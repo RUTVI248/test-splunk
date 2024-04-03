@@ -1,0 +1,1004 @@
+[
+{
+"name": "app=W32Time",
+"owner": "nobody",
+"sharing": "global",
+"synchronize": "enabled",
+"time": "enabled"
+},
+{
+"local": "enabled",
+"name": "app=win%3Alocal",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"name": "app=win%3Aremote",
+"owner": "nobody",
+"remote": "enabled",
+"sharing": "global"
+},
+{
+"automatic": "enabled",
+"name": "app=wuauserv",
+"owner": "nobody",
+"sharing": "global",
+"update": "enabled"
+},
+{
+"name": "eventtype=DhcpSrvLog",
+"owner": "nobody",
+"sharing": "global",
+"windows": "enabled"
+},
+{
+"dhcp": "enabled",
+"name": "eventtype=DhcpSrvLog_dhcp",
+"network": "enabled",
+"owner": "nobody",
+"session": "enabled",
+"sharing": "global"
+},
+{
+"dhcp": "enabled",
+"end": "enabled",
+"name": "eventtype=DhcpSrvLog_end",
+"network": "enabled",
+"owner": "nobody",
+"session": "enabled",
+"sharing": "global"
+},
+{
+"dhcp": "enabled",
+"name": "eventtype=DhcpSrvLog_start",
+"network": "enabled",
+"owner": "nobody",
+"session": "enabled",
+"sharing": "global",
+"start": "enabled"
+},
+{
+"inventory": "enabled",
+"name": "eventtype=hostmon_disk",
+"oshost": "enabled",
+"owner": "nobody",
+"performance": "enabled",
+"sharing": "global",
+"storage": "enabled"
+},
+{
+"cpu": "enabled",
+"inventory": "enabled",
+"memory": "enabled",
+"name": "eventtype=hostmon_inventory",
+"os": "enabled",
+"oshost": "enabled",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"memory": "enabled",
+"name": "eventtype=hostmon_os",
+"os": "enabled",
+"oshost": "enabled",
+"owner": "nobody",
+"performance": "enabled",
+"sharing": "global",
+"windows": "enabled"
+},
+{
+"name": "eventtype=hostmon_windows",
+"os": "enabled",
+"owner": "nobody",
+"sharing": "global",
+"windows": "enabled"
+},
+{
+"name": "eventtype=microsoft_windows_hostmon_process",
+"owner": "nobody",
+"process": "enabled",
+"report": "enabled",
+"sharing": "global"
+},
+{
+"name": "eventtype=microsoft_windows_hostmon_service",
+"owner": "nobody",
+"report": "enabled",
+"service": "enabled",
+"sharing": "global"
+},
+{
+"name": "eventtype=microsoft_windows_hostmon_service_time",
+"os": "enabled",
+"owner": "nobody",
+"performance": "enabled",
+"sharing": "global",
+"synchronize": "enabled",
+"time": "enabled"
+},
+{
+"dhcp": "enabled",
+"name": "eventtype=msdhcp",
+"network": "enabled",
+"owner": "nobody",
+"session": "enabled",
+"sharing": "global",
+"windows": "enabled"
+},
+{
+"end": "disabled",
+"name": "eventtype=msdhcp_end",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"name": "eventtype=msdhcp_start",
+"owner": "nobody",
+"sharing": "global",
+"start": "enabled"
+},
+{
+"name": "eventtype=netmon_windows",
+"os": "enabled",
+"owner": "nobody",
+"sharing": "global",
+"windows": "enabled"
+},
+{
+"dns": "enabled",
+"name": "eventtype=nt6-dns-events",
+"network": "enabled",
+"owner": "nobody",
+"resolution": "enabled",
+"sharing": "global"
+},
+{
+"cpu": "enabled",
+"name": "eventtype=perfmon_cputime",
+"oshost": "enabled",
+"owner": "nobody",
+"performance": "enabled",
+"report": "enabled",
+"sharing": "global"
+},
+{
+"anomalous": "enabled",
+"name": "eventtype=perfmon_cputime_anomalous",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"disk": "enabled",
+"name": "eventtype=perfmon_freediskspace",
+"oshost": "enabled",
+"owner": "nobody",
+"performance": "enabled",
+"report": "enabled",
+"sharing": "global",
+"storage": "enabled"
+},
+{
+"anomalous": "enabled",
+"name": "eventtype=perfmon_freediskspace_anomalous",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"disk": "enabled",
+"name": "eventtype=perfmon_logicaldisk",
+"oshost": "enabled",
+"owner": "nobody",
+"performance": "enabled",
+"sharing": "global",
+"storage": "enabled"
+},
+{
+"memory": "enabled",
+"name": "eventtype=perfmon_memory",
+"oshost": "enabled",
+"owner": "nobody",
+"performance": "enabled",
+"report": "enabled",
+"sharing": "global"
+},
+{
+"anomalous": "enabled",
+"name": "eventtype=perfmon_memory_anomalous",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"name": "eventtype=perfmon_network",
+"network": "enabled",
+"oshost": "enabled",
+"owner": "nobody",
+"performance": "enabled",
+"sharing": "global"
+},
+{
+"name": "eventtype=perfmon_network_bandwidth",
+"network": "enabled",
+"oshost": "enabled",
+"owner": "nobody",
+"performance": "enabled",
+"sharing": "global"
+},
+{
+"name": "eventtype=perfmon_network_throughput",
+"network": "enabled",
+"oshost": "enabled",
+"owner": "nobody",
+"performance": "enabled",
+"sharing": "global"
+},
+{
+"name": "eventtype=perfmon_process",
+"oshost": "enabled",
+"owner": "nobody",
+"performance": "enabled",
+"process": "enabled",
+"report": "enabled",
+"sharing": "global"
+},
+{
+"cpu": "enabled",
+"name": "eventtype=perfmon_processorinformation",
+"owner": "nobody",
+"performance": "enabled",
+"process": "enabled",
+"report": "enabled",
+"sharing": "global"
+},
+{
+"cpu": "enabled",
+"name": "eventtype=perfmon_system",
+"oshost": "enabled",
+"owner": "nobody",
+"performance": "enabled",
+"report": "enabled",
+"sharing": "global"
+},
+{
+"name": "eventtype=perfmon_windows",
+"os": "enabled",
+"owner": "nobody",
+"sharing": "global",
+"windows": "enabled"
+},
+{
+"name": "eventtype=printmon_windows",
+"os": "enabled",
+"owner": "nobody",
+"sharing": "global",
+"windows": "enabled"
+},
+{
+"listening": "enabled",
+"name": "eventtype=script_listeningports",
+"owner": "nobody",
+"port": "enabled",
+"report": "enabled",
+"sharing": "global"
+},
+{
+"name": "eventtype=script_windows",
+"os": "enabled",
+"owner": "nobody",
+"sharing": "global",
+"windows": "enabled"
+},
+{
+"account": "enabled",
+"add": "enabled",
+"change": "enabled",
+"name": "eventtype=windows_account_created",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"account": "enabled",
+"change": "enabled",
+"delete": "enabled",
+"name": "eventtype=windows_account_deleted",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"account": "enabled",
+"change": "enabled",
+"disable": "enabled",
+"name": "eventtype=windows_account_disabled",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"account": "enabled",
+"change": "enabled",
+"enable": "enabled",
+"name": "eventtype=windows_account_enabled",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"account": "enabled",
+"change": "enabled",
+"lock": "enabled",
+"lockout": "enabled",
+"name": "eventtype=windows_account_lockout",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"account": "enabled",
+"change": "enabled",
+"management": "enabled",
+"name": "eventtype=windows_account_management",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"authentication": "enabled",
+"name": "eventtype=windows_account_mapped",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"account": "enabled",
+"change": "enabled",
+"modify": "enabled",
+"name": "eventtype=windows_account_modified",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"authentication": "enabled",
+"name": "eventtype=windows_account_notmapped",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"account": "enabled",
+"change": "enabled",
+"modify": "enabled",
+"name": "eventtype=windows_account_password_change",
+"owner": "nobody",
+"password": "enabled",
+"sharing": "global"
+},
+{
+"account": "enabled",
+"change": "enabled",
+"modify": "enabled",
+"name": "eventtype=windows_account_password_set",
+"owner": "nobody",
+"password": "enabled",
+"sharing": "global"
+},
+{
+"account": "enabled",
+"change": "enabled",
+"modify": "enabled",
+"name": "eventtype=windows_account_unlocked",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"authentication": "enabled",
+"name": "eventtype=windows_account_used4logon",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"audit": "enabled",
+"backup": "enabled",
+"change": "enabled",
+"name": "eventtype=windows_audit_backup",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"audit": "enabled",
+"error": "enabled",
+"name": "eventtype=windows_audit_errors",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"audit": "enabled",
+"change": "enabled",
+"cleared": "enabled",
+"delete": "enabled",
+"name": "eventtype=windows_audit_log_cleared",
+"owner": "nobody",
+"sharing": "global",
+"watchlist": "enabled"
+},
+{
+"audit": "enabled",
+"change": "enabled",
+"name": "eventtype=windows_audit_log_logon",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"name": "eventtype=windows_audit_log_stopped",
+"owner": "nobody",
+"sharing": "global",
+"stop": "enabled",
+"stopped": "enabled",
+"watchlist": "enabled"
+},
+{
+"audit": "enabled",
+"change": "enabled",
+"configuration": "enabled",
+"modify": "enabled",
+"name": "eventtype=windows_audit_policy_change",
+"owner": "nobody",
+"policy": "enabled",
+"sharing": "global"
+},
+{
+"audit": "enabled",
+"change": "enabled",
+"configuration": "enabled",
+"modify": "enabled",
+"name": "eventtype=windows_audit_policy_changed",
+"owner": "nobody",
+"policy": "enabled",
+"sharing": "global"
+},
+{
+"execute": "enabled",
+"name": "eventtype=windows_auth_package",
+"owner": "nobody",
+"process": "enabled",
+"sharing": "global",
+"start": "enabled"
+},
+{
+"authentication": "enabled",
+"name": "eventtype=windows_auth_ticket_granted",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"name": "eventtype=windows_endpoint_processes",
+"owner": "nobody",
+"process": "enabled",
+"report": "enabled",
+"sharing": "global"
+},
+{
+"name": "eventtype=windows_endpoint_services",
+"owner": "nobody",
+"report": "enabled",
+"service": "enabled",
+"sharing": "global"
+},
+{
+"name": "eventtype=windows_event_signature",
+"owner": "nobody",
+"sharing": "global",
+"track_event_signatures": "enabled"
+},
+{
+"application": "enabled",
+"configuration": "enabled",
+"firewall": "enabled",
+"name": "eventtype=windows_firewall_policy_active",
+"owner": "nobody",
+"report": "enabled",
+"sharing": "global"
+},
+{
+"application": "enabled",
+"configuration": "enabled",
+"firewall": "enabled",
+"modify": "enabled",
+"name": "eventtype=windows_firewall_policy_change",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"application": "enabled",
+"firewall": "enabled",
+"listening": "enabled",
+"name": "eventtype=windows_firewall_port_listening",
+"owner": "nobody",
+"port": "enabled",
+"report": "enabled",
+"sharing": "global"
+},
+{
+"access": "enabled",
+"file": "enabled",
+"name": "eventtype=windows_handle_closed",
+"owner": "nobody",
+"resource": "enabled",
+"sharing": "global",
+"stop": "enabled"
+},
+{
+"access": "enabled",
+"logoff": "enabled",
+"name": "eventtype=windows_logoff",
+"owner": "nobody",
+"sharing": "global",
+"stop": "enabled"
+},
+{
+"authentication": "enabled",
+"name": "eventtype=windows_logon_explicit",
+"owner": "nobody",
+"privileged": "enabled",
+"sharing": "global"
+},
+{
+"authentication": "enabled",
+"name": "eventtype=windows_logon_failure",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"add": "enabled",
+"authorization": "enabled",
+"name": "eventtype=windows_logon_process",
+"owner": "nobody",
+"process": "enabled",
+"sharing": "global"
+},
+{
+"authentication": "enabled",
+"name": "eventtype=windows_logon_success",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"execute": "enabled",
+"name": "eventtype=windows_notification_package",
+"owner": "nobody",
+"process": "enabled",
+"sharing": "global",
+"start": "enabled"
+},
+{
+"access": "enabled",
+"file": "enabled",
+"name": "eventtype=windows_object_open",
+"owner": "nobody",
+"resource": "enabled",
+"sharing": "global",
+"start": "enabled"
+},
+{
+"authentication": "enabled",
+"name": "eventtype=windows_pre_auth_failed",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"execute": "enabled",
+"name": "eventtype=windows_privileged_object_operation",
+"owner": "nobody",
+"privileged": "enabled",
+"resource": "enabled",
+"sharing": "global",
+"start": "enabled"
+},
+{
+"execute": "enabled",
+"name": "eventtype=windows_privileged_service_call",
+"owner": "nobody",
+"privileged": "enabled",
+"process": "enabled",
+"sharing": "global",
+"start": "enabled"
+},
+{
+"execute": "enabled",
+"name": "eventtype=windows_process_exit",
+"owner": "nobody",
+"process": "enabled",
+"sharing": "global",
+"stop": "enabled"
+},
+{
+"execute": "enabled",
+"name": "eventtype=windows_process_new",
+"owner": "nobody",
+"process": "enabled",
+"sharing": "global",
+"start": "enabled"
+},
+{
+"execute": "enabled",
+"name": "eventtype=windows_process_token",
+"owner": "nobody",
+"privileged": "enabled",
+"process": "enabled",
+"sharing": "global",
+"start": "enabled"
+},
+{
+"access": "enabled",
+"account": "enabled",
+"add": "enabled",
+"authorization": "enabled",
+"change": "enabled",
+"name": "eventtype=windows_security_access_granted",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"access": "enabled",
+"account": "enabled",
+"authorization": "enabled",
+"change": "enabled",
+"delete": "enabled",
+"name": "eventtype=windows_security_access_removed",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"authentication": "enabled",
+"name": "eventtype=windows_security_authentication",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"change": "enabled",
+"name": "eventtype=windows_security_change",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"account": "enabled",
+"change": "enabled",
+"name": "eventtype=windows_security_change_account",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"audit": "enabled",
+"change": "enabled",
+"name": "eventtype=windows_security_change_audit",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"listening": "enabled",
+"name": "eventtype=windows_security_endpoint_port",
+"owner": "nobody",
+"port": "enabled",
+"sharing": "global"
+},
+{
+"endpoint": "enabled",
+"name": "eventtype=windows_security_endpoint_registry",
+"owner": "nobody",
+"registry": "enabled",
+"sharing": "global"
+},
+{
+"audit": "enabled",
+"change": "enabled",
+"misconfiguration": "enabled",
+"name": "eventtype=windows_security_misconfiguration_password_minimum_length",
+"owner": "nobody",
+"password": "enabled",
+"policy": "enabled",
+"report": "enabled",
+"sharing": "global",
+"vulnerability": "enabled"
+},
+{
+"authentication": "enabled",
+"name": "eventtype=windows_service_ticket_granted",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"access": "enabled",
+"logoff": "enabled",
+"name": "eventtype=windows_session_disconnected",
+"owner": "nobody",
+"sharing": "global",
+"stop": "enabled"
+},
+{
+"authentication": "enabled",
+"name": "eventtype=windows_special_privileges",
+"owner": "nobody",
+"privileged": "enabled",
+"sharing": "global"
+},
+{
+"audit": "enabled",
+"change": "enabled",
+"name": "eventtype=windows_system_change_audit",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"name": "eventtype=windows_system_update",
+"owner": "nobody",
+"sharing": "global",
+"system": "enabled",
+"update": "enabled"
+},
+{
+"name": "eventtype=windows_system_update_status",
+"owner": "nobody",
+"sharing": "global",
+"status": "enabled"
+},
+{
+"failure": "enabled",
+"name": "eventtype=windows_time_failure",
+"owner": "nobody",
+"performance": "enabled",
+"report": "enabled",
+"sharing": "global",
+"synchronize": "enabled",
+"time": "enabled"
+},
+{
+"name": "eventtype=windows_time_sync",
+"owner": "nobody",
+"performance": "enabled",
+"report": "enabled",
+"sharing": "global",
+"success": "enabled",
+"synchronize": "enabled",
+"time": "enabled"
+},
+{
+"name": "eventtype=windows_updatelog",
+"owner": "nobody",
+"sharing": "global",
+"system": "enabled",
+"update": "enabled"
+},
+{
+"name": "eventtype=windows_updatelog_status",
+"owner": "nobody",
+"sharing": "global",
+"status": "enabled"
+},
+{
+"name": "eventtype=windowsupdatelog_windows",
+"os": "enabled",
+"owner": "nobody",
+"sharing": "global",
+"windows": "enabled"
+},
+{
+"name": "eventtype=wineventlog_application",
+"os": "enabled",
+"owner": "nobody",
+"sharing": "global",
+"windows": "enabled"
+},
+{
+"name": "eventtype=wineventlog_security",
+"os": "enabled",
+"owner": "nobody",
+"sharing": "global",
+"windows": "enabled"
+},
+{
+"name": "eventtype=wineventlog_system",
+"os": "enabled",
+"owner": "nobody",
+"sharing": "global",
+"windows": "enabled"
+},
+{
+"name": "eventtype=wineventlog_windows",
+"os": "enabled",
+"owner": "nobody",
+"sharing": "global",
+"windows": "enabled"
+},
+{
+"change": "enabled",
+"endpoint": "enabled",
+"name": "eventtype=winregistry_windows",
+"os": "enabled",
+"owner": "nobody",
+"registry": "enabled",
+"sharing": "global",
+"windows": "enabled"
+},
+{
+"name": "eventtype=winsec",
+"owner": "nobody",
+"security": "enabled",
+"sharing": "global"
+},
+{
+"memory": "enabled",
+"name": "eventtype=wmi_computersystem",
+"owner": "nobody",
+"performance": "enabled",
+"sharing": "global"
+},
+{
+"cpu": "enabled",
+"name": "eventtype=wmi_cputime",
+"owner": "nobody",
+"performance": "enabled",
+"report": "enabled",
+"sharing": "global"
+},
+{
+"anomalous": "enabled",
+"name": "eventtype=wmi_cputime_anomalous",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"disk": "enabled",
+"name": "eventtype=wmi_freediskspace",
+"owner": "nobody",
+"performance": "enabled",
+"report": "enabled",
+"sharing": "global",
+"storage": "enabled"
+},
+{
+"anomalous": "enabled",
+"name": "eventtype=wmi_freediskspace_anomalous",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"name": "eventtype=wmi_installed_packages",
+"owner": "nobody",
+"sharing": "global",
+"status": "enabled",
+"system": "enabled",
+"update": "enabled"
+},
+{
+"name": "eventtype=wmi_localprocesses",
+"owner": "nobody",
+"process": "enabled",
+"report": "enabled",
+"sharing": "global"
+},
+{
+"anomalous": "enabled",
+"name": "eventtype=wmi_localprocesses_anomalous",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"disk": "enabled",
+"name": "eventtype=wmi_logicaldisk",
+"owner": "nobody",
+"performance": "enabled",
+"sharing": "global",
+"storage": "enabled"
+},
+{
+"memory": "enabled",
+"name": "eventtype=wmi_memory",
+"owner": "nobody",
+"performance": "enabled",
+"report": "enabled",
+"sharing": "global"
+},
+{
+"anomalous": "enabled",
+"name": "eventtype=wmi_memory_anomalous",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"name": "eventtype=wmi_network_bandwidth",
+"network": "enabled",
+"owner": "nobody",
+"performance": "enabled",
+"sharing": "global"
+},
+{
+"name": "eventtype=wmi_network_throughput",
+"network": "enabled",
+"owner": "nobody",
+"performance": "enabled",
+"sharing": "global"
+},
+{
+"name": "eventtype=wmi_service",
+"owner": "nobody",
+"report": "enabled",
+"service": "enabled",
+"sharing": "global"
+},
+{
+"anomalous": "enabled",
+"name": "eventtype=wmi_service_state_anomalous",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"anomalous": "enabled",
+"name": "eventtype=wmi_service_status_anomalous",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"name": "eventtype=wmi_uptime",
+"owner": "nobody",
+"performance": "enabled",
+"report": "enabled",
+"sharing": "global",
+"uptime": "enabled"
+},
+{
+"anomalous": "enabled",
+"name": "eventtype=wmi_uptime_anomalous",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"account": "enabled",
+"inventory": "enabled",
+"name": "eventtype=wmi_useraccounts",
+"owner": "nobody",
+"report": "enabled",
+"sharing": "global",
+"user": "enabled"
+},
+{
+"inventory": "enabled",
+"name": "eventtype=wmi_version",
+"owner": "nobody",
+"report": "enabled",
+"sharing": "global",
+"system": "enabled",
+"version": "enabled"
+},
+{
+"name": "eventtype=wmi_windows",
+"os": "enabled",
+"owner": "nobody",
+"sharing": "global",
+"windows": "enabled"
+},
+{
+"cleartext": "enabled",
+"name": "Logon_Type=8",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"audit": "enabled",
+"name": "privilege_id=SeAuditPrivilege",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"audit": "enabled",
+"name": "privilege_id=SeSecurityPrivilege",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"account": "enabled",
+"change": "enabled",
+"modify": "enabled",
+"name": "Service_Name=kadmin%2Fchangepw",
+"owner": "nobody",
+"password": "enabled",
+"sharing": "global"
+},
+{
+"name": "Token_Elevation_Type_id=2",
+"owner": "nobody",
+"privileged": "enabled",
+"sharing": "global"
+}
+]

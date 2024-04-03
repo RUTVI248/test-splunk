@@ -1,0 +1,37 @@
+[
+{
+"eai:data": "<?xml version=\"1.1\"?>\n<view template=\"python_upgrade_readiness_app:/templates/jquery_scan.html\" type=\"html\">\n\t<label>jQuery Scan</label>\n</view>",
+"eai:type": "views",
+"name": "jquery_scan",
+"owner": "nobody",
+"sharing": "app"
+},
+{
+"eai:data": "<?xml version=\"1.1\"?>\n<view template=\"python_upgrade_readiness_app:/templates/python_scan.html\" type=\"html\">\n\t<label>Python Scan</label>\n</view>\n",
+"eai:type": "views",
+"name": "python_scan",
+"owner": "nobody",
+"sharing": "app"
+},
+{
+"eai:data": "<?xml version=\"1.1\"?>\n<view template=\"python_upgrade_readiness_app:/templates/setting.html\" type=\"html\" isVisible=\"false\">\n\t<label>Python Version</label>\n</view>",
+"eai:type": "views",
+"name": "setting",
+"owner": "nobody",
+"sharing": "app"
+},
+{
+"eai:data": "<?xml version=\"1.1\"?>\n<view template=\"python_upgrade_readiness_app:/templates/setting_scan.html\" type=\"html\" isVisible=\"false\">\n\t<label>Setting Scan</label>\n</view>\n",
+"eai:type": "views",
+"name": "setting_scan",
+"owner": "nobody",
+"sharing": "app"
+},
+{
+"eai:data": "<?xml version=\"1.1\"?>\n<view template=\"python_upgrade_readiness_app:/templates/splunk9x_scan.html\" type=\"html\">\n\t<label>Splunk Platform Compatibility Scan</label>\n</view>\n",
+"eai:type": "views",
+"name": "splunk9x_scan",
+"owner": "nobody",
+"sharing": "app"
+}
+]

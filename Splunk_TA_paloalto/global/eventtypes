@@ -1,0 +1,335 @@
+[
+{
+"color": "none",
+"name": "pan",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=pan_* OR sourcetype=pan:*",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "pan_aperture",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=pan_aperture OR sourcetype=pan:aperture",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "pan_aperture_activity_monitoring",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=pan_aperture OR sourcetype=pan:aperture AND log_type=\"activity_monitoring\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "pan_aperture_admin_audit",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=pan_aperture OR sourcetype=pan:aperture AND log_type=\"admin_audit\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "pan_aperture_incident",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=pan_aperture OR sourcetype=pan:aperture AND log_type=\"incident\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "pan_aperture_policy_violation",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=pan_aperture OR sourcetype=pan:aperture AND log_type=\"policy_violation\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "pan_aperture_remediation",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=pan_aperture OR sourcetype=pan:aperture AND log_type=\"remediation\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "pan_config",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=pan_config OR sourcetype=pan:config",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "pan_correlation",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=pan_correlation OR sourcetype=pan:correlation OR (sourcetype=pan:firewall_cloud AND LogType=\"CORRELATION\")",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "pan_data",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=pan_threat OR sourcetype=pan:threat OR (sourcetype=pan:firewall_cloud AND LogType=\"THREAT\") AND log_subtype = \"data\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "pan_decryption",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=pan_decryption OR sourcetype=pan:decryption OR (sourcetype=pan:firewall_cloud AND LogType=\"DECRYPTION\")",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "pan_email",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=pan_threat OR sourcetype=pan:threat OR (sourcetype=pan:firewall_cloud AND LogType=\"THREAT\") AND recipient=\"*\" AND sender=\"*\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "pan_endpoint",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=pan:analytics_traps OR sourcetype=pan:threat_traps OR sourcetype=pan:system_traps OR sourcetype=pan:config_traps",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "pan_file",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=pan_threat OR sourcetype=pan:threat OR (sourcetype=pan:firewall_cloud AND LogType=\"THREAT\") AND log_subtype = \"file\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "pan_firewall",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=pan:traffic OR sourcetype=pan:threat OR sourcetype=pan:config OR sourcetype=pan:system OR sourcetype=pan:hipmatch OR sourcetype=pan:correlation OR sourcetype=pan:globalprotect OR sourcetype=pan:firewall_cloud",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "pan_firewall_cloud",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=pan:firewall_cloud",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "pan_globalprotect",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=pan_globalprotect OR sourcetype=pan:globalprotect OR (sourcetype=pan:firewall_cloud AND LogType=\"GLOBALPROTECT\")",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "pan_iot_alert",
+"owner": "nobody",
+"priority": "1",
+"search": "(sourcetype=pan:iot_alert)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "pan_iot_device",
+"owner": "nobody",
+"priority": "1",
+"search": "(sourcetype=pan:iot_device)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "pan_iot_vulnerability",
+"owner": "nobody",
+"priority": "1",
+"search": "(sourcetype=pan:iot_vulnerability)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "pan_malware_attacks",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=pan:threat_traps",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "pan_malware_operations",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=pan:analytics_traps OR sourcetype=pan:system_traps OR sourcetype=pan:config_traps",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "pan_spyware",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=pan_threat OR sourcetype=pan:threat OR (sourcetype=pan:firewall_cloud AND LogType=\"THREAT\") AND log_subtype = \"spyware\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "pan_system",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=pan_system OR sourcetype=pan:system OR (sourcetype=pan:firewall_cloud AND LogType=\"SYSTEM\")",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "pan_system_alert",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=pan_system OR sourcetype=pan:system AND log_subtype=\"url-filtering\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "pan_system_auth",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=pan_system OR sourcetype=pan:system AND log_subtype=\"globalprotect\" OR description=\"*Failed password*\" NOT description=\"*client configuration released*\" NOT description=\"*client configuration generated*\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "pan_system_change",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=pan_system OR sourcetype=pan:system description=\"*config cleared*\" AND NOT (log_subtype IN (\"routing\", \"ras\", \"vpn\"))",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "pan_threat",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=pan_threat OR sourcetype=pan:threat OR (sourcetype=pan:firewall_cloud AND LogType=\"THREAT\") AND log_subtype != \"url\" log_subtype != \"file\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "pan_traffic",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=pan_traffic OR sourcetype=pan:traffic OR (sourcetype=pan:firewall_cloud AND LogType=\"TRAFFIC\")",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "pan_traffic_end",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=pan_traffic OR sourcetype=pan:traffic OR (sourcetype=pan:firewall_cloud AND LogType=\"TRAFFIC\") AND log_subtype=\"end\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "pan_traffic_start",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=pan_traffic OR sourcetype=pan:traffic OR (sourcetype=pan:firewall_cloud AND LogType=\"TRAFFIC\") AND log_subtype=\"start\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "pan_traps",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=pan:analytics_traps OR sourcetype=pan:threat_traps OR sourcetype=pan:system_traps OR sourcetype=pan:config_traps",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "pan_url",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=pan_threat OR sourcetype=pan:threat OR (sourcetype=pan:firewall_cloud AND LogType=\"THREAT\") AND log_subtype = \"url\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "pan_virus",
+"owner": "nobody",
+"priority": "1",
+"search": "(sourcetype=pan_threat OR sourcetype=pan:threat OR (sourcetype=pan:firewall_cloud AND LogType=\"THREAT\")) AND (log_subtype = \"virus\" OR log_subtype = \"wildfire-virus\")",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "pan_wildfire",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=pan_threat OR sourcetype=pan:threat OR (sourcetype=pan:firewall_cloud AND LogType=\"THREAT\") AND log_subtype = \"wildfire\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "pan_wildfire_malicious",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=pan_threat OR sourcetype=pan:threat OR (sourcetype=pan:firewall_cloud AND LogType=\"THREAT\") AND log_subtype=\"wildfire\" AND verdict=malicious",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "pan_xdr_incident",
+"owner": "nobody",
+"priority": "1",
+"search": "(sourcetype=pan:xdr_incident)",
+"sharing": "global",
+"tags": "\n          "
+}
+]

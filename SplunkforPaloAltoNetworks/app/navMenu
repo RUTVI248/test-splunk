@@ -1,0 +1,8 @@
+[
+{
+"eai:data": "<nav search_view=\"search\" color=\"#FFFFFF\">\n\n  <collection label=\"Palo Alto Networks\">\n    <a href=\"/app/Splunk_TA_paloalto\">Configuration</a>\n    <divider />\n    <a href=\"http://splunk.paloaltonetworks.com\" target=\"_blank\">Documentation</a>\n    <a href=\"http://answers.splunk.com/ask/?appid=491\" target=\"_blank\">Send Feedback</a>\n  </collection>\n  \n  <collection label=\"Activity\">\n    <view name=\"user_behavior\" />\n    <view name=\"saas_activity\" />\n    <view name=\"file_activity\" />\n    <view name=\"web_activity\" />\n    <view name=\"iot_activity\" />\n    <view name=\"globalprotect\" />\n  </collection>\n  \n  <collection label=\"Threats\">\n    <view name=\"cortex_xdr_incidents\" default=\"true\" />\n    <view name=\"malware\" />\n    <view name=\"network_security\" />\n    <view name=\"saas_security\" />\n    <view name=\"iot_security\" />\n    <view name=\"email_security\" />\n    <view name=\"wildfire_submissions\" />\n  </collection>\n  \n  <collection label=\"Operations\">\n    <view name=\"firewall_system\" />\n    <view name=\"firewall_configuration\" />\n    <view name=\"threat_intelligence\" />\n    <view name=\"data_model_audit\" />\n    <view name=\"realtime_event_feed\"/>\n  </collection>\n\n  <view name=\"search\" stylesheet=\"application.css\"/>\n\n</nav>",
+"name": "default",
+"owner": "nobody",
+"sharing": "app"
+}
+]

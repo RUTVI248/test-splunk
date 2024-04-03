@@ -1,0 +1,918 @@
+[
+{
+"name": "LOOKUP-user_account_control_property",
+"origName": "ActiveDirectory : LOOKUP-user_account_control_property",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "ActiveDirectory",
+"transform": "user_account_control_property"
+},
+{
+"name": "LOOKUP-signature_for_microsoft_dhcp",
+"origName": "DhcpSrvLog : LOOKUP-signature_for_microsoft_dhcp",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "DhcpSrvLog",
+"transform": "msdhcp_signature_lookup"
+},
+{
+"name": "LOOKUP-dns_recordclass_lookup",
+"origName": "MSAD:NT6:DNS : LOOKUP-dns_recordclass_lookup",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "MSAD:NT6:DNS",
+"transform": "dns_recordclass_lookup"
+},
+{
+"name": "LOOKUP-windows_dns_action_lookup",
+"origName": "MSAD:NT6:DNS : LOOKUP-windows_dns_action_lookup",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "MSAD:NT6:DNS",
+"transform": "windows_dns_action_lookup"
+},
+{
+"name": "LOOKUP-windows_dns_query_type_lookup",
+"origName": "MSAD:NT6:DNS : LOOKUP-windows_dns_query_type_lookup",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "MSAD:NT6:DNS",
+"transform": "windows_dns_query_type_lookup"
+},
+{
+"lookup.field.output.windows_action": "action",
+"name": "LOOKUP-action_for_win_timesync_status",
+"origName": "Script:TimesyncStatus : LOOKUP-action_for_win_timesync_status",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:TimesyncStatus",
+"transform": "windows_timesync_action_lookup"
+},
+{
+"lookup.field.output.action": "status",
+"name": "LOOKUP-action_for_windows_xmlsecurity_input",
+"origName": "source::WinEventLog:Application : LOOKUP-action_for_windows_xmlsecurity_input",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Application",
+"transform": "xmlsecurity_eventcode_errorcode_action_lookup"
+},
+{
+"name": "LOOKUP-0severity_for_windows",
+"origName": "source::WinEventLog:Security : LOOKUP-0severity_for_windows",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"transform": "windows_severity_lookup"
+},
+{
+"name": "LOOKUP-action_for_windows00_security",
+"origName": "source::WinEventLog:Security : LOOKUP-action_for_windows00_security",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"transform": "windows_wineventlog_change_action_lookup"
+},
+{
+"name": "LOOKUP-action_for_windows0_security",
+"origName": "source::WinEventLog:Security : LOOKUP-action_for_windows0_security",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"transform": "windows_audit_changes_lookup"
+},
+{
+"lookup.field.output.action": "status",
+"name": "LOOKUP-action_for_windows1_security",
+"origName": "source::WinEventLog:Security : LOOKUP-action_for_windows1_security",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"transform": "windows_action_lookup"
+},
+{
+"lookup.field.input.Type": "Keywords",
+"lookup.field.output.action": "status",
+"name": "LOOKUP-action_for_windows2_security",
+"origName": "source::WinEventLog:Security : LOOKUP-action_for_windows2_security",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"transform": "windows_action_lookup"
+},
+{
+"lookup.field.output.action": "status",
+"name": "LOOKUP-action_for_windows_xmlsecurity_input",
+"origName": "source::WinEventLog:Security : LOOKUP-action_for_windows_xmlsecurity_input",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"transform": "xmlsecurity_eventcode_errorcode_action_lookup"
+},
+{
+"name": "LOOKUP-app0_for_windows_security",
+"origName": "source::WinEventLog:Security : LOOKUP-app0_for_windows_security",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"transform": "windows_app_lookup"
+},
+{
+"name": "LOOKUP-app1_for_windows_security",
+"origName": "source::WinEventLog:Security : LOOKUP-app1_for_windows_security",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"transform": "windows_app_lookup"
+},
+{
+"name": "LOOKUP-app2_for_windows_security",
+"origName": "source::WinEventLog:Security : LOOKUP-app2_for_windows_security",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"transform": "windows_app_lookup"
+},
+{
+"name": "LOOKUP-app3_for_windows_security",
+"origName": "source::WinEventLog:Security : LOOKUP-app3_for_windows_security",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"transform": "windows_app_lookup"
+},
+{
+"name": "LOOKUP-app4_for_windows_security",
+"origName": "source::WinEventLog:Security : LOOKUP-app4_for_windows_security",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"transform": "windows_app_lookup"
+},
+{
+"lookup.field.output.CategoryString": "ta_windows_security_CategoryString",
+"name": "LOOKUP-CategoryString_for_windows_legacy_security",
+"origName": "source::WinEventLog:Security : LOOKUP-CategoryString_for_windows_legacy_security",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"transform": "windows_signature_lookup"
+},
+{
+"name": "LOOKUP-msadgroupclass",
+"origName": "source::WinEventLog:Security : LOOKUP-msadgroupclass",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"transform": "MSADGroupType"
+},
+{
+"name": "LOOKUP-privilege_for_windows_security",
+"origName": "source::WinEventLog:Security : LOOKUP-privilege_for_windows_security",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"transform": "windows_privilege_lookup"
+},
+{
+"name": "LOOKUP-service_name_for_endpoint_service",
+"origName": "source::WinEventLog:Security : LOOKUP-service_name_for_endpoint_service",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"transform": "windows_endpoint_service_service_name_lookup"
+},
+{
+"name": "LOOKUP-service_type_for_endpoint_service",
+"origName": "source::WinEventLog:Security : LOOKUP-service_type_for_endpoint_service",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"transform": "windows_endpoint_service_service_type_lookup"
+},
+{
+"lookup.field.output.signature": "subject",
+"name": "LOOKUP-signature_for_windows",
+"origName": "source::WinEventLog:Security : LOOKUP-signature_for_windows",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"transform": "windows_signature_lookup2"
+},
+{
+"name": "LOOKUP-transpot_for_endpoint_pot",
+"origName": "source::WinEventLog:Security : LOOKUP-transpot_for_endpoint_pot",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"transform": "windows_endpoint_port_transport_lookup"
+},
+{
+"name": "LOOKUP-wineventlog-change-object-fields",
+"origName": "source::WinEventLog:Security : LOOKUP-wineventlog-change-object-fields",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"transform": "windows_wineventlog_change_object_fields_lookup"
+},
+{
+"lookup.field.input.StartType": "start_type2",
+"name": "LOOKUP-0start_mode_for_eventcode_7040_service_windows",
+"origName": "source::WinEventLog:System : LOOKUP-0start_mode_for_eventcode_7040_service_windows",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:System",
+"transform": "windows_start_mode_lookup"
+},
+{
+"lookup.field.input.StartType": "Service_Start_Type",
+"name": "LOOKUP-1start_mode_for_eventcode_7045_service_windows",
+"origName": "source::WinEventLog:System : LOOKUP-1start_mode_for_eventcode_7045_service_windows",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:System",
+"transform": "windows_start_mode_lookup"
+},
+{
+"lookup.field.output.action": "status",
+"name": "LOOKUP-action_for_windows_xmlsecurity_input",
+"origName": "source::WinEventLog:System : LOOKUP-action_for_windows_xmlsecurity_input",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:System",
+"transform": "xmlsecurity_eventcode_errorcode_action_lookup"
+},
+{
+"name": "LOOKUP-status_for_windows_system_update",
+"origName": "source::WinEventLog:System : LOOKUP-status_for_windows_system_update",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:System",
+"transform": "windows_update_status_lookup"
+},
+{
+"lookup.field.output.action": "status",
+"name": "LOOKUP-action_for_windows_xmlsecurity_input",
+"origName": "source::XmlWinEventLog:Application : LOOKUP-action_for_windows_xmlsecurity_input",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Application",
+"transform": "xmlsecurity_eventcode_errorcode_action_lookup"
+},
+{
+"name": "LOOKUP-0severity_for_windows",
+"origName": "source::XmlWinEventLog:Security : LOOKUP-0severity_for_windows",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"transform": "windows_severity_lookup"
+},
+{
+"name": "LOOKUP-action_for_windows00_security",
+"origName": "source::XmlWinEventLog:Security : LOOKUP-action_for_windows00_security",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"transform": "windows_wineventlog_change_action_lookup"
+},
+{
+"name": "LOOKUP-action_for_windows0_security",
+"origName": "source::XmlWinEventLog:Security : LOOKUP-action_for_windows0_security",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"transform": "windows_audit_changes_lookup"
+},
+{
+"lookup.field.output.action": "status",
+"name": "LOOKUP-action_for_windows1_security",
+"origName": "source::XmlWinEventLog:Security : LOOKUP-action_for_windows1_security",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"transform": "windows_action_lookup"
+},
+{
+"lookup.field.input.Type": "Keywords",
+"lookup.field.output.action": "status",
+"name": "LOOKUP-action_for_windows2_security",
+"origName": "source::XmlWinEventLog:Security : LOOKUP-action_for_windows2_security",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"transform": "windows_action_lookup"
+},
+{
+"lookup.field.output.action": "status",
+"name": "LOOKUP-action_for_windows_xmlsecurity_input",
+"origName": "source::XmlWinEventLog:Security : LOOKUP-action_for_windows_xmlsecurity_input",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"transform": "xmlsecurity_eventcode_errorcode_action_lookup"
+},
+{
+"name": "LOOKUP-app0_for_windows_security",
+"origName": "source::XmlWinEventLog:Security : LOOKUP-app0_for_windows_security",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"transform": "windows_app_lookup"
+},
+{
+"name": "LOOKUP-app1_for_windows_security",
+"origName": "source::XmlWinEventLog:Security : LOOKUP-app1_for_windows_security",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"transform": "windows_app_lookup"
+},
+{
+"name": "LOOKUP-app2_for_windows_security",
+"origName": "source::XmlWinEventLog:Security : LOOKUP-app2_for_windows_security",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"transform": "windows_app_lookup"
+},
+{
+"name": "LOOKUP-app3_for_windows_security",
+"origName": "source::XmlWinEventLog:Security : LOOKUP-app3_for_windows_security",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"transform": "windows_app_lookup"
+},
+{
+"name": "LOOKUP-app4_for_windows_security",
+"origName": "source::XmlWinEventLog:Security : LOOKUP-app4_for_windows_security",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"transform": "windows_app_lookup"
+},
+{
+"lookup.field.output.CategoryString": "ta_windows_security_CategoryString",
+"name": "LOOKUP-CategoryString_for_windows_xml_security",
+"origName": "source::XmlWinEventLog:Security : LOOKUP-CategoryString_for_windows_xml_security",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"transform": "windows_signature_lookup"
+},
+{
+"name": "LOOKUP-msadgroupclass",
+"origName": "source::XmlWinEventLog:Security : LOOKUP-msadgroupclass",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"transform": "MSADGroupType"
+},
+{
+"name": "LOOKUP-object_for_windows3_security",
+"origName": "source::XmlWinEventLog:Security : LOOKUP-object_for_windows3_security",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"transform": "xmlsecurity_change_audit_and_account_management_lookup"
+},
+{
+"name": "LOOKUP-privilege_for_windows_security",
+"origName": "source::XmlWinEventLog:Security : LOOKUP-privilege_for_windows_security",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"transform": "windows_privilege_lookup"
+},
+{
+"name": "LOOKUP-service_name",
+"origName": "source::XmlWinEventLog:Security : LOOKUP-service_name",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"transform": "windows_endpoint_service_service_name_lookup"
+},
+{
+"lookup.field.output.signature": "subject",
+"name": "LOOKUP-signature_for_windows",
+"origName": "source::XmlWinEventLog:Security : LOOKUP-signature_for_windows",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"transform": "windows_signature_lookup2"
+},
+{
+"lookup.field.input.Service_Start_Type": "ServiceStartType",
+"name": "LOOKUP-start_mode_for_windows_xml",
+"origName": "source::XmlWinEventLog:Security : LOOKUP-start_mode_for_windows_xml",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"transform": "windows_endpoint_service_service_type_lookup"
+},
+{
+"name": "LOOKUP-transport_for_endpoint_pot",
+"origName": "source::XmlWinEventLog:Security : LOOKUP-transport_for_endpoint_pot",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"transform": "windows_endpoint_port_transport_lookup"
+},
+{
+"name": "LOOKUP-0start_mode_for_eventcode_7045_service_windows_xml",
+"origName": "source::XmlWinEventLog:System : LOOKUP-0start_mode_for_eventcode_7045_service_windows_xml",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:System",
+"transform": "windows_start_mode_lookup"
+},
+{
+"lookup.field.input.StartType": "param3",
+"name": "LOOKUP-1start_mode_for_eventcode_7040_service_windows_xml",
+"origName": "source::XmlWinEventLog:System : LOOKUP-1start_mode_for_eventcode_7040_service_windows_xml",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:System",
+"transform": "windows_start_mode_lookup"
+},
+{
+"lookup.field.output.action": "status",
+"name": "LOOKUP-action_for_windows_xmlsecurity_input",
+"origName": "source::XmlWinEventLog:System : LOOKUP-action_for_windows_xmlsecurity_input",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:System",
+"transform": "xmlsecurity_eventcode_errorcode_action_lookup"
+},
+{
+"name": "LOOKUP-status_for_windows_system_update",
+"origName": "source::XmlWinEventLog:System : LOOKUP-status_for_windows_system_update",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:System",
+"transform": "windows_update_status_lookup"
+},
+{
+"name": "LOOKUP-status_for_windowsupdatelog",
+"origName": "WindowsUpdateLog : LOOKUP-status_for_windowsupdatelog",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WindowsUpdateLog",
+"transform": "windows_update_status_lookup"
+},
+{
+"name": "LOOKUP-1severity_for_windows",
+"origName": "WinEventLog : LOOKUP-1severity_for_windows",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinEventLog",
+"transform": "windows_severity_lookup"
+},
+{
+"name": "LOOKUP-1severity_for_windows",
+"origName": "wineventlog : LOOKUP-1severity_for_windows",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "wineventlog",
+"transform": "windows_severity_lookup"
+},
+{
+"name": "LOOKUP-CategoryString_for_windows",
+"origName": "WinEventLog : LOOKUP-CategoryString_for_windows",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinEventLog",
+"transform": "windows_signature_lookup"
+},
+{
+"name": "LOOKUP-CategoryString_for_windows",
+"origName": "wineventlog : LOOKUP-CategoryString_for_windows",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "wineventlog",
+"transform": "windows_signature_lookup"
+},
+{
+"lookup.field.output.signature": "subject",
+"name": "LOOKUP-signature_for_windows3",
+"origName": "wineventlog : LOOKUP-signature_for_windows3",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "wineventlog",
+"transform": "windows_signature_lookup"
+},
+{
+"lookup.field.output.signature": "subject",
+"name": "LOOKUP-signature_for_windows3",
+"origName": "WinEventLog : LOOKUP-signature_for_windows3",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinEventLog",
+"transform": "windows_signature_lookup"
+},
+{
+"name": "LOOKUP-action_for_WinRegistry",
+"origName": "WinRegistry : LOOKUP-action_for_WinRegistry",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinRegistry",
+"transform": "endpoint_change_vendor_action_lookup"
+},
+{
+"lookup.field.input.object": "sourcetype",
+"name": "LOOKUP-object_category_for_WinRegistry",
+"origName": "WinRegistry : LOOKUP-object_category_for_WinRegistry",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinRegistry",
+"transform": "endpoint_change_object_category_lookup"
+},
+{
+"name": "LOOKUP-status_for_WinRegistry",
+"origName": "WinRegistry : LOOKUP-status_for_WinRegistry",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinRegistry",
+"transform": "endpoint_change_status_lookup"
+},
+{
+"name": "LOOKUP-user_type_for_WinRegistry",
+"origName": "WinRegistry : LOOKUP-user_type_for_WinRegistry",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinRegistry",
+"transform": "endpoint_change_user_type_lookup"
+},
+{
+"name": "LOOKUP-status_for_installedupdates",
+"origName": "WMI:InstalledUpdates : LOOKUP-status_for_installedupdates",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:InstalledUpdates",
+"transform": "windows_update_status_lookup"
+},
+{
+"name": "LOOKUP-action_for_wmi_user_account_status",
+"origName": "WMI:UserAccounts : LOOKUP-action_for_wmi_user_account_status",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:UserAccounts",
+"transform": "wmi_user_account_status_lookup"
+},
+{
+"name": "LOOKUP-range_for_wmi_version",
+"origName": "WMI:Version : LOOKUP-range_for_wmi_version",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:Version",
+"transform": "wmi_version_range_lookup"
+},
+{
+"name": "LOOKUP-0severity_for_windows",
+"origName": "WMI:WinEventLog:Application : LOOKUP-0severity_for_windows",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Application",
+"transform": "windows_severity_lookup"
+},
+{
+"name": "LOOKUP-1severity_for_windows",
+"origName": "WMI:WinEventLog:Application : LOOKUP-1severity_for_windows",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Application",
+"transform": "windows_severity_lookup"
+},
+{
+"name": "LOOKUP-CategoryString_for_windows",
+"origName": "WMI:WinEventLog:Application : LOOKUP-CategoryString_for_windows",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Application",
+"transform": "windows_signature_lookup"
+},
+{
+"lookup.field.output.signature": "subject",
+"name": "LOOKUP-signature_for_windows3",
+"origName": "WMI:WinEventLog:Application : LOOKUP-signature_for_windows3",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Application",
+"transform": "windows_signature_lookup"
+},
+{
+"name": "LOOKUP-0severity_for_windows",
+"origName": "WMI:WinEventLog:Security : LOOKUP-0severity_for_windows",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security",
+"transform": "windows_severity_lookup"
+},
+{
+"name": "LOOKUP-1severity_for_windows",
+"origName": "WMI:WinEventLog:Security : LOOKUP-1severity_for_windows",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security",
+"transform": "windows_severity_lookup"
+},
+{
+"name": "LOOKUP-action_for_windows0_security",
+"origName": "WMI:WinEventLog:Security : LOOKUP-action_for_windows0_security",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security",
+"transform": "windows_audit_changes_lookup"
+},
+{
+"lookup.field.output.action": "status",
+"name": "LOOKUP-action_for_windows1_security",
+"origName": "WMI:WinEventLog:Security : LOOKUP-action_for_windows1_security",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security",
+"transform": "windows_action_lookup"
+},
+{
+"lookup.field.input.Type": "Keywords",
+"lookup.field.output.action": "status",
+"name": "LOOKUP-action_for_windows2_security",
+"origName": "WMI:WinEventLog:Security : LOOKUP-action_for_windows2_security",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security",
+"transform": "windows_action_lookup"
+},
+{
+"name": "LOOKUP-app0_for_windows_security",
+"origName": "WMI:WinEventLog:Security : LOOKUP-app0_for_windows_security",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security",
+"transform": "windows_app_lookup"
+},
+{
+"name": "LOOKUP-app1_for_windows_security",
+"origName": "WMI:WinEventLog:Security : LOOKUP-app1_for_windows_security",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security",
+"transform": "windows_app_lookup"
+},
+{
+"name": "LOOKUP-app2_for_windows_security",
+"origName": "WMI:WinEventLog:Security : LOOKUP-app2_for_windows_security",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security",
+"transform": "windows_app_lookup"
+},
+{
+"name": "LOOKUP-app3_for_windows_security",
+"origName": "WMI:WinEventLog:Security : LOOKUP-app3_for_windows_security",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security",
+"transform": "windows_app_lookup"
+},
+{
+"name": "LOOKUP-app4_for_windows_security",
+"origName": "WMI:WinEventLog:Security : LOOKUP-app4_for_windows_security",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security",
+"transform": "windows_app_lookup"
+},
+{
+"lookup.field.output.CategoryString": "ta_windows_security_CategoryString",
+"name": "LOOKUP-CategoryString_for_windows",
+"origName": "WMI:WinEventLog:Security : LOOKUP-CategoryString_for_windows",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security",
+"transform": "windows_signature_lookup"
+},
+{
+"name": "LOOKUP-msadgroupclass",
+"origName": "WMI:WinEventLog:Security : LOOKUP-msadgroupclass",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security",
+"transform": "MSADGroupType"
+},
+{
+"name": "LOOKUP-privilege_for_windows_security",
+"origName": "WMI:WinEventLog:Security : LOOKUP-privilege_for_windows_security",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security",
+"transform": "windows_privilege_lookup"
+},
+{
+"lookup.field.output.signature": "subject",
+"name": "LOOKUP-signature_for_windows",
+"origName": "WMI:WinEventLog:Security : LOOKUP-signature_for_windows",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security",
+"transform": "windows_signature_lookup2"
+},
+{
+"lookup.field.output.signature": "subject",
+"name": "LOOKUP-signature_for_windows3",
+"origName": "WMI:WinEventLog:Security : LOOKUP-signature_for_windows3",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security",
+"transform": "windows_signature_lookup"
+},
+{
+"name": "LOOKUP-0severity_for_windows",
+"origName": "WMI:WinEventLog:System : LOOKUP-0severity_for_windows",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:System",
+"transform": "windows_severity_lookup"
+},
+{
+"name": "LOOKUP-1severity_for_windows",
+"origName": "WMI:WinEventLog:System : LOOKUP-1severity_for_windows",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:System",
+"transform": "windows_severity_lookup"
+},
+{
+"name": "LOOKUP-CategoryString_for_windows",
+"origName": "WMI:WinEventLog:System : LOOKUP-CategoryString_for_windows",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:System",
+"transform": "windows_signature_lookup"
+},
+{
+"lookup.field.output.signature": "subject",
+"name": "LOOKUP-signature_for_windows3",
+"origName": "WMI:WinEventLog:System : LOOKUP-signature_for_windows3",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:System",
+"transform": "windows_signature_lookup"
+},
+{
+"name": "LOOKUP-status_for_windows_system_update",
+"origName": "WMI:WinEventLog:System : LOOKUP-status_for_windows_system_update",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:System",
+"transform": "windows_update_status_lookup"
+},
+{
+"name": "LOOKUP-1severity_for_windows",
+"origName": "xmlwineventlog : LOOKUP-1severity_for_windows",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "xmlwineventlog",
+"transform": "windows_severity_lookup"
+},
+{
+"name": "LOOKUP-1severity_for_windows",
+"origName": "XmlWinEventLog : LOOKUP-1severity_for_windows",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "XmlWinEventLog",
+"transform": "windows_severity_lookup"
+},
+{
+"name": "LOOKUP-CategoryString_for_windows",
+"origName": "xmlwineventlog : LOOKUP-CategoryString_for_windows",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "xmlwineventlog",
+"transform": "windows_signature_lookup"
+},
+{
+"name": "LOOKUP-CategoryString_for_windows",
+"origName": "XmlWinEventLog : LOOKUP-CategoryString_for_windows",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "XmlWinEventLog",
+"transform": "windows_signature_lookup"
+},
+{
+"lookup.field.output.signature": "subject",
+"name": "LOOKUP-signature_for_windows3",
+"origName": "XmlWinEventLog : LOOKUP-signature_for_windows3",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "XmlWinEventLog",
+"transform": "windows_signature_lookup"
+},
+{
+"lookup.field.output.signature": "subject",
+"name": "LOOKUP-signature_for_windows3",
+"origName": "xmlwineventlog : LOOKUP-signature_for_windows3",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "xmlwineventlog",
+"transform": "windows_signature_lookup"
+}
+]

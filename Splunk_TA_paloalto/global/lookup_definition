@@ -1,0 +1,111 @@
+[
+{
+"fields_list": "app,app:category,app:subcategory,app:technology,app:risk,app:evasive,app:excessive_bandwidth,app:used_by_malware,app:able_to_transfer_file,app:has_known_vulnerability,app:tunnels_other_application,app:prone_to_misuse,app:pervasive_use,app:is_saas,app:default_ports",
+"filename": "app_list.csv",
+"name": "app_lookup",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"collection": "autofocus_export",
+"external_type": "kvstore",
+"fields_list": "section, dns, label, sha1, submit_time, line, email, md5, sha256",
+"name": "autofocus_export_lookup",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"collection": "autofocus_tags",
+"external_type": "kvstore",
+"fields_list": "aftag:aliases, aftag:comments, aftag:count, aftag:created_at, aftag:customer_name, aftag:description, aftag:down_votes, aftag:last_comment, aftag:lasthit, aftag:owner, aftag:public_tag_name, aftag:review_submitted, aftag:source, aftag:tag_class, aftag:tag_class_id, aftag:tag_definition_scope, aftag:tag_definition_scope_id, aftag:tag_definition_status, aftag:tag_definition_status_id, aftag:tag_groups, aftag:tag_name, aftag:tagstatus, aftag:total_searches, aftag:up_votes, aftag:updated_at, aftag:tagstatus, aftag:tag_groups.tag_group_name, aftag:tag_groups.description, aftag:tag_groups",
+"name": "autofocus_tag_lookup",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"default_match": "unknown",
+"fields_list": "cidr,classification",
+"filename": "ip_classifications.csv",
+"match_type": "CIDR(cidr)",
+"max_matches": "1",
+"min_matches": "1",
+"name": "classification_lookup",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"fields_list": "log_subtype,action,command,object,object_category,object_attrs,change_type,status",
+"filename": "endpoint_actions.csv",
+"max_matches": "1",
+"min_matches": "1",
+"name": "endpoint_actions_lookup",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"filename": "minemeld_domainthreatlist.csv",
+"name": "minemeld_domainthreatlist",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"filename": "minemeld_filethreatlist.csv",
+"name": "minemeld_filethreatlist",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"filename": "minemeld_ipv4threatlist.csv",
+"name": "minemeld_ipv4threatlist",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"filename": "minemeld_urlthreatlist.csv",
+"name": "minemeld_urlthreatlist",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"collection": "minemeldfeeds",
+"external_type": "kvstore",
+"fields_list": "indicator, splunk_source, splunk_last_seen, value.confidence, value.first_seen, value.last_seen, value.share_level, value.sources, value.type, value.autofocus_tags, value.autofocus_benign, value.autofocus_grayware, value.autofocus_malware, value.autofocus_num_matching_artifacts, value",
+"name": "minemeldfeeds_lookup",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"default_match": "unknown",
+"fields_list": "vendor_action,action",
+"filename": "pan_vendor_actions.csv",
+"max_matches": "1",
+"min_matches": "1",
+"name": "pan_vendor_action_lookup",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"fields_list": "sourcetype,vendor,product,ids_type,vendor_product",
+"filename": "pan_vendor_info.csv",
+"name": "pan_vendor_info_lookup",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"default_match": "no",
+"fields_list": "app,sanctioned_saas",
+"filename": "sanctioned_saas.csv",
+"max_matches": "1",
+"min_matches": "1",
+"name": "sanctioned_saas_lookup",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"fields_list": "threat_id,threat:name,threat:category,threat:severity,threat:cve",
+"filename": "threat_list.csv",
+"name": "threat_lookup",
+"owner": "nobody",
+"sharing": "global"
+}
+]

@@ -1,0 +1,170 @@
+[
+{
+"eai:data": "<?xml version=\"1.0\"?>\n<view template=\"pages/app.html\" type=\"html\" isVisible=\"False\" isDashboard=\"False\">\n    <label>Alert</label>\n</view>",
+"eai:type": "views",
+"name": "alert",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"eai:data": "<?xml version=\"1.0\"?>\n<view template=\"pages/app.html\" type=\"html\" isDashboard=\"False\">\n    <label>Alerts</label>\n</view>",
+"eai:type": "views",
+"name": "alerts",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"eai:data": "<view template=\"builder.html\" onunloadCancelJobs=\"False\" type=\"redirect\" target=\"search\" isVisible=\"False\" isDashboard=\"False\">\n  <label>Advanced Charting</label>\n</view>",
+"eai:type": "views",
+"name": "charting",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"eai:data": "<?xml version=\"1.0\"?>\n<view template=\"pages/app.html\" type=\"html\" isDashboard=\"False\">\n    <label>Dashboards</label>\n</view>",
+"eai:type": "views",
+"name": "dashboards",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"eai:data": "<?xml version=\"1.0\"?>\n<view template=\"pages/system.html\" type=\"html\" isVisible=\"False\" isDashboard=\"False\">\n    <label>Data Model Editor</label>\n</view>\n",
+"eai:type": "views",
+"name": "data_model_editor",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"eai:data": "<?xml version=\"1.0\"?>\n<view type=\"redirect\" target=\"pivot\" isDashboard=\"False\">\n    <label>Datasets</label>\n</view>",
+"eai:type": "views",
+"name": "data_model_explorer",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"eai:data": "<?xml version=\"1.0\"?>\n<view template=\"pages/system.html\" type=\"html\" isVisible=\"False\" isDashboard=\"False\">\n    <label>Data Model Manager</label>\n</view>",
+"eai:type": "views",
+"name": "data_model_manager",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"eai:data": "<?xml version=\"1.0\"?>\n<view type=\"redirect\" target=\"pivot\" isDashboard=\"False\">\n    <label>Datasets</label>\n</view>",
+"eai:type": "views",
+"name": "data_models",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"eai:data": "<?xml version=\"1.0\"?>\n<view template=\"pages/app.html\" type=\"html\" isDashboard=\"False\">\n    <label>Dataset</label>\n</view>",
+"eai:type": "views",
+"name": "dataset",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"eai:data": "<?xml version=\"1.0\"?>\n<view template=\"pages/page_with_flag.html\" type=\"html\" isDashboard=\"False\">\n    <label>Datasets</label>\n</view>",
+"eai:type": "views",
+"name": "datasets",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"eai:data": "<?xml version=\"1.0\"?>\n<view template=\"pages/app.html\" type=\"html\" isDashboard=\"False\">\n    <label>Field Extractor</label>\n</view>",
+"eai:type": "views",
+"name": "field_extractor",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"eai:data": "<?xml version=\"1.0\"?>\n<view onunloadCancelJobs=\"False\" autoCancelInterval=\"100\" isDashboard=\"False\" type=\"redirect\" target=\"search\">\n    <!-- autoCancelInterval is set here to 100 -->\n    <label>Search</label>\n</view>",
+"eai:type": "views",
+"name": "flashtimeline",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"eai:data": "<?xml version=\"1.0\"?>\n<view template=\"pages/app.html\" type=\"html\" isDashboard=\"False\">\n    <label>Job Manager</label>\n</view>",
+"eai:type": "views",
+"name": "job_manager",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"eai:data": "<?xml version=\"1.0\"?>\n<view template=\"pages/app.html\" type=\"html\" isDashboard=\"False\">\n    <label>Mod Setup</label>\n</view>",
+"eai:type": "views",
+"name": "mod_setup",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"eai:data": "<?xml version=\"1.0\"?>\n<view template=\"pages/app.html\" type=\"html\" isDashboard=\"False\">\n    <label>Datasets</label>\n</view>",
+"eai:type": "views",
+"name": "pivot",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"eai:data": "<?xml version=\"1.0\"?>\n<view template=\"pages/app.html\" type=\"html\" isVisible=\"False\"  isDashboard=\"False\">\n    <label>Report</label>\n</view>",
+"eai:type": "views",
+"name": "report",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"eai:data": "<view isVisible=\"false\" template=\"builder.html\" displayView=\"report_builder_display\" decomposeIntentions=\"true\" isDashboard=\"False\" type=\"redirect\" target=\"search\"> \n  <label>Report Builder</label>\n</view>",
+"eai:type": "views",
+"name": "report_builder_define_data",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"eai:data": "<view isVisible=\"false\" template=\"builder.html\" isDashboard=\"False\" type=\"redirect\" target=\"report\">\n  <label>Display Report</label>\n</view>",
+"eai:type": "views",
+"name": "report_builder_display",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"eai:data": "<view isVisible=\"false\" template=\"builder.html\" displayView=\"report_builder_display\" onunloadCancelJobs=\"False\" decomposeIntentions=\"true\" isDashboard=\"False\" type=\"redirect\" target=\"search\">\n  <label>Report Builder</label>\n</view>",
+"eai:type": "views",
+"name": "report_builder_format_report",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"eai:data": "<view isVisible=\"false\" template=\"builder.html\" isDashboard=\"False\" type=\"redirect\" target=\"report\">\n    <label>Display Report</label>\n</view>",
+"eai:type": "views",
+"name": "report_builder_print",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"eai:data": "<?xml version=\"1.0\"?>\n<view template=\"pages/app.html\" type=\"html\" isDashboard=\"False\">\n    <label>Reports</label>\n</view>",
+"eai:type": "views",
+"name": "reports",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"eai:data": "<?xml version=\"1.0\"?>\n<view template=\"pages/search.html\" type=\"html\" isDashboard=\"False\">\n    <label>Search</label>\n</view>",
+"eai:type": "views",
+"name": "search",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"eai:data": "<?xml version=\"1.0\"?>\n<view template=\"pages/app.html\" type=\"html\" isDashboard=\"False\">\n    <label>Show Source</label>\n</view>",
+"eai:type": "views",
+"name": "show_source",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"eai:data": "<?xml version=\"1.0\"?>\n<view template=\"pages/app.html\" type=\"html\" isDashboard=\"False\">\n    <label>Table</label>\n</view>",
+"eai:type": "views",
+"name": "table",
+"owner": "nobody",
+"sharing": "global"
+}
+]

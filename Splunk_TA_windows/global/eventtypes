@@ -1,0 +1,1370 @@
+[
+{
+"color": "none",
+"name": "ad-files",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=MSAD:NT6:Replication OR sourcetype=MSAD:NT6:Health OR sourcetype=MSAD:NT6:SiteInfo OR sourcetype=MSAD:NT6:Netlogon OR sourcetype=ActiveDirectory OR sourcetype=MSAD:NT6:DNS-Health OR sourcetype=MSAD:NT6:DNS-Zone-Information OR sourcetype=MSAD:NT6:DNS",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "admon",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=ActiveDirectory",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "admon-computer",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=admon objectCategory=\"*CN=Computer*\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "admon-gpo",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=admon objectCategory=\"*CN=Group-Policy-Container*\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "admon-group",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=admon objectCategory=\"*CN=Group*\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "admon-user",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=admon objectCategory=\"*CN=Person*\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "DhcpSrvLog",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=DhcpSrvLog",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "DhcpSrvLog_dhcp",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=DhcpSrvLog (msdhcp_id=13 OR msdhcp_id=14 OR msdhcp_id=15)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "DhcpSrvLog_end",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=DhcpSrvLog (msdhcp_id=12 OR msdhcp_id=16 OR msdhcp_id=17 OR msdhcp_id=18)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "DhcpSrvLog_start",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=DhcpSrvLog (msdhcp_id=10 OR msdhcp_id=11)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "endpoint_services_processes",
+"owner": "nobody",
+"priority": "1",
+"search": "source=\"WMI:WinEventLog:Security\" OR sourcetype=\"WinEventLog\" OR sourcetype=\"XmlWinEventLog\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "hostmon_disk",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=WinHostMon (Type=Disk)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "hostmon_inventory",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=WinHostMon (Type=OperatingSystem OR Type=Processor)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "hostmon_os",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=WinHostMon Type=OperatingSystem",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "hostmon_windows",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=WinHostMon",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "microsoft_windows_hostmon_process",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=WinHostMon source=process",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "microsoft_windows_hostmon_service",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=WinHostMon source=service",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "microsoft_windows_hostmon_service_time",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=WinHostMon source=service Name=W32Time",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "msad-dc-health",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=powershell sourcetype=\"MSAD:*:Health\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "msad-dns-debuglog",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=ad-files sourcetype=\"MSAD:*:DNS\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "msad-dns-health",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=powershell sourcetype=\"MSAD:*:DNS-Health\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "msad-dns-zoneinfo",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=powershell sourcetype=\"MSAD:*:DNS-Zone-Information\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "msad-rep-health",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=powershell sourcetype=\"MSAD:*:Replication\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "msad-site",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=powershell sourcetype=\"MSAD:*:SiteInfo\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "msad-siteinfo",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=powershell sourcetype=\"MSAD:*:SiteInfo\" Type=\"Site\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "msad-sitelinkinfo",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=powershell sourcetype=\"MSAD:*:SiteInfo\" Type=\"SiteLink\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "msad-subnet-affinity",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"MSAD:*:Netlogon\" msad_affinity=NO_CLIENT_SITE",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "msad-subnetinfo",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=powershell sourcetype=\"MSAD:*:SiteInfo\" Type=\"Subnet\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "msdhcp",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=msdhcp",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "msdhcp_end",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=msdhcp (msdhcp_id=12 OR msdhcp_id=16 OR msdhcp_id=17)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "msdhcp_start",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=msdhcp (msdhcp_id=10 OR msdhcp_id=11 OR msdhcp_id=13)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "netmon_windows",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=WinNetMon",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "nt6-dns-events",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=MSAD:NT6:DNS",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "perfmon",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"Perfmon:*\" OR sourcetype=\"PerfmonMk:*\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "perfmon-dns",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=perfmon (sourcetype=\"Perfmon:DNS\" OR sourcetype=\"PerfmonMk:DNS\")",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "perfmon-ntds",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=perfmon (sourcetype=\"Perfmon:NTDS\" OR sourcetype=\"PerfmonMk:NTDS\")",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "perfmon_cputime",
+"owner": "nobody",
+"priority": "1",
+"search": "(sourcetype=Perfmon:CPU OR sourcetype=PerfmonMk:CPU OR sourcetype=Perfmon:CPUTime)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "perfmon_cputime_anomalous",
+"owner": "nobody",
+"priority": "1",
+"search": "(sourcetype=Perfmon:CPU OR sourcetype=PerfmonMk:CPU OR sourcetype=Perfmon:CPUTime) windows_cpu_load_percent>90",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "perfmon_freediskspace",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=Perfmon:FreeDiskSpace",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "perfmon_freediskspace_anomalous",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=Perfmon:FreeDiskSpace windows_storage_free_percent<10",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "perfmon_logicaldisk",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=Perfmon:LogicalDisk OR sourcetype=PerfmonMk:LogicalDisk",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "perfmon_memory",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=Perfmon:Memory OR sourcetype=PerfmonMk:Memory",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "perfmon_memory_anomalous",
+"owner": "nobody",
+"priority": "1",
+"search": "(sourcetype=Perfmon:Memory OR sourcetype=PerfmonMk:Memory) windows_mem_free<104857600",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "perfmon_network",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=Perfmon:Network OR sourcetype=PerfmonMk:Network",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "perfmon_network_bandwidth",
+"owner": "nobody",
+"priority": "1",
+"search": "(sourcetype=Perfmon:LocalNetwork OR sourcetype=PerfmonMk:Network OR sourcetype=Perfmon:Network) (counter=\"Current Bandwidth\" OR Current_Bandwidth=*)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "perfmon_network_throughput",
+"owner": "nobody",
+"priority": "1",
+"search": "(sourcetype=Perfmon:LocalNetwork OR sourcetype=PerfmonMk:Network OR sourcetype=Perfmon:Network) (counter=\"Bytes Total/sec\" OR Bytes_Total/sec = *)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "perfmon_process",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=Perfmon:Process OR sourcetype=PerfmonMk:Process",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "perfmon_processorinformation",
+"owner": "nobody",
+"priority": "1",
+"search": "(sourcetype=Perfmon:ProcessorInformation OR sourcetype=PerfmonMk:ProcessorInformation)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "perfmon_system",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=Perfmon:System OR sourcetype=PerfmonMk:System",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "perfmon_windows",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=Perfmon:* OR sourcetype=PerfmonMk:* OR sourcetype=WMI:Perfmon*",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "powershell",
+"owner": "nobody",
+"priority": "1",
+"search": "source=Powershell",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "printmon_windows",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=WinPrintMon",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "script_listeningports",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=Script:ListeningPorts",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "script_windows",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=Script:* source=*.bat",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "winapp",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_application",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_account_created",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_security (EventCode=4720 OR EventCode=4741 OR EventCode=624 OR EventCode=645)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_account_deleted",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_security (EventCode=4726 OR EventCode=4743 OR EventCode=630 OR EventCode=647)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_account_disabled",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_security (EventCode=4725 OR EventCode=629)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_account_enabled",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_security (EventCode=4722 OR EventCode=626)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_account_lockout",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_security (EventCode=4740 OR EventCode=644)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_account_management",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_security (ta_windows_security_CategoryString=\"Account Management\" OR TaskCategory=\"User Account Management\")",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_account_mapped",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_security (EventCode=4774 OR EventCode=678)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_account_modified",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_security (EventCode=4738 OR EventCode=4742 OR EventCode=642 OR EventCode=646 OR EventCode=625)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_account_notmapped",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_security (EventCode=4775 OR EventCode=679)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_account_password_change",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_security (EventCode=4723 OR EventCode=627)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_account_password_set",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_security (EventCode=4724 OR EventCode=628)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_account_unlocked",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_security (EventCode=4767 OR EventCode=671)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_account_used4logon",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_security (EventCode=4776 OR EventCode=4777 OR EventCode=680 OR EventCode=681)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_audit_backup",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_security EventCode=1105",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_audit_errors",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_security (EventCode=1101 OR EventCode=1104 OR EventCode=1108)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_audit_log_cleared",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_security (EventCode=1102 OR EventCode=517)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_audit_log_logon",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_security EventCode=4625 (ta_windows_status=0xC0000064 OR ta_windows_status=0xC000006A OR ta_windows_status=0xC000006F OR ta_windows_status=0xC0000070 OR ta_windows_status=0xC0000071 OR ta_windows_status=0xC0000072 OR ta_windows_status=0XC000018C OR ta_windows_status=0XC0000192 OR ta_windows_status=0xC0000193 OR ta_windows_status=0xC0000234 OR ta_windows_status=0XC00002EE OR ta_windows_status=0XC0000413)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_audit_log_stopped",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_security EventCode=1100",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_audit_policy_change",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_security (EventCode=4715 OR EventCode=4719 OR EventCode=612)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_audit_policy_changed",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_security (EventCode=4912 OR EventCode=807)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_auth_package",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_security (EventCode=4610 OR EventCode=514)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_auth_ticket_granted",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_security (EventCode=4768 OR EventCode=672 OR EventCode=676)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_endpoint_processes",
+"owner": "nobody",
+"priority": "1",
+"search": "(source=\"WinEventLog:Security\" OR source=\"XmlWinEventLog:Security\") (EventCode=4688 OR EventCode=4689 OR EventCode=4696 OR EventCode=4673 OR EventCode=4674)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_endpoint_services",
+"owner": "nobody",
+"priority": "1",
+"search": "(source=\"WinEventLog:Security\" OR source=\"XmlWinEventLog:Security\" OR source=\"WinEventLog:System\" OR source=\"XmlWinEventLog:System\") (EventCode=1100 OR EventCode=4697 OR EventCode=5024 OR EventCode=5025 OR EventCode=5030 OR EventCode=5033 OR EventCode=5034 OR EventCode=5035 OR EventCode=5478 OR EventCode=7036 OR EventCode=7040 OR EventCode=7045)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_event_signature",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=WinEventLog OR sourcetype=XmlWinEventLog OR sourcetype=WMI:WinEventLog:System OR sourcetype=WMI:WinEventLog:Security OR sourcetype=WMI:WinEventLog:Application OR sourcetype=wineventlog OR sourcetype=xmlwineventlog",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_firewall_policy_active",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_security (EventCode=848 OR EventCode=849 OR EventCode=850)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_firewall_policy_change",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_security (EventCode=4946 OR EventCode=4947 OR EventCode=4948 OR EventCode=851 OR EventCode=852)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_firewall_port_listening",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_security (EventCode=4957 OR EventCode=861)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_handle_closed",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_security (EventCode=4658 OR EventCode=562)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_logoff",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_security (EventCode=4634 OR EventCode=4647 OR EventCode=538 OR EventCode=551)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_logon_explicit",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_security (EventCode=4648 OR EventCode=552)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_logon_failure",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_security ((EventCode=4625 AND ta_windows_action!=error) OR EventCode=529 OR EventCode=530 OR EventCode=531 OR EventCode=532 OR EventCode=533 OR EventCode=534 OR EventCode=535 OR EventCode=536 OR EventCode=537 OR EventCode=539)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_logon_process",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_security (EventCode=4611 OR EventCode=515)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_logon_success",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_security (EventCode=4624 OR EventCode=528 OR EventCode=540)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_notification_package",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_security (EventCode=4614 OR EventCode=518)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_object_open",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_security (EventCode=4656 OR EventCode=560)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_pre_auth_failed",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_security (EventCode=4771 OR EventCode=675)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_privileged_object_operation",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_security (EventCode=4674 OR EventCode=578)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_privileged_service_call",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_security (EventCode=4673 OR EventCode=577)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_process_exit",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_security (EventCode=4689 OR EventCode=593)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_process_new",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_security (EventCode=4688 OR EventCode=592)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_process_token",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_security (EventCode=4696 OR EventCode=600)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_security_access_granted",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_security (EventCode=4717 OR EventCode=621)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_security_access_removed",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_security (EventCode=4718 OR EventCode=622)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_security_authentication",
+"owner": "nobody",
+"priority": "1",
+"search": "(source=WinEventLog:Security OR source=XmlWinEventLog:Security) (EventCode=4624 OR EventCode=4625)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_security_change",
+"owner": "nobody",
+"priority": "1",
+"search": "(source=WinEventLog:Security OR source=XmlWinEventLog:Security) (EventCode=5461 OR EventCode=4698 OR EventCode=4700 OR EventCode=4701 OR EventCode=4702 OR EventCode=4799)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_security_change_account",
+"owner": "nobody",
+"priority": "1",
+"search": "(source=WinEventLog:Security OR source=XmlWinEventLog:Security) AND EventCode IN (4634,4703,4704,4705,4720,4722,4723,4724,4725,4726,4732,4738,4740,4767,4781,4800,4801)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_security_change_audit",
+"owner": "nobody",
+"priority": "1",
+"search": "(source=WinEventLog:Security OR source=XmlWinEventLog:Security) (EventCode=1101 OR EventCode=1108 OR EventCode=4719 OR EventCode=1102)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_security_endpoint_port",
+"owner": "nobody",
+"priority": "1",
+"search": "(source=WinEventLog:Security OR source=XmlWinEventLog:Security) (EventCode=5158)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_security_endpoint_registry",
+"owner": "nobody",
+"priority": "1",
+"search": "(source=WinEventLog:Security OR source=XmlWinEventLog:Security) (EventCode=4657 OR (EventCode=4670 AND (Object_Type=\"Registry\" OR ObjectType=\"Registry\")))",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_security_misconfiguration_password_minimum_length",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_security EventCode=\"4739\" (Min__Password_Length<7 OR Mixed_Domain_Mode<7)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_service_ticket_granted",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_security (EventCode=4769 OR EventCode=4773 OR EventCode=673 OR EventCode=677)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_session_disconnected",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_security (EventCode=4779 OR EventCode=683)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_session_reconnected",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_security (EventCode=4778 OR EventCode=682)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_special_privileges",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_security (EventCode=4672 OR EventCode=576)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_system_change_audit",
+"owner": "nobody",
+"priority": "1",
+"search": "(source=WinEventLog:System OR source=XmlWinEventLog:System) (EventCode=104)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_system_update",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_system \"Windows Update Agent\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_system_update_status",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_system \"Windows Update Agent\" (EventCode=17 OR EventCode=18 OR EventCode=19)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_ticket_renewed",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_security (EventCode=4770 OR EventCode=674)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_time_failure",
+"owner": "nobody",
+"priority": "1",
+"search": "(eventtype=wineventlog_system (SourceName=W32Time OR Microsoft-Windows-Time-Service) (EventCode=17 OR EventCode=29 OR EventCode=36 OR EventCode=38)) OR (sourcetype=Script:TimesyncStatus windows_action=failure)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_time_sync",
+"owner": "nobody",
+"priority": "1",
+"search": "(eventtype=wineventlog_system (SourceName=W32Time OR SourceName=Microsoft-Windows-Time-Service) (EventCode=35 OR EventCode=37)) OR (sourcetype=Script:TimesyncStatus windows_action=success)",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_updatelog",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=WindowsUpdateLog",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windows_updatelog_status",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=WindowsUpdateLog \"Content Install\" NOT \"Download Succeeded\" NOT \"Reboot Completed\" NOT \"Hide Update\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "windowsupdatelog_windows",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=WindowsUpdateLog",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "wineventlog-dfs",
+"owner": "nobody",
+"priority": "1",
+"search": "source=\"WinEventLog:DFS Replication\" OR source=\"XmlWinEventLog:DFS Replication\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "wineventlog-dns",
+"owner": "nobody",
+"priority": "1",
+"search": "source=\"WinEventLog:DNS Server\" OR source=\"XmlWinEventLog:DNS Server\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "wineventlog-ds",
+"owner": "nobody",
+"priority": "1",
+"search": "source=\"WinEventLog:Directory Service\" OR source=\"XmlWinEventLog:Directory Service\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "wineventlog-filereplication",
+"owner": "nobody",
+"priority": "1",
+"search": "source=\"WinEventLog:File Replication Service\" OR source=\"XmlWinEventLog:File Replication Service\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "wineventlog-keymanagement",
+"owner": "nobody",
+"priority": "1",
+"search": "source=\"WinEventLog:Key Management Service\" OR source=\"XmlWinEventLog:Key Management Service\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "wineventlog_application",
+"owner": "nobody",
+"priority": "1",
+"search": "source=WinEventLog:Application OR source=WMI:WinEventLog:Application OR source=XmlWinEventLog:Application",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "wineventlog_security",
+"owner": "nobody",
+"priority": "1",
+"search": "source=WinEventLog:Security OR source=WMI:WinEventLog:Security OR source=XmlWinEventLog:Security",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "wineventlog_system",
+"owner": "nobody",
+"priority": "1",
+"search": "source=WinEventLog:System OR source=WMI:WinEventLog:System OR source=XmlWinEventLog:System",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "wineventlog_windows",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_application OR eventtype=wineventlog_system OR eventtype=wineventlog_security OR eventtype=wineventlog-ds OR eventtype=wineventlog-dfs OR eventtype=wineventlog-keymanagement OR eventtype=wineventlog-filereplication OR eventtype=wineventlog-dns",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "winregistry_windows",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=WinRegistry",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "winsec",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_security",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "winsystem",
+"owner": "nobody",
+"priority": "1",
+"search": "eventtype=wineventlog_system",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "wmi_computersystem",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=WMI:ComputerSystem",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "wmi_cputime",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=WMI:CPUTime",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "wmi_cputime_anomalous",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=WMI:CPUTime windows_percent_processor_time>90",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "wmi_freediskspace",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=WMI:FreeDiskSpace",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "wmi_freediskspace_anomalous",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=WMI:FreeDiskSpace windows_storage_free_percent<10",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "wmi_installed_packages",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=WMI:InstalledUpdates",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "wmi_localprocesses",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=WMI:LocalProcesses",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "wmi_localprocesses_anomalous",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=WMI:LocalProcesses (windows_cpu_load_percent>50) NOT windows_app=*Total",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "wmi_logicaldisk",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=WMI:LogicalDisk",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "wmi_memory",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=WMI:Memory",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "wmi_memory_anomalous",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=WMI:Memory windows_mem_free<104857600",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "wmi_network_bandwidth",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=WMI:LocalNetwork CurrentBandwidth=*",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "wmi_network_throughput",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=WMI:LocalNetwork BytesTotalPersec=*",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "wmi_service",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=WMI:Service",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "wmi_service_state_anomalous",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=WMI:Service windows_start_mode=Auto windows_state=* NOT windows_state=Running",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "wmi_service_status_anomalous",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=WMI:Service Status=* NOT Status=OK",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "wmi_uptime",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=WMI:Uptime",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "wmi_uptime_anomalous",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=WMI:Uptime windows_uptime>2592000",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "wmi_useraccounts",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=WMI:UserAccounts",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "wmi_version",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=WMI:Version",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "wmi_windows",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=WMI:*",
+"sharing": "global",
+"tags": "\n          "
+}
+]

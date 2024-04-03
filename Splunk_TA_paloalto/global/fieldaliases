@@ -1,0 +1,1928 @@
+[
+{
+"alias.0.traps_id": "src",
+"name": "src",
+"origName": "pan:analytics_traps : FIELDALIAS-src",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:analytics_traps"
+},
+{
+"alias.0.traps_id": "src_host",
+"name": "src_host",
+"origName": "pan:analytics_traps : FIELDALIAS-src_host",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:analytics_traps"
+},
+{
+"alias.0.action_taken_by": "admin",
+"name": "admin",
+"origName": "pan:aperture : FIELDALIAS-admin",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:aperture"
+},
+{
+"alias.0.cloud_app_instance": "app",
+"name": "app",
+"origName": "pan:aperture : FIELDALIAS-app",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:aperture"
+},
+{
+"alias.0.incident_category": "category",
+"name": "category",
+"origName": "pan:aperture : FIELDALIAS-category",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:aperture"
+},
+{
+"alias.0.item_name": "file_name",
+"name": "file_name",
+"origName": "pan:aperture : FIELDALIAS-file_name",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:aperture"
+},
+{
+"alias.0.incident_id": "id",
+"name": "id",
+"origName": "pan:aperture : FIELDALIAS-id",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:aperture"
+},
+{
+"alias.0.log_type": "log_subtype",
+"name": "log_subtype",
+"origName": "pan:aperture : FIELDALIAS-log_subtype",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:aperture"
+},
+{
+"alias.0.item_name": "object",
+"name": "object",
+"origName": "pan:aperture : FIELDALIAS-object",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:aperture"
+},
+{
+"alias.0.item_type": "object_category",
+"name": "object_category",
+"origName": "pan:aperture : FIELDALIAS-object_category",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:aperture"
+},
+{
+"alias.0.item_creator": "object_creator",
+"name": "object_creator",
+"origName": "pan:aperture : FIELDALIAS-object_creator",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:aperture"
+},
+{
+"alias.0.asset_id": "object_path",
+"name": "object_path",
+"origName": "pan:aperture : FIELDALIAS-object_path",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:aperture"
+},
+{
+"alias.0.severity": "severity_id",
+"name": "severity_id",
+"origName": "pan:aperture : FIELDALIAS-severity_id",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:aperture"
+},
+{
+"alias.0.policy_rule_name": "signature_id",
+"name": "signature_id",
+"origName": "pan:aperture : FIELDALIAS-signature_id",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:aperture"
+},
+{
+"alias.0.incident_category": "threat_category",
+"name": "threat_category",
+"origName": "pan:aperture : FIELDALIAS-threat_category",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:aperture"
+},
+{
+"alias.0.admin_role": "user_role",
+"name": "user_role",
+"origName": "pan:aperture : FIELDALIAS-user_role",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:aperture"
+},
+{
+"alias.0.command": "cmd",
+"name": "cmd",
+"origName": "pan:config : FIELDALIAS-cmd",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:config"
+},
+{
+"alias.0.configuration_path": "path",
+"name": "config",
+"origName": "pan:config : FIELDALIAS-config",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:config"
+},
+{
+"alias.0.host": "dest",
+"name": "dest_for_pan_config",
+"origName": "pan:config : FIELDALIAS-dest_for_pan_config",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:config"
+},
+{
+"alias.0.host": "dvc",
+"name": "dvc_for_pan_config",
+"origName": "pan:config : FIELDALIAS-dvc_for_pan_config",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:config"
+},
+{
+"alias.0.host_name": "src",
+"name": "src_for_pan_config",
+"origName": "pan:config : FIELDALIAS-src_for_pan_config",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:config"
+},
+{
+"alias.0.admin": "src_user",
+"name": "src_user_for_pan_config",
+"origName": "pan:config : FIELDALIAS-src_user_for_pan_config",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:config"
+},
+{
+"alias.0.admin": "user",
+"name": "user_for_pan_config",
+"origName": "pan:config : FIELDALIAS-user_for_pan_config",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:config"
+},
+{
+"alias.0.vsys": "virtual_system",
+"name": "virtual_system",
+"origName": "pan:config : FIELDALIAS-virtual_system",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:config"
+},
+{
+"alias.0.traps_id": "src",
+"name": "src",
+"origName": "pan:config_traps : FIELDALIAS-src",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:config_traps"
+},
+{
+"alias.0.traps_id": "src_host",
+"name": "src_host",
+"origName": "pan:config_traps : FIELDALIAS-src_host",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:config_traps"
+},
+{
+"alias.0.evidence": "body",
+"name": "body",
+"origName": "pan:correlation : FIELDALIAS-body",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:correlation"
+},
+{
+"alias.0.object": "category",
+"name": "category",
+"origName": "pan:correlation : FIELDALIAS-category",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:correlation"
+},
+{
+"alias.0.src_ip": "client_ip",
+"name": "client_ip",
+"origName": "pan:correlation : FIELDALIAS-client_ip",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:correlation"
+},
+{
+"alias.0.host": "dest",
+"name": "dest_for_pan_correlation",
+"origName": "pan:correlation : FIELDALIAS-dest_for_pan_correlation",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:correlation"
+},
+{
+"alias.0.host": "dvc",
+"name": "dvc_for_pan_correlation",
+"origName": "pan:correlation : FIELDALIAS-dvc_for_pan_correlation",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:correlation"
+},
+{
+"alias.0.evidence": "signature",
+"name": "signature",
+"origName": "pan:correlation : FIELDALIAS-signature",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:correlation"
+},
+{
+"alias.0.src_ip": "src",
+"name": "src_for_pan_correlation",
+"origName": "pan:correlation : FIELDALIAS-src_for_pan_correlation",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:correlation"
+},
+{
+"alias.0.object": "threat_category",
+"name": "threat_category",
+"origName": "pan:correlation : FIELDALIAS-threat_category",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:correlation"
+},
+{
+"alias.0.evidence": "threat_name",
+"name": "threat_name",
+"origName": "pan:correlation : FIELDALIAS-threat_name",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:correlation"
+},
+{
+"alias.0.src_user": "user",
+"name": "user_for_pan_correlation",
+"origName": "pan:correlation : FIELDALIAS-user_for_pan_correlation",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:correlation"
+},
+{
+"alias.0.vsys": "virtual_system",
+"name": "virtual_system",
+"origName": "pan:correlation : FIELDALIAS-virtual_system",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:correlation"
+},
+{
+"alias.0.log_type": "type",
+"name": "type",
+"origName": "pan:decryption : FIELDALIAS-type",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:decryption"
+},
+{
+"alias.0.dest_ip": "dest",
+"name": "dest_for_pan_cloud",
+"origName": "pan:firewall_cloud : FIELDALIAS-dest_for_pan_cloud",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.host": "dvc",
+"name": "dvc_for_pan_cloud",
+"origName": "pan:firewall_cloud : FIELDALIAS-dvc_for_pan_cloud",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.AdminUserName": "admin",
+"name": "fwcloud_admin",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_admin",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.Application": "app",
+"name": "fwcloud_app",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_app",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.IsSaaSApplication": "app:is_saas",
+"name": "fwcloud_app_is_saas",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_app_is_saas",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.Application": "application",
+"name": "fwcloud_application",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_application",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.AuthMethod": "auth_method",
+"name": "fwcloud_auth_method",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_auth_method",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.Bytes": "bytes",
+"name": "fwcloud_bytes",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_bytes",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.BytesSent": "bytes_in",
+"name": "fwcloud_bytes_in",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_bytes_in",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.BytesReceived": "bytes_out",
+"name": "fwcloud_bytes_out",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_bytes_out",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.Client": "client",
+"name": "fwcloud_client",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_client",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.SourceLocation": "client_location",
+"name": "fwcloud_client_location",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_client_location",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.EventName": "cmd",
+"name": "fwcloud_cmd",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_cmd",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.EventName": "command",
+"name": "fwcloud_command",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_command",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.EventPath": "configuration_path",
+"name": "fwcloud_configuration_path",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_configuration_path",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.ContentType": "content_type",
+"name": "fwcloud_content_type",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_content_type",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.DestinationAddress": "dest",
+"name": "fwcloud_dest",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_dest",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.DestinationDeviceHost": "dest_host",
+"name": "fwcloud_dest_host",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_dest_host",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.OutboundInterface": "dest_interface",
+"name": "fwcloud_dest_interface",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_dest_interface",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.DestinationAddress": "dest_ip",
+"name": "fwcloud_dest_ip",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_dest_ip",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.DestinationLocation": "dest_location",
+"name": "fwcloud_dest_location",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_dest_location",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.DestinationPort": "dest_port",
+"name": "fwcloud_dest_port",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_dest_port",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.DestinationUser": "dest_user",
+"name": "fwcloud_dest_user",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_dest_user",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.ToZone": "dest_zone",
+"name": "fwcloud_dest_zone",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_dest_zone",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.FileHash": "file_hash",
+"name": "fwcloud_file_hash",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_file_hash",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.FileName": "file_name",
+"name": "fwcloud_file_name",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_file_name",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.FileType": "file_type",
+"name": "fwcloud_file_type",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_file_type",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.HostID": "host_id",
+"name": "fwcloud_host_id",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_host_id",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.LogSourceName": "host_name",
+"name": "fwcloud_host_name",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_host_name",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.URLCategory": "http_category",
+"name": "fwcloud_http_category",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_http_category",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.ContentType": "http_content_type",
+"name": "fwcloud_http_content_type",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_http_content_type",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.Referer": "http_referrer",
+"name": "fwcloud_http_referrer",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_http_referrer",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.HTTPRefererFQDN": "http_referrer_name",
+"name": "fwcloud_http_referrer_name",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_http_referrer_name",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.UserAgent": "http_user_agent",
+"name": "fwcloud_http_user_agent",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_http_user_agent",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.LogType": "log_type",
+"name": "fwcloud_log_type",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_log_type",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.LoginDuration": "login_duration",
+"name": "fwcloud_login_duration",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_login_duration",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.EndpointDeviceName": "machine_name",
+"name": "fwcloud_machine_name",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_machine_name",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.EventName": "module",
+"name": "fwcloud_module",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_module",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.PacketsTotal": "packets",
+"name": "fwcloud_packets",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_packets",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.PacketsReceived": "packets_in",
+"name": "fwcloud_packets_in",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_packets_in",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.PacketsSent": "packets_out",
+"name": "fwcloud_packets_out",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_packets_out",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.EventPath": "path",
+"name": "fwcloud_path",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_path",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.PrivateIPv4": "private_ip",
+"name": "fwcloud_private_ip",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_private_ip",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.PrivateIPv6": "private_ipv6",
+"name": "fwcloud_private_ipv6",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_private_ipv6",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.PublicIPv4": "public_ip",
+"name": "fwcloud_public_ip",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_public_ip",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.PublicIPv6": "public_ipv6",
+"name": "fwcloud_public_ipv6",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_public_ipv6",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.RecipientEmail": "recipient",
+"name": "fwcloud_recipient",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_recipient",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.Referer": "referrer",
+"name": "fwcloud_referrer",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_referrer",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.ReportID": "report_id",
+"name": "fwcloud_report_id",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_report_id",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.EventResult": "result",
+"name": "fwcloud_result",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_result",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.Rule": "rule",
+"name": "fwcloud_rule",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_rule",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.RuleUUID": "rule_id",
+"name": "fwcloud_rule_id",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_rule_id",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.SenderEmail": "sender",
+"name": "fwcloud_sender",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_sender",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.SequenceNo": "sequence_number",
+"name": "fwcloud_sequence_number",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_sequence_number",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.DeviceSN": "serial_number",
+"name": "fwcloud_serial_number",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_serial_number",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.DestinationAddress": "server_ip",
+"name": "fwcloud_server_ip",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_server_ip",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.DestinationLocation": "server_location",
+"name": "fwcloud_server_location",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_server_location",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.SessionEndReason": "session_end_reason",
+"name": "fwcloud_session_end_reason",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_session_end_reason",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.SessionID": "session_id",
+"name": "fwcloud_session_id",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_session_id",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.ThreatName": "signature",
+"name": "fwcloud_signature",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_signature",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.ThreatID": "signature_id",
+"name": "fwcloud_signature_id",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_signature_id",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.SourceAddress": "src",
+"name": "fwcloud_src",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_src",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.SourceDeviceHost": "src_host",
+"name": "fwcloud_src_host",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_src_host",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.InboundInterface": "src_interface",
+"name": "fwcloud_src_interface",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_src_interface",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.SourceLocation": "src_location",
+"name": "fwcloud_src_location",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_src_location",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.SourcePort": "src_port",
+"name": "fwcloud_src_port",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_src_port",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.SourceRegion": "src_region",
+"name": "fwcloud_src_region",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_src_region",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.FromZone": "src_zone",
+"name": "fwcloud_src_zone",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_src_zone",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.Stage": "stage",
+"name": "fwcloud_stage",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_stage",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.SessionStartTime": "start_time",
+"name": "fwcloud_start_time",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_start_time",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.EventStatus": "status",
+"name": "fwcloud_status",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_status",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.EventStatus": "result",
+"name": "fwcloud_status_for_results",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_status_for_results",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.ThreatID": "threat",
+"name": "fwcloud_threat",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_threat",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.ThreatCategory": "threat_category",
+"name": "fwcloud_threat_category",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_threat_category",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.ThreatName": "threat_name",
+"name": "fwcloud_threat_name",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_threat_name",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.Protocol": "transport",
+"name": "fwcloud_transport",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_transport",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.TunnelType": "tunnel_type",
+"name": "fwcloud_tunnel_type",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_tunnel_type",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.LogType": "type",
+"name": "fwcloud_type",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_type",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.URL": "url",
+"name": "fwcloud_url",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_url",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.UserAgent": "user_agent",
+"name": "fwcloud_user_agent",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_user_agent",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.Action": "vendor_action",
+"name": "fwcloud_vendor_action",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_vendor_action",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.protocol": "vendor_protocol",
+"name": "fwcloud_vendor_protocol",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_vendor_protocol",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.Verdict": "verdict",
+"name": "fwcloud_verdict",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_verdict",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.VirtualSystem": "vsys",
+"name": "fwcloud_vsys",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_vsys",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.VirtualSystemID": "vsys_id",
+"name": "fwcloud_vsys_id",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_vsys_id",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.VirtualSystemName": "vsys_name",
+"name": "fwcloud_vsys_name",
+"origName": "pan:firewall_cloud : FIELDALIAS-fwcloud_vsys_name",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.src_ip": "src",
+"name": "src_for_pan_cloud",
+"origName": "pan:firewall_cloud : FIELDALIAS-src_for_pan_cloud",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud"
+},
+{
+"alias.0.login_duration": "duration",
+"name": "login_duration_for_duration",
+"origName": "pan:globalprotect : FIELDALIAS-login_duration_for_duration",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:globalprotect"
+},
+{
+"alias.0.opaque": "description",
+"name": "opaque_for_description",
+"origName": "pan:globalprotect : FIELDALIAS-opaque_for_description",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:globalprotect"
+},
+{
+"alias.0.private_ip": "client_ip",
+"name": "private_ip_for_client_ip",
+"origName": "pan:globalprotect : FIELDALIAS-private_ip_for_client_ip",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:globalprotect"
+},
+{
+"alias.0.public_ip": "src_ip",
+"name": "public_ip_for_src_ip",
+"origName": "pan:globalprotect : FIELDALIAS-public_ip_for_src_ip",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:globalprotect"
+},
+{
+"alias.0.src_user": "user",
+"name": "src_user_for_user",
+"origName": "pan:globalprotect : FIELDALIAS-src_user_for_user",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:globalprotect"
+},
+{
+"alias.0.stage": "log_subtype",
+"name": "stage_for_log_subtype",
+"origName": "pan:globalprotect : FIELDALIAS-stage_for_log_subtype",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:globalprotect"
+},
+{
+"alias.0.status": "result",
+"name": "status_for_results",
+"origName": "pan:globalprotect : FIELDALIAS-status_for_results",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:globalprotect"
+},
+{
+"alias.0.log_type": "type",
+"name": "type",
+"origName": "pan:globalprotect : FIELDALIAS-type",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:globalprotect"
+},
+{
+"alias.0.host": "dvc",
+"name": "dvc_for_pan_hipmatch",
+"origName": "pan:hipmatch : FIELDALIAS-dvc_for_pan_hipmatch",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:hipmatch"
+},
+{
+"alias.0.src_ip": "src",
+"name": "src_for_pan_hipmatch",
+"origName": "pan:hipmatch : FIELDALIAS-src_for_pan_hipmatch",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:hipmatch"
+},
+{
+"alias.0.log_type": "type",
+"name": "type",
+"origName": "pan:hipmatch : FIELDALIAS-type",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:hipmatch"
+},
+{
+"alias.0.src_user": "user",
+"name": "user_for_pan_hipmatch",
+"origName": "pan:hipmatch : FIELDALIAS-user_for_pan_hipmatch",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:hipmatch"
+},
+{
+"alias.0.vsys": "virtual_system",
+"name": "virtual_system",
+"origName": "pan:hipmatch : FIELDALIAS-virtual_system",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:hipmatch"
+},
+{
+"alias.0.msg.appName": "app",
+"name": "iot_alert_app",
+"origName": "pan:iot_alert : FIELDALIAS-iot_alert_app",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:iot_alert"
+},
+{
+"alias.0.msg.description": "body",
+"name": "iot_alert_body",
+"origName": "pan:iot_alert : FIELDALIAS-iot_alert_body",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:iot_alert"
+},
+{
+"alias.0.msg.description": "description",
+"name": "iot_alert_description",
+"origName": "pan:iot_alert : FIELDALIAS-iot_alert_description",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:iot_alert"
+},
+{
+"alias.0.msg.toip": "dest",
+"name": "iot_alert_dest",
+"origName": "pan:iot_alert : FIELDALIAS-iot_alert_dest",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:iot_alert"
+},
+{
+"alias.0.profile": "dest_type",
+"name": "iot_alert_dest_type",
+"origName": "pan:iot_alert : FIELDALIAS-iot_alert_dest_type",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:iot_alert"
+},
+{
+"alias.0.severityNumber": "severity_id",
+"name": "iot_alert_severity_id",
+"origName": "pan:iot_alert : FIELDALIAS-iot_alert_severity_id",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:iot_alert"
+},
+{
+"alias.0.name": "signature",
+"name": "iot_alert_signature",
+"origName": "pan:iot_alert : FIELDALIAS-iot_alert_signature",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:iot_alert"
+},
+{
+"alias.0.msg.ruleid": "signature_id",
+"name": "iot_alert_signature_id",
+"origName": "pan:iot_alert : FIELDALIAS-iot_alert_signature_id",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:iot_alert"
+},
+{
+"alias.0.msg.fromip": "src",
+"name": "iot_alert_src",
+"origName": "pan:iot_alert : FIELDALIAS-iot_alert_src",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:iot_alert"
+},
+{
+"alias.0.profile": "src_type",
+"name": "iot_alert_src_type",
+"origName": "pan:iot_alert : FIELDALIAS-iot_alert_src_type",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:iot_alert"
+},
+{
+"alias.0.name": "subject",
+"name": "iot_alert_subject",
+"origName": "pan:iot_alert : FIELDALIAS-iot_alert_subject",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:iot_alert"
+},
+{
+"alias.0.deviceid": "user",
+"name": "iot_alert_user",
+"origName": "pan:iot_alert : FIELDALIAS-iot_alert_user",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:iot_alert"
+},
+{
+"alias.0.siteid": "vendor_account",
+"name": "iot_alert_vendor_account",
+"origName": "pan:iot_alert : FIELDALIAS-iot_alert_vendor_account",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:iot_alert"
+},
+{
+"alias.0.tenantid": "vendor_region",
+"name": "iot_alert_vendor_region",
+"origName": "pan:iot_alert : FIELDALIAS-iot_alert_vendor_region",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:iot_alert"
+},
+{
+"alias.0.in_use": "enabled",
+"name": "iot_device_enabled",
+"origName": "pan:iot_device : FIELDALIAS-iot_device_enabled",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:iot_device"
+},
+{
+"alias.0.profile": "family",
+"name": "iot_device_family",
+"origName": "pan:iot_device : FIELDALIAS-iot_device_family",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:iot_device"
+},
+{
+"alias.0.ip_address": "ip",
+"name": "iot_device_ip",
+"origName": "pan:iot_device : FIELDALIAS-iot_device_ip",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:iot_device"
+},
+{
+"alias.0.MAC": "mac",
+"name": "iot_device_mac",
+"origName": "pan:iot_device : FIELDALIAS-iot_device_mac",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:iot_device"
+},
+{
+"alias.0.os_combined": "os",
+"name": "iot_device_os",
+"origName": "pan:iot_device : FIELDALIAS-iot_device_os",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:iot_device"
+},
+{
+"alias.0.Serial_Number": "serial",
+"name": "iot_device_serial",
+"origName": "pan:iot_device : FIELDALIAS-iot_device_serial",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:iot_device"
+},
+{
+"alias.0.AD_Username": "user",
+"name": "iot_device_user",
+"origName": "pan:iot_device : FIELDALIAS-iot_device_user",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:iot_device"
+},
+{
+"alias.0.os/firmware_version": "version",
+"name": "iot_device_version",
+"origName": "pan:iot_device : FIELDALIAS-iot_device_version",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:iot_device"
+},
+{
+"alias.0.vulnerability_name": "cve",
+"name": "iot_vulnerability_cve",
+"origName": "pan:iot_vulnerability : FIELDALIAS-iot_vulnerability_cve",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:iot_vulnerability"
+},
+{
+"alias.0.ip": "dest",
+"name": "iot_vulnerability_dest",
+"origName": "pan:iot_vulnerability : FIELDALIAS-iot_vulnerability_dest",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:iot_vulnerability"
+},
+{
+"alias.0.deviceid": "dvc",
+"name": "iot_vulnerability_dvc",
+"origName": "pan:iot_vulnerability : FIELDALIAS-iot_vulnerability_dvc",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:iot_vulnerability"
+},
+{
+"alias.0.risk_level": "severity",
+"name": "iot_vulnerability_severity",
+"origName": "pan:iot_vulnerability : FIELDALIAS-iot_vulnerability_severity",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:iot_vulnerability"
+},
+{
+"alias.0.risk_score": "severity_id",
+"name": "iot_vulnerability_severity_id",
+"origName": "pan:iot_vulnerability : FIELDALIAS-iot_vulnerability_severity_id",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:iot_vulnerability"
+},
+{
+"alias.0.zb_ticketid": "signature_id",
+"name": "iot_vulnerability_signature_id",
+"origName": "pan:iot_vulnerability : FIELDALIAS-iot_vulnerability_signature_id",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:iot_vulnerability"
+},
+{
+"alias.0.description": "body",
+"name": "body",
+"origName": "pan:system : FIELDALIAS-body",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:system"
+},
+{
+"alias.0.host": "dest",
+"name": "dest_for_pan_system",
+"origName": "pan:system : FIELDALIAS-dest_for_pan_system",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:system"
+},
+{
+"alias.0.host": "dvc",
+"name": "dvc_for_pan_system",
+"origName": "pan:system : FIELDALIAS-dvc_for_pan_system",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:system"
+},
+{
+"alias.0.description": "reason",
+"name": "reason",
+"origName": "pan:system : FIELDALIAS-reason",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:system"
+},
+{
+"alias.0.event_id": "signature",
+"name": "signature",
+"origName": "pan:system : FIELDALIAS-signature",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:system"
+},
+{
+"alias.0.user": "src_user",
+"name": "src_user",
+"origName": "pan:system : FIELDALIAS-src_user",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:system"
+},
+{
+"alias.0.vsys": "virtual_system",
+"name": "virtual_system",
+"origName": "pan:system : FIELDALIAS-virtual_system",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:system"
+},
+{
+"alias.0.traps_id": "src",
+"name": "src",
+"origName": "pan:system_traps : FIELDALIAS-src",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:system_traps"
+},
+{
+"alias.0.traps_id": "src_host",
+"name": "src_host",
+"origName": "pan:system_traps : FIELDALIAS-src_host",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:system_traps"
+},
+{
+"alias.0.app": "application",
+"name": "app",
+"origName": "pan:threat : FIELDALIAS-app",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat"
+},
+{
+"alias.0.dest_ip": "dest",
+"name": "dest_for_pan_threat",
+"origName": "pan:threat : FIELDALIAS-dest_for_pan_threat",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat"
+},
+{
+"alias.0.host": "dvc",
+"name": "dvc_for_pan_threat",
+"origName": "pan:threat : FIELDALIAS-dvc_for_pan_threat",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat"
+},
+{
+"alias.0.content_type": "http_content_type",
+"name": "http_content_type_for_pan_threat",
+"origName": "pan:threat : FIELDALIAS-http_content_type_for_pan_threat",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat"
+},
+{
+"alias.0.http_referrer_name": "http_referrer_domain",
+"name": "http_referrer_domain_pan_threat",
+"origName": "pan:threat : FIELDALIAS-http_referrer_domain_pan_threat",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat"
+},
+{
+"alias.0.referrer": "http_referrer",
+"name": "http_referrer_for_pan_threat",
+"origName": "pan:threat : FIELDALIAS-http_referrer_for_pan_threat",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat"
+},
+{
+"alias.0.user_agent": "http_user_agent",
+"name": "http_user_agent_for_pan_threat",
+"origName": "pan:threat : FIELDALIAS-http_user_agent_for_pan_threat",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat"
+},
+{
+"alias.0.threat_name": "signature",
+"name": "signature",
+"origName": "pan:threat : FIELDALIAS-signature",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat"
+},
+{
+"alias.0.threat_id": "signature_id",
+"name": "signature_id",
+"origName": "pan:threat : FIELDALIAS-signature_id",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat"
+},
+{
+"alias.0.src_ip": "src",
+"name": "src_for_pan_threat",
+"origName": "pan:threat : FIELDALIAS-src_for_pan_threat",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat"
+},
+{
+"alias.0.misc": "url",
+"name": "url_for_pan_threat",
+"origName": "pan:threat : FIELDALIAS-url_for_pan_threat",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat"
+},
+{
+"alias.0.vsys": "virtual_system",
+"name": "virtual_system",
+"origName": "pan:threat : FIELDALIAS-virtual_system",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat"
+},
+{
+"alias.0.vendor_action": "action",
+"name": "action",
+"origName": "pan:threat_traps : FIELDALIAS-action",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat_traps"
+},
+{
+"alias.0.module_id": "category",
+"name": "category",
+"origName": "pan:threat_traps : FIELDALIAS-category",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat_traps"
+},
+{
+"alias.0.dest_ip": "client_ip",
+"name": "client_ip",
+"origName": "pan:threat_traps : FIELDALIAS-client_ip",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat_traps"
+},
+{
+"alias.0.agent_version": "endpoint_version",
+"name": "endpoint_version",
+"origName": "pan:threat_traps : FIELDALIAS-endpoint_version",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat_traps"
+},
+{
+"alias.0.agent_version": "product_version",
+"name": "product_version",
+"origName": "pan:threat_traps : FIELDALIAS-product_version",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat_traps"
+},
+{
+"alias.0.module_id": "signature",
+"name": "signature",
+"origName": "pan:threat_traps : FIELDALIAS-signature",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat_traps"
+},
+{
+"alias.0.traps_id": "src",
+"name": "src",
+"origName": "pan:threat_traps : FIELDALIAS-src",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat_traps"
+},
+{
+"alias.0.traps_id": "src_host",
+"name": "src_host",
+"origName": "pan:threat_traps : FIELDALIAS-src_host",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat_traps"
+},
+{
+"alias.0.module_id": "threat_category",
+"name": "threat_category",
+"origName": "pan:threat_traps : FIELDALIAS-threat_category",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat_traps"
+},
+{
+"alias.0.app": "application",
+"name": "app",
+"origName": "pan:traffic : FIELDALIAS-app",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:traffic"
+},
+{
+"alias.0.dest_ip": "dest",
+"name": "dest_for_pan_traffic",
+"origName": "pan:traffic : FIELDALIAS-dest_for_pan_traffic",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:traffic"
+},
+{
+"alias.0.rule": "signature",
+"name": "session_start_signature",
+"origName": "pan:traffic : FIELDALIAS-session_start_signature",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:traffic"
+},
+{
+"alias.0.src_ip": "src",
+"name": "src_for_pan_traffic",
+"origName": "pan:traffic : FIELDALIAS-src_for_pan_traffic",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:traffic"
+},
+{
+"alias.0.vsys": "virtual_system",
+"name": "virtual_system",
+"origName": "pan:traffic : FIELDALIAS-virtual_system",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:traffic"
+},
+{
+"alias.0.src_ip": "client_ip",
+"name": "client_ip",
+"origName": "pan:userid : FIELDALIAS-client_ip",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:userid"
+},
+{
+"alias.0.src_ip": "dest",
+"name": "dest_for_pan_correlation",
+"origName": "pan:userid : FIELDALIAS-dest_for_pan_correlation",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:userid"
+},
+{
+"alias.0.src_ip": "dest_ip",
+"name": "dest_ip_for_pan_correlation",
+"origName": "pan:userid : FIELDALIAS-dest_ip_for_pan_correlation",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:userid"
+},
+{
+"alias.0.host": "dvc",
+"name": "dvc_for_pan_correlation",
+"origName": "pan:userid : FIELDALIAS-dvc_for_pan_correlation",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:userid"
+},
+{
+"alias.0.src_ip": "src",
+"name": "src_for_pan_correlation",
+"origName": "pan:userid : FIELDALIAS-src_for_pan_correlation",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:userid"
+},
+{
+"alias.0.log_type": "type",
+"name": "type",
+"origName": "pan:userid : FIELDALIAS-type",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:userid"
+},
+{
+"alias.0.vsys": "virtual_system",
+"name": "virtual_system",
+"origName": "pan:userid : FIELDALIAS-virtual_system",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:userid"
+},
+{
+"alias.0.description": "signature",
+"name": "description",
+"origName": "pan:xdr_incident : FIELDALIAS-description",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:xdr_incident"
+},
+{
+"alias.0.hosts": "dest",
+"name": "hosts",
+"origName": "pan:xdr_incident : FIELDALIAS-hosts",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:xdr_incident"
+},
+{
+"alias.0.incident_id": "id",
+"name": "incident_id",
+"origName": "pan:xdr_incident : FIELDALIAS-incident_id",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:xdr_incident"
+},
+{
+"alias.0.incident_sources{}": "src_type",
+"name": "incident_sources",
+"origName": "pan:xdr_incident : FIELDALIAS-incident_sources",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:xdr_incident"
+},
+{
+"alias.0.score": "severity_id",
+"name": "score",
+"origName": "pan:xdr_incident : FIELDALIAS-score",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:xdr_incident"
+},
+{
+"alias.0.users{}": "user",
+"name": "users",
+"origName": "pan:xdr_incident : FIELDALIAS-users",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:xdr_incident"
+}
+]

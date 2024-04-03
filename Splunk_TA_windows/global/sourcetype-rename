@@ -1,0 +1,434 @@
+[
+{
+"name": "WinEventLog:Application",
+"owner": "nobody",
+"sharing": "global",
+"value": "wineventlog"
+},
+{
+"name": "WinEventLog:DFS-Replication",
+"owner": "nobody",
+"sharing": "global",
+"value": "wineventlog"
+},
+{
+"name": "WinEventLog:Directory-Service",
+"owner": "nobody",
+"sharing": "global",
+"value": "wineventlog"
+},
+{
+"name": "WinEventLog:DNS-Server",
+"owner": "nobody",
+"sharing": "global",
+"value": "wineventlog"
+},
+{
+"name": "WinEventLog:File-Replication-Service",
+"owner": "nobody",
+"sharing": "global",
+"value": "wineventlog"
+},
+{
+"name": "WinEventLog:Key-Management-Service",
+"owner": "nobody",
+"sharing": "global",
+"value": "wineventlog"
+},
+{
+"name": "WinEventLog:Microsoft-Windows-Application-Experience/Program-Inventory",
+"owner": "nobody",
+"sharing": "global",
+"value": "wineventlog"
+},
+{
+"name": "WinEventLog:Microsoft-Windows-AppLocker/EXE and DLL",
+"owner": "nobody",
+"sharing": "global",
+"value": "wineventlog"
+},
+{
+"name": "WinEventLog:Microsoft-Windows-AppLocker/MSI and Script",
+"owner": "nobody",
+"sharing": "global",
+"value": "wineventlog"
+},
+{
+"name": "WinEventLog:Microsoft-Windows-AppLocker/Packaged app-Deployment",
+"owner": "nobody",
+"sharing": "global",
+"value": "wineventlog"
+},
+{
+"name": "WinEventLog:Microsoft-Windows-AppLocker/Packaged app-Execution",
+"owner": "nobody",
+"sharing": "global",
+"value": "wineventlog"
+},
+{
+"name": "WinEventLog:Microsoft-Windows-CAPI2/Operational",
+"owner": "nobody",
+"sharing": "global",
+"value": "wineventlog"
+},
+{
+"name": "WinEventLog:Microsoft-Windows-CodeIntegrity/Operational",
+"owner": "nobody",
+"sharing": "global",
+"value": "wineventlog"
+},
+{
+"name": "WinEventLog:Microsoft-Windows-Defender/Operational",
+"owner": "nobody",
+"sharing": "global",
+"value": "wineventlog"
+},
+{
+"name": "WinEventLog:Microsoft-Windows-DNS-Client/Operational",
+"owner": "nobody",
+"sharing": "global",
+"value": "wineventlog"
+},
+{
+"name": "WinEventLog:Microsoft-Windows-DriverFrameworks-UserMode/Operational",
+"owner": "nobody",
+"sharing": "global",
+"value": "wineventlog"
+},
+{
+"name": "WinEventLog:Microsoft-Windows-Kernel-PnP/Device Configuration",
+"owner": "nobody",
+"sharing": "global",
+"value": "wineventlog"
+},
+{
+"name": "WinEventLog:Microsoft-Windows-LSA/Operational",
+"owner": "nobody",
+"sharing": "global",
+"value": "wineventlog"
+},
+{
+"name": "WinEventLog:Microsoft-Windows-NetworkProfile/Operational",
+"owner": "nobody",
+"sharing": "global",
+"value": "wineventlog"
+},
+{
+"name": "WinEventLog:Microsoft-Windows-PowerShell/Operational",
+"owner": "nobody",
+"sharing": "global",
+"value": "wineventlog"
+},
+{
+"name": "WinEventLog:Microsoft-Windows-PrintService/Operational",
+"owner": "nobody",
+"sharing": "global",
+"value": "wineventlog"
+},
+{
+"name": "WinEventLog:Microsoft-Windows-SmartCard-Audit/Authentication",
+"owner": "nobody",
+"sharing": "global",
+"value": "wineventlog"
+},
+{
+"name": "WinEventLog:Microsoft-Windows-SMBClient/Operational",
+"owner": "nobody",
+"sharing": "global",
+"value": "wineventlog"
+},
+{
+"name": "WinEventLog:Microsoft-Windows-TaskScheduler/Operational",
+"owner": "nobody",
+"sharing": "global",
+"value": "wineventlog"
+},
+{
+"name": "WinEventLog:Microsoft-Windows-TerminalServices-LocalSessionManager/Admin",
+"owner": "nobody",
+"sharing": "global",
+"value": "wineventlog"
+},
+{
+"name": "WinEventLog:Microsoft-Windows-TerminalServices-LocalSessionManager/Operational",
+"owner": "nobody",
+"sharing": "global",
+"value": "wineventlog"
+},
+{
+"name": "WinEventLog:Microsoft-Windows-TerminalServices-RDPClient/Operational",
+"owner": "nobody",
+"sharing": "global",
+"value": "wineventlog"
+},
+{
+"name": "WinEventLog:Microsoft-Windows-TerminalServices-RemoteConnectionManager/Admin",
+"owner": "nobody",
+"sharing": "global",
+"value": "wineventlog"
+},
+{
+"name": "WinEventLog:Microsoft-Windows-TerminalServices-RemoteConnectionManager/Operational",
+"owner": "nobody",
+"sharing": "global",
+"value": "wineventlog"
+},
+{
+"name": "WinEventLog:Microsoft-Windows-Windows Defender/Operational",
+"owner": "nobody",
+"sharing": "global",
+"value": "wineventlog"
+},
+{
+"name": "WinEventLog:Microsoft-Windows-Windows Firewall With Advanced Security/Firewall",
+"owner": "nobody",
+"sharing": "global",
+"value": "wineventlog"
+},
+{
+"name": "WinEventLog:Microsoft-Windows-WindowsUpdateClient/Operational",
+"owner": "nobody",
+"sharing": "global",
+"value": "wineventlog"
+},
+{
+"name": "WinEventLog:Microsoft-Windows-WinRM/Operational",
+"owner": "nobody",
+"sharing": "global",
+"value": "wineventlog"
+},
+{
+"name": "WinEventLog:Microsoft-Windows-WLAN-Autoconfig/Operational",
+"owner": "nobody",
+"sharing": "global",
+"value": "wineventlog"
+},
+{
+"name": "WinEventLog:Security",
+"owner": "nobody",
+"sharing": "global",
+"value": "wineventlog"
+},
+{
+"name": "WinEventLog:Setup",
+"owner": "nobody",
+"sharing": "global",
+"value": "wineventlog"
+},
+{
+"name": "WinEventLog:System",
+"owner": "nobody",
+"sharing": "global",
+"value": "wineventlog"
+},
+{
+"name": "WinEventLog:System:IAS",
+"owner": "nobody",
+"sharing": "global",
+"value": "wineventlog"
+},
+{
+"name": "WinEventLog:Windows PowerShell",
+"owner": "nobody",
+"sharing": "global",
+"value": "wineventlog"
+},
+{
+"name": "XmlWinEventLog:Application",
+"owner": "nobody",
+"sharing": "global",
+"value": "xmlwineventlog"
+},
+{
+"name": "XmlWinEventLog:Microsoft-Windows-Application-Experience/Program-Inventory",
+"owner": "nobody",
+"sharing": "global",
+"value": "xmlwineventlog"
+},
+{
+"name": "XmlWinEventLog:Microsoft-Windows-AppLocker/EXE and DLL",
+"owner": "nobody",
+"sharing": "global",
+"value": "xmlwineventlog"
+},
+{
+"name": "XmlWinEventLog:Microsoft-Windows-AppLocker/MSI and Script",
+"owner": "nobody",
+"sharing": "global",
+"value": "xmlwineventlog"
+},
+{
+"name": "XmlWinEventLog:Microsoft-Windows-AppLocker/Packaged app-Deployment",
+"owner": "nobody",
+"sharing": "global",
+"value": "xmlwineventlog"
+},
+{
+"name": "XmlWinEventLog:Microsoft-Windows-AppLocker/Packaged app-Execution",
+"owner": "nobody",
+"sharing": "global",
+"value": "xmlwineventlog"
+},
+{
+"name": "XmlWinEventLog:Microsoft-Windows-CAPI2/Operational",
+"owner": "nobody",
+"sharing": "global",
+"value": "xmlwineventlog"
+},
+{
+"name": "XmlWinEventLog:Microsoft-Windows-CodeIntegrity/Operational",
+"owner": "nobody",
+"sharing": "global",
+"value": "xmlwineventlog"
+},
+{
+"name": "XmlWinEventLog:Microsoft-Windows-Defender/Operational",
+"owner": "nobody",
+"sharing": "global",
+"value": "xmlwineventlog"
+},
+{
+"name": "XmlWinEventLog:Microsoft-Windows-DNS-Client/Operational",
+"owner": "nobody",
+"sharing": "global",
+"value": "xmlwineventlog"
+},
+{
+"name": "XmlWinEventLog:Microsoft-Windows-DriverFrameworks-UserMode/Operational",
+"owner": "nobody",
+"sharing": "global",
+"value": "xmlwineventlog"
+},
+{
+"name": "XmlWinEventLog:Microsoft-Windows-Kernel-PnP/Device Configuration",
+"owner": "nobody",
+"sharing": "global",
+"value": "xmlwineventlog"
+},
+{
+"name": "XmlWinEventLog:Microsoft-Windows-LSA/Operational",
+"owner": "nobody",
+"sharing": "global",
+"value": "xmlwineventlog"
+},
+{
+"name": "XmlWinEventLog:Microsoft-Windows-NetworkProfile/Operational",
+"owner": "nobody",
+"sharing": "global",
+"value": "xmlwineventlog"
+},
+{
+"name": "XmlWinEventLog:Microsoft-Windows-PowerShell/Operational",
+"owner": "nobody",
+"sharing": "global",
+"value": "xmlwineventlog"
+},
+{
+"name": "XmlWinEventLog:Microsoft-Windows-PrintService/Operational",
+"owner": "nobody",
+"sharing": "global",
+"value": "xmlwineventlog"
+},
+{
+"name": "XmlWinEventLog:Microsoft-Windows-SmartCard-Audit/Authentication",
+"owner": "nobody",
+"sharing": "global",
+"value": "xmlwineventlog"
+},
+{
+"name": "XmlWinEventLog:Microsoft-Windows-SMBClient/Operational",
+"owner": "nobody",
+"sharing": "global",
+"value": "xmlwineventlog"
+},
+{
+"name": "XmlWinEventLog:Microsoft-Windows-TaskScheduler/Operational",
+"owner": "nobody",
+"sharing": "global",
+"value": "xmlwineventlog"
+},
+{
+"name": "XmlWinEventLog:Microsoft-Windows-TerminalServices-LocalSessionManager/Admin",
+"owner": "nobody",
+"sharing": "global",
+"value": "xmlwineventlog"
+},
+{
+"name": "XmlWinEventLog:Microsoft-Windows-TerminalServices-LocalSessionManager/Operational",
+"owner": "nobody",
+"sharing": "global",
+"value": "xmlwineventlog"
+},
+{
+"name": "XmlWinEventLog:Microsoft-Windows-TerminalServices-RDPClient/Operational",
+"owner": "nobody",
+"sharing": "global",
+"value": "xmlwineventlog"
+},
+{
+"name": "XmlWinEventLog:Microsoft-Windows-TerminalServices-RemoteConnectionManager/Admin",
+"owner": "nobody",
+"sharing": "global",
+"value": "xmlwineventlog"
+},
+{
+"name": "XmlWinEventLog:Microsoft-Windows-TerminalServices-RemoteConnectionManager/Operational",
+"owner": "nobody",
+"sharing": "global",
+"value": "xmlwineventlog"
+},
+{
+"name": "XmlWinEventLog:Microsoft-Windows-Windows Defender/Operational",
+"owner": "nobody",
+"sharing": "global",
+"value": "xmlwineventlog"
+},
+{
+"name": "XmlWinEventLog:Microsoft-Windows-Windows Firewall With Advanced Security/Firewall",
+"owner": "nobody",
+"sharing": "global",
+"value": "xmlwineventlog"
+},
+{
+"name": "XmlWinEventLog:Microsoft-Windows-WindowsUpdateClient/Operational",
+"owner": "nobody",
+"sharing": "global",
+"value": "xmlwineventlog"
+},
+{
+"name": "XmlWinEventLog:Microsoft-Windows-WinRM/Operational",
+"owner": "nobody",
+"sharing": "global",
+"value": "xmlwineventlog"
+},
+{
+"name": "XmlWinEventLog:Microsoft-Windows-WLAN-Autoconfig/Operational",
+"owner": "nobody",
+"sharing": "global",
+"value": "xmlwineventlog"
+},
+{
+"name": "XmlWinEventLog:Security",
+"owner": "nobody",
+"sharing": "global",
+"value": "xmlwineventlog"
+},
+{
+"name": "XmlWinEventLog:Setup",
+"owner": "nobody",
+"sharing": "global",
+"value": "xmlwineventlog"
+},
+{
+"name": "XmlWinEventLog:System",
+"owner": "nobody",
+"sharing": "global",
+"value": "xmlwineventlog"
+},
+{
+"name": "XmlWinEventLog:Windows PowerShell",
+"owner": "nobody",
+"sharing": "global",
+"value": "xmlwineventlog"
+}
+]

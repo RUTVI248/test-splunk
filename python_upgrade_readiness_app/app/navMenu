@@ -1,0 +1,8 @@
+[
+{
+"eai:data": "<nav>\n    <view name=\"setting_scan\"/>\n    <view name=\"splunk9x_scan\" default=\"true\"/>\n    <view name=\"setting\" />\n    <view name=\"jquery_scan\"/>\n    <view name=\"python_scan\"/>\n</nav>",
+"name": "default",
+"owner": "nobody",
+"sharing": "app"
+}
+]

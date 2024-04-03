@@ -1,0 +1,2122 @@
+[
+{
+"name": "action",
+"origName": "DhcpSrvLog : EVAL-action",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "DhcpSrvLog",
+"value": "case(msdhcp_id IN (13,15,12,16,18), \"blocked\", msdhcp_id IN (10,11), \"added\")"
+},
+{
+"name": "dest",
+"origName": "DhcpSrvLog : EVAL-dest",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "DhcpSrvLog",
+"value": "coalesce(if(nt_host!=\"BAD_ADDRESS\", nt_host, null()), ip, lower(case(match(raw_mac, \"^\\w{12}$\"), rtrim(replace(raw_mac, \"(\\w{2})\", \"\\1:\"), \":\"), true(), replace(raw_mac, \"-|\\.|\\s\", \":\"))))"
+},
+{
+"name": "dest_mac",
+"origName": "DhcpSrvLog : EVAL-dest_mac",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "DhcpSrvLog",
+"value": "lower(case(match(raw_mac, \"^\\w{12,}$\"), replace(raw_mac, \"^.*(\\w{2})(\\w{2})(\\w{2})(\\w{2})(\\w{2})(\\w{2})$\", \"\\1:\\2:\\3:\\4:\\5:\\6\"), true(), replace(raw_mac, \"-|\\.|\\s\", \":\")))"
+},
+{
+"name": "dest_nt_host",
+"origName": "DhcpSrvLog : EVAL-dest_nt_host",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "DhcpSrvLog",
+"value": "case(nt_host!=\"BAD_ADDRESS\", nt_host)"
+},
+{
+"name": "product",
+"origName": "DhcpSrvLog : EVAL-product",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "DhcpSrvLog",
+"value": "\"DHCP\""
+},
+{
+"name": "quarantine_info",
+"origName": "DhcpSrvLog : EVAL-quarantine_info",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "DhcpSrvLog",
+"value": "case(qresult == 0, \"NoQuarantine\", qresult == 1, \"Quarantine\", qresult == 2, \"Drop Packet\", qresult == 3, \"Probation\", qresult == 6, \"No Quarantine Information\",  true(), qresult)"
+},
+{
+"name": "reason",
+"origName": "DhcpSrvLog : EVAL-reason",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "DhcpSrvLog",
+"value": "case(nt_host==\"BAD_ADDRESS\", nt_host)"
+},
+{
+"name": "vendor",
+"origName": "DhcpSrvLog : EVAL-vendor",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "DhcpSrvLog",
+"value": "\"Microsoft\""
+},
+{
+"name": "vendor_product",
+"origName": "DhcpSrvLog : EVAL-vendor_product",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "DhcpSrvLog",
+"value": "\"Microsoft DHCP\""
+},
+{
+"name": "answer",
+"origName": "MSAD:NT6:DNS : EVAL-answer",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "MSAD:NT6:DNS",
+"value": "mvmap(answer, replace(replace(answer,\"\\(\\d+\\)\",\".\"),\"\\\\[\\\\w+\\\\]\",\"\"))"
+},
+{
+"name": "message_type",
+"origName": "MSAD:NT6:DNS : EVAL-message_type",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "MSAD:NT6:DNS",
+"value": "if(operation==\"R\",\"Response\", \"Query\")"
+},
+{
+"name": "name",
+"origName": "MSAD:NT6:DNS : EVAL-name",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "MSAD:NT6:DNS",
+"value": "if(operation==\"R\",\"R\",\"\")+opcode+\"_\"+response+\"_\"+questiontype"
+},
+{
+"name": "query",
+"origName": "MSAD:NT6:DNS : EVAL-query",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "MSAD:NT6:DNS",
+"value": "replace(questionname,\"(?:\\(\\d+\\))\",\".\")"
+},
+{
+"name": "vendor_product",
+"origName": "MSAD:NT6:DNS : EVAL-vendor_product",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "MSAD:NT6:DNS",
+"value": "\"Microsoft Windows\""
+},
+{
+"name": "cpu_interrupts",
+"origName": "Perfmon:CPU : EVAL-cpu_interrupts",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:CPU",
+"value": "if(counter==\"Interrupts/sec\" AND instance==\"_Total\",Value,null())"
+},
+{
+"name": "cpu_load_percent",
+"origName": "Perfmon:CPU : EVAL-cpu_load_percent",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:CPU",
+"value": "if(counter==\"% Processor Time\",Value,null())"
+},
+{
+"name": "cpu_user_percent",
+"origName": "Perfmon:CPU : EVAL-cpu_user_percent",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:CPU",
+"value": "if(counter==\"% User Time\",Value,null())"
+},
+{
+"name": "metric_type",
+"origName": "Perfmon:CPU : EVAL-metric_type",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:CPU",
+"value": "\"gauge\""
+},
+{
+"name": "windows_cpu_load_percent",
+"origName": "Perfmon:CPU : EVAL-windows_cpu_load_percent",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:CPU",
+"value": "if(counter==\"% Processor Time\",Value,null())"
+},
+{
+"name": "cpu_interrupts",
+"origName": "Perfmon:CPUTime : EVAL-cpu_interrupts",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:CPUTime",
+"value": "if(counter==\"Interrupts/sec\",Value,null())"
+},
+{
+"name": "cpu_load_mhz",
+"origName": "Perfmon:CPUTime : EVAL-cpu_load_mhz",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:CPUTime",
+"value": "if(counter==\"Processor Frequency\",Value,null())"
+},
+{
+"name": "cpu_load_percent",
+"origName": "Perfmon:CPUTime : EVAL-cpu_load_percent",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:CPUTime",
+"value": "if(counter==\"% Processor Time\",Value,null())"
+},
+{
+"name": "cpu_user_percent",
+"origName": "Perfmon:CPUTime : EVAL-cpu_user_percent",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:CPUTime",
+"value": "if(counter==\"% User Time\",Value,null())"
+},
+{
+"name": "windows_cpu_load_percent",
+"origName": "Perfmon:CPUTime : EVAL-windows_cpu_load_percent",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:CPUTime",
+"value": "if(counter==\"% Processor Time\",Value,null())"
+},
+{
+"name": "metric_type",
+"origName": "Perfmon:DFS_Replicated_Folders : EVAL-metric_type",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:DFS_Replicated_Folders",
+"value": "\"gauge\""
+},
+{
+"name": "metric_type",
+"origName": "Perfmon:DNS : EVAL-metric_type",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:DNS",
+"value": "\"gauge\""
+},
+{
+"name": "storage_free",
+"origName": "Perfmon:FreeDiskSpace : EVAL-storage_free",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:FreeDiskSpace",
+"value": "if(counter==\"Free Megabytes\",Value*1048576,null())"
+},
+{
+"name": "storage_free_percent",
+"origName": "Perfmon:FreeDiskSpace : EVAL-storage_free_percent",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:FreeDiskSpace",
+"value": "if(counter==\"% Free Space\",Value,null())"
+},
+{
+"name": "storage_used_percent",
+"origName": "Perfmon:FreeDiskSpace : EVAL-storage_used_percent",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:FreeDiskSpace",
+"value": "if(counter==\"% Free Space\",100-Value,null())"
+},
+{
+"name": "windows_storage_free_percent",
+"origName": "Perfmon:FreeDiskSpace : EVAL-windows_storage_free_percent",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:FreeDiskSpace",
+"value": "if(counter==\"% Free Space\",Value,null())"
+},
+{
+"name": "thruput",
+"origName": "Perfmon:LocalNetwork : EVAL-thruput",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:LocalNetwork",
+"value": "if(counter==\"Bytes Total/sec\",Value,null())"
+},
+{
+"name": "thruput_max",
+"origName": "Perfmon:LocalNetwork : EVAL-thruput_max",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:LocalNetwork",
+"value": "if(counter==\"Current Bandwidth\",Value,null())"
+},
+{
+"name": "latency",
+"origName": "Perfmon:LogicalDisk : EVAL-latency",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:LogicalDisk",
+"value": "if(counter==\"Avg. Disk sec/Transfer\",Value*1000,null())"
+},
+{
+"name": "metric_type",
+"origName": "Perfmon:LogicalDisk : EVAL-metric_type",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:LogicalDisk",
+"value": "\"gauge\""
+},
+{
+"name": "mount",
+"origName": "Perfmon:LogicalDisk : EVAL-mount",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:LogicalDisk",
+"value": "if(instance==\"_Total\", null(), instance)"
+},
+{
+"name": "read_latency",
+"origName": "Perfmon:LogicalDisk : EVAL-read_latency",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:LogicalDisk",
+"value": "if(counter==\"Avg. Disk sec/Read\",Value,null())"
+},
+{
+"name": "read_ops",
+"origName": "Perfmon:LogicalDisk : EVAL-read_ops",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:LogicalDisk",
+"value": "if(counter==\"Disk Reads/sec\",Value,null())"
+},
+{
+"name": "storage_free_percent",
+"origName": "Perfmon:LogicalDisk : EVAL-storage_free_percent",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:LogicalDisk",
+"value": "if(counter==\"% Free Space\",Value,null())"
+},
+{
+"name": "total_ops",
+"origName": "Perfmon:LogicalDisk : EVAL-total_ops",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:LogicalDisk",
+"value": "if(counter==\"Disk Transfers/sec\",Value,null())"
+},
+{
+"name": "write_latency",
+"origName": "Perfmon:LogicalDisk : EVAL-write_latency",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:LogicalDisk",
+"value": "if(counter==\"Avg. Disk sec/Write\",Value,null())"
+},
+{
+"name": "write_ops",
+"origName": "Perfmon:LogicalDisk : EVAL-write_ops",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:LogicalDisk",
+"value": "if(counter==\"Disk Writes/sec\",Value,null())"
+},
+{
+"name": "mem_committed",
+"origName": "Perfmon:Memory : EVAL-mem_committed",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Memory",
+"value": "if(counter==\"Committed Bytes\",Value,null())"
+},
+{
+"name": "mem_free",
+"origName": "Perfmon:Memory : EVAL-mem_free",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Memory",
+"value": "case(counter==\"Available MBytes\",Value,counter==\"Available Bytes\",Value/1048576,1=1,null())"
+},
+{
+"name": "mem_page_in",
+"origName": "Perfmon:Memory : EVAL-mem_page_in",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Memory",
+"value": "if(counter==\"Pages Input/sec\",Value,null())"
+},
+{
+"name": "mem_page_ops",
+"origName": "Perfmon:Memory : EVAL-mem_page_ops",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Memory",
+"value": "if(counter==\"Pages/sec\",Value,null())"
+},
+{
+"name": "mem_page_out",
+"origName": "Perfmon:Memory : EVAL-mem_page_out",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Memory",
+"value": "if(counter==\"Pages Output/sec\",Value,null())"
+},
+{
+"name": "metric_type",
+"origName": "Perfmon:Memory : EVAL-metric_type",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Memory",
+"value": "\"gauge\""
+},
+{
+"name": "swap_free",
+"origName": "Perfmon:Memory : EVAL-swap_free",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Memory",
+"value": "if(counter==\"Pool Nonpaged Bytes\",Value,null())"
+},
+{
+"name": "swap_used",
+"origName": "Perfmon:Memory : EVAL-swap_used",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Memory",
+"value": "if(counter==\"Pool Paged Bytes\",Value,null())"
+},
+{
+"name": "windows_mem_free",
+"origName": "Perfmon:Memory : EVAL-windows_mem_free",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Memory",
+"value": "case(counter==\"Available MBytes\",Value,counter==\"Available Bytes\",Value/1048576,1=1,null())"
+},
+{
+"name": "bytes",
+"origName": "Perfmon:Network : EVAL-bytes",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Network",
+"value": "if(counter==\"Bytes Total/sec\",Value,null())"
+},
+{
+"name": "bytes_in",
+"origName": "Perfmon:Network : EVAL-bytes_in",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Network",
+"value": "if(counter==\"Bytes Received/sec\",Value,null())"
+},
+{
+"name": "bytes_out",
+"origName": "Perfmon:Network : EVAL-bytes_out",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Network",
+"value": "if(counter==\"Bytes Sent/sec\",Value,null())"
+},
+{
+"name": "metric_type",
+"origName": "Perfmon:Network : EVAL-metric_type",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Network",
+"value": "\"gauge\""
+},
+{
+"name": "packets",
+"origName": "Perfmon:Network : EVAL-packets",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Network",
+"value": "if(counter==\"Packets/sec\",Value,null())"
+},
+{
+"name": "packets_in",
+"origName": "Perfmon:Network : EVAL-packets_in",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Network",
+"value": "if(counter==\"Packets Received/sec\",Value,null())"
+},
+{
+"name": "packets_out",
+"origName": "Perfmon:Network : EVAL-packets_out",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Network",
+"value": "if(counter==\"Packets Sent/sec\",Value,null())"
+},
+{
+"name": "thruput",
+"origName": "Perfmon:Network : EVAL-thruput",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Network",
+"value": "if(counter==\"Bytes Total/sec\",Value,null())"
+},
+{
+"name": "thruput_max",
+"origName": "Perfmon:Network : EVAL-thruput_max",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Network",
+"value": "if(counter==\"Current Bandwidth\",Value,null())"
+},
+{
+"name": "bytes",
+"origName": "Perfmon:Network_Interface : EVAL-bytes",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Network_Interface",
+"value": "if(counter==\"Bytes Total/sec\",Value,null())"
+},
+{
+"name": "bytes_in",
+"origName": "Perfmon:Network_Interface : EVAL-bytes_in",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Network_Interface",
+"value": "if(counter==\"Bytes Received/sec\",Value,null())"
+},
+{
+"name": "bytes_out",
+"origName": "Perfmon:Network_Interface : EVAL-bytes_out",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Network_Interface",
+"value": "if(counter==\"Bytes Sent/sec\",Value,null())"
+},
+{
+"name": "metric_type",
+"origName": "Perfmon:Network_Interface : EVAL-metric_type",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Network_Interface",
+"value": "\"gauge\""
+},
+{
+"name": "packets",
+"origName": "Perfmon:Network_Interface : EVAL-packets",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Network_Interface",
+"value": "if(counter==\"Packets/sec\",Value,null())"
+},
+{
+"name": "packets_in",
+"origName": "Perfmon:Network_Interface : EVAL-packets_in",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Network_Interface",
+"value": "if(counter==\"Packets Received/sec\",Value,null())"
+},
+{
+"name": "packets_out",
+"origName": "Perfmon:Network_Interface : EVAL-packets_out",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Network_Interface",
+"value": "if(counter==\"Packets Sent/sec\",Value,null())"
+},
+{
+"name": "thruput",
+"origName": "Perfmon:Network_Interface : EVAL-thruput",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Network_Interface",
+"value": "if(counter==\"Bytes Total/sec\",Value,null())"
+},
+{
+"name": "thruput_max",
+"origName": "Perfmon:Network_Interface : EVAL-thruput_max",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Network_Interface",
+"value": "if(counter==\"Current Bandwidth\",Value,null())"
+},
+{
+"name": "metric_type",
+"origName": "Perfmon:NTDS : EVAL-metric_type",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:NTDS",
+"value": "\"gauge\""
+},
+{
+"name": "metric_type",
+"origName": "Perfmon:PhysicalDisk : EVAL-metric_type",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:PhysicalDisk",
+"value": "\"gauge\""
+},
+{
+"name": "mem_used",
+"origName": "Perfmon:Process : EVAL-mem_used",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Process",
+"value": "if(instance!=\"_Total\" AND instance!=\"Idle\" AND counter==\"Working Set - Private\", Value, null())"
+},
+{
+"name": "metric_type",
+"origName": "Perfmon:Process : EVAL-metric_type",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Process",
+"value": "\"gauge\""
+},
+{
+"name": "process_cpu_used_percent",
+"origName": "Perfmon:Process : EVAL-process_cpu_used_percent",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Process",
+"value": "if(instance!=\"_Total\" AND instance!=\"Idle\" AND counter==\"% Processor Time\", Value, null())"
+},
+{
+"name": "process_mem_used",
+"origName": "Perfmon:Process : EVAL-process_mem_used",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Process",
+"value": "if(instance!=\"_Total\" AND instance!=\"Idle\" AND counter==\"Working Set - Private\", Value, null())"
+},
+{
+"name": "process_name",
+"origName": "Perfmon:Process : EVAL-process_name",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Process",
+"value": "if(instance!=\"_Total\" AND instance!=\"Idle\",instance,null())"
+},
+{
+"name": "vendor_product",
+"origName": "Perfmon:Process : EVAL-vendor_product",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Process",
+"value": "\"Microsoft Windows\""
+},
+{
+"name": "cpu_interrupts",
+"origName": "Perfmon:Processor : EVAL-cpu_interrupts",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Processor",
+"value": "if(counter==\"Interrupts/sec\" AND instance==\"_Total\",Value,null())"
+},
+{
+"name": "cpu_load_percent",
+"origName": "Perfmon:Processor : EVAL-cpu_load_percent",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Processor",
+"value": "if(counter==\"% Processor Time\",Value,null())"
+},
+{
+"name": "cpu_user_percent",
+"origName": "Perfmon:Processor : EVAL-cpu_user_percent",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Processor",
+"value": "if(counter==\"% User Time\",Value,null())"
+},
+{
+"name": "metric_type",
+"origName": "Perfmon:Processor : EVAL-metric_type",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Processor",
+"value": "\"gauge\""
+},
+{
+"name": "windows_cpu_load_percent",
+"origName": "Perfmon:Processor : EVAL-windows_cpu_load_percent",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Processor",
+"value": "if(counter==\"% Processor Time\",Value,null())"
+},
+{
+"name": "cpu_load_mhz",
+"origName": "Perfmon:ProcessorInformation : EVAL-cpu_load_mhz",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:ProcessorInformation",
+"value": "if(counter==\"Processor Frequency\" AND instance==\"_Total\",Value,null())"
+},
+{
+"name": "cpu_load_percent",
+"origName": "Perfmon:ProcessorInformation : EVAL-cpu_load_percent",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:ProcessorInformation",
+"value": "if(counter==\"% Processor Time\" AND instance==\"_Total\",Value,null())"
+},
+{
+"name": "metric_type",
+"origName": "Perfmon:ProcessorInformation : EVAL-metric_type",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:ProcessorInformation",
+"value": "\"gauge\""
+},
+{
+"name": "vendor_product",
+"origName": "Perfmon:ProcessorInformation : EVAL-vendor_product",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:ProcessorInformation",
+"value": "\"Microsoft Windows\""
+},
+{
+"name": "metric_type",
+"origName": "Perfmon:System : EVAL-metric_type",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:System",
+"value": "\"gauge\""
+},
+{
+"name": "system_threads_count",
+"origName": "Perfmon:System : EVAL-system_threads_count",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:System",
+"value": "if(counter==\"Threads\",Value,null())"
+},
+{
+"name": "wait_threads_count",
+"origName": "Perfmon:System : EVAL-wait_threads_count",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:System",
+"value": "if(counter==\"Processor Queue Length\",Value,null())"
+},
+{
+"name": "cpu_interrupts",
+"origName": "PerfmonMk:CPU : EVAL-cpu_interrupts",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:CPU",
+"value": "if(instance==\"_Total\", 'Interrupts/sec', null())"
+},
+{
+"name": "latency",
+"origName": "PerfmonMk:LogicalDisk : EVAL-latency",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:LogicalDisk",
+"value": "'Avg._Disk_sec/Transfer' * 1000"
+},
+{
+"name": "mount",
+"origName": "PerfmonMk:LogicalDisk : EVAL-mount",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:LogicalDisk",
+"value": "if(instance==\"_Total\", null(), instance)"
+},
+{
+"name": "storage",
+"origName": "PerfmonMk:LogicalDisk : EVAL-storage",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:LogicalDisk",
+"value": "((100*Free_Megabytes)/storage_free_percent)"
+},
+{
+"name": "storage_used",
+"origName": "PerfmonMk:LogicalDisk : EVAL-storage_used",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:LogicalDisk",
+"value": "(((100-storage_free_percent)*Free_Megabytes)/storage_free_percent)"
+},
+{
+"name": "storage_used_percent",
+"origName": "PerfmonMk:LogicalDisk : EVAL-storage_used_percent",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:LogicalDisk",
+"value": "(100-storage_free_percent)"
+},
+{
+"name": "swap_percent",
+"origName": "PerfmonMk:Memory : EVAL-swap_percent",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:Memory",
+"value": "(swap_used/(swap_used+swap_free))*100"
+},
+{
+"name": "mem_used",
+"origName": "PerfmonMk:Process : EVAL-mem_used",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:Process",
+"value": "if(instance!=\"_Total\" AND instance!=\"Idle\", 'Working_Set_-_Private', null())"
+},
+{
+"name": "process_cpu_used_percent",
+"origName": "PerfmonMk:Process : EVAL-process_cpu_used_percent",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:Process",
+"value": "if(instance!=\"_Total\" AND instance!=\"Idle\", '%_Processor_Time', null())"
+},
+{
+"name": "process_mem_used",
+"origName": "PerfmonMk:Process : EVAL-process_mem_used",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:Process",
+"value": "if(instance!=\"_Total\" AND instance!=\"Idle\", 'Working_Set_-_Private', null())"
+},
+{
+"name": "process_name",
+"origName": "PerfmonMk:Process : EVAL-process_name",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:Process",
+"value": "if(instance!=\"_Total\" AND instance!=\"Idle\", instance,null())"
+},
+{
+"name": "vendor_product",
+"origName": "PerfmonMk:Process : EVAL-vendor_product",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:Process",
+"value": "\"Microsoft Windows\""
+},
+{
+"name": "cpu_interrupts",
+"origName": "PerfmonMk:Processor : EVAL-cpu_interrupts",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:Processor",
+"value": "if(instance==\"_Total\", 'Interrupts/sec', null())"
+},
+{
+"name": "cpu_load_mhz",
+"origName": "PerfmonMk:ProcessorInformation : EVAL-cpu_load_mhz",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:ProcessorInformation",
+"value": "if(instance==\"_Total\", 'Processor_Frequency', null())"
+},
+{
+"name": "cpu_load_percent",
+"origName": "PerfmonMk:ProcessorInformation : EVAL-cpu_load_percent",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:ProcessorInformation",
+"value": "if(instance==\"_Total\", '%_Processor_Time', null())"
+},
+{
+"name": "vendor_product",
+"origName": "PerfmonMk:ProcessorInformation : EVAL-vendor_product",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:ProcessorInformation",
+"value": "\"Microsoft Windows\""
+},
+{
+"name": "transport_dest_port",
+"origName": "Script:ListeningPorts : EVAL-transport_dest_port",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:ListeningPorts",
+"value": "transport.\"/\".dest_port"
+},
+{
+"name": "vendor_product",
+"origName": "Script:ListeningPorts : EVAL-vendor_product",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:ListeningPorts",
+"value": "\"Microsoft Windows\""
+},
+{
+"name": "last_sync_time",
+"origName": "Script:TimesyncStatus : EVAL-last_sync_time",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:TimesyncStatus",
+"value": "coalesce(strptime(Last_Successful_Sync_Time, \"%m/%d/%Y %H:%M:%S %p\"),strptime(Last_Successful_Sync_Time, \"%m/%d/%Y %H:%M:%S\"),strptime(Last_Successful_Sync_Time, \"%d-%m-%Y %H:%M:%S\"))"
+},
+{
+"name": "resource_type",
+"origName": "Script:TimesyncStatus : EVAL-resource_type",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:TimesyncStatus",
+"value": "\"system\""
+},
+{
+"name": "dest",
+"origName": "source::WinEventLog:Application : EVAL-dest",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Application",
+"value": "coalesce('ComputerName','Computer')"
+},
+{
+"name": "Error_Code",
+"origName": "source::WinEventLog:Application : EVAL-Error_Code",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Application",
+"value": "case(isnotnull(Status), Status, isnotnull(Error_Code), Error_Code, true(), \"-\")"
+},
+{
+"name": "action",
+"origName": "source::WinEventLog:Security : EVAL-action",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"value": "case(EventCode==\"4688\" AND Keywords==\"Audit Success\",\"allowed\",EventCode==\"4688\" AND Keywords==\"Audit Failure\",\"blocked\")"
+},
+{
+"name": "authentication_method",
+"origName": "source::WinEventLog:Security : EVAL-authentication_method",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"value": "case(EventCode IN (4624,4625), Authentication_Package, true(), authentication_method)"
+},
+{
+"name": "dest_nt_domain",
+"origName": "source::WinEventLog:Security : EVAL-dest_nt_domain",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"value": "nullif(dest_nt_domain,\"-\")"
+},
+{
+"name": "Error_Code",
+"origName": "source::WinEventLog:Security : EVAL-Error_Code",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"value": "case(isnotnull(Status), Status, isnotnull(Error_Code), Error_Code, true(), \"-\")"
+},
+{
+"name": "file_name",
+"origName": "source::WinEventLog:Security : EVAL-file_name",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"value": "if(Object_Type==\"File\" AND isnotnull(object_file_name),object_file_name,if(isnotnull(Share_Name),Share_Name,file_name))"
+},
+{
+"name": "file_path",
+"origName": "source::WinEventLog:Security : EVAL-file_path",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"value": "if(Object_Type==\"File\" AND isnotnull(object_file_path),object_file_path,if(isnotnull(Share_Path),Share_Path,file_path))"
+},
+{
+"name": "object",
+"origName": "source::WinEventLog:Security : EVAL-object",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"value": "case(EventCode IN (4727,4730,4731,4734,4735,4737,4754,4755,4758,4764,4799), Group_Name, EventCode IN (4703,4704,4705,4722,4723,4724,4725,4726,4738,4767), Target_Account_Name, EventCode==4781, Target_New_Account_Name, EventCode==4720, New_Account_Account_Name, EventCode==4740, Account_Locked_Out_Name, EventCode IN (4800,4801), ComputerName, EventCode==4634, Subject_Account_Name, EventCode IN (4698,4700,4701,4702), Task_Name, EventCode==1102, \"audit log\", EventCode==4719, \"Windows Security Audit Policy\", EventCode IN (4732,4729,4757,4756,4728,4733), if(like(Member_Security_ID, \"%\\%\"), mvindex(split(Member_Security_ID, \"\\\\\"),-1), if(like(user, \"%\\%\") OR user==\"-\", null(), user)), true(),object)"
+},
+{
+"name": "object_attrs",
+"origName": "source::WinEventLog:Security : EVAL-object_attrs",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"value": "if(EventCode==4717 OR EventCode==4718,Access_Right,if(isnotnull(Group_Name) AND NOT EventCode IN (4727,4730,4731,4734,4735,4737,4754,4755,4758,4764,4799),Group_Name,if(EventCode IN (4698,4700,4701),TaskContent,if(EventCode==4702,TaskNewContent,if(EventCode==4719, \"Category=\"+Category+\",Subcategory=\"+Subcategory+\",Subcategory GUID=\"+Subcategory_GUID+\",Changes=\"+Changes,object_attrs)))))"
+},
+{
+"name": "object_id",
+"origName": "source::WinEventLog:Security : EVAL-object_id",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"value": "case(EventCode IN (4728,4729,4733,4756,4757),Member_Security_ID, EventCode IN (4727,4730,4731,4734,4735,4737,4754,4755,4758,4764,4799), Group_Security_ID, EventCode IN (4703,4704,4705,4722,4723,4724,4725,4726,4738,4767,4781), Target_Security_ID, EventCode==4720, New_Account_Security_ID, EventCode==4732, Member_Security_ID, EventCode==4740, Account_Locked_Out_Security_ID, EventCode==4634, Subject_Security_ID, true(), object_id)"
+},
+{
+"name": "parent_process",
+"origName": "source::WinEventLog:Security : EVAL-parent_process",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"value": "case(EventCode==4696,Process_Name,true(),parent_process)"
+},
+{
+"name": "parent_process_id",
+"origName": "source::WinEventLog:Security : EVAL-parent_process_id",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"value": "case(EventCode==4688,Creator_Process_ID,EventCode==4696,Process_ID)"
+},
+{
+"name": "parent_process_name",
+"origName": "source::WinEventLog:Security : EVAL-parent_process_name",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"value": "case(EventCode==4696,replace(Process_Name,\"(?:.*\\\\\\)?(.*)\",\"\\1\"),true(),parent_process_name)"
+},
+{
+"name": "parent_process_path",
+"origName": "source::WinEventLog:Security : EVAL-parent_process_path",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"value": "case(EventCode==4688,Creator_Process_Name,EventCode==4696,Process_Name)"
+},
+{
+"name": "process",
+"origName": "source::WinEventLog:Security : EVAL-process",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"value": "case(EventCode==4688, coalesce(if(match(process_command_line_process,\"(\\\\\\)\"), Process_Command_Line, (if(match(New_Process_Name,\"\\s\"), \"\\\"\" + New_Process_Name + \"\\\"\", New_Process_Name)) + \" \" + process_command_line_arguments), New_Process_Name), EventCode==4696, Target_Process_Name , true(), coalesce(Process, process, Process_Name))"
+},
+{
+"name": "process_exec",
+"origName": "source::WinEventLog:Security : EVAL-process_exec",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"value": "case(EventCode==4688,new_process_name,EventCode==4696,target_process_name,EventCode==4689 OR EventCode==4674 OR EventCode==4673,replace(Process_Name,\"(?:.*\\\\\\)?(.*)\",\"\\1\"))"
+},
+{
+"name": "process_id",
+"origName": "source::WinEventLog:Security : EVAL-process_id",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"value": "case(EventCode==4696,Target_Process_ID, EventCode==4689 OR EventCode==4673, Process_ID, true(), process_id)"
+},
+{
+"name": "process_name",
+"origName": "source::WinEventLog:Security : EVAL-process_name",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"value": "case(EventCode==4688,new_process_name,EventCode==4696,target_process_name,EventCode==4689 OR EventCode==4674 OR EventCode==4673,replace(Process_Name,\"(?:.*\\\\\\)?(.*)\",\"\\1\"),true(),Process_Name)"
+},
+{
+"name": "process_path",
+"origName": "source::WinEventLog:Security : EVAL-process_path",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"value": "case(EventCode==4688,New_Process_Name,EventCode==4696,Target_Process_Name,EventCode==4689 OR EventCode==4674 OR EventCode==4673,Process_Name)"
+},
+{
+"name": "product",
+"origName": "source::WinEventLog:Security : EVAL-product",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"value": "\"Windows\""
+},
+{
+"name": "registry_path",
+"origName": "source::WinEventLog:Security : EVAL-registry_path",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"value": "if(EventCode==4657 OR EventCode==4670,Object_Name,registry_path)"
+},
+{
+"name": "registry_value_name",
+"origName": "source::WinEventLog:Security : EVAL-registry_value_name",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"value": "if(EventCode==4657, Object_Value_Name, registry_value_name)"
+},
+{
+"name": "registry_value_type",
+"origName": "source::WinEventLog:Security : EVAL-registry_value_type",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"value": "if(EventCode==4657, New_Value_Type, registry_value_type)"
+},
+{
+"name": "src",
+"origName": "source::WinEventLog:Security : EVAL-src",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"value": "case(EventCode IN (4729,4799,4730,4727,4755,4754,4758,4764,4735,4737,4731,4734,4757,4756,4728,4733), ComputerName, true(), src)"
+},
+{
+"name": "src_nt_domain",
+"origName": "source::WinEventLog:Security : EVAL-src_nt_domain",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"value": "case(EventCode IN (4634,4720,4727,4728,4729,4730,4731,4732,4733,4734,4735,4737,4740,4754,4755,4756,4757,4758,4764,4800,4801), Subject_Account_Domain, true(), src_nt_domain)"
+},
+{
+"name": "src_user",
+"origName": "source::WinEventLog:Security : EVAL-src_user",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"value": "case(EventCode IN (4634,4703,4704,4705,4722,4723,4724,4725,4726,4727,4728,4729,4730,4731,4733,4734,4735,4737,4738,4754,4755,4756,4757,4758,4764,4767,4781,4800,4801), Subject_Account_Name, true(),src_user)"
+},
+{
+"name": "src_user_name",
+"origName": "source::WinEventLog:Security : EVAL-src_user_name",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"value": "case(EventCode IN (4730,4727,4755,4754,4758,4764,4735,4737,4731,4734,4728,4729,4733,4756,4757,4634,4703,4704,4705,4720,4722,4723,4724,4725,4726,4732,4738,4740,4767,4781,4800,4801), Subject_Account_Name, true(),src_user_name)"
+},
+{
+"name": "ta_windows_action",
+"origName": "source::WinEventLog:Security : EVAL-ta_windows_action",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"value": "case(upper(Status) == \"0XC000006F\", \"denied\", upper(Status) == \"0XC0000070\", \"denied\", upper(Status) == \"0XC000015B\", \"denied\", upper(Status) == \"0XC0000234\", \"denied\", upper(Status) == \"0XC0000064\", \"unknown\", upper(Status) == \"0XC0000133\", \"error\", upper(Status) == \"0XC0000225\", \"error\", 1=1 , \"failure\")"
+},
+{
+"name": "user",
+"origName": "source::WinEventLog:Security : EVAL-user",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"value": "case(EventCode==4799,Subject_Account_Name,EventCode IN (4727,4730,4731,4734,4735,4737,4754,4755,4758,4764),null(),EventCode==4688,if(user==\"-\" OR isnull(user),src_user,user),EventCode IN (4689,4696,4673,4674,4697),case(user!=\"-\",user), EventCode IN (4703,4704,4705,4722,4723,4724,4725,4726,4738,4767), Target_Account_Name, EventCode==4781, Target_New_Account_Name, EventCode IN (4728,4729,4732,4733,4756,4757), if(like(Member_Security_ID, \"%\\%\"), mvindex(split(Member_Security_ID, \"\\\\\"),-1), if(like(user, \"%\\%\") OR user==\"-\", null(), user)), true(),user)"
+},
+{
+"name": "user_group",
+"origName": "source::WinEventLog:Security : EVAL-user_group",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"value": "coalesce(Group_Name,New_Account_Name,Target_Account_Name)"
+},
+{
+"name": "user_name",
+"origName": "source::WinEventLog:Security : EVAL-user_name",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"value": "case(EventCode IN (4703,4704,4705,4722,4723,4724,4725,4726,4738,4767), Target_Account_Name, EventCode==4781, Target_New_Account_Name, EventCode==4720, New_Account_Account_Name, EventCode==4740, Account_Locked_Out_Name, EventCode IN (1102,4634,4698,4700,4701,4702,4719,4799,4800,4801), Subject_Account_Name, EventCode==104, User, EventCode IN (4728,4729,4732,4733,4756,4757), if(like(Member_Security_ID, \"%\\%\"), mvindex(split(Member_Security_ID, \"\\\\\"),-1), if(like(user, \"%\\%\")OR user==\"-\", null(), user)), true(),user_name)"
+},
+{
+"name": "user_type",
+"origName": "source::WinEventLog:Security : EVAL-user_type",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"value": "case(EventCode IN (4741, 4742, 4743), \"computer\")"
+},
+{
+"name": "vendor",
+"origName": "source::WinEventLog:Security : EVAL-vendor",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"value": "\"Microsoft\""
+},
+{
+"name": "action",
+"origName": "source::WinEventLog:System : EVAL-action",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:System",
+"value": "if(EventCode==104, \"cleared\", action)"
+},
+{
+"name": "app",
+"origName": "source::WinEventLog:System : EVAL-app",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:System",
+"value": "if(SourceName=\"IAS\",\"ias\",null())"
+},
+{
+"name": "change_type",
+"origName": "source::WinEventLog:System : EVAL-change_type",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:System",
+"value": "case(EventCode==104, \"audit\", true(), change_type)"
+},
+{
+"name": "Error_Code",
+"origName": "source::WinEventLog:System : EVAL-Error_Code",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:System",
+"value": "case(isnotnull(Status), Status, isnotnull(Error_Code), Error_Code, true(), \"-\")"
+},
+{
+"name": "object_category",
+"origName": "source::WinEventLog:System : EVAL-object_category",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:System",
+"value": "if(EventCode==104, \"audit log\", object_category)"
+},
+{
+"name": "product",
+"origName": "source::WinEventLog:System : EVAL-product",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:System",
+"value": "\"Windows\""
+},
+{
+"name": "result",
+"origName": "source::WinEventLog:System : EVAL-result",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:System",
+"value": "if(EventCode==104, \"log file was cleared\", result)"
+},
+{
+"name": "status",
+"origName": "source::WinEventLog:System : EVAL-status",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:System",
+"value": "case(EventCode==\"7036\" AND status==\"running\",\"started\",EventCode==\"7036\" AND status==\"stopped\",\"stopped\",EventCode==\"104\",\"success\")"
+},
+{
+"name": "user",
+"origName": "source::WinEventLog:System : EVAL-user",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:System",
+"value": "case(EventCode IN (7040,7045),case(user!=\"-\",user),true(),user)"
+},
+{
+"name": "user_name",
+"origName": "source::WinEventLog:System : EVAL-user_name",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:System",
+"value": "if(EventCode==104, User, user_name)"
+},
+{
+"name": "vendor",
+"origName": "source::WinEventLog:System : EVAL-vendor",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:System",
+"value": "\"Microsoft\""
+},
+{
+"name": "app",
+"origName": "source::WinEventLog:System:IAS : EVAL-app",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:System:IAS",
+"value": "\"ias\""
+},
+{
+"name": "Error_Code",
+"origName": "source::XmlWinEventLog:Application : EVAL-Error_Code",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Application",
+"value": "case(isnotnull(Status), Status, isnotnull(Error_Code), Error_Code, true(), \"-\")"
+},
+{
+"name": "action",
+"origName": "source::XmlWinEventLog:Security : EVAL-action",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"value": "case(EventCode==\"4688\" AND Keywords==\"0x8020000000000000\",\"allowed\")"
+},
+{
+"name": "authentication_method",
+"origName": "source::XmlWinEventLog:Security : EVAL-authentication_method",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"value": "case(EventCode IN (4624, 4625), AuthenticationPackageName, true(), authentication_method)"
+},
+{
+"name": "dest_nt_domain",
+"origName": "source::XmlWinEventLog:Security : EVAL-dest_nt_domain",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"value": "nullif(dest_nt_domain,\"-\")"
+},
+{
+"name": "Error_Code",
+"origName": "source::XmlWinEventLog:Security : EVAL-Error_Code",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"value": "case(isnotnull(Status), Status, isnotnull(Error_Code), Error_Code, true(), \"-\")"
+},
+{
+"name": "file_name",
+"origName": "source::XmlWinEventLog:Security : EVAL-file_name",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"value": "coalesce(file_name,if(ObjectType==\"File\",object_file_name,null()),ShareName)"
+},
+{
+"name": "file_path",
+"origName": "source::XmlWinEventLog:Security : EVAL-file_path",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"value": "coalesce(file_path,if(ObjectType==\"File\",object_file_path,null()),ShareLocalPath)"
+},
+{
+"name": "Group_Domain",
+"origName": "source::XmlWinEventLog:Security : EVAL-Group_Domain",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"value": "case(isnotnull(TargetDomainName) AND ((EventCode>=4727 AND EventCode<=4735) OR EventCode==4737 OR (EventCode>=4744 AND EventCode<=4764) OR EventCode==4799), TargetDomainName, 1=1, Group_Domain)"
+},
+{
+"name": "Group_Name",
+"origName": "source::XmlWinEventLog:Security : EVAL-Group_Name",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"value": "case(isnotnull(TargetUserName) AND ((EventCode>=4727 AND EventCode<=4735) OR EventCode==4737 OR (EventCode>=4744 AND EventCode<=4764) OR EventCode==4799), TargetUserName, 1=1, Group_Name)"
+},
+{
+"name": "object",
+"origName": "source::XmlWinEventLog:Security : EVAL-object",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"value": "case(EventCode IN (4634,4703,4704,4705,4720,4722,4723,4724,4725,4726,4727,4730,4731,4734,4735,4737,4738,4740,4754,4755,4758,4764,4767,4799), TargetUserName, EventCode==4781, NewTargetUserName, EventCode IN (4728,4729,4732,4733,4756,4757), if(like(MemberSid, \"%\\%\"), mvindex(split(MemberSid, \"\\\\\"), -1), if(like(member_user_name, \"%\\%\"), null(), member_user_name)), EventCode IN (4800,4801), Computer, EventCode IN (4698,4700,4701,4702),TaskName, EventCode==1102, \"audit log\", EventCode==4719, \"Windows Security Audit Policy\", true(), object)"
+},
+{
+"name": "object_attrs",
+"origName": "source::XmlWinEventLog:Security : EVAL-object_attrs",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"value": "if(EventCode IN (4720,4738), null(),if(EventCode=4717, AccessGranted, (if(EventCode==4718, AccessRemoved, (if(isnotnull(SamAccountName) AND NOT EventCode IN (4727,4730,4731,4734,4735,4737,4754,4755,4758,4764,4799), SamAccountName, if(EventCode IN (4728,4729,4732,4733,4756,4757), TargetUserName, if(EventCode IN (4698,4700,4701), TaskContent, if(EventCode==4702, TaskContentNew, if(EventCode==4719, \"Category=\"+CategoryId+\",Subcategory=\"+SubcategoryId+\",Subcategory GUID=\"+SubcategoryGuid+\",Changes=\"+AuditPolicyChanges,object_attrs))))))))))"
+},
+{
+"name": "object_id",
+"origName": "source::XmlWinEventLog:Security : EVAL-object_id",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"value": "case(EventCode IN (4704, 4705, 4720, 4722, 4723, 4724, 4725, 4726, 4727, 4730, 4731, 4734, 4735, 4737, 4738, 4754, 4755, 4758, 4764, 4767, 4781, 4799), TargetSid, EventCode IN (4634,4703), TargetUserSid, EventCode IN (4728,4729,4732,4733,4756,4757), MemberSid, true(), object_id)"
+},
+{
+"name": "parent_process",
+"origName": "source::XmlWinEventLog:Security : EVAL-parent_process",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"value": "case(EventCode==4696,ProcessName,true(),parent_process)"
+},
+{
+"name": "parent_process_id",
+"origName": "source::XmlWinEventLog:Security : EVAL-parent_process_id",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"value": "case(EventCode==4688 OR EventCode==4696,ProcessId)"
+},
+{
+"name": "parent_process_name",
+"origName": "source::XmlWinEventLog:Security : EVAL-parent_process_name",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"value": "case(EventCode==4696,replace(ProcessName,\"(?:.*\\\\\\)?(.*)\",\"\\1\"),true(),parent_process_name)"
+},
+{
+"name": "parent_process_path",
+"origName": "source::XmlWinEventLog:Security : EVAL-parent_process_path",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"value": "case(EventCode==4688,parent_process,EventCode==4696,ProcessName)"
+},
+{
+"name": "process",
+"origName": "source::XmlWinEventLog:Security : EVAL-process",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"value": "case(EventCode==4688, coalesce(if(match(process_command_line_process,\"(\\\\\\)\"), Process_Command_Line, (if(match(NewProcessName,\"\\s\"), \"\\\"\" + NewProcessName + \"\\\"\", NewProcessName)) + \" \" + process_command_line_arguments), NewProcessName) , EventCode==4696, TargetProcessName, true(), coalesce(process, Process, ProcessName))"
+},
+{
+"name": "process_exec",
+"origName": "source::XmlWinEventLog:Security : EVAL-process_exec",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"value": "case(EventCode==4688,new_process_name,EventCode==4696,target_process_name,EventCode==4689 OR EventCode==4674 OR EventCode==4673,replace(ProcessName,\"(?:.*\\\\\\)?(.*)\",\"\\1\"))"
+},
+{
+"name": "process_id",
+"origName": "source::XmlWinEventLog:Security : EVAL-process_id",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"value": "case(EventCode==4688, new_process_id, EventCode==4696, TargetProcessId, true(), process_id)"
+},
+{
+"name": "process_name",
+"origName": "source::XmlWinEventLog:Security : EVAL-process_name",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"value": "case(EventCode=4688,new_process_name,EventCode==4696,target_process_name,EventCode==4689 OR EventCode==4674 OR EventCode==4673,replace(ProcessName,\"(?:.*\\\\\\)?(.*)\",\"\\1\"),true(),ProcessName)"
+},
+{
+"name": "process_path",
+"origName": "source::XmlWinEventLog:Security : EVAL-process_path",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"value": "case(EventCode==4688, new_process, EventCode==4696, TargetProcessName, true(), coalesce(process, Process, ProcessName))"
+},
+{
+"name": "product",
+"origName": "source::XmlWinEventLog:Security : EVAL-product",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"value": "\"Windows\""
+},
+{
+"name": "registry_path",
+"origName": "source::XmlWinEventLog:Security : EVAL-registry_path",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"value": "if(EventCode==4657,ObjectName,registry_path)"
+},
+{
+"name": "registry_value_name",
+"origName": "source::XmlWinEventLog:Security : EVAL-registry_value_name",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"value": "if(EventCode==4657,ObjectValueName,registry_value_name)"
+},
+{
+"name": "registry_value_type",
+"origName": "source::XmlWinEventLog:Security : EVAL-registry_value_type",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"value": "if(EventCode==4657,NewValueType,registry_value_type)"
+},
+{
+"name": "service",
+"origName": "source::XmlWinEventLog:Security : EVAL-service",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"value": "if(isnotnull(service),service, Service)"
+},
+{
+"name": "src",
+"origName": "source::XmlWinEventLog:Security : EVAL-src",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"value": "case(EventCode IN (4727,4728,4729,4730,4731,4733,4734,4735,4737,4754,4755,4756,4757,4758,4764,4799), dest, EventCode==4778, ClientAddress, EventCode == 4624, IpAddress, EventCode==4625, WorkstationName, 1=1, src)"
+},
+{
+"name": "src_nt_domain",
+"origName": "source::XmlWinEventLog:Security : EVAL-src_nt_domain",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"value": "case(EventCode IN (4634,4800,4801), TargetDomainName, EventCode IN (4727,4728,4729,4730,4731,4733,4734,4735,4737,4754,4755,4756,4757,4758,4764), SubjectDomainName, true(), src_nt_domain)"
+},
+{
+"name": "src_port",
+"origName": "source::XmlWinEventLog:Security : EVAL-src_port",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"value": "if(EventCode=5158 OR EventCode=5156, SourcePort, src_port)"
+},
+{
+"name": "src_user",
+"origName": "source::XmlWinEventLog:Security : EVAL-src_user",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"value": "case(EventCode IN (4624,4625,4703,4704,4705,4720,4722,4723,4724,4725,4726,4727,4728,4729,4730,4731,4733,4734,4735,4737,4738,4754,4755,4756,4757,4758,4764,4767,4781), case(SubjectUserName!=\"-\",SubjectUserName), EventCode IN (4634,4800,4801), TargetUserName, true(),src_user)"
+},
+{
+"name": "src_user_name",
+"origName": "source::XmlWinEventLog:Security : EVAL-src_user_name",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"value": "case(EventCode IN (4703,4704,4705,4720,4722,4723,4724,4725,4726,4727,4728,4729,4730,4731,4732,4733,4734,4735,4737,4738,4740,4754,4755,4756,4757,4758,4764,4767,4781), SubjectUserName, EventCode IN (4634,4800,4801), TargetUserName, true(),src_user_name)"
+},
+{
+"name": "ta_windows_action",
+"origName": "source::XmlWinEventLog:Security : EVAL-ta_windows_action",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"value": "case(upper(Status) == \"0XC000006F\", \"denied\", upper(Status) == \"0XC0000070\", \"denied\", upper(Status) == \"0XC000015B\", \"denied\", upper(Status) == \"0XC0000234\", \"denied\", upper(Status) == \"0XC0000064\", \"unknown\", upper(Status) == \"0XC0000133\", \"error\", upper(Status) == \"0XC0000225\", \"error\", 1=1 , \"failure\")"
+},
+{
+"name": "user",
+"origName": "source::XmlWinEventLog:Security : EVAL-user",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"value": "case(EventCode IN (4727,4730,4731,4734,4735,4737,4754,4755,4758,4764),null(),EventCode==4688,if(user==\"-\" OR isnull(user),src_user,user),EventCode IN (1102,4673,4674,4689,4697,4698,4700,4701,4702,4719,4799), case(SubjectUserName!=\"-\",SubjectUserName),EventCode==4696,case(user!=\"-\",user),EventCode IN (4703,4704,4705,4720,4722,4723,4724,4725,4726,4738,4767), TargetUserName, EventCode==4781, NewTargetUserName, EventCode IN (4728, 4729, 4732, 4733, 4756, 4757), if(like(MemberSid, \"%\\%\"), mvindex(split(MemberSid, \"\\\\\"),-1), if(like(member_user_name, \"%\\%\"), null(), member_user_name)), true(), user)"
+},
+{
+"name": "user_group",
+"origName": "source::XmlWinEventLog:Security : EVAL-user_group",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"value": "coalesce(TargetUserName,New_Account_Name,Target_Account_Name)"
+},
+{
+"name": "user_name",
+"origName": "source::XmlWinEventLog:Security : EVAL-user_name",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"value": "case(EventCode IN (4634,4703,4704,4705,4720,4722,4723,4724,4725,4726,4738,4740,4767,4800,4801), TargetUserName, EventCode==4781, NewTargetUserName, EventCode IN (1102,4719,4698,4700,4701,4702,4799), SubjectUserName, EventCode IN (4728, 4729, 4732, 4733, 4756, 4757), if(like(MemberSid, \"%\\%\"), mvindex(split(MemberSid, \"\\\\\"),-1), if(like(member_user_name, \"%\\%\"), null(), member_user_name)), true(), user_name)"
+},
+{
+"name": "user_type",
+"origName": "source::XmlWinEventLog:Security : EVAL-user_type",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"value": "case(EventCode IN (4741, 4742, 4743), \"computer\")"
+},
+{
+"name": "vendor",
+"origName": "source::XmlWinEventLog:Security : EVAL-vendor",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"value": "\"Microsoft\""
+},
+{
+"name": "action",
+"origName": "source::XmlWinEventLog:System : EVAL-action",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:System",
+"value": "case(EventCode==104, \"cleared\")"
+},
+{
+"name": "body",
+"origName": "source::XmlWinEventLog:System : EVAL-body",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:System",
+"value": "coalesce('signature_message','Message')"
+},
+{
+"name": "change_type",
+"origName": "source::XmlWinEventLog:System : EVAL-change_type",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:System",
+"value": "case(EventCode==104, \"audit\", true(), change_type)"
+},
+{
+"name": "Error_Code",
+"origName": "source::XmlWinEventLog:System : EVAL-Error_Code",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:System",
+"value": "case(isnotnull(Status), Status, isnotnull(Error_Code), Error_Code, true(), \"-\")"
+},
+{
+"name": "object",
+"origName": "source::XmlWinEventLog:System : EVAL-object",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:System",
+"value": "case(EventCode==104, user_data_channel + \" log\")"
+},
+{
+"name": "object_category",
+"origName": "source::XmlWinEventLog:System : EVAL-object_category",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:System",
+"value": "case(EventCode==104, \"audit log\")"
+},
+{
+"name": "product",
+"origName": "source::XmlWinEventLog:System : EVAL-product",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:System",
+"value": "\"Windows\""
+},
+{
+"name": "result",
+"origName": "source::XmlWinEventLog:System : EVAL-result",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:System",
+"value": "case(EventCode==104, \"log file was cleared\")"
+},
+{
+"name": "status",
+"origName": "source::XmlWinEventLog:System : EVAL-status",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:System",
+"value": "case(EventCode==\"7036\" AND param2==\"running\",\"started\",EventCode==\"7036\" AND param2==\"stopped\",\"stopped\", EventCode==104, \"success\")"
+},
+{
+"name": "vendor",
+"origName": "source::XmlWinEventLog:System : EVAL-vendor",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:System",
+"value": "\"Microsoft\""
+},
+{
+"name": "product",
+"origName": "WindowsUpdateLog : EVAL-product",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WindowsUpdateLog",
+"value": "\"Windows\""
+},
+{
+"name": "vendor",
+"origName": "WindowsUpdateLog : EVAL-vendor",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WindowsUpdateLog",
+"value": "\"Microsoft\""
+},
+{
+"name": "process_name",
+"origName": "WinEventLog : EVAL-process_name",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinEventLog",
+"value": "if(EventCode==4688, New_Process_Name, Process_Name)"
+},
+{
+"name": "signature_id",
+"origName": "WinEventLog : EVAL-signature_id",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinEventLog",
+"value": "if(SourceName=\"Microsoft-Windows-WindowsUpdateClient\",signature_id,EventCode)"
+},
+{
+"name": "signature_id",
+"origName": "wineventlog : EVAL-signature_id",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "wineventlog",
+"value": "if(SourceName=\"Microsoft-Windows-WindowsUpdateClient\",signature_id,EventCode)"
+},
+{
+"name": "vendor_product",
+"origName": "WinEventLog : EVAL-vendor_product",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinEventLog",
+"value": "\"Microsoft Windows\""
+},
+{
+"name": "vendor_product",
+"origName": "wineventlog : EVAL-vendor_product",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "wineventlog",
+"value": "\"Microsoft Windows\""
+},
+{
+"name": "cpu_architecture",
+"origName": "WinHostMon : EVAL-cpu_architecture",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinHostMon",
+"value": "if(Type==\"Processor\", Architecture, null())"
+},
+{
+"name": "cpu_cores",
+"origName": "WinHostMon : EVAL-cpu_cores",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinHostMon",
+"value": "if(Type==\"Processor\", NumberOfCores, null())"
+},
+{
+"name": "cpu_count",
+"origName": "WinHostMon : EVAL-cpu_count",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinHostMon",
+"value": "if(Type==\"Processor\", NumberOfProcessors, null())"
+},
+{
+"name": "cpu_mhz",
+"origName": "WinHostMon : EVAL-cpu_mhz",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinHostMon",
+"value": "if(Type==\"Processor\", ClockSpeedMHz, null())"
+},
+{
+"name": "description",
+"origName": "WinHostMon : EVAL-description",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinHostMon",
+"value": "if(Type==\"Processor\", Name, null())"
+},
+{
+"name": "family",
+"origName": "WinHostMon : EVAL-family",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinHostMon",
+"value": "if(Type==\"Processor\", Architecture, null())"
+},
+{
+"name": "mem",
+"origName": "WinHostMon : EVAL-mem",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinHostMon",
+"value": "if(Type==\"OperatingSystem\", TotalPhysicalMemoryKB/1024, null())"
+},
+{
+"name": "mem_free",
+"origName": "WinHostMon : EVAL-mem_free",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinHostMon",
+"value": "if(Type==\"OperatingSystem\",if(isNull(FreePhysicalMemoryKB), null(), (FreePhysicalMemoryKB)/1024), null())"
+},
+{
+"name": "mem_free_percent",
+"origName": "WinHostMon : EVAL-mem_free_percent",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinHostMon",
+"value": "if(Type==\"OperatingSystem\", if(isNull(TotalPhysicalMemoryKB), null(), if(isNull(FreePhysicalMemoryKB), null(), FreePhysicalMemoryKB/TotalPhysicalMemoryKB * 100)), null())"
+},
+{
+"name": "mem_used",
+"origName": "WinHostMon : EVAL-mem_used",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinHostMon",
+"value": "if(Type==\"OperatingSystem\", if(isNull(TotalPhysicalMemoryKB), null(), if(isNull(FreePhysicalMemoryKB), null(), (TotalPhysicalMemoryKB - FreePhysicalMemoryKB)/1024)), null())"
+},
+{
+"name": "mem_used_percent",
+"origName": "WinHostMon : EVAL-mem_used_percent",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinHostMon",
+"value": "if(Type==\"OperatingSystem\", if(isNull(TotalPhysicalMemoryKB), null(), if(isNull(FreePhysicalMemoryKB), null(), (TotalPhysicalMemoryKB - FreePhysicalMemoryKB)/TotalPhysicalMemoryKB * 100)), null())"
+},
+{
+"name": "mount",
+"origName": "WinHostMon : EVAL-mount",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinHostMon",
+"value": "if (Type==\"Disk\", Name, null())"
+},
+{
+"name": "os",
+"origName": "WinHostMon : EVAL-os",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinHostMon",
+"value": "if(Type==\"OperatingSystem\", OS, null())"
+},
+{
+"name": "serial",
+"origName": "WinHostMon : EVAL-serial",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinHostMon",
+"value": "if(Type==\"OperatingSystem\", SerialNumber, null())"
+},
+{
+"name": "start_mode",
+"origName": "WinHostMon : EVAL-start_mode",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinHostMon",
+"value": "lower(StartMode)"
+},
+{
+"name": "status",
+"origName": "WinHostMon : EVAL-status",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinHostMon",
+"value": "case(Type==\"OperatingSystem\", Status, Type==\"Service\", State, 1=1, null())"
+},
+{
+"name": "storage",
+"origName": "WinHostMon : EVAL-storage",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinHostMon",
+"value": "if (Type==\"Disk\", TotalSpaceKB/1024, null())"
+},
+{
+"name": "storage_free",
+"origName": "WinHostMon : EVAL-storage_free",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinHostMon",
+"value": "if (Type==\"Disk\", FreeSpaceKB/1024, null())"
+},
+{
+"name": "storage_free_percent",
+"origName": "WinHostMon : EVAL-storage_free_percent",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinHostMon",
+"value": "if (Type==\"Disk\", (FreeSpaceKB*100)/TotalSpaceKB, null())"
+},
+{
+"name": "storage_used",
+"origName": "WinHostMon : EVAL-storage_used",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinHostMon",
+"value": "if (Type==\"Disk\", (TotalSpaceKB-FreeSpaceKB)/1024, null())"
+},
+{
+"name": "storage_used_percent",
+"origName": "WinHostMon : EVAL-storage_used_percent",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinHostMon",
+"value": "if (Type==\"Disk\", ((TotalSpaceKB-FreeSpaceKB)*100)/TotalSpaceKB, null())"
+},
+{
+"name": "vendor_product",
+"origName": "WinHostMon : EVAL-vendor_product",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinHostMon",
+"value": "if(Type==\"OperatingSystem\", OS, null())"
+},
+{
+"name": "version",
+"origName": "WinHostMon : EVAL-version",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinHostMon",
+"value": "if(Type==\"OperatingSystem\", Version, null())"
+},
+{
+"name": "vendor_product",
+"origName": "WinRegistry : EVAL-vendor_product",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinRegistry",
+"value": "\"Microsoft Windows\""
+},
+{
+"name": "storage",
+"origName": "WMI:FreeDiskSpace : EVAL-storage",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:FreeDiskSpace",
+"value": "if(isnotnull(FreeMBytes) AND isnotnull(PercentFreeSpace),(FreeMegabytes*1048576)*(1-(PercentFreeSpace/100)),null())"
+},
+{
+"name": "storage_free",
+"origName": "WMI:FreeDiskSpace : EVAL-storage_free",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:FreeDiskSpace",
+"value": "if(isnotnull(FreeMegabytes),FreeMegabytes*1048576,null())"
+},
+{
+"name": "storage_used",
+"origName": "WMI:FreeDiskSpace : EVAL-storage_used",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:FreeDiskSpace",
+"value": "if(isnotnull(FreeMegabytes) AND isnotnull(PercentFreeSpace),((FreeMegabytes*1048576)*(1-(PercentFreeSpace/100)))-FreeMegabytes,null())"
+},
+{
+"name": "storage_used_percent",
+"origName": "WMI:FreeDiskSpace : EVAL-storage_used_percent",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:FreeDiskSpace",
+"value": "if(isnotnull(PercentFreeSpace),100-PercentFreeSpace,null())"
+},
+{
+"name": "product",
+"origName": "WMI:InstalledUpdates : EVAL-product",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:InstalledUpdates",
+"value": "\"Windows\""
+},
+{
+"name": "signature",
+"origName": "WMI:InstalledUpdates : EVAL-signature",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:InstalledUpdates",
+"value": "case(isnotnull(Description) AND isnotnull(HotFixID),Description.\" (\".HotFixID.\")\",isnotnull(Description),Description,isnotnull(HotFixID),HotFixID,1=1,null())"
+},
+{
+"name": "vendor",
+"origName": "WMI:InstalledUpdates : EVAL-vendor",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:InstalledUpdates",
+"value": "\"Microsoft\""
+},
+{
+"name": "vendor_product",
+"origName": "WMI:LocalProcesses : EVAL-vendor_product",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:LocalProcesses",
+"value": "\"Microsoft Windows\""
+},
+{
+"name": "mem_free",
+"origName": "WMI:Memory : EVAL-mem_free",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:Memory",
+"value": "case(isnotnull(AvailableMBytes),AvailableMBytes,isnotnull(windows_available_bytes),windows_available_bytes/1048576,1=1,null())"
+},
+{
+"name": "swap_percent",
+"origName": "WMI:Memory : EVAL-swap_percent",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:Memory",
+"value": "(swap_used/(swap_used+swap_free))*100"
+},
+{
+"name": "windows_mem_free",
+"origName": "WMI:Memory : EVAL-windows_mem_free",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:Memory",
+"value": "case(isnotnull(AvailableMBytes),AvailableMBytes,isnotnull(windows_available_bytes),windows_available_bytes/1048576,1=1,null())"
+},
+{
+"name": "vendor_product",
+"origName": "WMI:Service : EVAL-vendor_product",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:Service",
+"value": "\"Microsoft Windows\""
+},
+{
+"name": "metric_type",
+"origName": "WMI:Uptime : EVAL-metric_type",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:Uptime",
+"value": "\"gauge\""
+},
+{
+"name": "os",
+"origName": "WMI:Version : EVAL-os",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:Version",
+"value": "if(isnotnull(Caption) AND isnotnull(Version),Caption.\" \".Version,null())"
+},
+{
+"name": "signature_id",
+"origName": "WMI:WinEventLog:Application : EVAL-signature_id",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Application",
+"value": "if(SourceName=\"Microsoft-Windows-WindowsUpdateClient\",signature_id,EventCode)"
+},
+{
+"name": "vendor_product",
+"origName": "WMI:WinEventLog:Application : EVAL-vendor_product",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Application",
+"value": "\"Microsoft Windows\""
+},
+{
+"name": "dest_nt_domain",
+"origName": "WMI:WinEventLog:Security : EVAL-dest_nt_domain",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security",
+"value": "nullif(dest_nt_domain,\"-\")"
+},
+{
+"name": "process_id",
+"origName": "WMI:WinEventLog:Security : EVAL-process_id",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security",
+"value": "coalesce('IDProcess','Process_ID')"
+},
+{
+"name": "product",
+"origName": "WMI:WinEventLog:Security : EVAL-product",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security",
+"value": "\"Windows\""
+},
+{
+"name": "signature_id",
+"origName": "WMI:WinEventLog:Security : EVAL-signature_id",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security",
+"value": "if(SourceName=\"Microsoft-Windows-WindowsUpdateClient\",signature_id,EventCode)"
+},
+{
+"name": "ta_windows_action",
+"origName": "WMI:WinEventLog:Security : EVAL-ta_windows_action",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security",
+"value": "case(upper(Status) == \"0XC000006F\", \"denied\", upper(Status) == \"0XC0000070\", \"denied\", upper(Status) == \"0XC000015B\", \"denied\", upper(Status) == \"0XC0000234\", \"denied\", upper(Status) == \"0XC0000064\", \"unknown\", upper(Status) == \"0XC0000133\", \"error\", upper(Status) == \"0XC0000225\", \"error\", 1=1 , \"failure\")"
+},
+{
+"name": "user_group",
+"origName": "WMI:WinEventLog:Security : EVAL-user_group",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security",
+"value": "coalesce(Group_Name,New_Account_Name,Target_Account_Name)"
+},
+{
+"name": "vendor",
+"origName": "WMI:WinEventLog:Security : EVAL-vendor",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security",
+"value": "\"Microsoft\""
+},
+{
+"name": "vendor_product",
+"origName": "WMI:WinEventLog:Security : EVAL-vendor_product",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security",
+"value": "\"Microsoft Windows\""
+},
+{
+"name": "product",
+"origName": "WMI:WinEventLog:System : EVAL-product",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:System",
+"value": "\"Windows\""
+},
+{
+"name": "signature_id",
+"origName": "WMI:WinEventLog:System : EVAL-signature_id",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:System",
+"value": "if(SourceName=\"Microsoft-Windows-WindowsUpdateClient\",signature_id,EventCode)"
+},
+{
+"name": "vendor",
+"origName": "WMI:WinEventLog:System : EVAL-vendor",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:System",
+"value": "\"Microsoft\""
+},
+{
+"name": "vendor_product",
+"origName": "WMI:WinEventLog:System : EVAL-vendor_product",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:System",
+"value": "\"Microsoft Windows\""
+},
+{
+"name": "process_name",
+"origName": "XmlWinEventLog : EVAL-process_name",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "XmlWinEventLog",
+"value": "if(EventCode==4688, NewProcessName, ProcessName)"
+},
+{
+"name": "signature_id",
+"origName": "XmlWinEventLog : EVAL-signature_id",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "XmlWinEventLog",
+"value": "if(SourceName=\"Microsoft-Windows-WindowsUpdateClient\",signature_id,EventCode)"
+},
+{
+"name": "signature_id",
+"origName": "xmlwineventlog : EVAL-signature_id",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "xmlwineventlog",
+"value": "if(SourceName=\"Microsoft-Windows-WindowsUpdateClient\",signature_id,EventCode)"
+},
+{
+"name": "vendor_product",
+"origName": "XmlWinEventLog : EVAL-vendor_product",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "XmlWinEventLog",
+"value": "\"Microsoft Windows\""
+},
+{
+"name": "vendor_product",
+"origName": "xmlwineventlog : EVAL-vendor_product",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "xmlwineventlog",
+"value": "\"Microsoft Windows\""
+}
+]

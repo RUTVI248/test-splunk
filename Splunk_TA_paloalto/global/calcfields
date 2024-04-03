@@ -1,0 +1,826 @@
+[
+{
+"name": "log_severity",
+"origName": "pan:analytics_traps : EVAL-log_severity",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:analytics_traps",
+"value": "case(log_severity==0, \"critical\", log_severity==1, \"error\", log_severity==2, \"warning\", log_severity==3, \"notice\", log_severity==4, \"info\", true(), \"unknown\")"
+},
+{
+"name": "os_type",
+"origName": "pan:analytics_traps : EVAL-os_type",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:analytics_traps",
+"value": "case(os_type==1, \"windows\", os_type==2, \"mac\", os_type==3, \"android\", os_type==4, \"linux\", true(), \"unknown\")"
+},
+{
+"name": "severity",
+"origName": "pan:analytics_traps : EVAL-severity",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:analytics_traps",
+"value": "case(severity==0, \"critical\", severity==1, \"high\", severity==2, \"medium\", severity==3, \"low\", severity==4, \"informational\", log_severity==5, \"configuration\", true(), \"unknown\")"
+},
+{
+"name": "action",
+"origName": "pan:aperture : EVAL-action",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:aperture",
+"value": "coalesce(case(action IN (\"sign_in\", \"sign_out\"), \"success\"), action, action_taken)"
+},
+{
+"name": "client_ip",
+"origName": "pan:aperture : EVAL-client_ip",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:aperture",
+"value": "coalesce(source_ip, ip)"
+},
+{
+"name": "dvc",
+"origName": "pan:aperture : EVAL-dvc",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:aperture",
+"value": "\"aperture\""
+},
+{
+"name": "severity",
+"origName": "pan:aperture : EVAL-severity",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:aperture",
+"value": "case(severity <= 1, \"informational\", severity <=2, \"low\", severity <=3, \"medium\", severity <=4, \"high\", severity <=5, \"critical\")"
+},
+{
+"name": "signature",
+"origName": "pan:aperture : EVAL-signature",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:aperture",
+"value": "coalesce(policy_rule_name, event_type)"
+},
+{
+"name": "src",
+"origName": "pan:aperture : EVAL-src",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:aperture",
+"value": "coalesce(ip, source_ip)"
+},
+{
+"name": "src_ip",
+"origName": "pan:aperture : EVAL-src_ip",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:aperture",
+"value": "coalesce(source_ip, ip)"
+},
+{
+"name": "src_user",
+"origName": "pan:aperture : EVAL-src_user",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:aperture",
+"value": "coalesce(user, item_owner, admin_id)"
+},
+{
+"name": "threat_name",
+"origName": "pan:aperture : EVAL-threat_name",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:aperture",
+"value": "coalesce(policy_rule_name,log_subtype)"
+},
+{
+"name": "type",
+"origName": "pan:aperture : EVAL-type",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:aperture",
+"value": "if(log_type IN (\"incident\", \"remediation\"), \"alert\", \"event\")"
+},
+{
+"name": "user",
+"origName": "pan:aperture : EVAL-user",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:aperture",
+"value": "coalesce(user, item_owner, admin_id)"
+},
+{
+"name": "log_subtype",
+"origName": "pan:config : EVAL-log_subtype",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:config",
+"value": "\"config\""
+},
+{
+"name": "status",
+"origName": "pan:config : EVAL-status",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:config",
+"value": "if(result==\"Succeeded\" OR result==\"Submitted\", \"success\", null)"
+},
+{
+"name": "log_severity",
+"origName": "pan:config_traps : EVAL-log_severity",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:config_traps",
+"value": "case(log_severity==0, \"critical\", log_severity==1, \"error\", log_severity==2, \"warning\", log_severity==3, \"notice\", log_severity==4, \"info\", true(), \"unknown\")"
+},
+{
+"name": "severity",
+"origName": "pan:config_traps : EVAL-severity",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:config_traps",
+"value": "case(severity==0, \"critical\", severity==1, \"high\", severity==2, \"medium\", severity==3, \"low\", severity==4, \"informational\", log_severity==5, \"configuration\", true(), \"unknown\")"
+},
+{
+"name": "action",
+"origName": "pan:correlation : EVAL-action",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:correlation",
+"value": "\"allowed\""
+},
+{
+"name": "app",
+"origName": "pan:correlation : EVAL-app",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:correlation",
+"value": "\"Palo Alto Networks Firewall\""
+},
+{
+"name": "log_subtype",
+"origName": "pan:correlation : EVAL-log_subtype",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:correlation",
+"value": "\"correlation\""
+},
+{
+"name": "type",
+"origName": "pan:correlation : EVAL-type",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:correlation",
+"value": "case(severity IN (\"informational\",\"low\",\"medium\"),\"event\",severity IN (\"high\",\"critical\"),\"alert\",1==1,log_type)"
+},
+{
+"name": "vendor_action",
+"origName": "pan:correlation : EVAL-vendor_action",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:correlation",
+"value": "\"allowed\""
+},
+{
+"name": "category",
+"origName": "pan:firewall_cloud : EVAL-category",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud",
+"value": "coalesce(http_category, threat_category)"
+},
+{
+"name": "client_ip",
+"origName": "pan:firewall_cloud : EVAL-client_ip",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud",
+"value": "coalesce(SourceAddress, PrivateIPv4)"
+},
+{
+"name": "description",
+"origName": "pan:firewall_cloud : EVAL-description",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud",
+"value": "coalesce(Description, EventDescription)"
+},
+{
+"name": "dest_name",
+"origName": "pan:firewall_cloud : EVAL-dest_name",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud",
+"value": "replace(dest_hostname, \"^([^:/]+).*\", \"\\1\")"
+},
+{
+"name": "direction",
+"origName": "pan:firewall_cloud : EVAL-direction",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud",
+"value": "replace(DirectionOfAttack, \" \", \"-\")"
+},
+{
+"name": "duration",
+"origName": "pan:firewall_cloud : EVAL-duration",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud",
+"value": "coalesce(Duration, LoginDuration)"
+},
+{
+"name": "dvc_name",
+"origName": "pan:firewall_cloud : EVAL-dvc_name",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud",
+"value": "coalesce(DeviceName, LogSourceName)"
+},
+{
+"name": "event_id",
+"origName": "pan:firewall_cloud : EVAL-event_id",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud",
+"value": "coalesce(EventName, EventIDValue)"
+},
+{
+"name": "http_method",
+"origName": "pan:firewall_cloud : EVAL-http_method",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud",
+"value": "upper(HTTPMethod)"
+},
+{
+"name": "http_user_agent_length",
+"origName": "pan:firewall_cloud : EVAL-http_user_agent_length",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud",
+"value": "len(user_agent)"
+},
+{
+"name": "log_subtype",
+"origName": "pan:firewall_cloud : EVAL-log_subtype",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud",
+"value": "coalesce(Stage, Subtype, SubType, LogSubtype)"
+},
+{
+"name": "serial_number",
+"origName": "pan:firewall_cloud : EVAL-serial_number",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud",
+"value": "coalesce(DeviceSN, LogSourceID)"
+},
+{
+"name": "severity",
+"origName": "pan:firewall_cloud : EVAL-severity",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud",
+"value": "coalesce(Severity, VendorSeverity)"
+},
+{
+"name": "src_ip",
+"origName": "pan:firewall_cloud : EVAL-src_ip",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud",
+"value": "coalesce(SourceAddress, PublicIPv4)"
+},
+{
+"name": "src_user",
+"origName": "pan:firewall_cloud : EVAL-src_user",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud",
+"value": "coalesce(SourceUser, SourceUserName)"
+},
+{
+"name": "url_length",
+"origName": "pan:firewall_cloud : EVAL-url_length",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud",
+"value": "len(url)"
+},
+{
+"name": "user",
+"origName": "pan:firewall_cloud : EVAL-user",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud",
+"value": "case(SourceUser!=\"null\",'SourceUser',SourceUserName !=\"null\",'SourceUserName',src_user!=\"null\",'src_user',dest_user!=\"null\",'dest_user',recipient!=\"null\",'recipient',sender!=\"null\",'sender',true(),\"unknown\")"
+},
+{
+"name": "virtual_system",
+"origName": "pan:firewall_cloud : EVAL-virtual_system",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud",
+"value": "coalesce(VirtualSystem, VirtualLocation)"
+},
+{
+"name": "dvc_name",
+"origName": "pan:globalprotect : EVAL-dvc_name",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:globalprotect",
+"value": "coalesce(dvc_name, machine_name)"
+},
+{
+"name": "action",
+"origName": "pan:system : EVAL-action",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:system",
+"value": "case(match(description,\"(?i)succeeded\"),\"success\",match(description,\"(?i)cleared\"),\"cleared\",match(description,\"(?i)GlobalProtect gateway agent message\"),\"success\",match(description,\"(?i)Failed\"),\"failure\")"
+},
+{
+"name": "app",
+"origName": "pan:system : EVAL-app",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:system",
+"value": "\"Palo Alto Networks Firewall\""
+},
+{
+"name": "src",
+"origName": "pan:system : EVAL-src",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:system",
+"value": "coalesce(src,src_ip)"
+},
+{
+"name": "type",
+"origName": "pan:system : EVAL-type",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:system",
+"value": "\"event\""
+},
+{
+"name": "log_severity",
+"origName": "pan:system_traps : EVAL-log_severity",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:system_traps",
+"value": "case(log_severity==0, \"critical\", log_severity==1, \"error\", log_severity==2, \"warning\", log_severity==3, \"notice\", log_severity==4, \"info\", true(), \"unknown\")"
+},
+{
+"name": "severity",
+"origName": "pan:system_traps : EVAL-severity",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:system_traps",
+"value": "case(severity==0, \"critical\", severity==1, \"high\", severity==2, \"medium\", severity==3, \"low\", severity==4, \"informational\", log_severity==5, \"configuration\", true(), \"unknown\")"
+},
+{
+"name": "category",
+"origName": "pan:threat : EVAL-category",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat",
+"value": "if(log_subtype==\"url\", if(raw_category!=\"unknown\",raw_category,null()), if(threat_category==\"unknown\",log_subtype,coalesce(threat_category,log_subtype)))"
+},
+{
+"name": "client_ip",
+"origName": "pan:threat : EVAL-client_ip",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat",
+"value": "if(version >= 2049 OR (version < 2049 AND (isnull(direction) OR direction=\"client-to-server\")), src_ip, dest_ip)"
+},
+{
+"name": "client_location",
+"origName": "pan:threat : EVAL-client_location",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat",
+"value": "if(isnull(direction) OR direction=\"client-to-server\", src_location, dest_location)"
+},
+{
+"name": "dest_name",
+"origName": "pan:threat : EVAL-dest_name",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat",
+"value": "replace(dest_hostname, \"^([^:/]+).*\", \"\\1\")"
+},
+{
+"name": "flags",
+"origName": "pan:threat : EVAL-flags",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat",
+"value": "mvappend(if(floor(tonumber(session_flags,16) / pow(2, 31))%2==0,null(),\"pcap\"),if(floor(tonumber(session_flags,16) / pow(2, 28))%2==0,null(),\"credential_detected\"),if(floor(tonumber(session_flags,16) / pow(2, 25))%2==0,null(),\"ipv6\"),if(floor(tonumber(session_flags,16) / pow(2, 24))%2==0,null(),\"decrypted\"),if(floor(tonumber(session_flags,16) / pow(2, 23))%2==0,null(),\"denied_by_url_filtering\"),if(floor(tonumber(session_flags,16) / pow(2, 22))%2==0,null(),\"nat\"),if(floor(tonumber(session_flags,16) / pow(2, 21))%2==0,null(),\"captive_portal\"),if(floor(tonumber(session_flags,16) / pow(2, 19))%2==0,null(),\"x_forwarded_for\"),if(floor(tonumber(session_flags,16) / pow(2, 18))%2==0,null(),\"http_proxy\"),if(floor(tonumber(session_flags,16) / pow(2, 15))%2==0,null(),\"container_page\"),if(floor(tonumber(session_flags,16) / pow(2, 13))%2==0,null(),\"implicit_application\"),if(floor(tonumber(session_flags,16) / pow(2, 11))%2==0,null(),\"symmetric_return\"))"
+},
+{
+"name": "http_category",
+"origName": "pan:threat : EVAL-http_category",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat",
+"value": "if(log_subtype==\"url\", raw_category, null())"
+},
+{
+"name": "http_method",
+"origName": "pan:threat : EVAL-http_method",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat",
+"value": "if(log_subtype == \"url\", if(isnull(http_method), \"unknown\", upper(http_method)), null)"
+},
+{
+"name": "http_user_agent_length",
+"origName": "pan:threat : EVAL-http_user_agent_length",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat",
+"value": "len(user_agent)"
+},
+{
+"name": "protocol",
+"origName": "pan:threat : EVAL-protocol",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat",
+"value": "case(transport IN (\"tcp\", \"udp\"), \"ip\", transport==\"icmp\", \"icmp\", true(), protocol)"
+},
+{
+"name": "protocol_version",
+"origName": "pan:threat : EVAL-protocol_version",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat",
+"value": "if(match(coalesce(src_ip,dest_ip),\":\"), \"ipv6\", if(match(coalesce(src_ip,dest_ip), \"(?:\\d+\\.\\d+\\.\\d+\\.\\d+)\"),\"ipv4\", null))"
+},
+{
+"name": "recipient",
+"origName": "pan:threat : EVAL-recipient",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat",
+"value": "split(replace(recipient,\"^To: (.*?);?$\",\"\\1\"),\";\")"
+},
+{
+"name": "report_id",
+"origName": "pan:threat : EVAL-report_id",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat",
+"value": "if(log_subtype==\"wildfire\", coalesce(report_id,threat_id), null())"
+},
+{
+"name": "sender",
+"origName": "pan:threat : EVAL-sender",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat",
+"value": "split(replace(sender,\"^From: (.*?);?$\",\"\\1\"),\";\")"
+},
+{
+"name": "server_ip",
+"origName": "pan:threat : EVAL-server_ip",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat",
+"value": "if(version >= 2049 OR (version < 2049 AND (isnull(direction) OR direction=\"client-to-server\")), dest_ip, src_ip)"
+},
+{
+"name": "server_location",
+"origName": "pan:threat : EVAL-server_location",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat",
+"value": "if(isnull(direction) OR direction=\"client-to-server\", dest_location, src_location)"
+},
+{
+"name": "subject",
+"origName": "pan:threat : EVAL-subject",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat",
+"value": "replace(subject,\"^Sub: \",\"\")"
+},
+{
+"name": "threat_category",
+"origName": "pan:threat : EVAL-threat_category",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat",
+"value": "if(log_subtype!=\"url\" AND log_subtype!=\"file\", if(threat_category==\"unknown\",log_subtype,coalesce(threat_category,log_subtype)), null())"
+},
+{
+"name": "url_length",
+"origName": "pan:threat : EVAL-url_length",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat",
+"value": "len(url)"
+},
+{
+"name": "user",
+"origName": "pan:threat : EVAL-user",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat",
+"value": "coalesce(src_user,dest_user,recipient,sender,\"unknown\")"
+},
+{
+"name": "vendor_action",
+"origName": "pan:threat : EVAL-vendor_action",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat",
+"value": "action"
+},
+{
+"name": "vendor_protocol",
+"origName": "pan:threat : EVAL-vendor_protocol",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat",
+"value": "case(transport IN (\"tcp\", \"udp\"), \"ip\", transport==\"icmp\", \"icmp\", true(), protocol)"
+},
+{
+"name": "verdict",
+"origName": "pan:threat : EVAL-verdict",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat",
+"value": "if(log_subtype==\"wildfire\", raw_category, null())"
+},
+{
+"name": "command",
+"origName": "pan:threat_traps : EVAL-command",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat_traps",
+"value": "spath(replace(substr(processes_json, 2, len(processes_json)-2), \"\\\"\\\"\", \"\\\"\"), \"{}.commandLine\")"
+},
+{
+"name": "dest",
+"origName": "pan:threat_traps : EVAL-dest",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat_traps",
+"value": "coalesce(dest_ip,dest_host)"
+},
+{
+"name": "eventparam_json",
+"origName": "pan:threat_traps : EVAL-eventparam_json",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat_traps",
+"value": "replace(substr(eventparams_json, 2, len(eventparams_json)-2), \"\\\"\\\"\", \"\\\"\")"
+},
+{
+"name": "file_hash",
+"origName": "pan:threat_traps : EVAL-file_hash",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat_traps",
+"value": "lower(spath(replace(substr(files_json, 2, len(files_json)-2), \"\\\"\\\"\", \"\\\"\"), \"{}.sha256\"))"
+},
+{
+"name": "file_name",
+"origName": "pan:threat_traps : EVAL-file_name",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat_traps",
+"value": "spath(replace(substr(files_json, 2, len(files_json)-2), \"\\\"\\\"\", \"\\\"\"), \"{}.fileName\")"
+},
+{
+"name": "file_path",
+"origName": "pan:threat_traps : EVAL-file_path",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat_traps",
+"value": "spath(replace(substr(files_json, 2, len(files_json)-2), \"\\\"\\\"\", \"\\\"\"), \"{}.rawFullPath\")"
+},
+{
+"name": "file_size",
+"origName": "pan:threat_traps : EVAL-file_size",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat_traps",
+"value": "spath(replace(substr(files_json, 2, len(files_json)-2), \"\\\"\\\"\", \"\\\"\"), \"{}.fileSize\")"
+},
+{
+"name": "files_json",
+"origName": "pan:threat_traps : EVAL-files_json",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat_traps",
+"value": "replace(substr(files_json, 2, len(files_json)-2), \"\\\"\\\"\", \"\\\"\")"
+},
+{
+"name": "log_severity",
+"origName": "pan:threat_traps : EVAL-log_severity",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat_traps",
+"value": "case(log_severity==0, \"critical\", log_severity==1, \"error\", log_severity==2, \"warning\", log_severity==3, \"notice\", log_severity==4, \"info\", true(), \"unknown\")"
+},
+{
+"name": "os_type",
+"origName": "pan:threat_traps : EVAL-os_type",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat_traps",
+"value": "case(os_type==1, \"windows\", os_type==2, \"mac\", os_type==3, \"android\", os_type==4, \"linux\", true(), \"unknown\")"
+},
+{
+"name": "pid",
+"origName": "pan:threat_traps : EVAL-pid",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat_traps",
+"value": "spath(replace(substr(processes_json, 2, len(processes_json)-2), \"\\\"\\\"\", \"\\\"\"), \"{}.pid\")"
+},
+{
+"name": "processes_json",
+"origName": "pan:threat_traps : EVAL-processes_json",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat_traps",
+"value": "replace(substr(processes_json, 2, len(processes_json)-2), \"\\\"\\\"\", \"\\\"\")"
+},
+{
+"name": "severity",
+"origName": "pan:threat_traps : EVAL-severity",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat_traps",
+"value": "case(severity==0, \"critical\", severity==1, \"high\", severity==2, \"medium\", severity==3, \"low\", severity==4, \"informational\", log_severity==5, \"configuration\", true(), \"unknown\")"
+},
+{
+"name": "urls_json",
+"origName": "pan:threat_traps : EVAL-urls_json",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat_traps",
+"value": "replace(substr(urls_json, 2, len(urls_json)-2), \"\\\"\\\"\", \"\\\"\")"
+},
+{
+"name": "user",
+"origName": "pan:threat_traps : EVAL-user",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat_traps",
+"value": "spath(replace(substr(users_json, 2, len(users_json)-2), \"\\\"\\\"\", \"\\\"\"), \"{}.userName\")"
+},
+{
+"name": "users_json",
+"origName": "pan:threat_traps : EVAL-users_json",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat_traps",
+"value": "replace(substr(users_json, 2, len(users_json)-2), \"\\\"\\\"\", \"\\\"\")"
+},
+{
+"name": "verdict",
+"origName": "pan:threat_traps : EVAL-verdict",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat_traps",
+"value": "case(verdict==0, \"benign\", verdict==1, \"malware\", verdict==2, \"grayware\", verdict==4, \"phishing\", true(), \"unknown\")"
+},
+{
+"name": "client_ip",
+"origName": "pan:traffic : EVAL-client_ip",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:traffic",
+"value": "src_ip"
+},
+{
+"name": "client_location",
+"origName": "pan:traffic : EVAL-client_location",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:traffic",
+"value": "src_location"
+},
+{
+"name": "dvc",
+"origName": "pan:traffic : EVAL-dvc",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:traffic",
+"value": "coalesce(dvc_name, host)"
+},
+{
+"name": "flags",
+"origName": "pan:traffic : EVAL-flags",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:traffic",
+"value": "mvappend(if(floor(tonumber(session_flags,16) / pow(2, 31))%2==0,null(),\"pcap\"),if(floor(tonumber(session_flags,16) / pow(2, 25))%2==0,null(),\"ipv6\"),if(floor(tonumber(session_flags,16) / pow(2, 24))%2==0,null(),\"decrypted\"),if(floor(tonumber(session_flags,16) / pow(2, 23))%2==0,null(),\"denied_by_url_filtering\"),if(floor(tonumber(session_flags,16) / pow(2, 22))%2==0,null(),\"nat\"),if(floor(tonumber(session_flags,16) / pow(2, 21))%2==0,null(),\"captive_portal\"),if(floor(tonumber(session_flags,16) / pow(2, 19))%2==0,null(),\"x_forwarded_for\"),if(floor(tonumber(session_flags,16) / pow(2, 18))%2==0,null(),\"http_proxy\"),if(floor(tonumber(session_flags,16) / pow(2, 15))%2==0,null(),\"container_page\"),if(floor(tonumber(session_flags,16) / pow(2, 13))%2==0,null(),\"implicit_application\"),if(floor(tonumber(session_flags,16) / pow(2, 11))%2==0,null(),\"symmetric_return\"))"
+},
+{
+"name": "protocol",
+"origName": "pan:traffic : EVAL-protocol",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:traffic",
+"value": "case(transport IN (\"tcp\", \"udp\"), \"ip\", transport==\"icmp\", \"icmp\", true(), protocol)"
+},
+{
+"name": "protocol_version",
+"origName": "pan:traffic : EVAL-protocol_version",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:traffic",
+"value": "if(match(coalesce(src_ip,dest_ip),\":\"), \"ipv6\", if(match(coalesce(src_ip,dest_ip), \"(?:\\d+\\.\\d+\\.\\d+\\.\\d+)\"),\"ipv4\", null))"
+},
+{
+"name": "server_ip",
+"origName": "pan:traffic : EVAL-server_ip",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:traffic",
+"value": "dest_ip"
+},
+{
+"name": "server_location",
+"origName": "pan:traffic : EVAL-server_location",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:traffic",
+"value": "dest_location"
+},
+{
+"name": "user",
+"origName": "pan:traffic : EVAL-user",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:traffic",
+"value": "coalesce(src_user,dest_user,\"unknown\")"
+},
+{
+"name": "vendor_action",
+"origName": "pan:traffic : EVAL-vendor_action",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:traffic",
+"value": "action"
+},
+{
+"name": "vendor_protocol",
+"origName": "pan:traffic : EVAL-vendor_protocol",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:traffic",
+"value": "case(transport IN (\"tcp\", \"udp\"), \"ip\", transport==\"icmp\", \"icmp\", true(), protocol)"
+},
+{
+"name": "user",
+"origName": "pan:userid : EVAL-user",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:userid",
+"value": "coalesce(src_user,\"unknown\")"
+},
+{
+"name": "app",
+"origName": "pan:xdr_incident : EVAL-app",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:xdr_incident",
+"value": "\"Cortex XDR\""
+},
+{
+"name": "assigned_user_pretty_name",
+"origName": "pan:xdr_incident : EVAL-assigned_user_pretty_name",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:xdr_incident",
+"value": "replace(assigned_user_pretty_name,\"null\", \"UNASSIGNED\")"
+},
+{
+"name": "score",
+"origName": "pan:xdr_incident : EVAL-score",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:xdr_incident",
+"value": "coalesce(if(manual_score=\"null\", null(), manual_score), if(rule_based_score=\"null\", null(), rule_based_score))"
+},
+{
+"name": "type",
+"origName": "pan:xdr_incident : EVAL-type",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:xdr_incident",
+"value": "\"event\""
+}
+]

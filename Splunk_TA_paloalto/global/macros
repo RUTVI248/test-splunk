@@ -1,0 +1,86 @@
+[
+{
+"args": "type",
+"definition": "`mm_indicators($type$)` \n    | fillnull value=NULL autofocus_tags autofocus_grayware autofocus_malware confidence share_level \n    | eval af_tags=if(autofocus_tags == NULL, \"\", \" autofocus_tags:\" .mvjoin(autofocus_tags, \",\")) \n    | eval af_grayware=if(autofocus_grayware == NULL, \"\", \" autofocus_grayware:\" .autofocus_grayware) \n    | eval af_malware=if(autofocus_malware == NULL, \"\", \" autofocus_malware:\" . autofocus_malware) \n    | eval feed_confidence=if(confidence == NULL, \"\", \" confidence:\" . confidence) \n    | eval feed_share_level=if(share_level == NULL, \"\", \" share_level:\" . share_level) \n    | eval description=\"MineMeld feed:\" .splunk_source . feed_share_level . feed_confidence . af_grayware . af_malware . af_tags \n    | eval weight=case(share_level == \"green\", 0, share_level == \"yellow\", 1, share_level == \"amber\", 1, share_level == \"red\", 2)",
+"description": "Shared base for generating Splunk Enterprise Security threatlists.",
+"disabled": "0",
+"eai:appName": "Splunk_TA_paloalto",
+"eai:userName": "nobody",
+"name": "mm_es_gen(1)",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"definition": "inputlookup minemeldfeeds_lookup \n    | rename value.* AS * \n    | fieldformat first_seen=strftime('first_seen' / 1000, \"%c\") \n    | fieldformat last_seen=strftime('last_seen' / 1000, \"%c\") \n    | fieldformat splunk_last_seen=strftime('splunk_last_seen', \"%c\") \n    | fieldformat autofocus_create_date=strftime('autofocus_create_date' / 1000, \"%c\")",
+"description": "Retrieve all MineMeld indicators, formatting the time and moving the \"value\" namespace up a level for brevity's sake.",
+"disabled": "0",
+"eai:appName": "Splunk_TA_paloalto",
+"eai:userName": "nobody",
+"name": "mm_indicators",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"args": "type",
+"definition": "`mm_indicators` | search type=\"$type$\"",
+"description": "Retrieve all MineMeld indicators of the given type, formatting the time and moving the \"value\" namespace up a level for brevity's sake.",
+"disabled": "0",
+"eai:appName": "Splunk_TA_paloalto",
+"eai:userName": "nobody",
+"name": "mm_indicators(1)",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"definition": "sourcetype=\"pan:minemeld\"",
+"description": "Get the stats for indicator retrieval from MineMeld feeds.",
+"disabled": "0",
+"eai:appName": "Splunk_TA_paloalto",
+"eai:userName": "nobody",
+"name": "mm_stats",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"args": "tagclass",
+"definition": "`pan_autofocus_tags` | search aftag:tag_class=\"$tagclass$\"",
+"description": "Retrieve the tags for the given tag_class.",
+"disabled": "0",
+"eai:appName": "Splunk_TA_paloalto",
+"eai:userName": "nobody",
+"name": "pan_autofocus_tag_class(1)",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"args": "name",
+"definition": "`pan_autofocus_tags` | search aftag:public_tag_name=\"$name$\"",
+"description": "Retrieve tag info for the specified tag.",
+"disabled": "0",
+"eai:appName": "Splunk_TA_paloalto",
+"eai:userName": "nobody",
+"name": "pan_autofocus_tag_name(1)",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"definition": "inputlookup autofocus_tag_lookup",
+"description": "Retrieve all Autofocus tags from the kvstore.",
+"disabled": "0",
+"eai:appName": "Splunk_TA_paloalto",
+"eai:userName": "nobody",
+"name": "pan_autofocus_tags",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"definition": "spath input=processes_json | spath input=files_json | spath input=users_json | spath input=urls_json | rename {}.* AS * | eval file_hash=lower(sha256) | rename fileName AS file_name, fileSize AS file_size, commandLine AS command",
+"description": "Parse JSON fields from a Traps 5+ syslog",
+"disabled": "0",
+"eai:appName": "Splunk_TA_paloalto",
+"eai:userName": "nobody",
+"name": "traps_fields",
+"owner": "nobody",
+"sharing": "global"
+}
+]

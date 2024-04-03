@@ -1,0 +1,8 @@
+[
+{
+"eai:data": "<nav search_view=\"search\" color=\"#FFFFFF\">\n  <view name=\"inputs\" default=\"true\" />\n  <view name=\"configuration\"/>\n  <view name=\"health\"/>\n  <view name=\"search\" label=\"Search\"/>\n</nav>",
+"name": "default",
+"owner": "nobody",
+"sharing": "global"
+}
+]

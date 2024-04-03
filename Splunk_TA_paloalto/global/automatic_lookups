@@ -1,0 +1,303 @@
+[
+{
+"name": "LOOKUP-vendor_info_for_pan_analytics_traps",
+"origName": "pan:analytics_traps : LOOKUP-vendor_info_for_pan_analytics_traps",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:analytics_traps",
+"transform": "pan_vendor_info_lookup"
+},
+{
+"lookup.field.output.vendor_product": "app",
+"name": "LOOKUP-vendor_info_for_pan_aperture",
+"origName": "pan:aperture : LOOKUP-vendor_info_for_pan_aperture",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:aperture",
+"transform": "pan_vendor_info_lookup"
+},
+{
+"name": "LOOKUP-vendor_info_for_pan_config",
+"origName": "pan:config : LOOKUP-vendor_info_for_pan_config",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:config",
+"transform": "pan_vendor_info_lookup"
+},
+{
+"name": "LOOKUP-vendor_info_for_pan_config_traps",
+"origName": "pan:config_traps : LOOKUP-vendor_info_for_pan_config_traps",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:config_traps",
+"transform": "pan_vendor_info_lookup"
+},
+{
+"lookup.field.output.sanctioned_saas": "app:is_sanctioned_saas",
+"name": "LOOKUP-app_saas_class",
+"origName": "pan:firewall_cloud : LOOKUP-app_saas_class",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud",
+"transform": "sanctioned_saas_lookup"
+},
+{
+"lookup.field.input.cidr": "dest_ip",
+"lookup.field.output.classification": "dest_class",
+"name": "LOOKUP-dest_class",
+"origName": "pan:firewall_cloud : LOOKUP-dest_class",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud",
+"transform": "classification_lookup"
+},
+{
+"name": "LOOKUP-pan_app",
+"origName": "pan:firewall_cloud : LOOKUP-pan_app",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud",
+"transform": "app_lookup"
+},
+{
+"name": "LOOKUP-pan_threat_id",
+"origName": "pan:firewall_cloud : LOOKUP-pan_threat_id",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud",
+"transform": "threat_lookup"
+},
+{
+"lookup.field.input.cidr": "src_ip",
+"lookup.field.output.classification": "src_class",
+"name": "LOOKUP-src_class",
+"origName": "pan:firewall_cloud : LOOKUP-src_class",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud",
+"transform": "classification_lookup"
+},
+{
+"name": "LOOKUP-vendor_action",
+"origName": "pan:firewall_cloud : LOOKUP-vendor_action",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud",
+"transform": "pan_vendor_action_lookup"
+},
+{
+"name": "LOOKUP-vendor_info_for_pan_config",
+"origName": "pan:firewall_cloud : LOOKUP-vendor_info_for_pan_config",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud",
+"transform": "pan_vendor_info_lookup"
+},
+{
+"lookup.field.input.cidr": "src_ip",
+"lookup.field.output.classification": "src_class",
+"name": "LOOKUP-src_class",
+"origName": "pan:hipmatch : LOOKUP-src_class",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:hipmatch",
+"transform": "classification_lookup"
+},
+{
+"name": "LOOKUP-vendor_info_for_pan_hipmatch",
+"origName": "pan:hipmatch : LOOKUP-vendor_info_for_pan_hipmatch",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:hipmatch",
+"transform": "pan_vendor_info_lookup"
+},
+{
+"name": "LOOKUP-vendor_info_for_pan_iot_alert",
+"origName": "pan:iot_alert : LOOKUP-vendor_info_for_pan_iot_alert",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:iot_alert",
+"transform": "pan_vendor_info_lookup"
+},
+{
+"name": "LOOKUP-vendor_info_for_pan_iot_device",
+"origName": "pan:iot_device : LOOKUP-vendor_info_for_pan_iot_device",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:iot_device",
+"transform": "pan_vendor_info_lookup"
+},
+{
+"name": "LOOKUP-vendor_info_for_pan_iot_vulnerability",
+"origName": "pan:iot_vulnerability : LOOKUP-vendor_info_for_pan_iot_vulnerability",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:iot_vulnerability",
+"transform": "pan_vendor_info_lookup"
+},
+{
+"name": "LOOKUP-vendor_info_for_pan_config",
+"origName": "pan:system : LOOKUP-vendor_info_for_pan_config",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:system",
+"transform": "pan_vendor_info_lookup"
+},
+{
+"name": "LOOKUP-vendor_info_for_pan_system_traps",
+"origName": "pan:system_traps : LOOKUP-vendor_info_for_pan_system_traps",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:system_traps",
+"transform": "pan_vendor_info_lookup"
+},
+{
+"lookup.field.output.sanctioned_saas": "app:is_sanctioned_saas",
+"name": "LOOKUP-app_saas_class",
+"origName": "pan:threat : LOOKUP-app_saas_class",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat",
+"transform": "sanctioned_saas_lookup"
+},
+{
+"lookup.field.input.cidr": "dest_ip",
+"lookup.field.output.classification": "dest_class",
+"name": "LOOKUP-dest_class",
+"origName": "pan:threat : LOOKUP-dest_class",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat",
+"transform": "classification_lookup"
+},
+{
+"name": "LOOKUP-pan_app",
+"origName": "pan:threat : LOOKUP-pan_app",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat",
+"transform": "app_lookup"
+},
+{
+"name": "LOOKUP-pan_threat_id",
+"origName": "pan:threat : LOOKUP-pan_threat_id",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat",
+"transform": "threat_lookup"
+},
+{
+"lookup.field.input.cidr": "src_ip",
+"lookup.field.output.classification": "src_class",
+"name": "LOOKUP-src_class",
+"origName": "pan:threat : LOOKUP-src_class",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat",
+"transform": "classification_lookup"
+},
+{
+"name": "LOOKUP-vendor_action",
+"origName": "pan:threat : LOOKUP-vendor_action",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat",
+"transform": "pan_vendor_action_lookup"
+},
+{
+"name": "LOOKUP-vendor_info_for_pan_config",
+"origName": "pan:threat : LOOKUP-vendor_info_for_pan_config",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat",
+"transform": "pan_vendor_info_lookup"
+},
+{
+"name": "LOOKUP-vendor_info_for_pan_threat_traps",
+"origName": "pan:threat_traps : LOOKUP-vendor_info_for_pan_threat_traps",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat_traps",
+"transform": "pan_vendor_info_lookup"
+},
+{
+"lookup.field.output.sanctioned_saas": "app:is_sanctioned_saas",
+"name": "LOOKUP-app_saas_class",
+"origName": "pan:traffic : LOOKUP-app_saas_class",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:traffic",
+"transform": "sanctioned_saas_lookup"
+},
+{
+"lookup.field.input.cidr": "dest_ip",
+"lookup.field.output.classification": "dest_class",
+"name": "LOOKUP-dest_class",
+"origName": "pan:traffic : LOOKUP-dest_class",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:traffic",
+"transform": "classification_lookup"
+},
+{
+"name": "LOOKUP-pan_app",
+"origName": "pan:traffic : LOOKUP-pan_app",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:traffic",
+"transform": "app_lookup"
+},
+{
+"lookup.field.input.cidr": "src_ip",
+"lookup.field.output.classification": "src_class",
+"name": "LOOKUP-src_class",
+"origName": "pan:traffic : LOOKUP-src_class",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:traffic",
+"transform": "classification_lookup"
+},
+{
+"name": "LOOKUP-vendor_action",
+"origName": "pan:traffic : LOOKUP-vendor_action",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:traffic",
+"transform": "pan_vendor_action_lookup"
+},
+{
+"name": "LOOKUP-vendor_info_for_pan_config",
+"origName": "pan:traffic : LOOKUP-vendor_info_for_pan_config",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:traffic",
+"transform": "pan_vendor_info_lookup"
+}
+]

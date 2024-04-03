@@ -1,0 +1,237 @@
+[
+{
+"fields_list": "record_class_number,record_class",
+"filename": "dns_recordclass_lookup.csv",
+"name": "dns_recordclass_lookup",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"fields_list": "object,object_category",
+"filename": "object_category_850.csv",
+"name": "endpoint_change_object_category_lookup",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"default_match": "failure",
+"fields_list": "vendor_status,status",
+"filename": "status_850.csv",
+"max_matches": "1",
+"min_matches": "1",
+"name": "endpoint_change_status_lookup",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"fields_list": "sourcetype,user_type",
+"filename": "user_types.csv",
+"name": "endpoint_change_user_type_lookup",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"fields_list": "vendor_action,action",
+"filename": "vendor_actions.csv",
+"name": "endpoint_change_vendor_action_lookup",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"fields_list": "MSADGroupClassID,MSADGroupClass",
+"filename": "msad_group_type.csv",
+"max_matches": "1",
+"name": "MSADGroupType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"fields_list": "msdhcp_id,signature",
+"filename": "msdhcp_signatures.csv",
+"name": "msdhcp_signature_lookup",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"external_cmd": "user_account_control_property.py userAccountControl userAccountPropertyFlag",
+"external_type": "python",
+"fields_list": "userAccountControl,userAccountPropertyFlag",
+"name": "user_account_control_property",
+"owner": "nobody",
+"python.version": "python3",
+"sharing": "global"
+},
+{
+"fields_list": "Type,action",
+"filename": "windows_actions.csv",
+"name": "windows_action_lookup",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"fields_list": "EventCode,Source_Network_Address,Target_Server_Name,Logon_Type,source,app",
+"filename": "windows_apps.csv",
+"name": "windows_app_lookup",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"fields_list": "EventCode,action,change_type,object_category",
+"filename": "windows_audit_changes_860.csv",
+"name": "windows_audit_changes_lookup",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"fields_list": "message_type,vendor_dns_action,action,reply_code,reply_code_id",
+"filename": "windows_dns_action_lookup.csv",
+"name": "windows_dns_action_lookup",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"fields_list": "opcode,query_type",
+"filename": "windows_dns_query_type_lookup.csv",
+"name": "windows_dns_query_type_lookup",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"fields_list": "Protocol,transport",
+"filename": "windows_endpoint_port_transport.csv",
+"name": "windows_endpoint_port_transport_lookup",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"fields_list": "EventCode,service,service_name",
+"filename": "windows_endpoint_service_service_name.csv",
+"name": "windows_endpoint_service_service_name_lookup",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"fields_list": "Service_Start_Type,start_mode",
+"filename": "windows_endpoint_service_service_type.csv",
+"name": "windows_endpoint_service_service_type_lookup",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"fields_list": "EventType,Description",
+"filename": "windows_eventtypes.csv",
+"name": "windows_eventtype_lookup",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"fields_list": "privilege_id,privilege",
+"filename": "windows_privileges.csv",
+"name": "windows_privilege_lookup",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"case_sensitive_match": "false",
+"fields_list": "Type,EventCode,severity",
+"filename": "windows_severities.csv",
+"name": "windows_severity_lookup",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"fields_list": "signature_id,signature,CategoryString,action,result",
+"filename": "windows_signatures_860.csv",
+"name": "windows_signature_lookup",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"fields_list": "signature_id,Sub_Status,signature",
+"filename": "windows_signatures_substatus_850.csv",
+"name": "windows_signature_lookup2",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"fields_list": "StartType,start_mode",
+"filename": "windows_start_mode_lookup.csv",
+"name": "windows_start_mode_lookup",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"fields_list": "Last_Sync_Error,windows_action",
+"filename": "windows_timesync_actions.csv",
+"match_type": "WILDCARD(Last_Sync_Error)",
+"max_matches": "1",
+"name": "windows_timesync_action_lookup",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"fields_list": "sourcetype,EventCode,vendor_status,status",
+"filename": "windows_update_statii.csv",
+"name": "windows_update_status_lookup",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"fields_list": "EventCode,action,status",
+"filename": "windows_wineventlog_change_action_860.csv",
+"name": "windows_wineventlog_change_action_lookup",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"fields_list": "EventCode,change_type,object_attrs,object_category,result",
+"filename": "windows_wineventlog_change_object_fields_860.csv",
+"name": "windows_wineventlog_change_object_fields_lookup",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"fields_list": "status,enabled",
+"filename": "wmi_user_account_status.csv",
+"name": "wmi_user_account_status_lookup",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"fields_list": "sourcetype,range",
+"filename": "wmi_version_range.csv",
+"name": "wmi_version_range_lookup",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"fields_list": "EventCode,object_attrs,result",
+"filename": "xmlsecurity_change_audit_and_account_management_860.csv",
+"name": "xmlsecurity_change_audit_and_account_management_lookup",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"fields_list": "EventCode,action,Category,Subcategory,message,os",
+"filename": "xmlsecurity_eventcode_action.csv",
+"name": "xmlsecurity_eventcode_action_lookup",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"case_sensitive_match": "false",
+"fields_list": "EventCode,action,Error_Code,Description",
+"filename": "xmlsecurity_eventcode_action_multiinput.csv",
+"name": "xmlsecurity_eventcode_action_lookup_multiinput",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"case_sensitive_match": "false",
+"fields_list": "EventCode,action,Error_Code,Description,Category,Subcategory,os",
+"filename": "xmlsecurity_eventcode_errorcode_action.csv",
+"name": "xmlsecurity_eventcode_errorcode_action_lookup",
+"owner": "nobody",
+"sharing": "global"
+}
+]

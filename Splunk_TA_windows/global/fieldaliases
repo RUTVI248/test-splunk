@@ -1,0 +1,2617 @@
+[
+{
+"alias.0.msdhcp_user": "user",
+"name": "dhcp-user",
+"origName": "DhcpSrvLog : FIELDALIAS-dhcp-user",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "DhcpSrvLog"
+},
+{
+"alias.0.msdhcp_id": "signature_id",
+"name": "win-sign-id",
+"origName": "DhcpSrvLog : FIELDALIAS-win-sign-id",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "DhcpSrvLog"
+},
+{
+"alias.0.ip": "dest_ip",
+"alias.1.mac": "raw_mac",
+"alias.2.nt_host": "dest_nt_host",
+"name": "windows-dhcp",
+"origName": "DhcpSrvLog : FIELDALIAS-windows-dhcp",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "DhcpSrvLog"
+},
+{
+"alias.0.host": "dest",
+"name": "dest",
+"origName": "MSAD:NT6:DNS : FIELDALIAS-dest",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "MSAD:NT6:DNS"
+},
+{
+"alias.0.questionname": "query",
+"name": "query",
+"origName": "MSAD:NT6:DNS : FIELDALIAS-query",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "MSAD:NT6:DNS"
+},
+{
+"alias.0.questiontype": "record_type",
+"name": "record_type",
+"origName": "MSAD:NT6:DNS : FIELDALIAS-record_type",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "MSAD:NT6:DNS"
+},
+{
+"alias.0.src_ip": "src",
+"name": "src",
+"origName": "MSAD:NT6:DNS : FIELDALIAS-src",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "MSAD:NT6:DNS"
+},
+{
+"alias.0.packetid": "transaction_id",
+"name": "transaction_id",
+"origName": "MSAD:NT6:DNS : FIELDALIAS-transaction_id",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "MSAD:NT6:DNS"
+},
+{
+"alias.0.protocol": "transport",
+"name": "transport",
+"origName": "MSAD:NT6:DNS : FIELDALIAS-transport",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "MSAD:NT6:DNS"
+},
+{
+"alias.0.opcode": "vendor_query_type",
+"name": "vendor_query_type",
+"origName": "MSAD:NT6:DNS : FIELDALIAS-vendor_query_type",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "MSAD:NT6:DNS"
+},
+{
+"alias.0.instance": "cpu_instance",
+"name": "cpu_instance",
+"origName": "Perfmon:CPU : FIELDALIAS-cpu_instance",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:CPU"
+},
+{
+"alias.0.host": "dest",
+"name": "dest_for_perfmon",
+"origName": "Perfmon:CPU : FIELDALIAS-dest_for_perfmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:CPU"
+},
+{
+"alias.0.host": "src",
+"name": "src_for_perfmon",
+"origName": "Perfmon:CPU : FIELDALIAS-src_for_perfmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:CPU"
+},
+{
+"alias.0.host": "dest",
+"name": "dest_for_perfmon",
+"origName": "Perfmon:CPUTime : FIELDALIAS-dest_for_perfmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:CPUTime"
+},
+{
+"alias.0.host": "src",
+"name": "src_for_perfmon",
+"origName": "Perfmon:CPUTime : FIELDALIAS-src_for_perfmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:CPUTime"
+},
+{
+"alias.0.host": "dest",
+"name": "dest_for_perfmon",
+"origName": "Perfmon:FreeDiskSpace : FIELDALIAS-dest_for_perfmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:FreeDiskSpace"
+},
+{
+"alias.0.instance": "mount",
+"name": "mount_for_perfmon_freediskspace",
+"origName": "Perfmon:FreeDiskSpace : FIELDALIAS-mount_for_perfmon_freediskspace",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:FreeDiskSpace"
+},
+{
+"alias.0.host": "src",
+"name": "src_for_perfmon",
+"origName": "Perfmon:FreeDiskSpace : FIELDALIAS-src_for_perfmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:FreeDiskSpace"
+},
+{
+"alias.0.host": "dest",
+"name": "dest_for_perfmon",
+"origName": "Perfmon:LocalNetwork : FIELDALIAS-dest_for_perfmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:LocalNetwork"
+},
+{
+"alias.0.host": "src",
+"name": "src_for_perfmon",
+"origName": "Perfmon:LocalNetwork : FIELDALIAS-src_for_perfmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:LocalNetwork"
+},
+{
+"alias.0.host": "dest",
+"name": "dest_for_perfmon",
+"origName": "Perfmon:LogicalDisk : FIELDALIAS-dest_for_perfmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:LogicalDisk"
+},
+{
+"alias.0.host": "src",
+"name": "src_for_perfmon",
+"origName": "Perfmon:LogicalDisk : FIELDALIAS-src_for_perfmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:LogicalDisk"
+},
+{
+"alias.0.host": "dest",
+"name": "dest_for_perfmon",
+"origName": "Perfmon:Memory : FIELDALIAS-dest_for_perfmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Memory"
+},
+{
+"alias.0.host": "src",
+"name": "src_for_perfmon",
+"origName": "Perfmon:Memory : FIELDALIAS-src_for_perfmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Memory"
+},
+{
+"alias.0.host": "dest",
+"name": "dest_for_perfmon",
+"origName": "Perfmon:Network : FIELDALIAS-dest_for_perfmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Network"
+},
+{
+"alias.0.host": "src",
+"name": "src_for_perfmon",
+"origName": "Perfmon:Network : FIELDALIAS-src_for_perfmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Network"
+},
+{
+"alias.0.host": "dest",
+"name": "dest_for_perfmon",
+"origName": "Perfmon:Network_Interface : FIELDALIAS-dest_for_perfmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Network_Interface"
+},
+{
+"alias.0.host": "src",
+"name": "src_for_perfmon",
+"origName": "Perfmon:Network_Interface : FIELDALIAS-src_for_perfmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Network_Interface"
+},
+{
+"alias.0.host": "dest",
+"name": "dest_for_perfmon",
+"origName": "Perfmon:PhysicalDisk : FIELDALIAS-dest_for_perfmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:PhysicalDisk"
+},
+{
+"alias.0.host": "src",
+"name": "src_for_perfmon",
+"origName": "Perfmon:PhysicalDisk : FIELDALIAS-src_for_perfmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:PhysicalDisk"
+},
+{
+"alias.0.host": "dest",
+"name": "dest_for_perfmon",
+"origName": "Perfmon:Process : FIELDALIAS-dest_for_perfmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Process"
+},
+{
+"alias.0.host": "src",
+"name": "src_for_perfmon",
+"origName": "Perfmon:Process : FIELDALIAS-src_for_perfmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Process"
+},
+{
+"alias.0.instance": "cpu_instance",
+"name": "cpu_instance",
+"origName": "Perfmon:Processor : FIELDALIAS-cpu_instance",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Processor"
+},
+{
+"alias.0.host": "dest",
+"name": "dest_for_perfmon",
+"origName": "Perfmon:Processor : FIELDALIAS-dest_for_perfmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Processor"
+},
+{
+"alias.0.host": "src",
+"name": "src_for_perfmon",
+"origName": "Perfmon:Processor : FIELDALIAS-src_for_perfmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:Processor"
+},
+{
+"alias.0.host": "dest",
+"name": "dest_for_perfmon",
+"origName": "Perfmon:ProcessorInformation : FIELDALIAS-dest_for_perfmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:ProcessorInformation"
+},
+{
+"alias.0.host": "src",
+"name": "src_for_perfmon",
+"origName": "Perfmon:ProcessorInformation : FIELDALIAS-src_for_perfmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:ProcessorInformation"
+},
+{
+"alias.0.host": "dest",
+"name": "dest_for_perfmon",
+"origName": "Perfmon:System : FIELDALIAS-dest_for_perfmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:System"
+},
+{
+"alias.0.host": "src",
+"name": "src_for_perfmon",
+"origName": "Perfmon:System : FIELDALIAS-src_for_perfmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Perfmon:System"
+},
+{
+"alias.0.instance": "cpu_instance",
+"name": "cpu_instance",
+"origName": "PerfmonMk:CPU : FIELDALIAS-cpu_instance",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:CPU"
+},
+{
+"alias.0.%_Processor_Time": "cpu_load_percent",
+"name": "cpu_load_percent",
+"origName": "PerfmonMk:CPU : FIELDALIAS-cpu_load_percent",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:CPU"
+},
+{
+"alias.0.%_User_Time": "cpu_user_percent",
+"name": "cpu_user_percent",
+"origName": "PerfmonMk:CPU : FIELDALIAS-cpu_user_percent",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:CPU"
+},
+{
+"alias.0.host": "dest",
+"name": "dest_for_perfmon",
+"origName": "PerfmonMk:CPU : FIELDALIAS-dest_for_perfmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:CPU"
+},
+{
+"alias.0.host": "src",
+"name": "src_for_perfmon",
+"origName": "PerfmonMk:CPU : FIELDALIAS-src_for_perfmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:CPU"
+},
+{
+"alias.0.%_Processor_Time": "windows_cpu_load_percent",
+"name": "windows_cpu_load_percent",
+"origName": "PerfmonMk:CPU : FIELDALIAS-windows_cpu_load_percent",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:CPU"
+},
+{
+"alias.0.host": "dest",
+"name": "dest_for_perfmon",
+"origName": "PerfmonMk:LogicalDisk : FIELDALIAS-dest_for_perfmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:LogicalDisk"
+},
+{
+"alias.0.Avg._Disk_sec/Read": "read_latency",
+"name": "read_latency",
+"origName": "PerfmonMk:LogicalDisk : FIELDALIAS-read_latency",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:LogicalDisk"
+},
+{
+"alias.0.Disk_Reads/sec": "read_ops",
+"name": "read_ops",
+"origName": "PerfmonMk:LogicalDisk : FIELDALIAS-read_ops",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:LogicalDisk"
+},
+{
+"alias.0.host": "src",
+"name": "src_for_perfmon",
+"origName": "PerfmonMk:LogicalDisk : FIELDALIAS-src_for_perfmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:LogicalDisk"
+},
+{
+"alias.0.Free_Megabytes": "storage_free",
+"name": "storage_free",
+"origName": "PerfmonMk:LogicalDisk : FIELDALIAS-storage_free",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:LogicalDisk"
+},
+{
+"alias.0.%_Free_Space": "storage_free_percent",
+"name": "storage_free_percent",
+"origName": "PerfmonMk:LogicalDisk : FIELDALIAS-storage_free_percent",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:LogicalDisk"
+},
+{
+"alias.0.Disk_Transfers/sec": "total_ops",
+"name": "total_ops",
+"origName": "PerfmonMk:LogicalDisk : FIELDALIAS-total_ops",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:LogicalDisk"
+},
+{
+"alias.0.Avg._Disk_sec/Write": "write_latency",
+"name": "write_latency",
+"origName": "PerfmonMk:LogicalDisk : FIELDALIAS-write_latency",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:LogicalDisk"
+},
+{
+"alias.0.Disk_Writes/sec": "write_ops",
+"name": "write_ops",
+"origName": "PerfmonMk:LogicalDisk : FIELDALIAS-write_ops",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:LogicalDisk"
+},
+{
+"alias.0.host": "dest",
+"name": "dest_for_perfmon",
+"origName": "PerfmonMk:Memory : FIELDALIAS-dest_for_perfmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:Memory"
+},
+{
+"alias.0.Committed_Bytes": "mem_committed",
+"name": "mem_committed",
+"origName": "PerfmonMk:Memory : FIELDALIAS-mem_committed",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:Memory"
+},
+{
+"alias.0.Available_MBytes": "mem_free",
+"name": "mem_free",
+"origName": "PerfmonMk:Memory : FIELDALIAS-mem_free",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:Memory"
+},
+{
+"alias.0.Pages_Input/sec": "mem_page_in",
+"name": "mem_page_in",
+"origName": "PerfmonMk:Memory : FIELDALIAS-mem_page_in",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:Memory"
+},
+{
+"alias.0.Pages/sec": "mem_page_ops",
+"name": "mem_page_ops",
+"origName": "PerfmonMk:Memory : FIELDALIAS-mem_page_ops",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:Memory"
+},
+{
+"alias.0.Pages_Output/sec": "mem_page_out",
+"name": "mem_page_out",
+"origName": "PerfmonMk:Memory : FIELDALIAS-mem_page_out",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:Memory"
+},
+{
+"alias.0.host": "src",
+"name": "src_for_perfmon",
+"origName": "PerfmonMk:Memory : FIELDALIAS-src_for_perfmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:Memory"
+},
+{
+"alias.0.Pool_Nonpaged_Bytes": "swap_free",
+"name": "swap_free",
+"origName": "PerfmonMk:Memory : FIELDALIAS-swap_free",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:Memory"
+},
+{
+"alias.0.Pool_Paged_Bytes": "swap_used",
+"name": "swap_used",
+"origName": "PerfmonMk:Memory : FIELDALIAS-swap_used",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:Memory"
+},
+{
+"alias.0.Available_MBytes": "windows_mem_free",
+"name": "windows_mem_free",
+"origName": "PerfmonMk:Memory : FIELDALIAS-windows_mem_free",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:Memory"
+},
+{
+"alias.0.Bytes_Total/sec": "bytes",
+"name": "bytes",
+"origName": "PerfmonMk:Network : FIELDALIAS-bytes",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:Network"
+},
+{
+"alias.0.Bytes_Received/sec": "bytes_in",
+"name": "bytes_in",
+"origName": "PerfmonMk:Network : FIELDALIAS-bytes_in",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:Network"
+},
+{
+"alias.0.Bytes_Sent/sec": "bytes_out",
+"name": "bytes_out",
+"origName": "PerfmonMk:Network : FIELDALIAS-bytes_out",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:Network"
+},
+{
+"alias.0.host": "dest",
+"name": "dest_for_perfmon",
+"origName": "PerfmonMk:Network : FIELDALIAS-dest_for_perfmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:Network"
+},
+{
+"alias.0.Packets/sec": "packets",
+"name": "packets",
+"origName": "PerfmonMk:Network : FIELDALIAS-packets",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:Network"
+},
+{
+"alias.0.Packets_Received/sec": "packets_in",
+"name": "packets_in",
+"origName": "PerfmonMk:Network : FIELDALIAS-packets_in",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:Network"
+},
+{
+"alias.0.Packets_Sent/sec": "packets_out",
+"name": "packets_out",
+"origName": "PerfmonMk:Network : FIELDALIAS-packets_out",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:Network"
+},
+{
+"alias.0.host": "src",
+"name": "src_for_perfmon",
+"origName": "PerfmonMk:Network : FIELDALIAS-src_for_perfmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:Network"
+},
+{
+"alias.0.Bytes_Total/sec": "thruput",
+"name": "thruput",
+"origName": "PerfmonMk:Network : FIELDALIAS-thruput",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:Network"
+},
+{
+"alias.0.Current_Bandwidth": "thruput_max",
+"name": "thruput_max",
+"origName": "PerfmonMk:Network : FIELDALIAS-thruput_max",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:Network"
+},
+{
+"alias.0.Bytes_Total/sec": "bytes",
+"name": "bytes",
+"origName": "PerfmonMk:Network_Interface : FIELDALIAS-bytes",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:Network_Interface"
+},
+{
+"alias.0.Bytes_Received/sec": "bytes_in",
+"name": "bytes_in",
+"origName": "PerfmonMk:Network_Interface : FIELDALIAS-bytes_in",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:Network_Interface"
+},
+{
+"alias.0.Bytes_Sent/sec": "bytes_out",
+"name": "bytes_out",
+"origName": "PerfmonMk:Network_Interface : FIELDALIAS-bytes_out",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:Network_Interface"
+},
+{
+"alias.0.host": "dest",
+"name": "dest_for_perfmon",
+"origName": "PerfmonMk:Network_Interface : FIELDALIAS-dest_for_perfmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:Network_Interface"
+},
+{
+"alias.0.Packets/sec": "packets",
+"name": "packets",
+"origName": "PerfmonMk:Network_Interface : FIELDALIAS-packets",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:Network_Interface"
+},
+{
+"alias.0.Packets_Received/sec": "packets_in",
+"name": "packets_in",
+"origName": "PerfmonMk:Network_Interface : FIELDALIAS-packets_in",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:Network_Interface"
+},
+{
+"alias.0.Packets_Sent/sec": "packets_out",
+"name": "packets_out",
+"origName": "PerfmonMk:Network_Interface : FIELDALIAS-packets_out",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:Network_Interface"
+},
+{
+"alias.0.host": "src",
+"name": "src_for_perfmon",
+"origName": "PerfmonMk:Network_Interface : FIELDALIAS-src_for_perfmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:Network_Interface"
+},
+{
+"alias.0.Bytes_Total/sec": "thruput",
+"name": "thruput",
+"origName": "PerfmonMk:Network_Interface : FIELDALIAS-thruput",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:Network_Interface"
+},
+{
+"alias.0.Current_Bandwidth": "thruput_max",
+"name": "thruput_max",
+"origName": "PerfmonMk:Network_Interface : FIELDALIAS-thruput_max",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:Network_Interface"
+},
+{
+"alias.0.host": "dest",
+"name": "dest_for_perfmon",
+"origName": "PerfmonMk:PhysicalDisk : FIELDALIAS-dest_for_perfmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:PhysicalDisk"
+},
+{
+"alias.0.host": "src",
+"name": "src_for_perfmon",
+"origName": "PerfmonMk:PhysicalDisk : FIELDALIAS-src_for_perfmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:PhysicalDisk"
+},
+{
+"alias.0.host": "dest",
+"name": "dest_for_perfmon",
+"origName": "PerfmonMk:Process : FIELDALIAS-dest_for_perfmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:Process"
+},
+{
+"alias.0.ID_Process": "process_id",
+"name": "process_id_for_perfmon",
+"origName": "PerfmonMk:Process : FIELDALIAS-process_id_for_perfmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:Process"
+},
+{
+"alias.0.host": "src",
+"name": "src_for_perfmon",
+"origName": "PerfmonMk:Process : FIELDALIAS-src_for_perfmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:Process"
+},
+{
+"alias.0.instance": "cpu_instance",
+"name": "cpu_instance",
+"origName": "PerfmonMk:Processor : FIELDALIAS-cpu_instance",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:Processor"
+},
+{
+"alias.0.%_Processor_Time": "cpu_load_percent",
+"name": "cpu_load_percent",
+"origName": "PerfmonMk:Processor : FIELDALIAS-cpu_load_percent",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:Processor"
+},
+{
+"alias.0.%_User_Time": "cpu_user_percent",
+"name": "cpu_user_percent",
+"origName": "PerfmonMk:Processor : FIELDALIAS-cpu_user_percent",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:Processor"
+},
+{
+"alias.0.host": "dest",
+"name": "dest_for_perfmon",
+"origName": "PerfmonMk:Processor : FIELDALIAS-dest_for_perfmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:Processor"
+},
+{
+"alias.0.host": "src",
+"name": "src_for_perfmon",
+"origName": "PerfmonMk:Processor : FIELDALIAS-src_for_perfmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:Processor"
+},
+{
+"alias.0.%_Processor_Time": "windows_cpu_load_percent",
+"name": "windows_cpu_load_percent",
+"origName": "PerfmonMk:Processor : FIELDALIAS-windows_cpu_load_percent",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:Processor"
+},
+{
+"alias.0.host": "dest",
+"name": "dest_for_perfmon",
+"origName": "PerfmonMk:ProcessorInformation : FIELDALIAS-dest_for_perfmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:ProcessorInformation"
+},
+{
+"alias.0.host": "src",
+"name": "src_for_perfmon",
+"origName": "PerfmonMk:ProcessorInformation : FIELDALIAS-src_for_perfmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:ProcessorInformation"
+},
+{
+"alias.0.host": "dest",
+"name": "dest_for_perfmon",
+"origName": "PerfmonMk:System : FIELDALIAS-dest_for_perfmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:System"
+},
+{
+"alias.0.host": "src",
+"name": "src_for_perfmon",
+"origName": "PerfmonMk:System : FIELDALIAS-src_for_perfmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:System"
+},
+{
+"alias.0.Threads": "system_threads_count",
+"name": "system_threads_count",
+"origName": "PerfmonMk:System : FIELDALIAS-system_threads_count",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:System"
+},
+{
+"alias.0.Processor_Queue_Length": "wait_threads_count",
+"name": "wait_threads_count",
+"origName": "PerfmonMk:System : FIELDALIAS-wait_threads_count",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "PerfmonMk:System"
+},
+{
+"alias.0.dest_ip": "dest",
+"name": "dest_for_listeningports",
+"origName": "Script:ListeningPorts : FIELDALIAS-dest_for_listeningports",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:ListeningPorts"
+},
+{
+"alias.0.pid": "process_id",
+"name": "process_id_for_listeningports",
+"origName": "Script:ListeningPorts : FIELDALIAS-process_id_for_listeningports",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:ListeningPorts"
+},
+{
+"alias.0.host": "dest",
+"name": "dest",
+"origName": "Script:TimesyncStatus : FIELDALIAS-dest",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:TimesyncStatus"
+},
+{
+"alias.0.Message": "body",
+"name": "body_for_windows_security",
+"origName": "source::WinEventLog:Security : FIELDALIAS-body_for_windows_security",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security"
+},
+{
+"alias.0.Source_Port": "src_port",
+"name": "src_port_for_windows_security",
+"origName": "source::WinEventLog:Security : FIELDALIAS-src_port_for_windows_security",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security"
+},
+{
+"alias.0.Status": "ta_windows_status",
+"name": "Status_as_ta_windows_status",
+"origName": "source::WinEventLog:Security : FIELDALIAS-Status_as_ta_windows_status",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security"
+},
+{
+"alias.0.signature_message": "body",
+"alias.1.Message": "body",
+"name": "body_for_windows_system",
+"origName": "source::WinEventLog:System : FIELDALIAS-body_for_windows_system",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:System"
+},
+{
+"alias.0.signature_id": "package",
+"name": "package_for_windows",
+"origName": "source::WinEventLog:System : FIELDALIAS-package_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:System"
+},
+{
+"alias.0.signature": "package_title",
+"name": "package_title_for_windows",
+"origName": "source::WinEventLog:System : FIELDALIAS-package_title_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:System"
+},
+{
+"alias.0.updateTitle": "signature",
+"name": "updateTitle_as_signature",
+"origName": "source::WinEventLog:System : FIELDALIAS-updateTitle_as_signature",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:System"
+},
+{
+"alias.0.Computer": "dest",
+"name": "dest_for_xmlwineventlog_application",
+"origName": "source::XmlWinEventLog:Application : FIELDALIAS-dest_for_xmlwineventlog_application",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Application"
+},
+{
+"alias.0.Message": "body",
+"name": "body_for_windows_security",
+"origName": "source::XmlWinEventLog:Security : FIELDALIAS-body_for_windows_security",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security"
+},
+{
+"alias.0.Source_Port": "src_port",
+"name": "src_port_for_windows_security",
+"origName": "source::XmlWinEventLog:Security : FIELDALIAS-src_port_for_windows_security",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security"
+},
+{
+"alias.0.Status": "ta_windows_status",
+"name": "Status_as_ta_windows_status",
+"origName": "source::XmlWinEventLog:Security : FIELDALIAS-Status_as_ta_windows_status",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security"
+},
+{
+"alias.0.signature_id": "package",
+"name": "package_for_windows",
+"origName": "source::XmlWinEventLog:System : FIELDALIAS-package_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:System"
+},
+{
+"alias.0.signature": "package_title",
+"name": "package_title_for_windows",
+"origName": "source::XmlWinEventLog:System : FIELDALIAS-package_title_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:System"
+},
+{
+"alias.0.updateTitle": "signature",
+"name": "updateTitle_as_signature",
+"origName": "source::XmlWinEventLog:System : FIELDALIAS-updateTitle_as_signature",
+"overwrite": "0",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:System"
+},
+{
+"alias.0.host": "dest",
+"name": "dest_for_windowsupdatelog",
+"origName": "WindowsUpdateLog : FIELDALIAS-dest_for_windowsupdatelog",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WindowsUpdateLog"
+},
+{
+"alias.0.signature_id": "package",
+"name": "package_for_windows",
+"origName": "WindowsUpdateLog : FIELDALIAS-package_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WindowsUpdateLog"
+},
+{
+"alias.0.signature": "package_title",
+"name": "package_title_for_windows",
+"origName": "WindowsUpdateLog : FIELDALIAS-package_title_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WindowsUpdateLog"
+},
+{
+"alias.0.pid": "process_id",
+"name": "process_id_for_windowsupdatelog",
+"origName": "WindowsUpdateLog : FIELDALIAS-process_id_for_windowsupdatelog",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WindowsUpdateLog"
+},
+{
+"alias.0.TaskCategory": "category",
+"name": "category_for_windows",
+"origName": "WinEventLog : FIELDALIAS-category_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinEventLog"
+},
+{
+"alias.0.TaskCategory": "category",
+"name": "category_for_windows",
+"origName": "wineventlog : FIELDALIAS-category_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "wineventlog"
+},
+{
+"alias.0.host": "dvc_nt_host",
+"alias.1.ComputerName": "dvc",
+"name": "dvc_for_windows",
+"origName": "wineventlog : FIELDALIAS-dvc_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "wineventlog"
+},
+{
+"alias.0.host": "dvc_nt_host",
+"alias.1.ComputerName": "dvc",
+"name": "dvc_for_windows",
+"origName": "WinEventLog : FIELDALIAS-dvc_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinEventLog"
+},
+{
+"alias.0.RecordNumber": "event_id",
+"name": "event_id_for_windows",
+"origName": "wineventlog : FIELDALIAS-event_id_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "wineventlog"
+},
+{
+"alias.0.RecordNumber": "event_id",
+"name": "event_id_for_windows",
+"origName": "WinEventLog : FIELDALIAS-event_id_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinEventLog"
+},
+{
+"alias.0.RecordNumber": "id",
+"name": "id_for_windows",
+"origName": "wineventlog : FIELDALIAS-id_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "wineventlog"
+},
+{
+"alias.0.RecordNumber": "id",
+"name": "id_for_windows",
+"origName": "WinEventLog : FIELDALIAS-id_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinEventLog"
+},
+{
+"alias.0.Creator_Process_Name": "parent_process",
+"name": "parent_process_for_windows",
+"origName": "WinEventLog : FIELDALIAS-parent_process_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinEventLog"
+},
+{
+"alias.0.Process": "process",
+"name": "process_for_windows",
+"origName": "WinEventLog : FIELDALIAS-process_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinEventLog"
+},
+{
+"alias.0.Process": "process",
+"name": "process_for_windows",
+"origName": "wineventlog : FIELDALIAS-process_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "wineventlog"
+},
+{
+"alias.0.Process_Name": "process_name",
+"name": "process_name_for_windows",
+"origName": "wineventlog : FIELDALIAS-process_name_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "wineventlog"
+},
+{
+"alias.0.Service_Name": "service",
+"alias.1.Service_Name": "service_name",
+"name": "service_for_windows",
+"origName": "WinEventLog : FIELDALIAS-service_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinEventLog"
+},
+{
+"alias.0.Service_Name": "service",
+"alias.1.Service_Name": "service_name",
+"name": "service_for_windows",
+"origName": "wineventlog : FIELDALIAS-service_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "wineventlog"
+},
+{
+"alias.0.Service_ID": "service_id",
+"name": "service_id_for_windows",
+"origName": "WinEventLog : FIELDALIAS-service_id_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinEventLog"
+},
+{
+"alias.0.Service_ID": "service_id",
+"name": "service_id_for_windows",
+"origName": "wineventlog : FIELDALIAS-service_id_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "wineventlog"
+},
+{
+"alias.0.EventType": "severity_id",
+"name": "severity_id_for_windows",
+"origName": "WinEventLog : FIELDALIAS-severity_id_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinEventLog"
+},
+{
+"alias.0.EventType": "severity_id",
+"name": "severity_id_for_windows",
+"origName": "wineventlog : FIELDALIAS-severity_id_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "wineventlog"
+},
+{
+"alias.0.Primary_Group_ID": "user_group_id",
+"name": "user_group_id_for_windows",
+"origName": "WinEventLog : FIELDALIAS-user_group_id_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinEventLog"
+},
+{
+"alias.0.Primary_Group_ID": "user_group_id",
+"name": "user_group_id_for_windows",
+"origName": "wineventlog : FIELDALIAS-user_group_id_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "wineventlog"
+},
+{
+"alias.0.User_ID": "user_id",
+"name": "user_id_for_windows",
+"origName": "WinEventLog : FIELDALIAS-user_id_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinEventLog"
+},
+{
+"alias.0.User_ID": "user_id",
+"name": "user_id_for_windows",
+"origName": "wineventlog : FIELDALIAS-user_id_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "wineventlog"
+},
+{
+"alias.0.host": "dest",
+"name": "dest_for_winhostmon",
+"origName": "WinHostMon : FIELDALIAS-dest_for_winhostmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinHostMon"
+},
+{
+"alias.0.ProcessId": "process_id",
+"name": "process_id_for_winhostmon",
+"origName": "WinHostMon : FIELDALIAS-process_id_for_winhostmon",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinHostMon"
+},
+{
+"alias.0.host": "dest",
+"name": "dest_for_WinRegistry",
+"origName": "WinRegistry : FIELDALIAS-dest_for_WinRegistry",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinRegistry"
+},
+{
+"alias.0.pid": "process_id",
+"name": "process_id_for_WinRegistry",
+"origName": "WinRegistry : FIELDALIAS-process_id_for_WinRegistry",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinRegistry"
+},
+{
+"alias.0.data_type": "registry_value_type",
+"name": "registry_value_type",
+"origName": "WinRegistry : FIELDALIAS-registry_value_type",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinRegistry"
+},
+{
+"alias.0.host": "src",
+"name": "src_for_WinRegistry",
+"origName": "WinRegistry : FIELDALIAS-src_for_WinRegistry",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinRegistry"
+},
+{
+"alias.0.registry_type": "vendor_action",
+"name": "vendor_action_for_WinRegistry",
+"origName": "WinRegistry : FIELDALIAS-vendor_action_for_WinRegistry",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinRegistry"
+},
+{
+"alias.0.host": "dest",
+"name": "dest_for_wmi",
+"origName": "WMI:ComputerSystem : FIELDALIAS-dest_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:ComputerSystem"
+},
+{
+"alias.0.TotalPhysicalMemory": "mem",
+"name": "mem_for_wmi_computersystem",
+"origName": "WMI:ComputerSystem : FIELDALIAS-mem_for_wmi_computersystem",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:ComputerSystem"
+},
+{
+"alias.0.IDProcess": "pid",
+"name": "pid_for_wmi",
+"origName": "WMI:ComputerSystem : FIELDALIAS-pid_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:ComputerSystem"
+},
+{
+"alias.0.host": "src",
+"name": "src_for_wmi",
+"origName": "WMI:ComputerSystem : FIELDALIAS-src_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:ComputerSystem"
+},
+{
+"alias.0.Name": "cpu_instance",
+"name": "cpu_instance",
+"origName": "WMI:CPUTime : FIELDALIAS-cpu_instance",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:CPUTime"
+},
+{
+"alias.0.PercentProcessorTime": "cpu_load_percent",
+"name": "cpu_load_percent",
+"origName": "WMI:CPUTime : FIELDALIAS-cpu_load_percent",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:CPUTime"
+},
+{
+"alias.0.PercentUserTime": "cpu_user_percent",
+"name": "cpu_user_percent",
+"origName": "WMI:CPUTime : FIELDALIAS-cpu_user_percent",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:CPUTime"
+},
+{
+"alias.0.host": "dest",
+"name": "dest_for_wmi",
+"origName": "WMI:CPUTime : FIELDALIAS-dest_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:CPUTime"
+},
+{
+"alias.0.IDProcess": "pid",
+"name": "pid_for_wmi",
+"origName": "WMI:CPUTime : FIELDALIAS-pid_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:CPUTime"
+},
+{
+"alias.0.host": "src",
+"name": "src_for_wmi",
+"origName": "WMI:CPUTime : FIELDALIAS-src_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:CPUTime"
+},
+{
+"alias.0.host": "dest",
+"name": "dest_for_wmi",
+"origName": "WMI:FreeDiskSpace : FIELDALIAS-dest_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:FreeDiskSpace"
+},
+{
+"alias.0.Name": "mount",
+"name": "mount_for_wmi_freediskspace",
+"origName": "WMI:FreeDiskSpace : FIELDALIAS-mount_for_wmi_freediskspace",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:FreeDiskSpace"
+},
+{
+"alias.0.IDProcess": "pid",
+"name": "pid_for_wmi",
+"origName": "WMI:FreeDiskSpace : FIELDALIAS-pid_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:FreeDiskSpace"
+},
+{
+"alias.0.host": "src",
+"name": "src_for_wmi",
+"origName": "WMI:FreeDiskSpace : FIELDALIAS-src_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:FreeDiskSpace"
+},
+{
+"alias.0.PercentFreeSpace": "storage_free_percent",
+"name": "storage_free_percent",
+"origName": "WMI:FreeDiskSpace : FIELDALIAS-storage_free_percent",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:FreeDiskSpace"
+},
+{
+"alias.0.host": "dest",
+"name": "dest_for_wmi",
+"origName": "WMI:InstalledUpdates : FIELDALIAS-dest_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:InstalledUpdates"
+},
+{
+"alias.0.IDProcess": "pid",
+"name": "pid_for_wmi",
+"origName": "WMI:InstalledUpdates : FIELDALIAS-pid_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:InstalledUpdates"
+},
+{
+"alias.0.HotFixID": "signature_id",
+"name": "signature_id_for_installedupdates",
+"origName": "WMI:InstalledUpdates : FIELDALIAS-signature_id_for_installedupdates",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:InstalledUpdates"
+},
+{
+"alias.0.host": "src",
+"name": "src_for_wmi",
+"origName": "WMI:InstalledUpdates : FIELDALIAS-src_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:InstalledUpdates"
+},
+{
+"alias.0.BytesTotalPersec": "thruput",
+"name": "bytestotalpersec_as_thruput",
+"origName": "WMI:LocalNetwork : FIELDALIAS-bytestotalpersec_as_thruput",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:LocalNetwork"
+},
+{
+"alias.0.CurrentBandwidth": "thruput_max",
+"name": "currentbandwidth_as_thruput_max",
+"origName": "WMI:LocalNetwork : FIELDALIAS-currentbandwidth_as_thruput_max",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:LocalNetwork"
+},
+{
+"alias.0.host": "dest",
+"name": "dest_for_wmi",
+"origName": "WMI:LocalNetwork : FIELDALIAS-dest_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:LocalNetwork"
+},
+{
+"alias.0.IDProcess": "pid",
+"name": "pid_for_wmi",
+"origName": "WMI:LocalNetwork : FIELDALIAS-pid_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:LocalNetwork"
+},
+{
+"alias.0.host": "src",
+"name": "src_for_wmi",
+"origName": "WMI:LocalNetwork : FIELDALIAS-src_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:LocalNetwork"
+},
+{
+"alias.0.host": "dest",
+"name": "dest_for_wmi",
+"origName": "WMI:LocalPhysicalDisk : FIELDALIAS-dest_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:LocalPhysicalDisk"
+},
+{
+"alias.0.host": "src",
+"name": "src_for_wmi",
+"origName": "WMI:LocalPhysicalDisk : FIELDALIAS-src_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:LocalPhysicalDisk"
+},
+{
+"alias.0.PercentProcessorTime": "cpu_load_percent",
+"name": "cpu_load_percent_for_wmi_localprocesses",
+"origName": "WMI:LocalProcesses : FIELDALIAS-cpu_load_percent_for_wmi_localprocesses",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:LocalProcesses"
+},
+{
+"alias.0.host": "dest",
+"name": "dest_for_wmi",
+"origName": "WMI:LocalProcesses : FIELDALIAS-dest_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:LocalProcesses"
+},
+{
+"alias.0.PrivateBytes": "UsedBytes",
+"name": "mem_used_for_wmi_localprocesses",
+"origName": "WMI:LocalProcesses : FIELDALIAS-mem_used_for_wmi_localprocesses",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:LocalProcesses"
+},
+{
+"alias.0.IDProcess": "pid",
+"name": "pid_for_wmi",
+"origName": "WMI:LocalProcesses : FIELDALIAS-pid_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:LocalProcesses"
+},
+{
+"alias.0.windows_app": "Name",
+"alias.1.windows_app": "app",
+"alias.2.windows_app": "process",
+"name": "process_for_wmi_localprocesses",
+"origName": "WMI:LocalProcesses : FIELDALIAS-process_for_wmi_localprocesses",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:LocalProcesses"
+},
+{
+"alias.0.IDProcess": "process_id",
+"name": "process_id_for_wmi_localprocesses",
+"origName": "WMI:LocalProcesses : FIELDALIAS-process_id_for_wmi_localprocesses",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:LocalProcesses"
+},
+{
+"alias.0.host": "src",
+"name": "src_for_wmi",
+"origName": "WMI:LocalProcesses : FIELDALIAS-src_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:LocalProcesses"
+},
+{
+"alias.0.host": "dest",
+"name": "dest_for_wmi",
+"origName": "WMI:LogicalDisk : FIELDALIAS-dest_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:LogicalDisk"
+},
+{
+"alias.0.AvgDisksecPerTransfer": "latency",
+"name": "for_wmi_latency",
+"origName": "WMI:LogicalDisk : FIELDALIAS-for_wmi_latency",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:LogicalDisk"
+},
+{
+"alias.0.AvgDisksecPerRead": "read_latency",
+"name": "for_wmi_read_latency",
+"origName": "WMI:LogicalDisk : FIELDALIAS-for_wmi_read_latency",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:LogicalDisk"
+},
+{
+"alias.0.DiskReadsPersec": "read_ops",
+"name": "for_wmi_read_ops",
+"origName": "WMI:LogicalDisk : FIELDALIAS-for_wmi_read_ops",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:LogicalDisk"
+},
+{
+"alias.0.AvgDisksecPerWrite": "write_latency",
+"name": "for_wmi_write_latency",
+"origName": "WMI:LogicalDisk : FIELDALIAS-for_wmi_write_latency",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:LogicalDisk"
+},
+{
+"alias.0.DiskWritesPersec": "write_ops",
+"name": "for_wmi_write_ops",
+"origName": "WMI:LogicalDisk : FIELDALIAS-for_wmi_write_ops",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:LogicalDisk"
+},
+{
+"alias.0.IDProcess": "pid",
+"name": "pid_for_wmi",
+"origName": "WMI:LogicalDisk : FIELDALIAS-pid_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:LogicalDisk"
+},
+{
+"alias.0.host": "src",
+"name": "src_for_wmi",
+"origName": "WMI:LogicalDisk : FIELDALIAS-src_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:LogicalDisk"
+},
+{
+"alias.0.host": "dest",
+"name": "dest_for_wmi",
+"origName": "WMI:Memory : FIELDALIAS-dest_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:Memory"
+},
+{
+"alias.0.CommittedBytes": "mem_committed",
+"name": "mem_committed_for_wmi_memory",
+"origName": "WMI:Memory : FIELDALIAS-mem_committed_for_wmi_memory",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:Memory"
+},
+{
+"alias.0.PagesInputPersec": "mem_page_in",
+"name": "mem_page_in",
+"origName": "WMI:Memory : FIELDALIAS-mem_page_in",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:Memory"
+},
+{
+"alias.0.PagesPersec": "mem_page_ops",
+"name": "mem_page_ops",
+"origName": "WMI:Memory : FIELDALIAS-mem_page_ops",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:Memory"
+},
+{
+"alias.0.PagesOutputPersec": "mem_page_out",
+"name": "mem_page_out",
+"origName": "WMI:Memory : FIELDALIAS-mem_page_out",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:Memory"
+},
+{
+"alias.0.IDProcess": "pid",
+"name": "pid_for_wmi",
+"origName": "WMI:Memory : FIELDALIAS-pid_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:Memory"
+},
+{
+"alias.0.host": "src",
+"name": "src_for_wmi",
+"origName": "WMI:Memory : FIELDALIAS-src_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:Memory"
+},
+{
+"alias.0.PoolNonpagedBytes": "swap_free",
+"name": "swap_free",
+"origName": "WMI:Memory : FIELDALIAS-swap_free",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:Memory"
+},
+{
+"alias.0.PoolPagedBytes": "swap_used",
+"name": "swap_used",
+"origName": "WMI:Memory : FIELDALIAS-swap_used",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:Memory"
+},
+{
+"alias.0.host": "dest",
+"name": "dest_for_wmi",
+"origName": "WMI:ScheduledJobs : FIELDALIAS-dest_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:ScheduledJobs"
+},
+{
+"alias.0.host": "src",
+"name": "src_for_wmi",
+"origName": "WMI:ScheduledJobs : FIELDALIAS-src_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:ScheduledJobs"
+},
+{
+"alias.0.Description": "description",
+"name": "description_for_wmi",
+"origName": "WMI:Service : FIELDALIAS-description_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:Service"
+},
+{
+"alias.0.host": "dest",
+"name": "dest_for_wmi",
+"origName": "WMI:Service : FIELDALIAS-dest_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:Service"
+},
+{
+"alias.0.service_path": "file_path",
+"name": "file_path_for_wmi_service",
+"origName": "WMI:Service : FIELDALIAS-file_path_for_wmi_service",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:Service"
+},
+{
+"alias.0.IDProcess": "pid",
+"name": "pid_for_wmi",
+"origName": "WMI:Service : FIELDALIAS-pid_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:Service"
+},
+{
+"alias.0.IDProcess": "process_id",
+"name": "process_id_for_wmi",
+"origName": "WMI:Service : FIELDALIAS-process_id_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:Service"
+},
+{
+"alias.0.Name": "app",
+"alias.1.Name": "service",
+"name": "service_for_wmi_service",
+"origName": "WMI:Service : FIELDALIAS-service_for_wmi_service",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:Service"
+},
+{
+"alias.0.Name": "service",
+"alias.1.Name": "service_name",
+"name": "service_name_for_wmi",
+"origName": "WMI:Service : FIELDALIAS-service_name_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:Service"
+},
+{
+"alias.0.host": "src",
+"name": "src_for_wmi",
+"origName": "WMI:Service : FIELDALIAS-src_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:Service"
+},
+{
+"alias.0.StartMode": "start_mode",
+"name": "start_mode_for_wmi_service",
+"origName": "WMI:Service : FIELDALIAS-start_mode_for_wmi_service",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:Service"
+},
+{
+"alias.0.State": "status",
+"name": "status_for_wmi_service",
+"origName": "WMI:Service : FIELDALIAS-status_for_wmi_service",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:Service"
+},
+{
+"alias.0.host": "dest",
+"name": "dest_for_wmi",
+"origName": "WMI:Uptime : FIELDALIAS-dest_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:Uptime"
+},
+{
+"alias.0.IDProcess": "pid",
+"name": "pid_for_wmi",
+"origName": "WMI:Uptime : FIELDALIAS-pid_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:Uptime"
+},
+{
+"alias.0.host": "src",
+"name": "src_for_wmi",
+"origName": "WMI:Uptime : FIELDALIAS-src_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:Uptime"
+},
+{
+"alias.0.SystemUpTime": "uptime",
+"name": "uptime_for_wmi_uptime",
+"origName": "WMI:Uptime : FIELDALIAS-uptime_for_wmi_uptime",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:Uptime"
+},
+{
+"alias.0.Description": "description",
+"name": "description_for_wmi_user_account_status",
+"origName": "WMI:UserAccounts : FIELDALIAS-description_for_wmi_user_account_status",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:UserAccounts"
+},
+{
+"alias.0.host": "dest",
+"name": "dest_for_wmi",
+"origName": "WMI:UserAccounts : FIELDALIAS-dest_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:UserAccounts"
+},
+{
+"alias.0.Domain": "dest_nt_domain",
+"name": "dest_nt_domain_for_wmi_useraccounts",
+"origName": "WMI:UserAccounts : FIELDALIAS-dest_nt_domain_for_wmi_useraccounts",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:UserAccounts"
+},
+{
+"alias.0.IDProcess": "pid",
+"name": "pid_for_wmi",
+"origName": "WMI:UserAccounts : FIELDALIAS-pid_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:UserAccounts"
+},
+{
+"alias.0.host": "src",
+"name": "src_for_wmi",
+"origName": "WMI:UserAccounts : FIELDALIAS-src_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:UserAccounts"
+},
+{
+"alias.0.Status": "status",
+"name": "status_for_wmi_useraccounts",
+"origName": "WMI:UserAccounts : FIELDALIAS-status_for_wmi_useraccounts",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:UserAccounts"
+},
+{
+"alias.0.Name": "user",
+"name": "user_for_wmi_useraccounts",
+"origName": "WMI:UserAccounts : FIELDALIAS-user_for_wmi_useraccounts",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:UserAccounts"
+},
+{
+"alias.0.SID": "user_id",
+"name": "user_id_for_wmi_useraccounts",
+"origName": "WMI:UserAccounts : FIELDALIAS-user_id_for_wmi_useraccounts",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:UserAccounts"
+},
+{
+"alias.0.Caption": "description",
+"name": "description",
+"origName": "WMI:Version : FIELDALIAS-description",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:Version"
+},
+{
+"alias.0.host": "dest",
+"name": "dest_for_wmi",
+"origName": "WMI:Version : FIELDALIAS-dest_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:Version"
+},
+{
+"alias.0.Caption": "os_name",
+"alias.1.Caption": "family",
+"name": "os_name_for_wmi_version",
+"origName": "WMI:Version : FIELDALIAS-os_name_for_wmi_version",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:Version"
+},
+{
+"alias.0.Version": "kernel_release",
+"alias.1.Version": "os_release",
+"alias.2.Version": "version",
+"name": "os_version_for_wmi_version",
+"origName": "WMI:Version : FIELDALIAS-os_version_for_wmi_version",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:Version"
+},
+{
+"alias.0.IDProcess": "pid",
+"name": "pid_for_wmi",
+"origName": "WMI:Version : FIELDALIAS-pid_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:Version"
+},
+{
+"alias.0.host": "src",
+"name": "src_for_wmi",
+"origName": "WMI:Version : FIELDALIAS-src_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:Version"
+},
+{
+"alias.0.TaskCategory": "category",
+"name": "category_for_windows",
+"origName": "WMI:WinEventLog:Application : FIELDALIAS-category_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Application"
+},
+{
+"alias.0.ComputerName": "dest",
+"name": "dest_for_wmi",
+"origName": "WMI:WinEventLog:Application : FIELDALIAS-dest_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Application"
+},
+{
+"alias.0.host": "dvc_nt_host",
+"alias.1.ComputerName": "dvc",
+"name": "dvc_for_windows",
+"origName": "WMI:WinEventLog:Application : FIELDALIAS-dvc_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Application"
+},
+{
+"alias.0.RecordNumber": "event_id",
+"name": "event_id_for_windows",
+"origName": "WMI:WinEventLog:Application : FIELDALIAS-event_id_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Application"
+},
+{
+"alias.0.RecordNumber": "id",
+"name": "id_for_windows",
+"origName": "WMI:WinEventLog:Application : FIELDALIAS-id_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Application"
+},
+{
+"alias.0.IDProcess": "pid",
+"name": "pid_for_wmi",
+"origName": "WMI:WinEventLog:Application : FIELDALIAS-pid_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Application"
+},
+{
+"alias.0.IDProcess": "process_id",
+"name": "process_id_for_wmi",
+"origName": "WMI:WinEventLog:Application : FIELDALIAS-process_id_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Application"
+},
+{
+"alias.0.EventType": "severity_id",
+"name": "severity_id_for_windows",
+"origName": "WMI:WinEventLog:Application : FIELDALIAS-severity_id_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Application"
+},
+{
+"alias.0.User": "user",
+"name": "user_for_wmi",
+"origName": "WMI:WinEventLog:Application : FIELDALIAS-user_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Application"
+},
+{
+"alias.0.Primary_Group_ID": "user_group_id",
+"name": "user_group_id_for_windows",
+"origName": "WMI:WinEventLog:Application : FIELDALIAS-user_group_id_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Application"
+},
+{
+"alias.0.Message": "body",
+"name": "body_for_windows_security",
+"origName": "WMI:WinEventLog:Security : FIELDALIAS-body_for_windows_security",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security"
+},
+{
+"alias.0.TaskCategory": "category",
+"name": "category_for_windows",
+"origName": "WMI:WinEventLog:Security : FIELDALIAS-category_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security"
+},
+{
+"alias.0.host": "dest",
+"name": "dest_for_wmi",
+"origName": "WMI:WinEventLog:Security : FIELDALIAS-dest_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security"
+},
+{
+"alias.0.Port": "dest_port",
+"name": "dest_port_for_windows_security",
+"origName": "WMI:WinEventLog:Security : FIELDALIAS-dest_port_for_windows_security",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security"
+},
+{
+"alias.0.host": "dvc_nt_host",
+"alias.1.ComputerName": "dvc",
+"name": "dvc_for_windows",
+"origName": "WMI:WinEventLog:Security : FIELDALIAS-dvc_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security"
+},
+{
+"alias.0.RecordNumber": "event_id",
+"name": "event_id_for_windows",
+"origName": "WMI:WinEventLog:Security : FIELDALIAS-event_id_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security"
+},
+{
+"alias.0.RecordNumber": "id",
+"name": "id_for_windows",
+"origName": "WMI:WinEventLog:Security : FIELDALIAS-id_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security"
+},
+{
+"alias.0.IDProcess": "pid",
+"name": "pid_for_wmi",
+"origName": "WMI:WinEventLog:Security : FIELDALIAS-pid_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security"
+},
+{
+"alias.0.Process_Name": "process_name",
+"name": "process_name_for_windows_security",
+"origName": "WMI:WinEventLog:Security : FIELDALIAS-process_name_for_windows_security",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security"
+},
+{
+"alias.0.Service_Name": "service",
+"alias.1.Service_Name": "service_name",
+"name": "service_for_windows_security",
+"origName": "WMI:WinEventLog:Security : FIELDALIAS-service_for_windows_security",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security"
+},
+{
+"alias.0.Service_ID": "service_id",
+"name": "service_id_for_windows_security",
+"origName": "WMI:WinEventLog:Security : FIELDALIAS-service_id_for_windows_security",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security"
+},
+{
+"alias.0.EventType": "severity_id",
+"name": "severity_id_for_windows",
+"origName": "WMI:WinEventLog:Security : FIELDALIAS-severity_id_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security"
+},
+{
+"alias.0.Source_Port": "src_port",
+"name": "src_port_for_windows_security",
+"origName": "WMI:WinEventLog:Security : FIELDALIAS-src_port_for_windows_security",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security"
+},
+{
+"alias.0.Status": "ta_windows_status",
+"name": "Status_as_ta_windows_status",
+"origName": "WMI:WinEventLog:Security : FIELDALIAS-Status_as_ta_windows_status",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security"
+},
+{
+"alias.0.Primary_Group_ID": "user_group_id",
+"name": "user_group_id_for_windows",
+"origName": "WMI:WinEventLog:Security : FIELDALIAS-user_group_id_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security"
+},
+{
+"alias.0.User_ID": "user_id",
+"name": "user_id_for_windows_security",
+"origName": "WMI:WinEventLog:Security : FIELDALIAS-user_id_for_windows_security",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security"
+},
+{
+"alias.0.signature_message": "body",
+"alias.1.Message": "body",
+"name": "body_for_windows_system",
+"origName": "WMI:WinEventLog:System : FIELDALIAS-body_for_windows_system",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:System"
+},
+{
+"alias.0.TaskCategory": "category",
+"name": "category_for_windows",
+"origName": "WMI:WinEventLog:System : FIELDALIAS-category_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:System"
+},
+{
+"alias.0.host": "dvc_nt_host",
+"alias.1.ComputerName": "dvc",
+"name": "dvc_for_windows",
+"origName": "WMI:WinEventLog:System : FIELDALIAS-dvc_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:System"
+},
+{
+"alias.0.RecordNumber": "event_id",
+"name": "event_id_for_windows",
+"origName": "WMI:WinEventLog:System : FIELDALIAS-event_id_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:System"
+},
+{
+"alias.0.RecordNumber": "id",
+"name": "id_for_windows",
+"origName": "WMI:WinEventLog:System : FIELDALIAS-id_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:System"
+},
+{
+"alias.0.signature_id": "package",
+"name": "package_for_windows",
+"origName": "WMI:WinEventLog:System : FIELDALIAS-package_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:System"
+},
+{
+"alias.0.signature": "package_title",
+"name": "package_title_for_windows",
+"origName": "WMI:WinEventLog:System : FIELDALIAS-package_title_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:System"
+},
+{
+"alias.0.IDProcess": "pid",
+"name": "pid_for_wmi",
+"origName": "WMI:WinEventLog:System : FIELDALIAS-pid_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:System"
+},
+{
+"alias.0.IDProcess": "process_id",
+"name": "process_id_for_wmi",
+"origName": "WMI:WinEventLog:System : FIELDALIAS-process_id_for_wmi",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:System"
+},
+{
+"alias.0.EventType": "severity_id",
+"name": "severity_id_for_windows",
+"origName": "WMI:WinEventLog:System : FIELDALIAS-severity_id_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:System"
+},
+{
+"alias.0.Primary_Group_ID": "user_group_id",
+"name": "user_group_id_for_windows",
+"origName": "WMI:WinEventLog:System : FIELDALIAS-user_group_id_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:System"
+},
+{
+"alias.0.TaskCategory": "category",
+"name": "category_for_windows",
+"origName": "XmlWinEventLog : FIELDALIAS-category_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "XmlWinEventLog"
+},
+{
+"alias.0.TaskCategory": "category",
+"name": "category_for_windows",
+"origName": "xmlwineventlog : FIELDALIAS-category_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "xmlwineventlog"
+},
+{
+"alias.0.host": "dvc_nt_host",
+"alias.1.Computer": "dvc",
+"name": "dvc_for_windows",
+"origName": "XmlWinEventLog : FIELDALIAS-dvc_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "XmlWinEventLog"
+},
+{
+"alias.0.host": "dvc_nt_host",
+"alias.1.Computer": "dvc",
+"name": "dvc_for_windows",
+"origName": "xmlwineventlog : FIELDALIAS-dvc_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "xmlwineventlog"
+},
+{
+"alias.0.RecordNumber": "event_id",
+"name": "event_id_for_windows",
+"origName": "XmlWinEventLog : FIELDALIAS-event_id_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "XmlWinEventLog"
+},
+{
+"alias.0.RecordNumber": "event_id",
+"name": "event_id_for_windows",
+"origName": "xmlwineventlog : FIELDALIAS-event_id_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "xmlwineventlog"
+},
+{
+"alias.0.RecordNumber": "id",
+"name": "id_for_windows",
+"origName": "XmlWinEventLog : FIELDALIAS-id_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "XmlWinEventLog"
+},
+{
+"alias.0.RecordNumber": "id",
+"name": "id_for_windows",
+"origName": "xmlwineventlog : FIELDALIAS-id_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "xmlwineventlog"
+},
+{
+"alias.0.ParentProcessName": "parent_process",
+"name": "parent_process_for_windows",
+"origName": "XmlWinEventLog : FIELDALIAS-parent_process_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "XmlWinEventLog"
+},
+{
+"alias.0.ProcessName": "process_name",
+"name": "process_name_for_windows",
+"origName": "xmlwineventlog : FIELDALIAS-process_name_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "xmlwineventlog"
+},
+{
+"alias.0.ServiceName": "service",
+"alias.1.ServiceName": "service_name",
+"name": "service_for_windows",
+"origName": "xmlwineventlog : FIELDALIAS-service_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "xmlwineventlog"
+},
+{
+"alias.0.ServiceName": "service",
+"alias.1.ServiceName": "service_name",
+"name": "service_for_windows",
+"origName": "XmlWinEventLog : FIELDALIAS-service_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "XmlWinEventLog"
+},
+{
+"alias.0.ServiceSid": "service_id",
+"name": "service_id_for_windows",
+"origName": "xmlwineventlog : FIELDALIAS-service_id_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "xmlwineventlog"
+},
+{
+"alias.0.ServiceSid": "service_id",
+"name": "service_id_for_windows",
+"origName": "XmlWinEventLog : FIELDALIAS-service_id_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "XmlWinEventLog"
+},
+{
+"alias.0.EventType": "severity_id",
+"name": "severity_id_for_windows",
+"origName": "xmlwineventlog : FIELDALIAS-severity_id_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "xmlwineventlog"
+},
+{
+"alias.0.EventType": "severity_id",
+"name": "severity_id_for_windows",
+"origName": "XmlWinEventLog : FIELDALIAS-severity_id_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "XmlWinEventLog"
+},
+{
+"alias.0.Primary_Group_ID": "user_group_id",
+"name": "user_group_id_for_windows",
+"origName": "xmlwineventlog : FIELDALIAS-user_group_id_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "xmlwineventlog"
+},
+{
+"alias.0.Primary_Group_ID": "user_group_id",
+"name": "user_group_id_for_windows",
+"origName": "XmlWinEventLog : FIELDALIAS-user_group_id_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "XmlWinEventLog"
+},
+{
+"alias.0.UserID": "user_id",
+"name": "user_id_for_windows",
+"origName": "XmlWinEventLog : FIELDALIAS-user_id_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "XmlWinEventLog"
+},
+{
+"alias.0.UserID": "user_id",
+"name": "user_id_for_windows",
+"origName": "xmlwineventlog : FIELDALIAS-user_id_for_windows",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "xmlwineventlog"
+}
+]

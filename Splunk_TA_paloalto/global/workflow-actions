@@ -1,0 +1,86 @@
+[
+{
+"display_location": "both",
+"fields": "dest_ip",
+"label": "Open in Autofocus - Search Dest IP",
+"link.method": "get",
+"link.target": "blank",
+"link.uri": "https://autofocus.paloaltonetworks.com/panos-to-af?dst=$dest_ip$",
+"name": "autofocus_dest",
+"owner": "nobody",
+"sharing": "global",
+"type": "link"
+},
+{
+"display_location": "both",
+"fields": "file_digest",
+"label": "Open in Autofocus - Search File Digest",
+"link.method": "get",
+"link.target": "blank",
+"link.uri": "https://autofocus.paloaltonetworks.com/#/sample/$file_digest$",
+"name": "autofocus_filedigest",
+"owner": "nobody",
+"sharing": "global",
+"type": "link"
+},
+{
+"display_location": "both",
+"fields": "src_ip",
+"label": "Open in Autofocus - Search Source IP",
+"link.method": "get",
+"link.target": "blank",
+"link.uri": "https://autofocus.paloaltonetworks.com/panos-to-af?src=$src_ip$",
+"name": "autofocus_source",
+"owner": "nobody",
+"sharing": "global",
+"type": "link"
+},
+{
+"display_location": "both",
+"fields": "tag",
+"label": "Open in Autofocus - Search Tag",
+"link.method": "get",
+"link.target": "blank",
+"link.uri": "https://autofocus.paloaltonetworks.com/panos-to-af?tag=$tag$",
+"name": "autofocus_tag",
+"owner": "nobody",
+"sharing": "global",
+"type": "link"
+},
+{
+"display_location": "both",
+"fields": "threat_id",
+"label": "Open in Autofocus - Search Threat ID",
+"link.method": "get",
+"link.target": "blank",
+"link.uri": "https://autofocus.paloaltonetworks.com/panos-to-af?threatid=$threat_id$",
+"name": "autofocus_threatid",
+"owner": "nobody",
+"sharing": "global",
+"type": "link"
+},
+{
+"display_location": "both",
+"fields": "threat_name",
+"label": "Open in Autofocus - Search Threat Name",
+"link.method": "get",
+"link.target": "blank",
+"link.uri": "https://autofocus.paloaltonetworks.com/panos-to-af?name-of-threatid=$threat_name$",
+"name": "autofocus_threatname",
+"owner": "nobody",
+"sharing": "global",
+"type": "link"
+},
+{
+"display_location": "both",
+"fields": "url",
+"label": "Open in Autofocus - Search URL",
+"link.method": "get",
+"link.target": "blank",
+"link.uri": "https://autofocus.paloaltonetworks.com/panos-to-af?url=$url$",
+"name": "autofocus_url",
+"owner": "nobody",
+"sharing": "global",
+"type": "link"
+}
+]

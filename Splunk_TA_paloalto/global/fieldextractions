@@ -1,0 +1,128 @@
+[
+{
+"name": "search",
+"origName": "pan:analytics_traps : REPORT-search",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:analytics_traps",
+"type": "REPORT",
+"value": "extract_traps_analytics"
+},
+{
+"name": "search",
+"origName": "pan:config : REPORT-search",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:config",
+"type": "REPORT",
+"value": "extract_config"
+},
+{
+"name": "search",
+"origName": "pan:config_traps : REPORT-search",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:config_traps",
+"type": "REPORT",
+"value": "extract_traps_config-system"
+},
+{
+"name": "search",
+"origName": "pan:correlation : REPORT-search",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:correlation",
+"type": "REPORT",
+"value": "extract_correlation"
+},
+{
+"name": "search",
+"origName": "pan:decryption : REPORT-search",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:decryption",
+"type": "REPORT",
+"value": "extract_decryption"
+},
+{
+"name": "search",
+"origName": "pan:firewall_cloud : REPORT-search",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:firewall_cloud",
+"type": "REPORT",
+"value": "extract_threat_id_cloud, extract_threat_name_cloud, extract_dest_hostname_cloud, extract_major_content_type_cloud"
+},
+{
+"name": "search",
+"origName": "pan:globalprotect : REPORT-search",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:globalprotect",
+"type": "REPORT",
+"value": "extract_globalprotect"
+},
+{
+"name": "search",
+"origName": "pan:hipmatch : REPORT-search",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:hipmatch",
+"type": "REPORT",
+"value": "extract_hipmatch"
+},
+{
+"name": "search",
+"origName": "pan:system : REPORT-search",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:system",
+"type": "REPORT",
+"value": "extract_system, extract_globalprotect_user, extract_globalprotect_ip, extract_globalprotect_loginip, extract_globalprotect_clientversion, extract_globalprotect_message, extract_general_user, extract_system_alert_src, extract_system_auth"
+},
+{
+"name": "search",
+"origName": "pan:system_traps : REPORT-search",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:system_traps",
+"type": "REPORT",
+"value": "extract_traps_config-system"
+},
+{
+"name": "search",
+"origName": "pan:threat : REPORT-search",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat",
+"type": "REPORT",
+"value": "extract_threat, extract_threat_id, extract_threat_name, extract_dest_hostname, extract_http_referrer_name, extract_major_content_type, extract_filename, extract_url_domain"
+},
+{
+"name": "search",
+"origName": "pan:threat_traps : REPORT-search",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:threat_traps",
+"type": "REPORT",
+"value": "extract_traps_threat, extract_traps_type, extract_eventparam_json, extract_processes_json, extract_files_json, extract_users_json, extract_urls_json, extract_traps_threat_name"
+},
+{
+"name": "search",
+"origName": "pan:traffic : REPORT-search",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:traffic",
+"type": "REPORT",
+"value": "extract_traffic"
+},
+{
+"name": "search",
+"origName": "pan:userid : REPORT-search",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "pan:userid",
+"type": "REPORT",
+"value": "extract_userid"
+}
+]

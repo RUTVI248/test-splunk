@@ -1,0 +1,2522 @@
+[
+{
+"name": "0auto_kv_for_microsoft_dhcp",
+"origName": "DhcpSrvLog : REPORT-0auto_kv_for_microsoft_dhcp",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "DhcpSrvLog",
+"type": "REPORT",
+"value": "auto_kv_for_microsoft_dhcp"
+},
+{
+"name": "REPORT_1microsoft_dhcp_dest_dns",
+"origName": "DhcpSrvLog : REPORT_1microsoft_dhcp_dest_dns",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "DhcpSrvLog",
+"type": "REPORT",
+"value": "microsoft_dhcp_dest_dns"
+},
+{
+"name": "answer",
+"origName": "MSAD:NT6:DNS : EXTRACT-answer",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "MSAD:NT6:DNS",
+"type": "EXTRACT",
+"value": "(ANSWER\\s+SECTION|UPDATE\\s+SECTION):(?<ANSWER_OR_UPDATE_SECTION>.*?)(AUTHORITY\\s+SECTION|ADDITIONAL\\s+SECTION)"
+},
+{
+"name": "singleLine",
+"origName": "MSAD:NT6:DNS : EXTRACT-singleLine",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "MSAD:NT6:DNS",
+"type": "EXTRACT",
+"value": "(?<threadid>[0-9A-Fa-f]+)\\s+(?<context>PACKET)\\s+(?<packetid>[0-9A-Fa-f]*) (?<protocol>UDP|TCP) (?<direction>\\w+) (?<src_ip>[0-9A-Fa-f\\.\\:]+)\\s+(?<xid>[0-9A-Fa-f]+)\\s+(?<operation>[ R]) (?<opcode>.) \\[(?<hexflags>[0-9A-Fa-f]+) (?<flags>....) (?<response>[^\\]]+)\\]\\s+(?:QTYPE\\s+)?(?<questiontype>\\w+)\\s+(?:QCLASS\\s+\\d+\\s+)?(:?\\(\\d+\\))?(?<questionname>[^\\n]*)\\(0\\)"
+},
+{
+"name": "KV_for_microsoft_dns_web",
+"origName": "MSAD:NT6:DNS : REPORT-KV_for_microsoft_dns_web",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "MSAD:NT6:DNS",
+"type": "REPORT",
+"value": "KV_for_port,KV_for_Domain,KV_for_microsoftdns_action,KV_for_Record_type,KV_for_Record_Class,KV_for_Answer_Section_Count,KV_for_Update_Section_Count"
+},
+{
+"name": "Multi_answer",
+"origName": "MSAD:NT6:DNS : REPORT-Multi_answer",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "MSAD:NT6:DNS",
+"type": "REPORT",
+"value": "Answer_multi_value"
+},
+{
+"name": "mvcheck",
+"origName": "MSAD:NT6:DNS-Health : REPORT-mvcheck",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "MSAD:NT6:DNS-Health",
+"type": "REPORT",
+"value": "DNSHealth_ServerAddress_MV, DNSHealth_ListenAddress_MV, DNSHealth_Forwarder_MV, DNSHealth_LogIPFilterList_MV"
+},
+{
+"name": "subnetaffinity",
+"origName": "MSAD:NT6:Netlogon : EXTRACT-subnetaffinity",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "MSAD:NT6:Netlogon",
+"type": "EXTRACT",
+"value": "\\s(?<src_domain>[^:]+): (?<msad_affinity>NO_CLIENT_SITE): (?<src_host>[^\\s]+) (?<src_ip>[0-9A-Fa-f:\\.]+)"
+},
+{
+"name": "extractions",
+"origName": "MSAD:NT6:SiteInfo : REPORT-extractions",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "MSAD:NT6:SiteInfo",
+"type": "REPORT",
+"value": "MSAD-SiteInfo-AdjacentSites, MSAD-SiteInfo-Sites, MSAD-SiteInfo-SiteLinks, MSAD-SiteInfo-Subnets"
+},
+{
+"name": "subnetaffinity",
+"origName": "MSAD:SubnetAffinity : EXTRACT-subnetaffinity",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "MSAD:SubnetAffinity",
+"type": "EXTRACT",
+"value": "(?<src_nt_domain>\\w+): NO_CLIENT_SITE: (?<src_host>\\w+) (?<src_ip>[0-9\\.]+)"
+},
+{
+"name": "AuthorizedCDFPrefix_for_win_installed_apps",
+"origName": "Script:InstalledApps : REPORT-AuthorizedCDFPrefix_for_win_installed_apps",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:InstalledApps",
+"type": "REPORT",
+"value": "AuthorizedCDFPrefix_for_win_installed_apps"
+},
+{
+"name": "Comments_for_win_installed_apps",
+"origName": "Script:InstalledApps : REPORT-Comments_for_win_installed_apps",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:InstalledApps",
+"type": "REPORT",
+"value": "Comments_for_win_installed_apps"
+},
+{
+"name": "Contact_for_win_installed_apps",
+"origName": "Script:InstalledApps : REPORT-Contact_for_win_installed_apps",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:InstalledApps",
+"type": "REPORT",
+"value": "Contact_for_win_installed_apps"
+},
+{
+"name": "DisplayName_for_win_installed_apps",
+"origName": "Script:InstalledApps : REPORT-DisplayName_for_win_installed_apps",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:InstalledApps",
+"type": "REPORT",
+"value": "DisplayName_for_win_installed_apps"
+},
+{
+"name": "DisplayVersion_for_win_installed_apps",
+"origName": "Script:InstalledApps : REPORT-DisplayVersion_for_win_installed_apps",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:InstalledApps",
+"type": "REPORT",
+"value": "DisplayVersion_for_win_installed_apps"
+},
+{
+"name": "EstimatedSize_for_win_installed_apps",
+"origName": "Script:InstalledApps : REPORT-EstimatedSize_for_win_installed_apps",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:InstalledApps",
+"type": "REPORT",
+"value": "EstimatedSize_for_win_installed_apps"
+},
+{
+"name": "HelpLink_for_win_installed_apps",
+"origName": "Script:InstalledApps : REPORT-HelpLink_for_win_installed_apps",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:InstalledApps",
+"type": "REPORT",
+"value": "HelpLink_for_win_installed_apps"
+},
+{
+"name": "HelpTelephone_for_win_installed_apps",
+"origName": "Script:InstalledApps : REPORT-HelpTelephone_for_win_installed_apps",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:InstalledApps",
+"type": "REPORT",
+"value": "HelpTelephone_for_win_installed_apps"
+},
+{
+"name": "InstallDate_for_win_installed_apps",
+"origName": "Script:InstalledApps : REPORT-InstallDate_for_win_installed_apps",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:InstalledApps",
+"type": "REPORT",
+"value": "InstallDate_for_win_installed_apps"
+},
+{
+"name": "InstallLocation_for_win_installed_apps",
+"origName": "Script:InstalledApps : REPORT-InstallLocation_for_win_installed_apps",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:InstalledApps",
+"type": "REPORT",
+"value": "InstallLocation_for_win_installed_apps"
+},
+{
+"name": "InstallSource_for_win_installed_apps",
+"origName": "Script:InstalledApps : REPORT-InstallSource_for_win_installed_apps",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:InstalledApps",
+"type": "REPORT",
+"value": "InstallSource_for_win_installed_apps"
+},
+{
+"name": "Language_for_win_installed_apps",
+"origName": "Script:InstalledApps : REPORT-Language_for_win_installed_apps",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:InstalledApps",
+"type": "REPORT",
+"value": "Language_for_win_installed_apps"
+},
+{
+"name": "ModifyPath_for_win_installed_apps",
+"origName": "Script:InstalledApps : REPORT-ModifyPath_for_win_installed_apps",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:InstalledApps",
+"type": "REPORT",
+"value": "ModifyPath_for_win_installed_apps"
+},
+{
+"name": "NoModify_for_win_installed_apps",
+"origName": "Script:InstalledApps : REPORT-NoModify_for_win_installed_apps",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:InstalledApps",
+"type": "REPORT",
+"value": "NoModify_for_win_installed_apps"
+},
+{
+"name": "NoRepair_for_win_installed_apps",
+"origName": "Script:InstalledApps : REPORT-NoRepair_for_win_installed_apps",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:InstalledApps",
+"type": "REPORT",
+"value": "NoRepair_for_win_installed_apps"
+},
+{
+"name": "Publisher_for_win_installed_apps",
+"origName": "Script:InstalledApps : REPORT-Publisher_for_win_installed_apps",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:InstalledApps",
+"type": "REPORT",
+"value": "Publisher_for_win_installed_apps"
+},
+{
+"name": "Readme_for_win_installed_apps",
+"origName": "Script:InstalledApps : REPORT-Readme_for_win_installed_apps",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:InstalledApps",
+"type": "REPORT",
+"value": "Readme_for_win_installed_apps"
+},
+{
+"name": "Size_for_win_installed_apps",
+"origName": "Script:InstalledApps : REPORT-Size_for_win_installed_apps",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:InstalledApps",
+"type": "REPORT",
+"value": "Size_for_win_installed_apps"
+},
+{
+"name": "UninstallString_for_win_installed_apps",
+"origName": "Script:InstalledApps : REPORT-UninstallString_for_win_installed_apps",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:InstalledApps",
+"type": "REPORT",
+"value": "UninstallString_for_win_installed_apps"
+},
+{
+"name": "URLInfoAbout_for_win_installed_apps",
+"origName": "Script:InstalledApps : REPORT-URLInfoAbout_for_win_installed_apps",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:InstalledApps",
+"type": "REPORT",
+"value": "URLInfoAbout_for_win_installed_apps"
+},
+{
+"name": "URLUpdateInfo_for_win_installed_apps",
+"origName": "Script:InstalledApps : REPORT-URLUpdateInfo_for_win_installed_apps",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:InstalledApps",
+"type": "REPORT",
+"value": "URLUpdateInfo_for_win_installed_apps"
+},
+{
+"name": "Version_for_win_installed_apps",
+"origName": "Script:InstalledApps : REPORT-Version_for_win_installed_apps",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:InstalledApps",
+"type": "REPORT",
+"value": "Version_for_win_installed_apps"
+},
+{
+"name": "VersionMajor_for_win_installed_apps",
+"origName": "Script:InstalledApps : REPORT-VersionMajor_for_win_installed_apps",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:InstalledApps",
+"type": "REPORT",
+"value": "VersionMajor_for_win_installed_apps"
+},
+{
+"name": "VersionMinor_for_win_installed_apps",
+"origName": "Script:InstalledApps : REPORT-VersionMinor_for_win_installed_apps",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:InstalledApps",
+"type": "REPORT",
+"value": "VersionMinor_for_win_installed_apps"
+},
+{
+"name": "WindowsInstaller_for_win_installed_apps",
+"origName": "Script:InstalledApps : REPORT-WindowsInstaller_for_win_installed_apps",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:InstalledApps",
+"type": "REPORT",
+"value": "WindowsInstaller_for_win_installed_apps"
+},
+{
+"name": "0dest_ip_for_listeningports",
+"origName": "Script:ListeningPorts : REPORT-0dest_ip_for_listeningports",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:ListeningPorts",
+"type": "REPORT",
+"value": "dest_ip_for_listeningports"
+},
+{
+"name": "1kv_for_listeningports",
+"origName": "Script:ListeningPorts : REPORT-1kv_for_listeningports",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:ListeningPorts",
+"type": "REPORT",
+"value": "kv_for_listeningports"
+},
+{
+"name": "netshaddresscidr",
+"origName": "Script:NetworkConfiguration : EXTRACT-netshaddresscidr",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:NetworkConfiguration",
+"type": "EXTRACT",
+"value": "Subnet Prefix\\:\\s+(?<cidr>[^\\s]+)"
+},
+{
+"name": "netshaddressdhcp",
+"origName": "Script:NetworkConfiguration : EXTRACT-netshaddressdhcp",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:NetworkConfiguration",
+"type": "EXTRACT",
+"value": "DHCP enabled\\:\\s+(?<dhcp>(Yes|No))"
+},
+{
+"name": "netshaddressgw",
+"origName": "Script:NetworkConfiguration : EXTRACT-netshaddressgw",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:NetworkConfiguration",
+"type": "EXTRACT",
+"value": "Gateway\\:\\s+(?<gw>[\\d\\.]+)"
+},
+{
+"name": "netshaddressif",
+"origName": "Script:NetworkConfiguration : EXTRACT-netshaddressif",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:NetworkConfiguration",
+"type": "EXTRACT",
+"value": "Configuration for interface \\\"(?<if>[^\\\"]+)"
+},
+{
+"name": "netshaddressip",
+"origName": "Script:NetworkConfiguration : EXTRACT-netshaddressip",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:NetworkConfiguration",
+"type": "EXTRACT",
+"value": "IP Address\\:\\s+(?<ip>[\\d\\.]+)"
+},
+{
+"name": "netshaddressmask",
+"origName": "Script:NetworkConfiguration : EXTRACT-netshaddressmask",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:NetworkConfiguration",
+"type": "EXTRACT",
+"value": "mask (?<mask>[^\\)]+)"
+},
+{
+"name": "netshaddressmetric",
+"origName": "Script:NetworkConfiguration : EXTRACT-netshaddressmetric",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:NetworkConfiguration",
+"type": "EXTRACT",
+"value": "InterfaceMetric\\:\\s+(?<metric>\\d+)"
+},
+{
+"name": "AnnounceFlags_for_win_timesync_configuration",
+"origName": "Script:TimesyncConfiguration : REPORT-AnnounceFlags_for_win_timesync_configuration",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:TimesyncConfiguration",
+"type": "REPORT",
+"value": "AnnounceFlags_for_win_timesync_configuration"
+},
+{
+"name": "Current_time_for_win_timesync_configuration",
+"origName": "Script:TimesyncConfiguration : REPORT-Current_time_for_win_timesync_configuration",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:TimesyncConfiguration",
+"type": "REPORT",
+"value": "Current_time_for_win_timesync"
+},
+{
+"name": "EventLogFlags_for_win_timesync_configuration",
+"origName": "Script:TimesyncConfiguration : REPORT-EventLogFlags_for_win_timesync_configuration",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:TimesyncConfiguration",
+"type": "REPORT",
+"value": "EventLogFlags_for_win_timesync_configuration"
+},
+{
+"name": "FileLogEntries_for_win_timesync_configuration",
+"origName": "Script:TimesyncConfiguration : REPORT-FileLogEntries_for_win_timesync_configuration",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:TimesyncConfiguration",
+"type": "REPORT",
+"value": "FileLogEntries_for_win_timesync_configuration"
+},
+{
+"name": "FileLogFlags_for_win_timesync_configuration",
+"origName": "Script:TimesyncConfiguration : REPORT-FileLogFlags_for_win_timesync_configuration",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:TimesyncConfiguration",
+"type": "REPORT",
+"value": "FileLogFlags_for_win_timesync_configuration"
+},
+{
+"name": "FileLogName_for_win_timesync_configuration",
+"origName": "Script:TimesyncConfiguration : REPORT-FileLogName_for_win_timesync_configuration",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:TimesyncConfiguration",
+"type": "REPORT",
+"value": "FileLogName_for_win_timesync_configuration"
+},
+{
+"name": "FileLogSize_for_win_timesync_configuration",
+"origName": "Script:TimesyncConfiguration : REPORT-FileLogSize_for_win_timesync_configuration",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:TimesyncConfiguration",
+"type": "REPORT",
+"value": "FileLogSize_for_win_timesync_configuration"
+},
+{
+"name": "FrequencyCorrectRate_for_win_timesync_configuration",
+"origName": "Script:TimesyncConfiguration : REPORT-FrequencyCorrectRate_for_win_timesync_configuration",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:TimesyncConfiguration",
+"type": "REPORT",
+"value": "FrequencyCorrectRate_for_win_timesync_configuration"
+},
+{
+"name": "HoldPeriod_for_win_timesync_configuration",
+"origName": "Script:TimesyncConfiguration : REPORT-HoldPeriod_for_win_timesync_configuration",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:TimesyncConfiguration",
+"type": "REPORT",
+"value": "HoldPeriod_for_win_timesync_configuration"
+},
+{
+"name": "LargePhaseOffset_for_win_timesync_configuration",
+"origName": "Script:TimesyncConfiguration : REPORT-LargePhaseOffset_for_win_timesync_configuration",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:TimesyncConfiguration",
+"type": "REPORT",
+"value": "LargePhaseOffset_for_win_timesync_configuration"
+},
+{
+"name": "LocalClockDispersion_for_win_timesync_configuration",
+"origName": "Script:TimesyncConfiguration : REPORT-LocalClockDispersion_for_win_timesync_configuration",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:TimesyncConfiguration",
+"type": "REPORT",
+"value": "LocalClockDispersion_for_win_timesync_configuration"
+},
+{
+"name": "MaxAllowedPhaseOffset_for_win_timesync_configuration",
+"origName": "Script:TimesyncConfiguration : REPORT-MaxAllowedPhaseOffset_for_win_timesync_configuration",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:TimesyncConfiguration",
+"type": "REPORT",
+"value": "MaxAllowedPhaseOffset_for_win_timesync_configuration"
+},
+{
+"name": "MaxNegPhaseCorrection_for_win_timesync_configuration",
+"origName": "Script:TimesyncConfiguration : REPORT-MaxNegPhaseCorrection_for_win_timesync_configuration",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:TimesyncConfiguration",
+"type": "REPORT",
+"value": "MaxNegPhaseCorrection_for_win_timesync_configuration"
+},
+{
+"name": "MaxPollInterval_for_win_timesync_configuration",
+"origName": "Script:TimesyncConfiguration : REPORT-MaxPollInterval_for_win_timesync_configuration",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:TimesyncConfiguration",
+"type": "REPORT",
+"value": "MaxPollInterval_for_win_timesync_configuration"
+},
+{
+"name": "MaxPosPhaseCorrection_for_win_timesync_configuration",
+"origName": "Script:TimesyncConfiguration : REPORT-MaxPosPhaseCorrection_for_win_timesync_configuration",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:TimesyncConfiguration",
+"type": "REPORT",
+"value": "MaxPosPhaseCorrection_for_win_timesync_configuration"
+},
+{
+"name": "MinPollInterval_for_win_timesync_configuration",
+"origName": "Script:TimesyncConfiguration : REPORT-MinPollInterval_for_win_timesync_configuration",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:TimesyncConfiguration",
+"type": "REPORT",
+"value": "MinPollInterval_for_win_timesync_configuration"
+},
+{
+"name": "PhaseCorrectRate_for_win_timesync_configuration",
+"origName": "Script:TimesyncConfiguration : REPORT-PhaseCorrectRate_for_win_timesync_configuration",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:TimesyncConfiguration",
+"type": "REPORT",
+"value": "PhaseCorrectRate_for_win_timesync_configuration"
+},
+{
+"name": "PollAdjustFactor_for_win_timesync_configuration",
+"origName": "Script:TimesyncConfiguration : REPORT-PollAdjustFactor_for_win_timesync_configuration",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:TimesyncConfiguration",
+"type": "REPORT",
+"value": "PollAdjustFactor_for_win_timesync_configuration"
+},
+{
+"name": "SpikeWatchPeriod_for_win_timesync_configuration",
+"origName": "Script:TimesyncConfiguration : REPORT-SpikeWatchPeriod_for_win_timesync_configuration",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:TimesyncConfiguration",
+"type": "REPORT",
+"value": "SpikeWatchPeriod_for_win_timesync_configuration"
+},
+{
+"name": "Time_zone_for_win_timesync_configuration",
+"origName": "Script:TimesyncConfiguration : REPORT-Time_zone_for_win_timesync_configuration",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:TimesyncConfiguration",
+"type": "REPORT",
+"value": "Time_zone_for_win_timesync"
+},
+{
+"name": "TimeJumpAuditOffset_for_win_timesync_configuration",
+"origName": "Script:TimesyncConfiguration : REPORT-TimeJumpAuditOffset_for_win_timesync_configuration",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:TimesyncConfiguration",
+"type": "REPORT",
+"value": "TimeJumpAuditOffset_for_win_timesync_configuration"
+},
+{
+"name": "UpdateInterval_for_win_timesync_configuration",
+"origName": "Script:TimesyncConfiguration : REPORT-UpdateInterval_for_win_timesync_configuration",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:TimesyncConfiguration",
+"type": "REPORT",
+"value": "UpdateInterval_for_win_timesync_configuration"
+},
+{
+"name": "ClockRate_for_win_timesync_status",
+"origName": "Script:TimesyncStatus : REPORT-ClockRate_for_win_timesync_status",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:TimesyncStatus",
+"type": "REPORT",
+"value": "ClockRate_for_win_timesync_status"
+},
+{
+"name": "Current_time_for_win_timesync_status",
+"origName": "Script:TimesyncStatus : REPORT-Current_time_for_win_timesync_status",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:TimesyncStatus",
+"type": "REPORT",
+"value": "Current_time_for_win_timesync"
+},
+{
+"name": "Last_Successful_Sync_Time_for_win_timesync_status",
+"origName": "Script:TimesyncStatus : REPORT-Last_Successful_Sync_Time_for_win_timesync_status",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:TimesyncStatus",
+"type": "REPORT",
+"value": "Last_Successful_Sync_Time_for_win_timesync_status"
+},
+{
+"name": "Last_Sync_Error_for_win_timesync_status",
+"origName": "Script:TimesyncStatus : REPORT-Last_Sync_Error_for_win_timesync_status",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:TimesyncStatus",
+"type": "REPORT",
+"value": "Last_Sync_Error_for_win_timesync_status"
+},
+{
+"name": "Leap_Indicator_for_win_timesync_status",
+"origName": "Script:TimesyncStatus : REPORT-Leap_Indicator_for_win_timesync_status",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:TimesyncStatus",
+"type": "REPORT",
+"value": "Leap_Indicator_for_win_timesync_status"
+},
+{
+"name": "Phase_Offset_for_win_timesync_status",
+"origName": "Script:TimesyncStatus : REPORT-Phase_Offset_for_win_timesync_status",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:TimesyncStatus",
+"type": "REPORT",
+"value": "Phase_Offset_for_win_timesync_status"
+},
+{
+"name": "Poll_Interval_for_win_timesync_status",
+"origName": "Script:TimesyncStatus : REPORT-Poll_Interval_for_win_timesync_status",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:TimesyncStatus",
+"type": "REPORT",
+"value": "Poll_Interval_for_win_timesync_status"
+},
+{
+"name": "Precision_for_win_timesync_status",
+"origName": "Script:TimesyncStatus : REPORT-Precision_for_win_timesync_status",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:TimesyncStatus",
+"type": "REPORT",
+"value": "Precision_for_win_timesync_status"
+},
+{
+"name": "ReferenceId_for_win_timesync_status",
+"origName": "Script:TimesyncStatus : REPORT-ReferenceId_for_win_timesync_status",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:TimesyncStatus",
+"type": "REPORT",
+"value": "ReferenceId_for_win_timesync_status"
+},
+{
+"name": "Root_Delay_for_win_timesync_status",
+"origName": "Script:TimesyncStatus : REPORT-Root_Delay_for_win_timesync_status",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:TimesyncStatus",
+"type": "REPORT",
+"value": "Root_Delay_for_win_timesync_status"
+},
+{
+"name": "Root_Dispersion_for_win_timesync_status",
+"origName": "Script:TimesyncStatus : REPORT-Root_Dispersion_for_win_timesync_status",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:TimesyncStatus",
+"type": "REPORT",
+"value": "Root_Dispersion_for_win_timesync_status"
+},
+{
+"name": "Server_Role_for_win_timesync_status",
+"origName": "Script:TimesyncStatus : REPORT-Server_Role_for_win_timesync_status",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:TimesyncStatus",
+"type": "REPORT",
+"value": "Server_Role_for_win_timesync_status"
+},
+{
+"name": "Source_for_win_timesync_status",
+"origName": "Script:TimesyncStatus : REPORT-Source_for_win_timesync_status",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:TimesyncStatus",
+"type": "REPORT",
+"value": "Source_for_win_timesync_status"
+},
+{
+"name": "State_Machine_for_win_timesync_status",
+"origName": "Script:TimesyncStatus : REPORT-State_Machine_for_win_timesync_status",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:TimesyncStatus",
+"type": "REPORT",
+"value": "State_Machine_for_win_timesync_status"
+},
+{
+"name": "Stratum_for_win_timesync_status",
+"origName": "Script:TimesyncStatus : REPORT-Stratum_for_win_timesync_status",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:TimesyncStatus",
+"type": "REPORT",
+"value": "Stratum_for_win_timesync_status"
+},
+{
+"name": "Time_since_Last_Good_Sync_Time_for_win_timesync_status",
+"origName": "Script:TimesyncStatus : REPORT-Time_since_Last_Good_Sync_Time_for_win_timesync_status",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:TimesyncStatus",
+"type": "REPORT",
+"value": "Time_since_Last_Good_Sync_Time_for_win_timesync_status"
+},
+{
+"name": "Time_Source_Flags_for_win_timesync_status",
+"origName": "Script:TimesyncStatus : REPORT-Time_Source_Flags_for_win_timesync_status",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:TimesyncStatus",
+"type": "REPORT",
+"value": "Time_Source_Flags_for_win_timesync_status"
+},
+{
+"name": "Time_zone_for_win_timesync_status",
+"origName": "Script:TimesyncStatus : REPORT-Time_zone_for_win_timesync_status",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "Script:TimesyncStatus",
+"type": "REPORT",
+"value": "Time_zone_for_win_timesync"
+},
+{
+"name": "0MESSAGE",
+"origName": "source::(WMI:WinEventLog|WinEventLog)... : REPORT-0MESSAGE",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::(WMI:WinEventLog|WinEventLog)...",
+"type": "REPORT",
+"value": "wel-message, wel-eq-kv, wel-col-kv"
+},
+{
+"name": "0process_id_for_windows_security",
+"origName": "source::WinEventLog:Security : EXTRACT-0process_id_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "EXTRACT",
+"value": "(?s)Application Information:.*?Process ID:\\s+(?<process_id>\\S+).*?(?:(?:\\r*\\n){2})"
+},
+{
+"name": "1IpAddress_for_windows_security_from_xml",
+"origName": "source::WinEventLog:Security : EXTRACT-1IpAddress_for_windows_security_from_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "EXTRACT",
+"value": "\\<Data Name\\=[}}\\{\\{'\"]IpAddress['}}\\{\\{\"]\\>(?!\\:\\:1)(?!127\\.0\\.0\\.1)(?<src_ip>[^\\<]+)\\<\\/Data\\>"
+},
+{
+"name": "dest_port_for_windows_security",
+"origName": "source::WinEventLog:Security : EXTRACT-dest_port_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "EXTRACT",
+"value": "(?s)Network Information:.*?Destination Port:\\s+(?<dest_port>\\S+).*?(?:(?:\\r*\\n){2})"
+},
+{
+"name": "dest_port_for_windows_security_from_xml",
+"origName": "source::WinEventLog:Security : EXTRACT-dest_port_for_windows_security_from_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "EXTRACT",
+"value": "<Data Name='DestPort'>(?<dest_port>[^<]+)<\\/Data>"
+},
+{
+"name": "group_change_groupname",
+"origName": "source::WinEventLog:Security : EXTRACT-group_change_groupname",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "EXTRACT",
+"value": "(?ms)EventCode=4756(?:\\n|\\r).*Group:(?:\\n|\\r).*Security ID:\\s*(?<Group_Domain>.*)\\\\(?<Group_Name>[^\\n\\r]+)"
+},
+{
+"name": "object_attrs_for_windows_security",
+"origName": "source::WinEventLog:Security : EXTRACT-object_attrs_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "EXTRACT",
+"value": "Rule Name:\\s+(?<object_attrs>[^$]+)$"
+},
+{
+"name": "object_attrs_for_windows_security_from_xml",
+"origName": "source::WinEventLog:Security : EXTRACT-object_attrs_for_windows_security_from_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "EXTRACT",
+"value": "<Data Name='RuleName'>(?<object_attrs>[^<]+)<\\/Data>"
+},
+{
+"name": "process_for_windows_security",
+"origName": "source::WinEventLog:Security : EXTRACT-process_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "EXTRACT",
+"value": "(?s)Application Information:.*?Process Name:\\s+(?<process>\\S+).*?(?:(?:\\r*\\n){2})"
+},
+{
+"name": "process_for_windows_security_from_xml",
+"origName": "source::WinEventLog:Security : EXTRACT-process_for_windows_security_from_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "EXTRACT",
+"value": "<Data Name='ProcessName'>(?<process>[^<]+)<\\/Data>"
+},
+{
+"name": "process_id_for_windows_security",
+"origName": "source::WinEventLog:Security : EXTRACT-process_id_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "EXTRACT",
+"value": "(?s)Process Information:.*?Process ID:\\s+(?<process_id>\\S+).*?(?:(?:\\r*\\n){2})"
+},
+{
+"name": "process_id_for_windows_security_from_xml",
+"origName": "source::WinEventLog:Security : EXTRACT-process_id_for_windows_security_from_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "EXTRACT",
+"value": "<Execution ProcessID='(?<process_id>\\d+)'"
+},
+{
+"name": "0privilege_for_windows_security_xml",
+"origName": "source::WinEventLog:Security : REPORT-0privilege_for_windows_security_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "REPORT",
+"value": "PrivilegeList_as_vendor_privilege"
+},
+{
+"name": "0vendor_privilege_for_windows_security",
+"origName": "source::WinEventLog:Security : REPORT-0vendor_privilege_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "REPORT",
+"value": "vendor_privilege_sv_for_windows_security,vendor_privilege_mv_for_windows_security"
+},
+{
+"name": "account_locked_out_fields",
+"origName": "source::WinEventLog:Security : REPORT-account_locked_out_fields",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "REPORT",
+"value": "account_locked_out_fields_extraction"
+},
+{
+"name": "Caller_Domain_from_xml",
+"origName": "source::WinEventLog:Security : REPORT-Caller_Domain_from_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "REPORT",
+"value": "SubjectDomainName_as_Caller_Domain"
+},
+{
+"name": "Caller_User_Name_from_xml",
+"origName": "source::WinEventLog:Security : REPORT-Caller_User_Name_from_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "REPORT",
+"value": "SubjectUserName_as_Caller_User_Name"
+},
+{
+"name": "dest_for_windows_security",
+"origName": "source::WinEventLog:Security : REPORT-dest_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "REPORT",
+"value": "Target_Server_Name_as_dest,ComputerName_as_dest"
+},
+{
+"name": "dest_for_windows_xml_security",
+"origName": "source::WinEventLog:Security : REPORT-dest_for_windows_xml_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "REPORT",
+"value": "Target_Server_Name_as_dest,Computer_as_dest"
+},
+{
+"name": "dest_nt_domain_for_windows_security",
+"origName": "source::WinEventLog:Security : REPORT-dest_nt_domain_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "REPORT",
+"value": "Target_Domain_as_dest_nt_domain,Primary_Domain_as_dest_nt_domain,Group_Domain_as_dest_nt_domain,Account_Domain_as_dest_nt_domain,New_Domain_as_dest_nt_domain,Domain_as_dest_nt_domain,User_ID_as_dest_nt_domain,Security_ID_as_dest_nt_domain,Supplied_Realm_Name_as_dest_nt_domain,Target_Account_ID_as_dest_nt_domain"
+},
+{
+"name": "dest_nt_host_for_windows_security",
+"origName": "source::WinEventLog:Security : REPORT-dest_nt_host_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "REPORT",
+"value": "Target_Server_Name_as_dest_nt_host,ComputerName_as_dest_nt_host"
+},
+{
+"name": "file_name_and_path",
+"origName": "source::WinEventLog:Security : REPORT-file_name_and_path",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "REPORT",
+"value": "object_name_and_path_from_object_name,file_name_and_path_from_file_name,file_name_and_path_from_file_path"
+},
+{
+"name": "group_fields",
+"origName": "source::WinEventLog:Security : REPORT-group_fields",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "REPORT",
+"value": "group_fields_extraction"
+},
+{
+"name": "Logon_ID_from_xml",
+"origName": "source::WinEventLog:Security : REPORT-Logon_ID_from_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "REPORT",
+"value": "SubjectLogonId_as_Logon_ID"
+},
+{
+"name": "Logon_Type_from_xml",
+"origName": "source::WinEventLog:Security : REPORT-Logon_Type_from_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "REPORT",
+"value": "LogonType_as_Logon_Type"
+},
+{
+"name": "member_dn_for_windows_security",
+"origName": "source::WinEventLog:Security : REPORT-member_dn_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "REPORT",
+"value": "Member_Name_as_member_dn,Account_Name_as_member_dn"
+},
+{
+"name": "member_fields",
+"origName": "source::WinEventLog:Security : REPORT-member_fields",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "REPORT",
+"value": "member_fields_extraction"
+},
+{
+"name": "member_id_for_windows_security",
+"origName": "source::WinEventLog:Security : REPORT-member_id_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "REPORT",
+"value": "Member_ID_as_member_id,Security_ID_as_member_id"
+},
+{
+"name": "member_nt_domain_for_windows_security",
+"origName": "source::WinEventLog:Security : REPORT-member_nt_domain_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "REPORT",
+"value": "Member_ID_as_member_nt_domain,Security_ID_as_member_nt_domain"
+},
+{
+"name": "msad_actions_for_windows_security",
+"origName": "source::WinEventLog:Security : REPORT-msad_actions_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "REPORT",
+"value": "msad_action_from_Group_Type_Change,msad_action_from_Change_Type,msad_action_from_Description1,msad_action_from_Description2,msad_action_from_Description3,msad_action_from_raw1,msad_action_from_raw2,msad_action_from_raw3,msad_action_from_raw4"
+},
+{
+"name": "msad_attribute_changes_for_windows_security",
+"origName": "source::WinEventLog:Security : REPORT-msad_attribute_changes_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "REPORT",
+"value": "msad_attribute_changes_from_raw1,msad_attribute_changes_from_raw2,msad_attribute_changes_from_raw3,msad_attribute_changes_from_raw4,msad_attribute_changes_from_raw5,msad_attribute_changes_from_raw6"
+},
+{
+"name": "new_account_fields",
+"origName": "source::WinEventLog:Security : REPORT-new_account_fields",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "REPORT",
+"value": "new_account_fields_extraction"
+},
+{
+"name": "new_process_name",
+"origName": "source::WinEventLog:Security : REPORT-new_process_name",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "REPORT",
+"value": "extract_new_process_name"
+},
+{
+"name": "new_task_fields",
+"origName": "source::WinEventLog:Security : REPORT-new_task_fields",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "REPORT",
+"value": "new_task_fields_extraction"
+},
+{
+"name": "parent_process_name",
+"origName": "source::WinEventLog:Security : REPORT-parent_process_name",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "REPORT",
+"value": "extract_parent_process_name"
+},
+{
+"name": "privilege_id_for_windows_security",
+"origName": "source::WinEventLog:Security : REPORT-privilege_id_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "REPORT",
+"value": "privilege_id_for_windows_security"
+},
+{
+"name": "process_command_line_process_and_arguments",
+"origName": "source::WinEventLog:Security : REPORT-process_command_line_process_and_arguments",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "REPORT",
+"value": "process_command_line_process_and_arguments"
+},
+{
+"name": "session_id_for_windows_security",
+"origName": "source::WinEventLog:Security : REPORT-session_id_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "REPORT",
+"value": "Logon_ID_as_session_id,Client_Logon_ID_as_session_id,Caller_Logon_ID_as_session_id"
+},
+{
+"name": "Source_Port_from_xml",
+"origName": "source::WinEventLog:Security : REPORT-Source_Port_from_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "REPORT",
+"value": "IpPort_as_Source_Port"
+},
+{
+"name": "Source_Workstation_from_xml",
+"origName": "source::WinEventLog:Security : REPORT-Source_Workstation_from_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "REPORT",
+"value": "Workstation_as_Source_Workstation,WorkstationName_as_Source_Workstation,IpAddress_as_Source_Workstation"
+},
+{
+"name": "src_for_windows_security",
+"origName": "source::WinEventLog:Security : REPORT-src_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "REPORT",
+"value": "Source_Workstation_as_src,Workstation_Name_as_src,Caller_Machine_Name_as_src,Client_Machine_Name_as_src,Source_Network_Address_as_src,Client_Address_as_src"
+},
+{
+"name": "src_ip_for_windows_security",
+"origName": "source::WinEventLog:Security : REPORT-src_ip_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "REPORT",
+"value": "Source_Network_Address_as_src_ip,Client_Address_as_src_ip"
+},
+{
+"name": "src_nt_domain_for_windows_security",
+"origName": "source::WinEventLog:Security : REPORT-src_nt_domain_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "REPORT",
+"value": "Caller_Domain_as_src_nt_domain,Client_Domain_as_src_nt_domain,Account_Domain_as_src_nt_domain,New_Security_ID_as_src_nt_domain,Security_ID_as_src_nt_domain"
+},
+{
+"name": "src_nt_host_for_windows_security",
+"origName": "source::WinEventLog:Security : REPORT-src_nt_host_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "REPORT",
+"value": "Source_Workstation_as_src_nt_host,Workstation_Name_as_src_nt_host,Caller_Machine_Name_as_src_nt_host,Client_Machine_Name_as_src_nt_host,Caller_Computer_Name_as_src_nt_host"
+},
+{
+"name": "src_user_for_windows_security",
+"origName": "source::WinEventLog:Security : REPORT-src_user_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "REPORT",
+"value": "Caller_User_Name_as_src_user,Client_User_Name_as_src_user,Account_Name_as_src_user,User_Name_as_src_user"
+},
+{
+"name": "subject_fields",
+"origName": "source::WinEventLog:Security : REPORT-subject_fields",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "REPORT",
+"value": "subject_fields_extraction"
+},
+{
+"name": "Target_Domain_from_xml",
+"origName": "source::WinEventLog:Security : REPORT-Target_Domain_from_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "REPORT",
+"value": "TargetDomainName_as_Target_Domain"
+},
+{
+"name": "target_fields",
+"origName": "source::WinEventLog:Security : REPORT-target_fields",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "REPORT",
+"value": "target_fields_extraction"
+},
+{
+"name": "target_process_name",
+"origName": "source::WinEventLog:Security : REPORT-target_process_name",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "REPORT",
+"value": "extract_target_process_name"
+},
+{
+"name": "Target_Server_Name_from_xml",
+"origName": "source::WinEventLog:Security : REPORT-Target_Server_Name_from_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "REPORT",
+"value": "TargetServerName_as_Target_Server_Name"
+},
+{
+"name": "Target_User_Name_from_xml",
+"origName": "source::WinEventLog:Security : REPORT-Target_User_Name_from_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "REPORT",
+"value": "TargetUserName_as_Target_User_Name"
+},
+{
+"name": "task_fields",
+"origName": "source::WinEventLog:Security : REPORT-task_fields",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "REPORT",
+"value": "task_fields_extraction"
+},
+{
+"name": "Token_Elevation_Type_from_xml",
+"origName": "source::WinEventLog:Security : REPORT-Token_Elevation_Type_from_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "REPORT",
+"value": "TokenElevationType_as_Token_Elevation_Type"
+},
+{
+"name": "Token_Elevation_Type_id_for_windows_security",
+"origName": "source::WinEventLog:Security : REPORT-Token_Elevation_Type_id_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "REPORT",
+"value": "Token_Elevation_Type_id_for_windows_security"
+},
+{
+"name": "user_for_windows_security",
+"origName": "source::WinEventLog:Security : REPORT-user_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:Security",
+"type": "REPORT",
+"value": "Logon_Account_as_user,Logon_account_as_user,Target_User_Name_as_user,Primary_User_Name_as_user,Target_Account_Name_as_user,New_Account_Name_as_user,Special_Account_Name_as_user,Account_Name_as_user,User_Name_as_user,User_as_user,Security_ID_as_user"
+},
+{
+"name": "object_for_windows_system",
+"origName": "source::WinEventLog:System : EXTRACT-object_for_windows_system",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:System",
+"type": "EXTRACT",
+"value": "(?ms)EventCode=104(?:\\n|\\r).*(?:Message=The\\s(?<object>.+)\\sfile)"
+},
+{
+"name": "0auto_kv_for_windows_system_ias",
+"origName": "source::WinEventLog:System : REPORT-0auto_kv_for_windows_system_ias",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:System",
+"type": "REPORT",
+"value": "auto_kv_for_windows_system_ias"
+},
+{
+"name": "0signature_message_for_windows_system_update",
+"origName": "source::WinEventLog:System : REPORT-0signature_message_for_windows_system_update",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:System",
+"type": "REPORT",
+"value": "signature_message_for_windows_system_update"
+},
+{
+"name": "1service_name_eventcode_7036",
+"origName": "source::WinEventLog:System : REPORT-1service_name_eventcode_7036",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:System",
+"type": "REPORT",
+"value": "service_name_eventcode_7036"
+},
+{
+"name": "1service_name_eventcode_7040",
+"origName": "source::WinEventLog:System : REPORT-1service_name_eventcode_7040",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:System",
+"type": "REPORT",
+"value": "service_name_eventcode_7040"
+},
+{
+"name": "bestmatch_for_windows_system",
+"origName": "source::WinEventLog:System : REPORT-bestmatch_for_windows_system",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:System",
+"type": "REPORT",
+"value": "ComputerName_as_dest"
+},
+{
+"name": "bestmatch_for_windows_system_xml",
+"origName": "source::WinEventLog:System : REPORT-bestmatch_for_windows_system_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:System",
+"type": "REPORT",
+"value": "Computer_as_dest"
+},
+{
+"name": "signature_for_windows_system_update",
+"origName": "source::WinEventLog:System : REPORT-signature_for_windows_system_update",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:System",
+"type": "REPORT",
+"value": "signature_for_windows_system_timesync,signature_for_windows_system_update,signature_for_windows_system_update2"
+},
+{
+"name": "signature_from_xml",
+"origName": "source::WinEventLog:System : REPORT-signature_from_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:System",
+"type": "REPORT",
+"value": "updatetitle_from_user_data"
+},
+{
+"name": "signature_id_for_windows_system_update",
+"origName": "source::WinEventLog:System : REPORT-signature_id_for_windows_system_update",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:System",
+"type": "REPORT",
+"value": "signature_id_for_windowsupdatelog"
+},
+{
+"name": "signature_message_from_xml",
+"origName": "source::WinEventLog:System : REPORT-signature_message_from_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:System",
+"type": "REPORT",
+"value": "updatelist_from_user_data"
+},
+{
+"name": "user_for_windows_system",
+"origName": "source::WinEventLog:System : REPORT-user_for_windows_system",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:System",
+"type": "REPORT",
+"value": "user_for_windows_system_ias,User_as_user"
+},
+{
+"name": "0auto_kv_for_windows_system_ias",
+"origName": "source::WinEventLog:System:IAS : REPORT-0auto_kv_for_windows_system_ias",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WinEventLog:System:IAS",
+"type": "REPORT",
+"value": "auto_kv_for_windows_system_ias"
+},
+{
+"name": "0MESSAGE",
+"origName": "source::WMI... : REPORT-0MESSAGE",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::WMI...",
+"type": "REPORT",
+"value": "wel-message, wel-eq-kv, wel-col-kv"
+},
+{
+"name": "1IpAddress_for_windows_security_from_xml",
+"origName": "source::XmlWinEventLog:Security : EXTRACT-1IpAddress_for_windows_security_from_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"type": "EXTRACT",
+"value": "\\<Data Name\\=[}}\\{\\{'\"]IpAddress['}}\\{\\{\"]\\>(?!\\:\\:1)(?!127\\.0\\.0\\.1)(?<src_ip>[^\\<]+)\\<\\/Data\\>"
+},
+{
+"name": "dest_port_for_windows_security_from_xml",
+"origName": "source::XmlWinEventLog:Security : EXTRACT-dest_port_for_windows_security_from_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"type": "EXTRACT",
+"value": "<Data Name='DestPort'>(?<dest_port>[^<]+)<\\/Data>"
+},
+{
+"name": "new_process_for_windows_security_from_xml",
+"origName": "source::XmlWinEventLog:Security : EXTRACT-new_process_for_windows_security_from_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"type": "EXTRACT",
+"value": "<Data Name='NewProcessName'>(?<new_process>[^<]+)<\\/Data>"
+},
+{
+"name": "new_process_id_for_windows_security_from_xml",
+"origName": "source::XmlWinEventLog:Security : EXTRACT-new_process_id_for_windows_security_from_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"type": "EXTRACT",
+"value": "<Data Name='NewProcessId'>(?<new_process_id>[^<]+)<\\/Data>"
+},
+{
+"name": "object_attrs_for_windows_security_from_xml",
+"origName": "source::XmlWinEventLog:Security : EXTRACT-object_attrs_for_windows_security_from_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"type": "EXTRACT",
+"value": "<Data Name='RuleName'>(?<object_attrs>[^<]+)<\\/Data>"
+},
+{
+"name": "parent_process_for_windows_security_from_xml",
+"origName": "source::XmlWinEventLog:Security : EXTRACT-parent_process_for_windows_security_from_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"type": "EXTRACT",
+"value": "<Data Name='ParentProcessName'>(?<parent_process>[^<]+)<\\/Data>"
+},
+{
+"name": "process_command_line_for_xml",
+"origName": "source::XmlWinEventLog:Security : EXTRACT-process_command_line_for_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"type": "EXTRACT",
+"value": "<Data Name='CommandLine'>(?<Process_Command_Line>[^<]+)<\\/Data>"
+},
+{
+"name": "process_for_windows_security_from_xml",
+"origName": "source::XmlWinEventLog:Security : EXTRACT-process_for_windows_security_from_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"type": "EXTRACT",
+"value": "<Data Name='ProcessName'>(?<process>[^<]+)<\\/Data>"
+},
+{
+"name": "process_id_for_windows_security_from_xml",
+"origName": "source::XmlWinEventLog:Security : EXTRACT-process_id_for_windows_security_from_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"type": "EXTRACT",
+"value": "<Data Name='ProcessId'>(?<process_id>[^<]+)<\\/Data>"
+},
+{
+"name": "0privilege_for_windows_security_xml",
+"origName": "source::XmlWinEventLog:Security : REPORT-0privilege_for_windows_security_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"type": "REPORT",
+"value": "PrivilegeList_as_vendor_privilege"
+},
+{
+"name": "0vendor_privilege_for_windows_security",
+"origName": "source::XmlWinEventLog:Security : REPORT-0vendor_privilege_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"type": "REPORT",
+"value": "vendor_privilege_sv_for_windows_security,vendor_privilege_mv_for_windows_security"
+},
+{
+"name": "Caller_Domain_from_xml",
+"origName": "source::XmlWinEventLog:Security : REPORT-Caller_Domain_from_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"type": "REPORT",
+"value": "SubjectDomainName_as_Caller_Domain"
+},
+{
+"name": "caller_user_name_from_user_data_xml",
+"origName": "source::XmlWinEventLog:Security : REPORT-caller_user_name_from_user_data_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"type": "REPORT",
+"value": "SubjectUserName_from_user_data"
+},
+{
+"name": "Caller_User_Name_from_xml",
+"origName": "source::XmlWinEventLog:Security : REPORT-Caller_User_Name_from_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"type": "REPORT",
+"value": "SubjectUserName_as_Caller_User_Name"
+},
+{
+"name": "dest_for_windows_security",
+"origName": "source::XmlWinEventLog:Security : REPORT-dest_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"type": "REPORT",
+"value": "Target_Server_Name_as_dest,Computer_as_dest"
+},
+{
+"name": "dest_nt_domain_for_windows_security",
+"origName": "source::XmlWinEventLog:Security : REPORT-dest_nt_domain_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"type": "REPORT",
+"value": "Target_Domain_as_dest_nt_domain,Primary_Domain_as_dest_nt_domain,Group_Domain_as_dest_nt_domain,Account_Domain_as_dest_nt_domain,New_Domain_as_dest_nt_domain,Domain_as_dest_nt_domain,User_ID_as_dest_nt_domain,Security_ID_as_dest_nt_domain,Supplied_Realm_Name_as_dest_nt_domain,Target_Account_ID_as_dest_nt_domain"
+},
+{
+"name": "dest_nt_host_for_windows_security",
+"origName": "source::XmlWinEventLog:Security : REPORT-dest_nt_host_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"type": "REPORT",
+"value": "Target_Server_Name_as_dest_nt_host,ComputerName_as_dest_nt_host"
+},
+{
+"name": "file_name_and_path",
+"origName": "source::XmlWinEventLog:Security : REPORT-file_name_and_path",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"type": "REPORT",
+"value": "object_file_name_and_path_from_ObjectName_for_xml,file_name_and_path_from_FileName_for_xml,file_name_and_path_from_KeyFilePath_for_xml"
+},
+{
+"name": "logfilecleared_block_extract",
+"origName": "source::XmlWinEventLog:Security : REPORT-logfilecleared_block_extract",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"type": "REPORT",
+"value": "logfilecleared_xml_block"
+},
+{
+"name": "logfilecleareddata_for_xml",
+"origName": "source::XmlWinEventLog:Security : REPORT-logfilecleareddata_for_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"type": "REPORT",
+"value": "LogFileClearedData_from_user_data"
+},
+{
+"name": "Logon_ID_from_xml",
+"origName": "source::XmlWinEventLog:Security : REPORT-Logon_ID_from_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"type": "REPORT",
+"value": "SubjectLogonId_as_Logon_ID"
+},
+{
+"name": "Logon_Type_from_xml",
+"origName": "source::XmlWinEventLog:Security : REPORT-Logon_Type_from_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"type": "REPORT",
+"value": "LogonType_as_Logon_Type"
+},
+{
+"name": "member_dn_for_windows_security",
+"origName": "source::XmlWinEventLog:Security : REPORT-member_dn_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"type": "REPORT",
+"value": "Member_Name_as_member_dn,Account_Name_as_member_dn"
+},
+{
+"name": "member_id_for_windows_security",
+"origName": "source::XmlWinEventLog:Security : REPORT-member_id_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"type": "REPORT",
+"value": "Member_ID_as_member_id,Security_ID_as_member_id"
+},
+{
+"name": "member_nt_domain_for_windows_security",
+"origName": "source::XmlWinEventLog:Security : REPORT-member_nt_domain_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"type": "REPORT",
+"value": "Member_ID_as_member_nt_domain,Security_ID_as_member_nt_domain"
+},
+{
+"name": "member_user_name",
+"origName": "source::XmlWinEventLog:Security : REPORT-member_user_name",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"type": "REPORT",
+"value": "special_user_from_member_name"
+},
+{
+"name": "msad_actions_for_windows_security",
+"origName": "source::XmlWinEventLog:Security : REPORT-msad_actions_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"type": "REPORT",
+"value": "msad_action_from_Group_Type_Change,msad_action_from_Change_Type,msad_action_from_Description1,msad_action_from_Description2,msad_action_from_Description3,msad_action_from_raw1,msad_action_from_raw2,msad_action_from_raw3,msad_action_from_raw4"
+},
+{
+"name": "msad_attribute_changes_for_windows_security",
+"origName": "source::XmlWinEventLog:Security : REPORT-msad_attribute_changes_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"type": "REPORT",
+"value": "msad_attribute_changes_from_raw1,msad_attribute_changes_from_raw2,msad_attribute_changes_from_raw3,msad_attribute_changes_from_raw4,msad_attribute_changes_from_raw5,msad_attribute_changes_from_raw6"
+},
+{
+"name": "new_process_name_windows_xml",
+"origName": "source::XmlWinEventLog:Security : REPORT-new_process_name_windows_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"type": "REPORT",
+"value": "extract_new_process_name_for_windows_xml"
+},
+{
+"name": "parent_process_name_windows_xml",
+"origName": "source::XmlWinEventLog:Security : REPORT-parent_process_name_windows_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"type": "REPORT",
+"value": "extract_parent_process_name_for_windows_xml"
+},
+{
+"name": "privilege_id_for_windows_security",
+"origName": "source::XmlWinEventLog:Security : REPORT-privilege_id_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"type": "REPORT",
+"value": "privilege_id_for_windows_security"
+},
+{
+"name": "process_command_line_process_and_arguments",
+"origName": "source::XmlWinEventLog:Security : REPORT-process_command_line_process_and_arguments",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"type": "REPORT",
+"value": "process_command_line_process_and_arguments"
+},
+{
+"name": "session_id_for_windows_security",
+"origName": "source::XmlWinEventLog:Security : REPORT-session_id_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"type": "REPORT",
+"value": "Logon_ID_as_session_id,Client_Logon_ID_as_session_id,Caller_Logon_ID_as_session_id"
+},
+{
+"name": "Source_Port_from_xml",
+"origName": "source::XmlWinEventLog:Security : REPORT-Source_Port_from_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"type": "REPORT",
+"value": "IpPort_as_Source_Port"
+},
+{
+"name": "Source_Workstation_from_xml",
+"origName": "source::XmlWinEventLog:Security : REPORT-Source_Workstation_from_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"type": "REPORT",
+"value": "Workstation_as_Source_Workstation,WorkstationName_as_Source_Workstation,IpAddress_as_Source_Workstation"
+},
+{
+"name": "src_for_windows_security",
+"origName": "source::XmlWinEventLog:Security : REPORT-src_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"type": "REPORT",
+"value": "Source_Workstation_as_src,Workstation_Name_as_src,Caller_Machine_Name_as_src,Client_Machine_Name_as_src,Source_Network_Address_as_src,Client_Address_as_src"
+},
+{
+"name": "src_ip_for_windows_security",
+"origName": "source::XmlWinEventLog:Security : REPORT-src_ip_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"type": "REPORT",
+"value": "Source_Network_Address_as_src_ip,Client_Address_as_src_ip"
+},
+{
+"name": "src_nt_domain_for_windows_security",
+"origName": "source::XmlWinEventLog:Security : REPORT-src_nt_domain_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"type": "REPORT",
+"value": "Caller_Domain_as_src_nt_domain,Client_Domain_as_src_nt_domain,Account_Domain_as_src_nt_domain,Security_ID_as_src_nt_domain"
+},
+{
+"name": "src_nt_host_for_windows_security",
+"origName": "source::XmlWinEventLog:Security : REPORT-src_nt_host_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"type": "REPORT",
+"value": "Source_Workstation_as_src_nt_host,Workstation_Name_as_src_nt_host,Caller_Machine_Name_as_src_nt_host,Client_Machine_Name_as_src_nt_host,Caller_Computer_Name_as_src_nt_host"
+},
+{
+"name": "src_user_for_windows_security",
+"origName": "source::XmlWinEventLog:Security : REPORT-src_user_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"type": "REPORT",
+"value": "Caller_User_Name_as_src_user,Client_User_Name_as_src_user,Account_Name_as_src_user,User_Name_as_src_user"
+},
+{
+"name": "Target_Domain_from_xml",
+"origName": "source::XmlWinEventLog:Security : REPORT-Target_Domain_from_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"type": "REPORT",
+"value": "TargetDomainName_as_Target_Domain"
+},
+{
+"name": "target_process_name_windows_xml",
+"origName": "source::XmlWinEventLog:Security : REPORT-target_process_name_windows_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"type": "REPORT",
+"value": "extract_target_process_name_for_windows_xml"
+},
+{
+"name": "Target_Server_Name_from_xml",
+"origName": "source::XmlWinEventLog:Security : REPORT-Target_Server_Name_from_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"type": "REPORT",
+"value": "TargetServerName_as_Target_Server_Name"
+},
+{
+"name": "Target_User_Name_from_xml",
+"origName": "source::XmlWinEventLog:Security : REPORT-Target_User_Name_from_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"type": "REPORT",
+"value": "TargetUserName_as_Target_User_Name"
+},
+{
+"name": "Token_Elevation_Type_from_xml",
+"origName": "source::XmlWinEventLog:Security : REPORT-Token_Elevation_Type_from_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"type": "REPORT",
+"value": "TokenElevationType_as_Token_Elevation_Type"
+},
+{
+"name": "Token_Elevation_Type_id_for_windows_security",
+"origName": "source::XmlWinEventLog:Security : REPORT-Token_Elevation_Type_id_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"type": "REPORT",
+"value": "Token_Elevation_Type_id_for_windows_security"
+},
+{
+"name": "user_for_windows_security",
+"origName": "source::XmlWinEventLog:Security : REPORT-user_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:Security",
+"type": "REPORT",
+"value": "Logon_Account_as_user,Logon_account_as_user,Target_User_Name_as_user,Primary_User_Name_as_user,Target_Account_Name_as_user,New_Account_Name_as_user,Account_Name_as_user,User_Name_as_user,User_as_user,Security_ID_as_user"
+},
+{
+"name": "user_from_SubjectUserName",
+"origName": "source::XmlWinEventLog:System : EXTRACT-user_from_SubjectUserName",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:System",
+"type": "EXTRACT",
+"value": "<EventID>104<\\/EventID>.*<SubjectUserName>(?<user>.*?)<\\/SubjectUserName>"
+},
+{
+"name": "user_name_from_SubjectUserName",
+"origName": "source::XmlWinEventLog:System : EXTRACT-user_name_from_SubjectUserName",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:System",
+"type": "EXTRACT",
+"value": "<EventID>104<\\/EventID>.*<SubjectUserName>(?<user_name>.*?)<\\/SubjectUserName>"
+},
+{
+"name": "0signature_message_for_windows_system_update",
+"origName": "source::XmlWinEventLog:System : REPORT-0signature_message_for_windows_system_update",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:System",
+"type": "REPORT",
+"value": "signature_message_for_windows_system_update"
+},
+{
+"name": "bestmatch_for_windows_system_xml",
+"origName": "source::XmlWinEventLog:System : REPORT-bestmatch_for_windows_system_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:System",
+"type": "REPORT",
+"value": "Computer_as_dest"
+},
+{
+"name": "channel_from_user_data",
+"origName": "source::XmlWinEventLog:System : REPORT-channel_from_user_data",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:System",
+"type": "REPORT",
+"value": "channel_from_user_data"
+},
+{
+"name": "service_name",
+"origName": "source::XmlWinEventLog:System : REPORT-service_name",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:System",
+"type": "REPORT",
+"value": "ServiceName_as_service_name"
+},
+{
+"name": "signature_for_windows_system_update",
+"origName": "source::XmlWinEventLog:System : REPORT-signature_for_windows_system_update",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:System",
+"type": "REPORT",
+"value": "signature_for_windows_system_timesync,signature_for_windows_system_update,signature_for_windows_system_update2"
+},
+{
+"name": "signature_from_xml",
+"origName": "source::XmlWinEventLog:System : REPORT-signature_from_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:System",
+"type": "REPORT",
+"value": "updatetitle_from_user_data"
+},
+{
+"name": "signature_id_for_windows_system_update",
+"origName": "source::XmlWinEventLog:System : REPORT-signature_id_for_windows_system_update",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:System",
+"type": "REPORT",
+"value": "signature_id_for_windowsupdatelog"
+},
+{
+"name": "signature_message_from_xml",
+"origName": "source::XmlWinEventLog:System : REPORT-signature_message_from_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:System",
+"type": "REPORT",
+"value": "updatelist_from_user_data"
+},
+{
+"name": "user_for_windows_system",
+"origName": "source::XmlWinEventLog:System : REPORT-user_for_windows_system",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "source::XmlWinEventLog:System",
+"type": "REPORT",
+"value": "user_for_windows_system_ias,User_as_user"
+},
+{
+"name": "0signature_message_for_windowsupdatelog",
+"origName": "WindowsUpdateLog : REPORT-0signature_message_for_windowsupdatelog",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WindowsUpdateLog",
+"type": "REPORT",
+"value": "signature_message_for_windowsupdatelog"
+},
+{
+"name": "1signature_for_windowsupdatelog",
+"origName": "WindowsUpdateLog : REPORT-1signature_for_windowsupdatelog",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WindowsUpdateLog",
+"type": "REPORT",
+"value": "signature_for_windowsupdatelog,signature_for_windowsupdatelog_restartrequired,signature_for_windowsupdatelog_signature_message"
+},
+{
+"name": "pid-tid-component_for_windowsupdatelog",
+"origName": "WindowsUpdateLog : REPORT-pid-tid-component_for_windowsupdatelog",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WindowsUpdateLog",
+"type": "REPORT",
+"value": "pid-tid-component_for_windowsupdatelog"
+},
+{
+"name": "signature_id_for_windowsupdatelog",
+"origName": "WindowsUpdateLog : REPORT-signature_id_for_windowsupdatelog",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WindowsUpdateLog",
+"type": "REPORT",
+"value": "signature_id_for_windowsupdatelog"
+},
+{
+"name": "file_path-file_name_for_windows",
+"origName": "WinEventLog : REPORT-file_path-file_name_for_windows",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinEventLog",
+"type": "REPORT",
+"value": "file_path-file_name_for_windows"
+},
+{
+"name": "file_path-file_name_for_windows",
+"origName": "wineventlog : REPORT-file_path-file_name_for_windows",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "wineventlog",
+"type": "REPORT",
+"value": "file_path-file_name_for_windows"
+},
+{
+"name": "process_for_winhostmon",
+"origName": "WinHostMon : EXTRACT-process_for_winhostmon",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinHostMon",
+"type": "EXTRACT",
+"value": "Type=Process.*?Name=\"(?<process>[^\"}}\\{\\{]+)\""
+},
+{
+"name": "service_for_winhostmon",
+"origName": "WinHostMon : EXTRACT-service_for_winhostmon",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinHostMon",
+"type": "EXTRACT",
+"value": "DisplayName=\"(?<service>[^\"}}\\{\\{]+)\""
+},
+{
+"name": "service_name_for_winhostmon",
+"origName": "WinHostMon : EXTRACT-service_name_for_winhostmon",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinHostMon",
+"type": "EXTRACT",
+"value": "DisplayName=\"(?<service_name>[^\"}}\\{\\{]+)\""
+},
+{
+"name": "Path_for_WinHostMon_service",
+"origName": "WinHostMon : REPORT-Path_for_WinHostMon_service",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinHostMon",
+"type": "REPORT",
+"value": "Path_for_WinHostMon_service"
+},
+{
+"name": "Processor_Id_for_WinHostMon_processor",
+"origName": "WinHostMon : REPORT-Processor_Id_for_WinHostMon_processor",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinHostMon",
+"type": "REPORT",
+"value": "Processor_Id_for_WinHostMon_processor"
+},
+{
+"name": "service_exec_for_WinHostMon_service_path_and_exec_name",
+"origName": "WinHostMon : REPORT-service_exec_for_WinHostMon_service_path_and_exec_name",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinHostMon",
+"type": "REPORT",
+"value": "service_exec_for_WinHostMon_service_path, service_exec_for_WinHostMon_service_exec"
+},
+{
+"name": "System_Type_for_WinHostMon_computer",
+"origName": "WinHostMon : REPORT-System_Type_for_WinHostMon_computer",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinHostMon",
+"type": "REPORT",
+"value": "System_Type_for_WinHostMon_computer"
+},
+{
+"name": "object_for_WinRegistry",
+"origName": "WinRegistry : REPORT-object_for_WinRegistry",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinRegistry",
+"type": "REPORT",
+"value": "object_as_registry_key_for_WinRegistry,object_as_registry_value_for_WinRegistry"
+},
+{
+"name": "registry_path_parser",
+"origName": "WinRegistry : REPORT-registry_path_parser",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinRegistry",
+"type": "REPORT",
+"value": "registry_key_for_WinRegistry,registry_key-registry_value_for_WinRegistry"
+},
+{
+"name": "registry_value_data",
+"origName": "WinRegistry : REPORT-registry_value_data",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinRegistry",
+"type": "REPORT",
+"value": "registry_value_data_for_WinRegistry"
+},
+{
+"name": "user_for_WinRegistry",
+"origName": "WinRegistry : REPORT-user_for_WinRegistry",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinRegistry",
+"type": "REPORT",
+"value": "user_for_WinRegistry"
+},
+{
+"name": "vendor_status_msg_for_WinRegistry",
+"origName": "WinRegistry : REPORT-vendor_status_msg_for_WinRegistry",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WinRegistry",
+"type": "REPORT",
+"value": "vendor_status_msg_for_WinRegistry"
+},
+{
+"name": "report_field_extract_wmi_cputime_anomalous",
+"origName": "WMI:CPUTime : REPORT-report_field_extract_wmi_cputime_anomalous",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:CPUTime",
+"type": "REPORT",
+"value": "field_extract_wmi_cputime_anomalous"
+},
+{
+"name": "report_field_extract_wmi_freediskspace_anomalous",
+"origName": "WMI:FreeDiskSpace : REPORT-report_field_extract_wmi_freediskspace_anomalous",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:FreeDiskSpace",
+"type": "REPORT",
+"value": "field_extract_wmi_freediskspace_anomalous"
+},
+{
+"name": "00Description_for_installedupdates",
+"origName": "WMI:InstalledUpdates : REPORT-00Description_for_installedupdates",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:InstalledUpdates",
+"type": "REPORT",
+"value": "Description_for_installedupdates"
+},
+{
+"name": "report_field_extract_name",
+"origName": "WMI:LocalPhysicalDisk : REPORT-report_field_extract_name",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:LocalPhysicalDisk",
+"type": "REPORT",
+"value": "field_extract_wmi_localphysicaldisk_name"
+},
+{
+"name": "rep_field_extract_wmi_localprocesses_anomalous",
+"origName": "WMI:LocalProcesses : REPORT-rep_field_extract_wmi_localprocesses_anomalous",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:LocalProcesses",
+"type": "REPORT",
+"value": "field_extract_wmi_localprocesses_anomalous"
+},
+{
+"name": "report_field_extract_wmi_memory_anomalous",
+"origName": "WMI:Memory : REPORT-report_field_extract_wmi_memory_anomalous",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:Memory",
+"type": "REPORT",
+"value": "field_extract_wmi_memory_anomalous"
+},
+{
+"name": "report_field_extract_wmi_service_path_and_exec_name",
+"origName": "WMI:Service : REPORT-report_field_extract_wmi_service_path_and_exec_name",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:Service",
+"type": "REPORT",
+"value": "field_extract_wmi_service_path, field_extract_wmi_service_exec"
+},
+{
+"name": "report_field_extract_wmi_service_state_anomalous",
+"origName": "WMI:Service : REPORT-report_field_extract_wmi_service_state_anomalous",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:Service",
+"type": "REPORT",
+"value": "field_extract_wmi_service_state_anomalous"
+},
+{
+"name": "report_field_extract_wmi_service_state_full",
+"origName": "WMI:Service : REPORT-report_field_extract_wmi_service_state_full",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:Service",
+"type": "REPORT",
+"value": "field_extract_wmi_service_caption_description_pathname"
+},
+{
+"name": "report_field_extract_wmi_uptime_anomalous",
+"origName": "WMI:Uptime : REPORT-report_field_extract_wmi_uptime_anomalous",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:Uptime",
+"type": "REPORT",
+"value": "field_extract_wmi_uptime_anomalous"
+},
+{
+"name": "report_field_extract_description",
+"origName": "WMI:UserAccounts : REPORT-report_field_extract_description",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:UserAccounts",
+"type": "REPORT",
+"value": "field_extract_wmi_useraccounts_caption_description_name"
+},
+{
+"name": "0Caption_for_wmi_version",
+"origName": "WMI:Version : REPORT-0Caption_for_wmi_version",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:Version",
+"type": "REPORT",
+"value": "Caption_for_wmi_version"
+},
+{
+"name": "file_path-file_name_for_windows",
+"origName": "WMI:WinEventLog:Application : REPORT-file_path-file_name_for_windows",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Application",
+"type": "REPORT",
+"value": "file_path-file_name_for_windows"
+},
+{
+"name": "group_change_groupname",
+"origName": "WMI:WinEventLog:Security : EXTRACT-group_change_groupname",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security",
+"type": "EXTRACT",
+"value": "(?ms)EventCode=4756(?:\\n|\\r).*Group:(?:\\n|\\r).*Account Name:\\s*(?<Group_Name>.*)(?:\\n|\\r).*Account Domain:\\s*(?<Group_Domain>[^\\n\\r]+)"
+},
+{
+"name": "0vendor_privilege_for_windows_security",
+"origName": "WMI:WinEventLog:Security : REPORT-0vendor_privilege_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security",
+"type": "REPORT",
+"value": "vendor_privilege_sv_for_windows_security,vendor_privilege_mv_for_windows_security"
+},
+{
+"name": "dest_for_windows_security",
+"origName": "WMI:WinEventLog:Security : REPORT-dest_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security",
+"type": "REPORT",
+"value": "Target_Server_Name_as_dest,ComputerName_as_dest"
+},
+{
+"name": "dest_nt_domain_for_windows_security",
+"origName": "WMI:WinEventLog:Security : REPORT-dest_nt_domain_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security",
+"type": "REPORT",
+"value": "Target_Domain_as_dest_nt_domain,Primary_Domain_as_dest_nt_domain,Group_Domain_as_dest_nt_domain,Account_Domain_as_dest_nt_domain,New_Domain_as_dest_nt_domain,Domain_as_dest_nt_domain,User_ID_as_dest_nt_domain,Security_ID_as_dest_nt_domain,Supplied_Realm_Name_as_dest_nt_domain,Target_Account_ID_as_dest_nt_domain"
+},
+{
+"name": "dest_nt_host_for_windows_security",
+"origName": "WMI:WinEventLog:Security : REPORT-dest_nt_host_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security",
+"type": "REPORT",
+"value": "Target_Server_Name_as_dest_nt_host,ComputerName_as_dest_nt_host"
+},
+{
+"name": "file_path-file_name_for_windows",
+"origName": "WMI:WinEventLog:Security : REPORT-file_path-file_name_for_windows",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security",
+"type": "REPORT",
+"value": "file_path-file_name_for_windows"
+},
+{
+"name": "member_dn_for_windows_security",
+"origName": "WMI:WinEventLog:Security : REPORT-member_dn_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security",
+"type": "REPORT",
+"value": "Member_Name_as_member_dn,Account_Name_as_member_dn"
+},
+{
+"name": "member_id_for_windows_security",
+"origName": "WMI:WinEventLog:Security : REPORT-member_id_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security",
+"type": "REPORT",
+"value": "Member_ID_as_member_id,Security_ID_as_member_id"
+},
+{
+"name": "member_nt_domain_for_windows_security",
+"origName": "WMI:WinEventLog:Security : REPORT-member_nt_domain_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security",
+"type": "REPORT",
+"value": "Member_ID_as_member_nt_domain,Security_ID_as_member_nt_domain"
+},
+{
+"name": "msad_actions_for_windows_security",
+"origName": "WMI:WinEventLog:Security : REPORT-msad_actions_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security",
+"type": "REPORT",
+"value": "msad_action_from_Group_Type_Change,msad_action_from_Change_Type,msad_action_from_Description1,msad_action_from_Description2,msad_action_from_Description3,msad_action_from_raw1,msad_action_from_raw2,msad_action_from_raw3,msad_action_from_raw4"
+},
+{
+"name": "msad_attribute_changes_for_windows_security",
+"origName": "WMI:WinEventLog:Security : REPORT-msad_attribute_changes_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security",
+"type": "REPORT",
+"value": "msad_attribute_changes_from_raw1,msad_attribute_changes_from_raw2,msad_attribute_changes_from_raw3,msad_attribute_changes_from_raw4,msad_attribute_changes_from_raw5,msad_attribute_changes_from_raw6"
+},
+{
+"name": "privilege_id_for_windows_security",
+"origName": "WMI:WinEventLog:Security : REPORT-privilege_id_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security",
+"type": "REPORT",
+"value": "privilege_id_for_windows_security"
+},
+{
+"name": "session_id_for_windows_security",
+"origName": "WMI:WinEventLog:Security : REPORT-session_id_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security",
+"type": "REPORT",
+"value": "Logon_ID_as_session_id,Client_Logon_ID_as_session_id,Caller_Logon_ID_as_session_id"
+},
+{
+"name": "src_for_windows_security",
+"origName": "WMI:WinEventLog:Security : REPORT-src_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security",
+"type": "REPORT",
+"value": "Source_Workstation_as_src,Workstation_Name_as_src,Caller_Machine_Name_as_src,Client_Machine_Name_as_src,Source_Network_Address_as_src,Client_Address_as_src"
+},
+{
+"name": "src_ip_for_windows_security",
+"origName": "WMI:WinEventLog:Security : REPORT-src_ip_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security",
+"type": "REPORT",
+"value": "Source_Network_Address_as_src_ip,Client_Address_as_src_ip"
+},
+{
+"name": "src_nt_domain_for_windows_security",
+"origName": "WMI:WinEventLog:Security : REPORT-src_nt_domain_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security",
+"type": "REPORT",
+"value": "Caller_Domain_as_src_nt_domain,Client_Domain_as_src_nt_domain,Account_Domain_as_src_nt_domain,Security_ID_as_src_nt_domain"
+},
+{
+"name": "src_nt_host_for_windows_security",
+"origName": "WMI:WinEventLog:Security : REPORT-src_nt_host_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security",
+"type": "REPORT",
+"value": "Source_Workstation_as_src_nt_host,Workstation_Name_as_src_nt_host,Caller_Machine_Name_as_src_nt_host,Client_Machine_Name_as_src_nt_host,Caller_Computer_Name_as_src_nt_host"
+},
+{
+"name": "src_user_for_windows_security",
+"origName": "WMI:WinEventLog:Security : REPORT-src_user_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security",
+"type": "REPORT",
+"value": "Caller_User_Name_as_src_user,Client_User_Name_as_src_user,Account_Name_as_src_user,User_Name_as_src_user"
+},
+{
+"name": "Token_Elevation_Type_id_for_windows_security",
+"origName": "WMI:WinEventLog:Security : REPORT-Token_Elevation_Type_id_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security",
+"type": "REPORT",
+"value": "Token_Elevation_Type_id_for_windows_security"
+},
+{
+"name": "user_for_windows_security",
+"origName": "WMI:WinEventLog:Security : REPORT-user_for_windows_security",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:Security",
+"type": "REPORT",
+"value": "Logon_Account_as_user,Logon_account_as_user,Target_User_Name_as_user,Primary_User_Name_as_user,Target_Account_Name_as_user,New_Account_Name_as_user,Account_Name_as_user,User_Name_as_user,User_as_user,Security_ID_as_user"
+},
+{
+"name": "0signature_message_for_windows_system_update",
+"origName": "WMI:WinEventLog:System : REPORT-0signature_message_for_windows_system_update",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:System",
+"type": "REPORT",
+"value": "signature_message_for_windows_system_update"
+},
+{
+"name": "bestmatch_for_windows_system",
+"origName": "WMI:WinEventLog:System : REPORT-bestmatch_for_windows_system",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:System",
+"type": "REPORT",
+"value": "ComputerName_as_dest"
+},
+{
+"name": "file_path-file_name_for_windows",
+"origName": "WMI:WinEventLog:System : REPORT-file_path-file_name_for_windows",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:System",
+"type": "REPORT",
+"value": "file_path-file_name_for_windows"
+},
+{
+"name": "signature_for_windows_system_update",
+"origName": "WMI:WinEventLog:System : REPORT-signature_for_windows_system_update",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:System",
+"type": "REPORT",
+"value": "signature_for_windows_system_timesync,signature_for_windows_system_update,signature_for_windows_system_update2"
+},
+{
+"name": "signature_id_for_windows_system_update",
+"origName": "WMI:WinEventLog:System : REPORT-signature_id_for_windows_system_update",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:System",
+"type": "REPORT",
+"value": "signature_id_for_windowsupdatelog"
+},
+{
+"name": "user_for_windows_system",
+"origName": "WMI:WinEventLog:System : REPORT-user_for_windows_system",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "WMI:WinEventLog:System",
+"type": "REPORT",
+"value": "user_for_windows_system_ias,User_as_user"
+},
+{
+"name": "0xml_block_extract",
+"origName": "xmlwineventlog : REPORT-0xml_block_extract",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "xmlwineventlog",
+"type": "REPORT",
+"value": "system_xml_block,eventdata_xml_block,userdata_xml_block,debugdata_xml_block,renderinginfo_xml_block"
+},
+{
+"name": "0xml_block_extract",
+"origName": "XmlWinEventLog : REPORT-0xml_block_extract",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "XmlWinEventLog",
+"type": "REPORT",
+"value": "system_xml_block,eventdata_xml_block,userdata_xml_block,debugdata_xml_block,renderinginfo_xml_block"
+},
+{
+"name": "0xml_kv_extract",
+"origName": "xmlwineventlog : REPORT-0xml_kv_extract",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "xmlwineventlog",
+"type": "REPORT",
+"value": "system_props_xml_kv,system_props_xml_attributes,eventdata_xml_data,rendering_info_xml_data"
+},
+{
+"name": "0xml_kv_extract",
+"origName": "XmlWinEventLog : REPORT-0xml_kv_extract",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "XmlWinEventLog",
+"type": "REPORT",
+"value": "system_props_xml_kv,system_props_xml_attributes,eventdata_xml_data,rendering_info_xml_data"
+},
+{
+"name": "EventCode_from_xml",
+"origName": "xmlwineventlog : REPORT-EventCode_from_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "xmlwineventlog",
+"type": "REPORT",
+"value": "EventID_as_EventCode,EventID2_as_EventCode"
+},
+{
+"name": "EventCode_from_xml",
+"origName": "XmlWinEventLog : REPORT-EventCode_from_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "XmlWinEventLog",
+"type": "REPORT",
+"value": "EventID_as_EventCode,EventID2_as_EventCode"
+},
+{
+"name": "file_path-file_name_for_windows",
+"origName": "XmlWinEventLog : REPORT-file_path-file_name_for_windows",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "XmlWinEventLog",
+"type": "REPORT",
+"value": "file_path-file_name_for_windows"
+},
+{
+"name": "file_path-file_name_for_windows",
+"origName": "xmlwineventlog : REPORT-file_path-file_name_for_windows",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "xmlwineventlog",
+"type": "REPORT",
+"value": "file_path-file_name_for_windows"
+},
+{
+"name": "RecordNumber_from_xml",
+"origName": "xmlwineventlog : REPORT-RecordNumber_from_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "xmlwineventlog",
+"type": "REPORT",
+"value": "EventRecordID_as_RecordNumber"
+},
+{
+"name": "RecordNumber_from_xml",
+"origName": "XmlWinEventLog : REPORT-RecordNumber_from_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "XmlWinEventLog",
+"type": "REPORT",
+"value": "EventRecordID_as_RecordNumber"
+},
+{
+"name": "Sub_Status_from_xml",
+"origName": "xmlwineventlog : REPORT-Sub_Status_from_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "xmlwineventlog",
+"type": "REPORT",
+"value": "SubStatus_as_Sub_Status"
+},
+{
+"name": "Sub_Status_from_xml",
+"origName": "XmlWinEventLog : REPORT-Sub_Status_from_xml",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "XmlWinEventLog",
+"type": "REPORT",
+"value": "SubStatus_as_Sub_Status"
+}
+]

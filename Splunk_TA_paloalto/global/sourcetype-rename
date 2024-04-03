@@ -1,0 +1,44 @@
+[
+{
+"name": "pan_aperture",
+"owner": "nobody",
+"sharing": "global",
+"value": "pan:aperture"
+},
+{
+"name": "pan_config",
+"owner": "nobody",
+"sharing": "global",
+"value": "pan:config"
+},
+{
+"name": "pan_decryption",
+"owner": "nobody",
+"sharing": "global",
+"value": "pan:decryption"
+},
+{
+"name": "pan_globalprotect",
+"owner": "nobody",
+"sharing": "global",
+"value": "pan:globalprotect"
+},
+{
+"name": "pan_system",
+"owner": "nobody",
+"sharing": "global",
+"value": "pan:system"
+},
+{
+"name": "pan_threat",
+"owner": "nobody",
+"sharing": "global",
+"value": "pan:threat"
+},
+{
+"name": "pan_traffic",
+"owner": "nobody",
+"sharing": "global",
+"value": "pan:traffic"
+}
+]

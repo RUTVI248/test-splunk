@@ -1,0 +1,189 @@
+[
+{
+"authentication": "enabled",
+"name": "eventtype=pan_aperture_admin_audit",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"alert": "enabled",
+"name": "eventtype=pan_aperture_incident",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"alert": "enabled",
+"name": "eventtype=pan_aperture_policy_violation",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"alert": "enabled",
+"name": "eventtype=pan_aperture_remediation",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"account": "enabled",
+"change": "enabled",
+"name": "eventtype=pan_config",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"alert": "enabled",
+"name": "eventtype=pan_correlation",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"malware": "enabled",
+"name": "eventtype=pan_endpoint",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"attack": "enabled",
+"ids": "enabled",
+"name": "eventtype=pan_file",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"name": "eventtype=pan_firewall",
+"network": "enabled",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"name": "eventtype=pan_firewall_cloud",
+"network": "enabled",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"authentication": "enabled",
+"name": "eventtype=pan_globalprotect",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"alert": "enabled",
+"name": "eventtype=pan_iot_alert",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"endpoint": "enabled",
+"filesystem": "enabled",
+"inventory": "enabled",
+"listening": "enabled",
+"name": "eventtype=pan_iot_device",
+"network": "enabled",
+"owner": "nobody",
+"port": "enabled",
+"process": "enabled",
+"report": "enabled",
+"service": "enabled",
+"sharing": "global",
+"system": "enabled",
+"user": "enabled",
+"version": "enabled"
+},
+{
+"alert": "enabled",
+"name": "eventtype=pan_iot_vulnerability",
+"owner": "nobody",
+"report": "enabled",
+"sharing": "global",
+"vulnerability": "enabled"
+},
+{
+"attack": "enabled",
+"malware": "enabled",
+"name": "eventtype=pan_malware_attacks",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"malware": "enabled",
+"name": "eventtype=pan_malware_operations",
+"operations": "enabled",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"attack": "enabled",
+"ids": "enabled",
+"name": "eventtype=pan_spyware",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"alert": "enabled",
+"name": "eventtype=pan_system_alert",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"authentication": "enabled",
+"default": "enabled",
+"name": "eventtype=pan_system_auth",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"change": "enabled",
+"name": "eventtype=pan_system_change",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"attack": "enabled",
+"ids": "enabled",
+"name": "eventtype=pan_threat",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"communicate": "enabled",
+"name": "eventtype=pan_traffic",
+"network": "enabled",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"malware": "enabled",
+"name": "eventtype=pan_traps",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"name": "eventtype=pan_url",
+"owner": "nobody",
+"proxy": "enabled",
+"sharing": "global",
+"web": "enabled"
+},
+{
+"attack": "enabled",
+"ids": "enabled",
+"name": "eventtype=pan_virus",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"attack": "enabled",
+"ids": "enabled",
+"name": "eventtype=pan_wildfire",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"attack": "enabled",
+"ids": "enabled",
+"name": "eventtype=pan_wildfire_malicious",
+"owner": "nobody",
+"sharing": "global"
+}
+]

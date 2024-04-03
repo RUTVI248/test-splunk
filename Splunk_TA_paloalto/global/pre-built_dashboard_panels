@@ -1,0 +1,26 @@
+[
+{
+"eai:data": "<panel>\n  <title>PAN FW - App Activity Destinations in Last 24H</title>\n  <map>\n    <search>\n      <query>sourcetype=\"pan:traffic\" earliest=-1d | iplocation dest_ip | geostats count by application</query>\n      <earliest></earliest>\n      <latest></latest>\n    </search>\n    <option name=\"mapping.data.maxClusters\">100</option>\n    <option name=\"mapping.drilldown\">all</option>\n    <option name=\"mapping.map.center\">(0,0)</option>\n    <option name=\"mapping.map.zoom\">2</option>\n    <option name=\"mapping.markerLayer.markerMaxSize\">50</option>\n    <option name=\"mapping.markerLayer.markerMinSize\">10</option>\n    <option name=\"mapping.markerLayer.markerOpacity\">0.8</option>\n    <option name=\"mapping.tileLayer.maxZoom\">7</option>\n    <option name=\"mapping.tileLayer.minZoom\">0</option>\n  </map>\n</panel>",
+"name": "pan_fw_app_activity_destinations_in_last_24h",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"eai:data": "<panel>\n  <title>PAN FW - Threat Distribution in Last 24H</title>\n  <chart>\n    <search>\n      <query>sourcetype=\"pan:threat\" earliest=-1d | timechart span=5m count by threat_name limit=8</query>\n      <earliest>0</earliest>\n      <latest></latest>\n    </search>\n    <option name=\"charting.axisLabelsX.majorLabelStyle.overflowMode\">ellipsisNone</option>\n    <option name=\"charting.axisLabelsX.majorLabelStyle.rotation\">0</option>\n    <option name=\"charting.axisTitleX.visibility\">visible</option>\n    <option name=\"charting.axisTitleY.visibility\">visible</option>\n    <option name=\"charting.axisTitleY2.visibility\">visible</option>\n    <option name=\"charting.axisX.scale\">linear</option>\n    <option name=\"charting.axisY.scale\">linear</option>\n    <option name=\"charting.axisY2.enabled\">false</option>\n    <option name=\"charting.axisY2.scale\">inherit</option>\n    <option name=\"charting.chart\">area</option>\n    <option name=\"charting.chart.bubbleMaximumSize\">50</option>\n    <option name=\"charting.chart.bubbleMinimumSize\">10</option>\n    <option name=\"charting.chart.bubbleSizeBy\">area</option>\n    <option name=\"charting.chart.nullValueMode\">gaps</option>\n    <option name=\"charting.chart.sliceCollapsingThreshold\">0.01</option>\n    <option name=\"charting.chart.stackMode\">default</option>\n    <option name=\"charting.chart.style\">shiny</option>\n    <option name=\"charting.drilldown\">all</option>\n    <option name=\"charting.layout.splitSeries\">0</option>\n    <option name=\"charting.legend.labelStyle.overflowMode\">ellipsisMiddle</option>\n    <option name=\"charting.legend.placement\">right</option>\n    <option name=\"charting.axisY.minimumNumber\">5</option>\n  </chart>\n</panel>",
+"name": "pan_fw_threat_distribution_in_last_24h",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"eai:data": "<panel>\n\t<title>PAN FW - Top 10 App Traffic Volume in Last 24H</title>\n  <table>\n    <search>\n      <query>sourcetype=\"pan:traffic\" earliest=-1d | stats sum(bytes) AS sbytes by app | sort -sbytes | head 10 | eval \"Application and Protocol\"=upper(app) | eval \"Volume in MB\"=round(sbytes/1024/1024) | table \"Application and Protocol\" \"Volume in MB\"</query>\n      <earliest></earliest>\n      <latest></latest>\n    </search>\n  </table>\n</panel>",
+"name": "pan_fw_top_10_app_traffic_volume_in_last_24h",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"eai:data": "<panel>\n  <title>PAN FW - Top 10 Threat Source Users in Last 24H</title>\n  <chart>\n    <search>\n      <query>sourcetype = \"pan:threat\" earliest = -1d | stats count as \"Threats Number\" by src_user | sort -\"Threats Number\" | head 10</query>\n      <earliest></earliest>\n      <latest></latest>\n    </search>\n    <option name=\"charting.axisLabelsX.majorLabelStyle.overflowMode\">ellipsisNone</option>\n    <option name=\"charting.axisLabelsX.majorLabelStyle.rotation\">0</option>\n    <option name=\"charting.axisTitleX.visibility\">visible</option>\n    <option name=\"charting.axisTitleY.visibility\">visible</option>\n    <option name=\"charting.axisTitleY2.visibility\">visible</option>\n    <option name=\"charting.axisX.scale\">linear</option>\n    <option name=\"charting.axisY.scale\">linear</option>\n    <option name=\"charting.axisY2.enabled\">0</option>\n    <option name=\"charting.axisY2.scale\">inherit</option>\n    <option name=\"charting.chart\">pie</option>\n    <option name=\"charting.chart.bubbleMaximumSize\">50</option>\n    <option name=\"charting.chart.bubbleMinimumSize\">10</option>\n    <option name=\"charting.chart.bubbleSizeBy\">area</option>\n    <option name=\"charting.chart.nullValueMode\">gaps</option>\n    <option name=\"charting.chart.sliceCollapsingThreshold\">0.01</option>\n    <option name=\"charting.chart.stackMode\">default</option>\n    <option name=\"charting.chart.style\">shiny</option>\n    <option name=\"charting.drilldown\">all</option>\n    <option name=\"charting.layout.splitSeries\">0</option>\n    <option name=\"charting.legend.labelStyle.overflowMode\">ellipsisMiddle</option>\n    <option name=\"charting.legend.placement\">right</option>\n  </chart>\n</panel>",
+"name": "pan_fw_top_10_threat_source_users_in_last_24h",
+"owner": "nobody",
+"sharing": "global"
+}
+]
