@@ -1,0 +1,11 @@
+[
+{
+"name": "all",
+"origName": "gitforsplunk : REPORT-all",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "gitforsplunk",
+"type": "REPORT",
+"value": "git_commit_msg,git_changed_text,git_changed_files,git_status_codes,git_commit_hash,git_repo_size,git_runtime,git_status"
+}
+]

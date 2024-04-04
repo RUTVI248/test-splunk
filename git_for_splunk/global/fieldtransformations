@@ -1,0 +1,98 @@
+[
+{
+"CAN_OPTIMIZE": "1",
+"CLEAN_KEYS": "1",
+"KEEP_EMPTY_VALS": "0",
+"MV_ADD": "1",
+"REGEX": "\\s(?<changed_file>[^\\n]+?) +\\| [^\\n]+",
+"SOURCE_KEY": "change_list",
+"disabled": "0",
+"name": "git_changed_files",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"CAN_OPTIMIZE": "1",
+"CLEAN_KEYS": "1",
+"KEEP_EMPTY_VALS": "0",
+"MV_ADD": "0",
+"REGEX": "(?s)git log \\-\\-stat=\\d+,\\d+ \\-1.+?OUTPUT:commit (?<change_list>.+?)\\n \\d+ file",
+"SOURCE_KEY": "_raw",
+"disabled": "0",
+"name": "git_changed_text",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"CAN_OPTIMIZE": "1",
+"CLEAN_KEYS": "1",
+"KEEP_EMPTY_VALS": "0",
+"MV_ADD": "0",
+"REGEX": "OUTPUT:commit (?<commit_hash>\\S+)",
+"SOURCE_KEY": "_raw",
+"disabled": "0",
+"name": "git_commit_hash",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"CAN_OPTIMIZE": "1",
+"CLEAN_KEYS": "1",
+"KEEP_EMPTY_VALS": "0",
+"MV_ADD": "0",
+"REGEX": "git commit \\-\\-amend \\-m (?<commit_message>[^\\r\\n]+)",
+"SOURCE_KEY": "_raw",
+"disabled": "0",
+"name": "git_commit_msg",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"CAN_OPTIMIZE": "1",
+"CLEAN_KEYS": "1",
+"KEEP_EMPTY_VALS": "0",
+"MV_ADD": "0",
+"REGEX": "repo_size=(?<repo_size>\\d+)",
+"SOURCE_KEY": "_raw",
+"disabled": "0",
+"name": "git_repo_size",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"CAN_OPTIMIZE": "1",
+"CLEAN_KEYS": "1",
+"KEEP_EMPTY_VALS": "0",
+"MV_ADD": "0",
+"REGEX": "runtime=(?<runtime>[\\d\\.]+)",
+"SOURCE_KEY": "_raw",
+"disabled": "0",
+"name": "git_runtime",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"CAN_OPTIMIZE": "1",
+"CLEAN_KEYS": "1",
+"KEEP_EMPTY_VALS": "0",
+"MV_ADD": "0",
+"REGEX": "status=(?<status>\\d)",
+"SOURCE_KEY": "_raw",
+"disabled": "0",
+"name": "git_status",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"CAN_OPTIMIZE": "1",
+"CLEAN_KEYS": "1",
+"KEEP_EMPTY_VALS": "0",
+"MV_ADD": "0",
+"REGEX": "(?s)EXITCODE: (?<status_check_status>\\d+)(?:.+?EXITCODE: (?<status_add_files>\\d+))?(?:.+?EXITCODE: (?<status_commit_files>\\d+))?(?:.+?EXITCODE: (?<status_change_message>\\d+))?(?:.+?EXITCODE: (?<status_commit_details>\\d+))?(?:.+?EXITCODE: (?<status_push>\\d+))?",
+"SOURCE_KEY": "_raw",
+"disabled": "0",
+"name": "git_status_codes",
+"owner": "nobody",
+"sharing": "global"
+}
+]
