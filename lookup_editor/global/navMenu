@@ -1,0 +1,8 @@
+[
+{
+"eai:data": "<nav color=\"#858585\" search_view=\"search\">\n  <view name=\"lookup_list\" default=\"true\" />\n  <view name=\"new_lookup\" />\n\t<collection label=\"Health\">\n\t\t<view name=\"overview\" />\n\t\t<view name=\"logs\" />\n\t\t<view name=\"status\" />\n  </collection>\n  <collection label=\"Search\">\n  \t<view name=\"search\" />\n  \t<view name=\"datasets\" />\n  \t<view name=\"reports\" />\n  \t<view name=\"alerts\" />\n  \t<view name=\"dashboards\" />\n  </collection>\n</nav>",
+"name": "default",
+"owner": "nobody",
+"sharing": "global"
+}
+]
