@@ -2,9 +2,9 @@
 {
 "batch_index_query": "0",
 "case_sensitive_match": "1",
-"fields_list": "app,app:category,app:subcategory,app:technology,app:risk,app:evasive,app:excessive_bandwidth,app:used_by_malware,app:able_to_transfer_file,app:has_known_vulnerability,app:tunnels_other_application,app:prone_to_misuse,app:pervasive_use,app:is_saas,app:default_ports",
-"filename": "app_list.csv",
-"name": "test-splunktp",
+"fields_list": "eventSource,change_type",
+"filename": "aws_cloudtrail_changetype_741.csv",
+"name": "test2",
 "owner": "admin",
 "sharing": "user"
 }
