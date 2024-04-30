@@ -12,5 +12,12 @@
 "name": "test1",
 "owner": "admin",
 "sharing": "user"
+},
+{
+"eai:data": "\n<dashboard version=\"2\" theme=\"light\">\n    <label>test_dashboard</label>\n    <description></description>\n    <definition><![CDATA[\n{\n\t\"visualizations\": {},\n\t\"dataSources\": {},\n\t\"defaults\": {\n\t\t\"dataSources\": {\n\t\t\t\"ds.search\": {\n\t\t\t\t\"options\": {\n\t\t\t\t\t\"queryParameters\": {\n\t\t\t\t\t\t\"latest\": \"$global_time.latest$\",\n\t\t\t\t\t\t\"earliest\": \"$global_time.earliest$\"\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t},\n\t\"inputs\": {\n\t\t\"input_global_trp\": {\n\t\t\t\"type\": \"input.timerange\",\n\t\t\t\"options\": {\n\t\t\t\t\"token\": \"global_time\",\n\t\t\t\t\"defaultValue\": \"-24h@h,now\"\n\t\t\t},\n\t\t\t\"title\": \"Global Time Range\"\n\t\t}\n\t},\n\t\"layout\": {\n\t\t\"type\": \"absolute\",\n\t\t\"options\": {\n\t\t\t\"width\": 1440,\n\t\t\t\"height\": 960,\n\t\t\t\"display\": \"auto\"\n\t\t},\n\t\t\"structure\": [],\n\t\t\"globalInputs\": [\n\t\t\t\"input_global_trp\"\n\t\t]\n\t},\n\t\"description\": \"\",\n\t\"title\": \"test_dashboard\"\n}\n    ]]></definition>\n    <meta type=\"hiddenElements\"><![CDATA[\n{\n\t\"hideEdit\": false,\n\t\"hideOpenInSearch\": false,\n\t\"hideExport\": false\n}\n    ]]></meta>\n</dashboard>",
+"eai:type": "views",
+"name": "test_dashboard",
+"owner": "admin",
+"sharing": "user"
 }
 ]
