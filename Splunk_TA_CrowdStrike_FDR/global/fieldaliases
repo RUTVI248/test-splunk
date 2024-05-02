@@ -1,0 +1,11 @@
+[
+{
+"alias.0.UserSid": "identity",
+"name": "ses_ai_identity",
+"origName": "crowdstrike:events:sensor : FIELDALIAS-ses_ai_identity",
+"overwrite": "1",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor"
+}
+]

@@ -1,0 +1,2030 @@
+[
+{
+"external_cmd": "crowdstrike_ta_bitmask_lookup_AsepFlags.py bitmask result",
+"external_type": "python",
+"fields_list": "bitmask,result",
+"name": "crowdstrike_ta_bitmask_lookup_AsepFlags",
+"owner": "nobody",
+"python.version": "python3",
+"sharing": "global"
+},
+{
+"external_cmd": "crowdstrike_ta_bitmask_lookup_CodeSigningFlags.py bitmask result",
+"external_type": "python",
+"fields_list": "bitmask,result",
+"name": "crowdstrike_ta_bitmask_lookup_CodeSigningFlags",
+"owner": "nobody",
+"python.version": "python3",
+"sharing": "global"
+},
+{
+"external_cmd": "crowdstrike_ta_bitmask_lookup_ConfigIDPlatform.py bitmask result",
+"external_type": "python",
+"fields_list": "bitmask,result",
+"name": "crowdstrike_ta_bitmask_lookup_ConfigIDPlatform",
+"owner": "nobody",
+"python.version": "python3",
+"sharing": "global"
+},
+{
+"external_cmd": "crowdstrike_ta_bitmask_lookup_ConfigurationDescriptorAttributes.py bitmask result",
+"external_type": "python",
+"fields_list": "bitmask,result",
+"name": "crowdstrike_ta_bitmask_lookup_ConfigurationDescriptorAttributes",
+"owner": "nobody",
+"python.version": "python3",
+"sharing": "global"
+},
+{
+"external_cmd": "crowdstrike_ta_bitmask_lookup_ConnectionFlags.py bitmask result",
+"external_type": "python",
+"fields_list": "bitmask,result",
+"name": "crowdstrike_ta_bitmask_lookup_ConnectionFlags",
+"owner": "nobody",
+"python.version": "python3",
+"sharing": "global"
+},
+{
+"external_cmd": "crowdstrike_ta_bitmask_lookup_DcPolicyFlags.py bitmask result",
+"external_type": "python",
+"fields_list": "bitmask,result",
+"name": "crowdstrike_ta_bitmask_lookup_DcPolicyFlags",
+"owner": "nobody",
+"python.version": "python3",
+"sharing": "global"
+},
+{
+"external_cmd": "crowdstrike_ta_bitmask_lookup_DcPolicyMassStorageBlockPermissions.py bitmask result",
+"external_type": "python",
+"fields_list": "bitmask,result",
+"name": "crowdstrike_ta_bitmask_lookup_DcPolicyMassStorageBlockPermissions",
+"owner": "nobody",
+"python.version": "python3",
+"sharing": "global"
+},
+{
+"external_cmd": "crowdstrike_ta_bitmask_lookup_DllCharacteristics.py bitmask result",
+"external_type": "python",
+"fields_list": "bitmask,result",
+"name": "crowdstrike_ta_bitmask_lookup_DllCharacteristics",
+"owner": "nobody",
+"python.version": "python3",
+"sharing": "global"
+},
+{
+"external_cmd": "crowdstrike_ta_bitmask_lookup_EnabledPrivilegesBitmask.py bitmask result",
+"external_type": "python",
+"fields_list": "bitmask,result",
+"name": "crowdstrike_ta_bitmask_lookup_EnabledPrivilegesBitmask",
+"owner": "nobody",
+"python.version": "python3",
+"sharing": "global"
+},
+{
+"external_cmd": "crowdstrike_ta_bitmask_lookup_EtwNegotiatedFlags.py bitmask result",
+"external_type": "python",
+"fields_list": "bitmask,result",
+"name": "crowdstrike_ta_bitmask_lookup_EtwNegotiatedFlags",
+"owner": "nobody",
+"python.version": "python3",
+"sharing": "global"
+},
+{
+"external_cmd": "crowdstrike_ta_bitmask_lookup_FileAttributes.py bitmask result",
+"external_type": "python",
+"fields_list": "bitmask,result",
+"name": "crowdstrike_ta_bitmask_lookup_FileAttributes",
+"owner": "nobody",
+"python.version": "python3",
+"sharing": "global"
+},
+{
+"external_cmd": "crowdstrike_ta_bitmask_lookup_FileEcpBitmask.py bitmask result",
+"external_type": "python",
+"fields_list": "bitmask,result",
+"name": "crowdstrike_ta_bitmask_lookup_FileEcpBitmask",
+"owner": "nobody",
+"python.version": "python3",
+"sharing": "global"
+},
+{
+"external_cmd": "crowdstrike_ta_bitmask_lookup_FsOperationClassificationFlags.py bitmask result",
+"external_type": "python",
+"fields_list": "bitmask,result",
+"name": "crowdstrike_ta_bitmask_lookup_FsOperationClassificationFlags",
+"owner": "nobody",
+"python.version": "python3",
+"sharing": "global"
+},
+{
+"external_cmd": "crowdstrike_ta_bitmask_lookup_LfoUploadFlags.py bitmask result",
+"external_type": "python",
+"fields_list": "bitmask,result",
+"name": "crowdstrike_ta_bitmask_lookup_LfoUploadFlags",
+"owner": "nobody",
+"python.version": "python3",
+"sharing": "global"
+},
+{
+"external_cmd": "crowdstrike_ta_bitmask_lookup_ModifiedRegisters.py bitmask result",
+"external_type": "python",
+"fields_list": "bitmask,result",
+"name": "crowdstrike_ta_bitmask_lookup_ModifiedRegisters",
+"owner": "nobody",
+"python.version": "python3",
+"sharing": "global"
+},
+{
+"external_cmd": "crowdstrike_ta_bitmask_lookup_ModuleCharacteristics.py bitmask result",
+"external_type": "python",
+"fields_list": "bitmask,result",
+"name": "crowdstrike_ta_bitmask_lookup_ModuleCharacteristics",
+"owner": "nobody",
+"python.version": "python3",
+"sharing": "global"
+},
+{
+"external_cmd": "crowdstrike_ta_bitmask_lookup_PrivilegesBitmask.py bitmask result",
+"external_type": "python",
+"fields_list": "bitmask,result",
+"name": "crowdstrike_ta_bitmask_lookup_PrivilegesBitmask",
+"owner": "nobody",
+"python.version": "python3",
+"sharing": "global"
+},
+{
+"external_cmd": "crowdstrike_ta_bitmask_lookup_ProcessBehaviorBitfield.py bitmask result",
+"external_type": "python",
+"fields_list": "bitmask,result",
+"name": "crowdstrike_ta_bitmask_lookup_ProcessBehaviorBitfield",
+"owner": "nobody",
+"python.version": "python3",
+"sharing": "global"
+},
+{
+"external_cmd": "crowdstrike_ta_bitmask_lookup_ProcessParameterFlags.py bitmask result",
+"external_type": "python",
+"fields_list": "bitmask,result",
+"name": "crowdstrike_ta_bitmask_lookup_ProcessParameterFlags",
+"owner": "nobody",
+"python.version": "python3",
+"sharing": "global"
+},
+{
+"external_cmd": "crowdstrike_ta_bitmask_lookup_ProcessSxsFlags.py bitmask result",
+"external_type": "python",
+"fields_list": "bitmask,result",
+"name": "crowdstrike_ta_bitmask_lookup_ProcessSxsFlags",
+"owner": "nobody",
+"python.version": "python3",
+"sharing": "global"
+},
+{
+"external_cmd": "crowdstrike_ta_bitmask_lookup_RegClassificationFlags.py bitmask result",
+"external_type": "python",
+"fields_list": "bitmask,result",
+"name": "crowdstrike_ta_bitmask_lookup_RegClassificationFlags",
+"owner": "nobody",
+"python.version": "python3",
+"sharing": "global"
+},
+{
+"external_cmd": "crowdstrike_ta_bitmask_lookup_RegConfigFlags.py bitmask result",
+"external_type": "python",
+"fields_list": "bitmask,result",
+"name": "crowdstrike_ta_bitmask_lookup_RegConfigFlags",
+"owner": "nobody",
+"python.version": "python3",
+"sharing": "global"
+},
+{
+"external_cmd": "crowdstrike_ta_bitmask_lookup_RegKeyChangeType.py bitmask result",
+"external_type": "python",
+"fields_list": "bitmask,result",
+"name": "crowdstrike_ta_bitmask_lookup_RegKeyChangeType",
+"owner": "nobody",
+"python.version": "python3",
+"sharing": "global"
+},
+{
+"external_cmd": "crowdstrike_ta_bitmask_lookup_SignInfoFlags.py bitmask result",
+"external_type": "python",
+"fields_list": "bitmask,result",
+"name": "crowdstrike_ta_bitmask_lookup_SignInfoFlags",
+"owner": "nobody",
+"python.version": "python3",
+"sharing": "global"
+},
+{
+"external_cmd": "crowdstrike_ta_bitmask_lookup_SupportedArchitectures.py bitmask result",
+"external_type": "python",
+"fields_list": "bitmask,result",
+"name": "crowdstrike_ta_bitmask_lookup_SupportedArchitectures",
+"owner": "nobody",
+"python.version": "python3",
+"sharing": "global"
+},
+{
+"external_cmd": "crowdstrike_ta_bitmask_lookup_UACFlags.py bitmask result",
+"external_type": "python",
+"fields_list": "bitmask,result",
+"name": "crowdstrike_ta_bitmask_lookup_UACFlags",
+"owner": "nobody",
+"python.version": "python3",
+"sharing": "global"
+},
+{
+"external_cmd": "crowdstrike_ta_bitmask_lookup_UserFlags.py bitmask result",
+"external_type": "python",
+"fields_list": "bitmask,result",
+"name": "crowdstrike_ta_bitmask_lookup_UserFlags",
+"owner": "nobody",
+"python.version": "python3",
+"sharing": "global"
+},
+{
+"external_cmd": "crowdstrike_ta_bitmask_lookup_UserGroupsBitmask.py bitmask result",
+"external_type": "python",
+"fields_list": "bitmask,result",
+"name": "crowdstrike_ta_bitmask_lookup_UserGroupsBitmask",
+"owner": "nobody",
+"python.version": "python3",
+"sharing": "global"
+},
+{
+"external_cmd": "crowdstrike_ta_bitmask_lookup_UserLogonFlags.py bitmask result",
+"external_type": "python",
+"fields_list": "bitmask,result",
+"name": "crowdstrike_ta_bitmask_lookup_UserLogonFlags",
+"owner": "nobody",
+"python.version": "python3",
+"sharing": "global"
+},
+{
+"external_cmd": "crowdstrike_ta_bitmask_lookup_VolumeDeviceCharacteristics.py bitmask result",
+"external_type": "python",
+"fields_list": "bitmask,result",
+"name": "crowdstrike_ta_bitmask_lookup_VolumeDeviceCharacteristics",
+"owner": "nobody",
+"python.version": "python3",
+"sharing": "global"
+},
+{
+"external_cmd": "crowdstrike_ta_bitmask_lookup_WindowFlags.py bitmask result",
+"external_type": "python",
+"fields_list": "bitmask,result",
+"name": "crowdstrike_ta_bitmask_lookup_WindowFlags",
+"owner": "nobody",
+"python.version": "python3",
+"sharing": "global"
+},
+{
+"collection": "crowdstrike_ta_build_appinfo_resolution_collection",
+"external_type": "kvstore",
+"fields_list": "SHA256HashData, CompanyName, FileDescription, FileName, FileVersion, ProductName, ProductVersion, detectionCount",
+"name": "crowdstrike_ta_build_appinfo_resolution_lookup",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"collection": "crowdstrike_ta_build_mac_ip_resolution_collection",
+"external_type": "kvstore",
+"fields_list": "aid, GatewayIP, GatewayMAC, LocalAddressIP4, MAC",
+"name": "crowdstrike_ta_build_mac_ip_resolution_lookup",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"collection": "crowdstrike_ta_build_userinfo_resolution_collection",
+"external_type": "kvstore",
+"fields_list": "UserSid, AccountType, LastLoggedOnHost, LocalAdminAccess, LogonInfo, LogonTime, LogonType, PasswordLastSet, User, UserIsAdmin, UserLogonFlags, UserName, event_platform, monthsincereset",
+"name": "crowdstrike_ta_build_userinfo_resolution_lookup",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"collection": "crowdstrike_ta_combined_host_resolution_collection",
+"external_type": "kvstore",
+"fields_list": "aid, AgentLocalTime,Time, Timezone, ComputerName, MachineDomain, OU,Version, City, Country, Continent, SystemProductName, SiteName, event_platform, GatewayIP, GatewayMAC, LocalAddressIP4, MAC",
+"name": "crowdstrike_ta_combined_host_resolution_lookup",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"collection": "crowdstrike_ta_host_resolution_device_api_collection",
+"external_type": "kvstore",
+"fields_list": "device_id, cid, agent_load_flags, agent_local_time, agent_version, bios_manufacturer, bios_version, build_number, config_id_base, config_id_build, config_id_platform, cpu_signature, external_ip, mac_address, instance_id, service_provider, service_provider_account_id, hostname, first_seen, last_seen, local_ip, major_version, minor_version, os_version, os_build, platform_id, platform_name, reduced_functionality_mode, group_hash, product_type, product_type_desc, provision_status, serial_number, service_pack_minor, pointer_size, status, system_manufacturer, system_product_name, modified_timestamp, zone_group, kernel_version, os_product_name, chassis_type, chassis_type_desc, connection_ip, default_gateway_ip, connection_mac_address",
+"name": "crowdstrike_ta_host_resolution_device_api_lookup",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "AgentLocalTime,City,ComputerName,Continent,Country,MachineDomain,OU,SiteName,SystemProductName,Time,Timezone,Version,aid,event_platform,GatewayIP,GatewayMAC,LocalAddressIP4,MAC",
+"filename": "crowdstrike_ta_index_time_host_resolution_lookup.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_host_resolution_index_time_lookup",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"collection": "crowdstrike_ta_host_resolution_collection",
+"external_type": "kvstore",
+"fields_list": "aid, AgentLocalTime,Time, Timezone, ComputerName, MachineDomain, OU,Version, City, Country, Continent, SystemProductName, SiteName, event_platform",
+"name": "crowdstrike_ta_host_resolution_lookup",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "AccessoryConnectionType,AccessoryConnectionType_meaning",
+"filename": "crowdstrike_AccessoryConnectionType.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_AccessoryConnectionType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "AccountStatus,AccountStatus_meaning",
+"filename": "crowdstrike_AccountStatus.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_AccountStatus",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "AllocationType,AllocationType_meaning",
+"filename": "crowdstrike_AllocationType.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_AllocationType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "AmsiRegistrationState,AmsiRegistrationState_meaning",
+"filename": "crowdstrike_AmsiRegistrationState.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_AmsiRegistrationState",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "AmsiStatusCode,AmsiStatusCode_meaning",
+"filename": "crowdstrike_AmsiStatusCode.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_AmsiStatusCode",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "AndroidManifestFragmentType,AndroidManifestFragmentType_meaning",
+"filename": "crowdstrike_AndroidManifestFragmentType.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_AndroidManifestFragmentType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "AndroidModuleId,AndroidModuleId_meaning",
+"filename": "crowdstrike_AndroidModuleId.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_AndroidModuleId",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "AndroidModuleState,AndroidModuleState_meaning",
+"filename": "crowdstrike_AndroidModuleState.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_AndroidModuleState",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "AppPathFlag,AppPathFlag_meaning",
+"filename": "crowdstrike_AppPathFlag.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_AppPathFlag",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "AppProvider,AppProvider_meaning",
+"filename": "crowdstrike_AppProvider.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_AppProvider",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "AppType,AppType_meaning",
+"filename": "crowdstrike_AppType.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_AppType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "AsepClass,AsepClass_meaning",
+"filename": "crowdstrike_AsepClass.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_AsepClass",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "AsepValueType,AsepValueType_meaning",
+"filename": "crowdstrike_AsepValueType.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_AsepValueType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "AuthenticationId,AuthenticationId_meaning",
+"filename": "crowdstrike_AuthenticationId.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_AuthenticationId",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "BatteryStatus,BatteryStatus_meaning",
+"filename": "crowdstrike_BatteryStatus.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_BatteryStatus",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "BillingType,BillingType_meaning",
+"filename": "crowdstrike_BillingType.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_BillingType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "BlockingClassId,BlockingClassId_meaning",
+"filename": "crowdstrike_BlockingClassId.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_BlockingClassId",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "BluetoothStatus,BluetoothStatus_meaning",
+"filename": "crowdstrike_BluetoothStatus.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_BluetoothStatus",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "BootTimeFunctionalityLevel,BootTimeFunctionalityLevel_meaning",
+"filename": "crowdstrike_BootTimeFunctionalityLevel.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_BootTimeFunctionalityLevel",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "BuildType,BuildType_meaning",
+"filename": "crowdstrike_BuildType.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_BuildType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "CallStackModuleNamesVersion,CallStackModuleNamesVersion_meaning",
+"filename": "crowdstrike_CallStackModuleNamesVersion.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_CallStackModuleNamesVersion",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "ChannelId,ChannelId_meaning",
+"filename": "crowdstrike_ChannelId.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_ChannelId",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "ClientId,ClientId_meaning",
+"filename": "crowdstrike_ClientId.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_ClientId",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "CloudErrorCode,CloudErrorCode_meaning",
+"filename": "crowdstrike_CloudErrorCode.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_CloudErrorCode",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "CloudPlatform,CloudPlatform_meaning",
+"filename": "crowdstrike_CloudPlatform.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_CloudPlatform",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "ConnectionCipher,ConnectionCipher_meaning",
+"filename": "crowdstrike_ConnectionCipher.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_ConnectionCipher",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "ConnectionDirection,ConnectionDirection_meaning",
+"filename": "crowdstrike_ConnectionDirection.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_ConnectionDirection",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "ConnectionExchange,ConnectionExchange_meaning",
+"filename": "crowdstrike_ConnectionExchange.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_ConnectionExchange",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "ConnectionHash,ConnectionHash_meaning",
+"filename": "crowdstrike_ConnectionHash.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_ConnectionHash",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "ConnectionProtocol,ConnectionProtocol_meaning",
+"filename": "crowdstrike_ConnectionProtocol.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_ConnectionProtocol",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "ConnectType,ConnectType_meaning",
+"filename": "crowdstrike_ConnectType.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_ConnectType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "ContainerizationErrorCode,ContainerizationErrorCode_meaning",
+"filename": "crowdstrike_ContainerizationErrorCode.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_ContainerizationErrorCode",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "ControlStatus,ControlStatus_meaning",
+"filename": "crowdstrike_ControlStatus.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_ControlStatus",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "CpuVendor,CpuVendor_meaning",
+"filename": "crowdstrike_CpuVendor.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_CpuVendor",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "CrashLoadedModulesVersion,CrashLoadedModulesVersion_meaning",
+"filename": "crowdstrike_CrashLoadedModulesVersion.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_CrashLoadedModulesVersion",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "CrashThreadCallStackVersion,CrashThreadCallStackVersion_meaning",
+"filename": "crowdstrike_CrashThreadCallStackVersion.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_CrashThreadCallStackVersion",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "CreateProcessType,CreateProcessType_meaning",
+"filename": "crowdstrike_CreateProcessType.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_CreateProcessType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "CSAStatus,CSAStatus_meaning",
+"filename": "crowdstrike_CSAStatus.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_CSAStatus",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "CurrentFunctionalityLevel,CurrentFunctionalityLevel_meaning",
+"filename": "crowdstrike_CurrentFunctionalityLevel.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_CurrentFunctionalityLevel",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "DcPolicyAction,DcPolicyAction_meaning",
+"filename": "crowdstrike_DcPolicyAction.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_DcPolicyAction",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "DcPolicyBlockTechnique,DcPolicyBlockTechnique_meaning",
+"filename": "crowdstrike_DcPolicyBlockTechnique.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_DcPolicyBlockTechnique",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "DcPolicyMatchMethod,DcPolicyMatchMethod_meaning",
+"filename": "crowdstrike_DcPolicyMatchMethod.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_DcPolicyMatchMethod",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "DeactivationErrorCode,DeactivationErrorCode_meaning",
+"filename": "crowdstrike_DeactivationErrorCode.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_DeactivationErrorCode",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "DeviceConnectionStatus,DeviceConnectionStatus_meaning",
+"filename": "crowdstrike_DeviceConnectionStatus.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_DeviceConnectionStatus",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "DnsResponseType,DnsResponseType_meaning",
+"filename": "crowdstrike_DnsResponseType.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_DnsResponseType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "DriverLoadFlags,DriverLoadFlags_meaning",
+"filename": "crowdstrike_DriverLoadFlags.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_DriverLoadFlags",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "EndpointDescriptorAttributes,EndpointDescriptorAttributes_meaning",
+"filename": "crowdstrike_EndpointDescriptorAttributes.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_EndpointDescriptorAttributes",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "ErrorSource,ErrorSource_meaning",
+"filename": "crowdstrike_ErrorSource.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_ErrorSource",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "ErrorStatus,ErrorStatus_meaning",
+"filename": "crowdstrike_ErrorStatus.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_ErrorStatus",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "EtwChannelType,EtwChannelType_meaning",
+"filename": "crowdstrike_EtwChannelType.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_EtwChannelType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "ExceptionCode,ExceptionCode_meaning",
+"filename": "crowdstrike_ExceptionCode.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_ExceptionCode",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "ExceptionInformation0,ExceptionInformation0_meaning",
+"filename": "crowdstrike_ExceptionInformation0.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_ExceptionInformation0",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "ExclusionSource,ExclusionSource_meaning",
+"filename": "crowdstrike_ExclusionSource.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_ExclusionSource",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "ExclusionType,ExclusionType_meaning",
+"filename": "crowdstrike_ExclusionType.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_ExclusionType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "ExecutionPivot,ExecutionPivot_meaning",
+"filename": "crowdstrike_ExecutionPivot.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_ExecutionPivot",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "FalconServiceComponent,FalconServiceComponent_meaning",
+"filename": "crowdstrike_FalconServiceComponent.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_FalconServiceComponent",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "FalconServiceState,FalconServiceState_meaning",
+"filename": "crowdstrike_FalconServiceState.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_FalconServiceState",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "FileEventType,FileEventType_meaning",
+"filename": "crowdstrike_FileEventType.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_FileEventType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "FileKnownStatus,FileKnownStatus_meaning",
+"filename": "crowdstrike_FileKnownStatus.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_FileKnownStatus",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "FileSubType,FileSubType_meaning",
+"filename": "crowdstrike_FileSubType.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_FileSubType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "FileSystemOperationType,FileSystemOperationType_meaning",
+"filename": "crowdstrike_FileSystemOperationType.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_FileSystemOperationType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "FileWrittenFlags,FileWrittenFlags_meaning",
+"filename": "crowdstrike_FileWrittenFlags.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_FileWrittenFlags",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "FirewallAction,FirewallAction_meaning",
+"filename": "crowdstrike_FirewallAction.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_FirewallAction",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "FirewallProfile,FirewallProfile_meaning",
+"filename": "crowdstrike_FirewallProfile.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_FirewallProfile",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "FirmwareAnalysisErrorSource,FirmwareAnalysisErrorSource_meaning",
+"filename": "crowdstrike_FirmwareAnalysisErrorSource.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_FirmwareAnalysisErrorSource",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "FirmwareType,FirmwareType_meaning",
+"filename": "crowdstrike_FirmwareType.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_FirmwareType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "FontLoadOperation,FontLoadOperation_meaning",
+"filename": "crowdstrike_FontLoadOperation.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_FontLoadOperation",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "FsOperationClassification,FsOperationClassification_meaning",
+"filename": "crowdstrike_FsOperationClassification.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_FsOperationClassification",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "HarmfulAppCategory,HarmfulAppCategory_meaning",
+"filename": "crowdstrike_HarmfulAppCategory.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_HarmfulAppCategory",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "HIDDescriptorCountryCode,HIDDescriptorCountryCode_meaning",
+"filename": "crowdstrike_HIDDescriptorCountryCode.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_HIDDescriptorCountryCode",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "HookedObjectType,HookedObjectType_meaning",
+"filename": "crowdstrike_HookedObjectType.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_HookedObjectType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "HookedPointerType,HookedPointerType_meaning",
+"filename": "crowdstrike_HookedPointerType.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_HookedPointerType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "HookId,HookId_meaning",
+"filename": "crowdstrike_HookId.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_HookId",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "HostProcessType,HostProcessType_meaning",
+"filename": "crowdstrike_HostProcessType.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_HostProcessType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "HttpInternalSource,HttpInternalSource_meaning",
+"filename": "crowdstrike_HttpInternalSource.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_HttpInternalSource",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "HttpMethod,HttpMethod_meaning",
+"filename": "crowdstrike_HttpMethod.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_HttpMethod",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "HttpVisibilityState,HttpVisibilityState_meaning",
+"filename": "crowdstrike_HttpVisibilityState.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_HttpVisibilityState",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "HttpVisibilityStatusReason,HttpVisibilityStatusReason_meaning",
+"filename": "crowdstrike_HttpVisibilityStatusReason.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_HttpVisibilityStatusReason",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "ImageSubsystem,ImageSubsystem_meaning",
+"filename": "crowdstrike_ImageSubsystem.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_ImageSubsystem",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "ImpersonationLevel,ImpersonationLevel_meaning",
+"filename": "crowdstrike_ImpersonationLevel.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_ImpersonationLevel",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "InjectedThreadFlag,InjectedThreadFlag_meaning",
+"filename": "crowdstrike_InjectedThreadFlag.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_InjectedThreadFlag",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "InstanceMetadataProvider,InstanceMetadataProvider_meaning",
+"filename": "crowdstrike_InstanceMetadataProvider.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_InstanceMetadataProvider",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "IntegrityLevel,IntegrityLevel_meaning,IntegrityLevel_lc_meaning",
+"filename": "crowdstrike_IntegrityLevel.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_IntegrityLevel",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "InterfaceGuid,InterfaceGuid_meaning",
+"filename": "crowdstrike_InterfaceGuid.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_InterfaceGuid",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "IoControlCode,IoControlCode_meaning",
+"filename": "crowdstrike_IoControlCode.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_IoControlCode",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "LfoUploadCloudStatus,LfoUploadCloudStatus_meaning",
+"filename": "crowdstrike_LfoUploadCloudStatus.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_LfoUploadCloudStatus",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "LfoUploadExtendedStatus,LfoUploadExtendedStatus_meaning",
+"filename": "crowdstrike_LfoUploadExtendedStatus.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_LfoUploadExtendedStatus",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "LightningLatencyState,LightningLatencyState_meaning",
+"filename": "crowdstrike_LightningLatencyState.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_LightningLatencyState",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "LinkedAuthenticationId,LinkedAuthenticationId_meaning",
+"filename": "crowdstrike_LinkedAuthenticationId.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_LinkedAuthenticationId",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "LocationStatus,LocationStatus_meaning",
+"filename": "crowdstrike_LocationStatus.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_LocationStatus",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "LogonType,LogonType_meaning",
+"filename": "crowdstrike_LogonType.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_LogonType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "MachOSubType,MachOSubType_meaning",
+"filename": "crowdstrike_MachOSubType.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_MachOSubType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "Malicious,Malicious_meaning",
+"filename": "crowdstrike_Malicious.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_Malicious",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "MeasurementType,MeasurementType_meaning",
+"filename": "crowdstrike_MeasurementType.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_MeasurementType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "MemoryDescriptionFlags,MemoryDescriptionFlags_meaning",
+"filename": "crowdstrike_MemoryDescriptionFlags.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_MemoryDescriptionFlags",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "MemoryRegionProtection,MemoryRegionProtection_meaning",
+"filename": "crowdstrike_MemoryRegionProtection.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_MemoryRegionProtection",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "ModuleLoadMechanism,ModuleLoadMechanism_meaning",
+"filename": "crowdstrike_ModuleLoadMechanism.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_ModuleLoadMechanism",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "NetworkContainmentState,NetworkContainmentState_meaning",
+"filename": "crowdstrike_NetworkContainmentState.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_NetworkContainmentState",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "NetworkExtensionType,NetworkExtensionType_meaning",
+"filename": "crowdstrike_NetworkExtensionType.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_NetworkExtensionType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "NetworkProfile,NetworkProfile_meaning",
+"filename": "crowdstrike_NetworkProfile.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_NetworkProfile",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "OciContainerEngineType,OciContainerEngineType_meaning",
+"filename": "crowdstrike_OciContainerEngineType.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_OciContainerEngineType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "ParentAuthenticationId,ParentAuthenticationId_meaning",
+"filename": "crowdstrike_ParentAuthenticationId.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_ParentAuthenticationId",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "PatternHandlingErrorType,PatternHandlingErrorType_meaning",
+"filename": "crowdstrike_PatternHandlingErrorType.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_PatternHandlingErrorType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "PayloadClassification,PayloadClassification_meaning",
+"filename": "crowdstrike_PayloadClassification.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_PayloadClassification",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "PayloadClassificationFlags,PayloadClassificationFlags_meaning",
+"filename": "crowdstrike_PayloadClassificationFlags.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_PayloadClassificationFlags",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "PciAttachmentState,PciAttachmentState_meaning",
+"filename": "crowdstrike_PciAttachmentState.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_PciAttachmentState",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "PosixFileType,PosixFileType_meaning",
+"filename": "crowdstrike_PosixFileType.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_PosixFileType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "PowerPluggedType,PowerPluggedType_meaning",
+"filename": "crowdstrike_PowerPluggedType.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_PowerPluggedType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "PreviousMemoryRegionProtection,PreviousMemoryRegionProtection_meaning",
+"filename": "crowdstrike_PreviousMemoryRegionProtection.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_PreviousMemoryRegionProtection",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "ProcessCreateFlags,ProcessCreateFlags_meaning",
+"filename": "crowdstrike_ProcessCreateFlags.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_ProcessCreateFlags",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "Protocol,Protocol_meaning,Protocol_lc_meaning",
+"filename": "crowdstrike_Protocol.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_Protocol",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "ProvisionState,ProvisionState_meaning",
+"filename": "crowdstrike_ProvisionState.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_ProvisionState",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "PtAnalysisTrigger,PtAnalysisTrigger_meaning",
+"filename": "crowdstrike_PtAnalysisTrigger.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_PtAnalysisTrigger",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "PtCompatibilityFlags,PtCompatibilityFlags_meaning",
+"filename": "crowdstrike_PtCompatibilityFlags.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_PtCompatibilityFlags",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "PupAdwareConfidence,PupAdwareConfidence_meaning",
+"filename": "crowdstrike_PupAdwareConfidence.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_PupAdwareConfidence",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "QuarantinedFileState,QuarantinedFileState_meaning",
+"filename": "crowdstrike_QuarantinedFileState.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_QuarantinedFileState",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "QueryStatus,QueryStatus_meaning,QueryStatus_code,Description",
+"filename": "crowdstrike_QueryStatus.csv",
+"min_matches": "1",
+"name": "crowdstrike_ta_lookup_QueryStatus",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "ReasonOfFunctionalityLevel,ReasonOfFunctionalityLevel_meaning",
+"filename": "crowdstrike_ReasonOfFunctionalityLevel.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_ReasonOfFunctionalityLevel",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "RegClassification,RegClassification_meaning",
+"filename": "crowdstrike_RegClassification.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_RegClassification",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "RegConfigClass,RegConfigClass_meaning",
+"filename": "crowdstrike_RegConfigClass.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_RegConfigClass",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "RegConfigValueType,RegConfigValueType_meaning",
+"filename": "crowdstrike_RegConfigValueType.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_RegConfigValueType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "RegCreateDisposition,RegCreateDisposition_meaning",
+"filename": "crowdstrike_RegCreateDisposition.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_RegCreateDisposition",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "RegOperationType,RegOperationType_meaning",
+"filename": "crowdstrike_RegOperationType.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_RegOperationType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "RegTamperType,RegTamperType_meaning",
+"filename": "crowdstrike_RegTamperType.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_RegTamperType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "RegType,RegType_meaning",
+"filename": "crowdstrike_RegType.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_RegType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"default_match": "Unassigned or private use",
+"fields_list": "RequestType_meaning,RequestType",
+"filename": "crowdstrike_RequestType.csv",
+"min_matches": "1",
+"name": "crowdstrike_ta_lookup_RequestType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "RFMState,RFMState_meaning",
+"filename": "crowdstrike_RFMState.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_RFMState",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "RuleAction,RuleAction_meaning",
+"filename": "crowdstrike_RuleAction.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_RuleAction",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "SafetyNetFailureType,SafetyNetFailureType_meaning",
+"filename": "crowdstrike_SafetyNetFailureType.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_SafetyNetFailureType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "ScreenshotType,ScreenshotType_meaning",
+"filename": "crowdstrike_ScreenshotType.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_ScreenshotType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "ScriptContentSource,ScriptContentSource_meaning",
+"filename": "crowdstrike_ScriptContentSource.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_ScriptContentSource",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "ScriptControlErrorCode,ScriptControlErrorCode_meaning",
+"filename": "crowdstrike_ScriptControlErrorCode.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_ScriptControlErrorCode",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "ScriptingLanguageId,ScriptingLanguageId_meaning",
+"filename": "crowdstrike_ScriptingLanguageId.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_ScriptingLanguageId",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "SEHValidationFailureFlags,SEHValidationFailureFlags_meaning",
+"filename": "crowdstrike_SEHValidationFailureFlags.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_SEHValidationFailureFlags",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "SELinuxEnforcementPolicy,SELinuxEnforcementPolicy_meaning",
+"filename": "crowdstrike_SELinuxEnforcementPolicy.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_SELinuxEnforcementPolicy",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "ServiceErrorControl,ServiceErrorControl_meaning",
+"filename": "crowdstrike_ServiceErrorControl.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_ServiceErrorControl",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "ServiceServiceSidType,ServiceServiceSidType_meaning",
+"filename": "crowdstrike_ServiceServiceSidType.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_ServiceServiceSidType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "ServiceStart,ServiceStart_meaning",
+"filename": "crowdstrike_ServiceStart.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_ServiceStart",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "ServiceType,ServiceType_meaning",
+"filename": "crowdstrike_ServiceType.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_ServiceType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "SHA256HashData,SHA256HashData_meaning",
+"filename": "crowdstrike_SHA256HashData.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_SHA256HashData",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "ShowWindowFlags,ShowWindowFlags_meaning",
+"filename": "crowdstrike_ShowWindowFlags.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_ShowWindowFlags",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "SignatureErrorState,SignatureErrorState_meaning",
+"filename": "crowdstrike_SignatureErrorState.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_SignatureErrorState",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "StackHashVersion,StackHashVersion_meaning",
+"filename": "crowdstrike_StackHashVersion.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_StackHashVersion",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "StandbyBucket,StandbyBucket_meaning",
+"filename": "crowdstrike_StandbyBucket.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_StandbyBucket",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "Status,Status_meaning",
+"filename": "crowdstrike_Status.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_Status",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "SuppressType,SuppressType_meaning",
+"filename": "crowdstrike_SuppressType.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_SuppressType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "SuspectStackFlag,SuspectStackFlag_meaning",
+"filename": "crowdstrike_SuspectStackFlag.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_SuspectStackFlag",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "SyntheticPR2Flags,SyntheticPR2Flags_meaning",
+"filename": "crowdstrike_SyntheticPR2Flags.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_SyntheticPR2Flags",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "SystemTableIndex,SystemTableIndex_meaning",
+"filename": "crowdstrike_SystemTableIndex.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_SystemTableIndex",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "TargetAndroidComponentType,TargetAndroidComponentType_meaning",
+"filename": "crowdstrike_TargetAndroidComponentType.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_TargetAndroidComponentType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "TemplateDisposition,TemplateDisposition_meaning",
+"filename": "crowdstrike_TemplateDisposition.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_TemplateDisposition",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "ThreadExecutionControlType,ThreadExecutionControlType_meaning",
+"filename": "crowdstrike_ThreadExecutionControlType.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_ThreadExecutionControlType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "TokenObjectCheckType,TokenObjectCheckType_meaning",
+"filename": "crowdstrike_TokenObjectCheckType.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_TokenObjectCheckType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "TokenType,TokenType_meaning",
+"filename": "crowdstrike_TokenType.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_TokenType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "UACCredentialCaptureActionType,UACCredentialCaptureActionType_meaning",
+"filename": "crowdstrike_UACCredentialCaptureActionType.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_UACCredentialCaptureActionType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "UACElevationReason,UACElevationReason_meaning",
+"filename": "crowdstrike_UACElevationReason.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_UACElevationReason",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "UACMSIAction,UACMSIAction_meaning",
+"filename": "crowdstrike_UACMSIAction.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_UACMSIAction",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "UACPromptType,UACPromptType_meaning",
+"filename": "crowdstrike_UACPromptType.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_UACPromptType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "UmppaInjectionType,UmppaInjectionType_meaning",
+"filename": "crowdstrike_UmppaInjectionType.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_UmppaInjectionType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "UmppcEntryReason,UmppcEntryReason_meaning",
+"filename": "crowdstrike_UmppcEntryReason.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_UmppcEntryReason",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "UpdateFlag,UpdateFlag_meaning",
+"filename": "crowdstrike_UpdateFlag.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_UpdateFlag",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "UserLogoffType,UserLogoffType_meaning",
+"filename": "crowdstrike_UserLogoffType.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_UserLogoffType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "UserModeHookSource,UserModeHookSource_meaning",
+"filename": "crowdstrike_UserModeHookSource.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_UserModeHookSource",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "UserSid,UserSid_meaning",
+"filename": "crowdstrike_UserSid.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_UserSid",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "VnodeModificationType,VnodeModificationType_meaning",
+"filename": "crowdstrike_VnodeModificationType.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_VnodeModificationType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "VnodeType,VnodeType_meaning",
+"filename": "crowdstrike_VnodeType.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_VnodeType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "VolumeFileSystemType,VolumeFileSystemType_meaning",
+"filename": "crowdstrike_VolumeFileSystemType.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_VolumeFileSystemType",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "WellKnownTargetFunction,WellKnownTargetFunction_meaning",
+"filename": "crowdstrike_WellKnownTargetFunction.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_WellKnownTargetFunction",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"batch_index_query": "0",
+"case_sensitive_match": "1",
+"fields_list": "WhitelistingSource,WhitelistingSource_meaning",
+"filename": "crowdstrike_WhitelistingSource.csv",
+"min_matches": "0",
+"name": "crowdstrike_ta_lookup_WhitelistingSource",
+"owner": "nobody",
+"sharing": "global"
+}
+]

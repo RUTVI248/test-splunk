@@ -1,0 +1,42 @@
+[
+{
+"definition": "index=*",
+"disabled": "0",
+"eai:appName": "Splunk_TA_CrowdStrike_FDR",
+"eai:userName": "nobody",
+"iseval": "0",
+"name": "crowdstrike_ta_aidmaster_index",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"definition": "index=*",
+"disabled": "0",
+"eai:appName": "Splunk_TA_CrowdStrike_FDR",
+"eai:userName": "nobody",
+"iseval": "0",
+"name": "crowdstrike_ta_appinfo_index",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"definition": "index=*",
+"disabled": "0",
+"eai:appName": "Splunk_TA_CrowdStrike_FDR",
+"eai:userName": "nobody",
+"iseval": "0",
+"name": "crowdstrike_ta_managedassets_index",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"definition": "index=*",
+"disabled": "0",
+"eai:appName": "Splunk_TA_CrowdStrike_FDR",
+"eai:userName": "nobody",
+"iseval": "0",
+"name": "crowdstrike_ta_userinfo_index",
+"owner": "nobody",
+"sharing": "global"
+}
+]

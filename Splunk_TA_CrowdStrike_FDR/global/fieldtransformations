@@ -1,0 +1,41 @@
+[
+{
+"CAN_OPTIMIZE": "1",
+"CLEAN_KEYS": "1",
+"FORMAT": "event_time::\"$1\"",
+"KEEP_EMPTY_VALS": "0",
+"MV_ADD": "0",
+"REGEX": "(?:\"timestamp\":\\s*\"?(\\d{10,13})\"?)",
+"SOURCE_KEY": "_raw",
+"disabled": "0",
+"name": "crowdstrike_ta_extract_timestamp_events_sensor",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"CAN_OPTIMIZE": "1",
+"CLEAN_KEYS": "1",
+"FORMAT": "host_res_aid::\"$1\"",
+"KEEP_EMPTY_VALS": "0",
+"MV_ADD": "0",
+"REGEX": "(?:\"aid\":\\s*\"([A-Fa-f0-9]{32})\")",
+"SOURCE_KEY": "_raw",
+"disabled": "0",
+"name": "crowdstrike_ta_index_time_event_host_resolution_trigger_idxtm",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"CAN_OPTIMIZE": "1",
+"CLEAN_KEYS": "1",
+"FORMAT": "sourcetype::crowdstrike:events:sensor",
+"KEEP_EMPTY_VALS": "0",
+"MV_ADD": "0",
+"REGEX": ".*",
+"SOURCE_KEY": "_raw",
+"disabled": "0",
+"name": "crowdstrike_ta_rewrite_sensor_intermediate_sourcetype",
+"owner": "nobody",
+"sharing": "global"
+}
+]

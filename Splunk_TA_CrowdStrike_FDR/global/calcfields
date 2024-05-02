@@ -1,0 +1,762 @@
+[
+{
+"name": "action",
+"origName": "crowdstrike:events:sensor : EVAL-action",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case( event_simpleName IN (\"FileRenameInfo\", \"NewExecutableRenamed\", \"AsepValueUpdate\", \"CriticalEnvironmentVariableChanged\"), \"modified\", \n        event_simpleName=\"UserLogoff\", \"logoff\", \n        event_simpleName=\"UserLogon\", \"success\", \n        event_simpleName IN (\"UserLogonFailed\", \"UserLogonFailed2\"), \"failure\", \n        event_simpleName IN (\"ProcessRollup2\", \"EndOfProcess\", \"SyntheticProcessRollup2\", \"ImageHash\", \"CommandHistory\", \"PrivilegedProcessHandleFromUnsignedModule\", \"ScreenshotTakenEtw\", \"WmiCreateProcess\", \"InjectedThread\", \"DriverLoad\", \"KernelModeLoadImage\", \"ProcessRollup2Stats\"), \"allowed\", \n        event_simpleName IN (\"ProcessBlocked\", \"QuarantinedFile\", \"QuarantinedFileState\"), \"blocked\", \n        event_simpleName IN (\"FileCreateInfo\", \"NewExecutableWritten\", \"PeFileWritten\", \"DirectoryCreate\", \"NewScriptWritten\", \"PackedExecutableWritten\", \"ELFFileWritten\", \"RarFileWritten\", \"AsepKeyUpdate\", \"InstalledApplication\", \"LFODownloadConfirmation\"), \"created\", \n        event_simpleName=\"PeVersionInfo\", \"information\", \n        event_simpleName=\"ExecutableDeleted\", \"deleted\", \n        event_simpleName IN (\"FileOpenInfo\", \"CriticalFileAccessed\", \"SensitiveWmiQuery\"), \"read\")"
+},
+{
+"name": "additional_answer_count",
+"origName": "crowdstrike:events:sensor : EVAL-additional_answer_count",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName=\"DnsRequest\", \"0\")"
+},
+{
+"name": "answer",
+"origName": "crowdstrike:events:sensor : EVAL-answer",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName=\"DnsRequest\", if(isnull(IP4Records) AND isnull(IP6Records) ,null(), mvindex(split(coalesce(IP4Records, \"\")+coalesce(IP6Records, \"\"), \";\"), 0, -2)))"
+},
+{
+"name": "answer_count",
+"origName": "crowdstrike:events:sensor : EVAL-answer_count",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName=\"DnsRequest\", if(isnull(IP4Records) AND isnull(IP6Records), 0, mvcount(split(coalesce(IP4Records, \"\")+coalesce(IP6Records, \"\"), \";\"))-1))"
+},
+{
+"name": "app",
+"origName": "crowdstrike:events:sensor : EVAL-app",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"UserLogon\",\"UserLogonFailed\",\"UserLogonFailed2\"), lower(event_platform)+if(UserLogonFlags IN (\"4\", \"8\", \"12\"), \":local\", \"\"))"
+},
+{
+"name": "category",
+"origName": "crowdstrike:events:sensor : EVAL-category",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"QuarantinedFile\", \"QuarantinedFileState\"), \"quarantine\")"
+},
+{
+"name": "change_type",
+"origName": "crowdstrike:events:sensor : EVAL-change_type",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"SensitiveWmiQuery\", \"NewExecutableRenamed\", \"FileRenameInfo\") AND event_platform=\"Win\", \"Filesystem\", event_simpleName=\"UserLogoff\", \"AAA\", event_simpleName IN (\"InstalledApplication\", \"CriticalEnvironmentVariableChanged\"), \"Filesystem\")"
+},
+{
+"name": "command",
+"origName": "crowdstrike:events:sensor : EVAL-command",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"SensitiveWmiQuery\"), WmiQuery)"
+},
+{
+"name": "cpu_cores",
+"origName": "crowdstrike:events:sensor : EVAL-cpu_cores",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName=\"SystemCapacity\", PhysicalCoreCount)"
+},
+{
+"name": "cpu_count",
+"origName": "crowdstrike:events:sensor : EVAL-cpu_count",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName=\"SystemCapacity\", PhysicalCoreCount)"
+},
+{
+"name": "cpu_mhz",
+"origName": "crowdstrike:events:sensor : EVAL-cpu_mhz",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName=\"SystemCapacity\", CpuClockSpeed)"
+},
+{
+"name": "creation_time",
+"origName": "crowdstrike:events:sensor : EVAL-creation_time",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"NetworkConnectIP4\", \"NetworkListenIP4\", \"NetworkCloseIP4\", \"NetworkCloseIP6\", \"NetworkConnectIP6\", \"NetworkListenIP6\", \"NetworkReceiveAcceptIP4\", \"NetworkReceiveAcceptIP6\"), ContextTimeStamp)"
+},
+{
+"name": "date",
+"origName": "crowdstrike:events:sensor : EVAL-date",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName=\"QuarantinedFile\", timestamp, event_simpleName=\"QuarantinedFileState\", ContextTimeStamp)"
+},
+{
+"name": "description",
+"origName": "crowdstrike:events:sensor : EVAL-description",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName=\"UserIdentity\", \"user is logged on\", event_simpleName=\"OsVersionInfo\", \"operating system\", event_simpleName=\"LocalIpAddressIP4\", \"new IPv4 network address\", event_simpleName=\"LocalIpAddressIP6\", \"new IPv6 network address\")"
+},
+{
+"name": "dest",
+"origName": "crowdstrike:events:sensor : EVAL-dest",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"ScreenshotTakenEtw\", \"WmiCreateProcess\", \"InjectedThread\", \"DriverLoad\", \"AsepValueUpdate\", \"AsepKeyUpdate\", \"SensitiveWmiQuery\", \"NewExecutableRenamed\", \"HostedServiceStarted\", \"ModifyServiceBinary\", \"CreateService\", \"ScheduledTaskRegistered\", \"RarFileWritten\", \"ELFFileWritten\", \"FileRenameInfo\", \"UserIdentity\", \"ServiceStarted\", \"OsVersionInfo\", \"QuarantinedFile\", \"QuarantinedFileState\", \"UserLogoff\", \"UserLogonFailed\", \"UserLogonFailed2\", \"ProcessRollup2\", \"ProcessRollup2\", \"EndOfProcess\", \"SyntheticProcessRollup2\", \"ImageHash\", \"CommandHistory\", \"ProcessBlocked\", \"PrivilegedProcessHandleFromUnsignedModule\", \"NewExecutableWritten\", \"PeFileWritten\", \"DirectoryCreate\", \"CriticalFileAccessed\", \"NewScriptWritten\", \"PeVersionInfo\", \"PackedExecutableWritten\", \"ExecutableDeleted\", \"FileOpenInfo\", \"FileCreateInfo\", \"InstalledApplication\", \"InstanceMetadata\", \"KernelModeLoadImage\", \"HostInfo\", \"ProcessRollup2Stats\", \"LFODownloadConfirmation\", \"SystemCapacity\", \"CriticalEnvironmentVariableChanged\"), coalesce(device_hostname, aid_computer_name), \n        event_simpleName IN (\"LocalIpAddressIP4\", \"NetworkListenIP4\", \"NetworkReceiveAcceptIP4\"), LocalAddressIP4, \n        event_simpleName IN (\"LocalIpAddressIP6\", \"NetworkListenIP6\", \"NetworkReceiveAcceptIP6\"), LocalAddressIP6, \n        event_simpleName IN (\"NetworkConnectIP4\", \"NetworkCloseIP4\"), RemoteAddressIP4, \n        event_simpleName IN (\"NetworkCloseIP6\", \"NetworkConnectIP6\"), RemoteAddressIP6, \n        event_simpleName=\"UserLogon\", LogonServer, \n        event_simpleName=\"DnsRequest\", RespondingDnsServer)"
+},
+{
+"name": "dest_aid",
+"origName": "crowdstrike:events:sensor : EVAL-dest_aid",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(isnull(device_hostname) AND isnull(aid_computer_name) AND event_simpleName IN (\"ScreenshotTakenEtw\", \"WmiCreateProcess\", \"InjectedThread\", \"DriverLoad\", \"AsepValueUpdate\", \"AsepKeyUpdate\", \"SensitiveWmiQuery\", \"NewExecutableRenamed\", \"HostedServiceStarted\", \"ModifyServiceBinary\", \"CreateService\", \"ScheduledTaskRegistered\", \"RarFileWritten\", \"ELFFileWritten\", \"FileRenameInfo\", \"UserIdentity\", \"ServiceStarted\", \"OsVersionInfo\", \"QuarantinedFile\", \"QuarantinedFileState\", \"UserLogoff\", \"UserLogonFailed\", \"UserLogonFailed2\", \"ProcessRollup2\", \"ProcessRollup2\", \"EndOfProcess\", \"SyntheticProcessRollup2\", \"ImageHash\", \"CommandHistory\", \"ProcessBlocked\", \"PrivilegedProcessHandleFromUnsignedModule\", \"NewExecutableWritten\", \"PeFileWritten\", \"DirectoryCreate\", \"CriticalFileAccessed\", \"NewScriptWritten\", \"PeVersionInfo\", \"PackedExecutableWritten\", \"ExecutableDeleted\", \"FileOpenInfo\", \"FileCreateInfo\", \"InstalledApplication\", \"InstanceMetadata\", \"KernelModeLoadImage\", \"HostInfo\", \"ProcessRollup2Stats\", \"LFODownloadConfirmation\", \"SystemCapacity\", \"CriticalEnvironmentVariableChanged\"),  aid)"
+},
+{
+"name": "dest_host",
+"origName": "crowdstrike:events:sensor : EVAL-dest_host",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"LocalIpAddressIP4\", \"LocalIpAddressIP6\"), coalesce(device_hostname, aid_computer_name))"
+},
+{
+"name": "dest_host_aid",
+"origName": "crowdstrike:events:sensor : EVAL-dest_host_aid",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(isnull(device_hostname) AND isnull(aid_computer_name) AND event_simpleName IN (\"LocalIpAddressIP4\", \"LocalIpAddressIP6\"),  aid)"
+},
+{
+"name": "dest_ip",
+"origName": "crowdstrike:events:sensor : EVAL-dest_ip",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"ScreenshotTakenEtw\", \"WmiCreateProcess\", \"InjectedThread\", \"DriverLoad\", \"AsepValueUpdate\", \"AsepKeyUpdate\", \"SensitiveWmiQuery\", \"NewExecutableRenamed\", \"HostedServiceStarted\", \"ModifyServiceBinary\", \"CreateService\", \"ScheduledTaskRegistered\"), aip)"
+},
+{
+"name": "dest_name",
+"origName": "crowdstrike:events:sensor : EVAL-dest_name",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"SensitiveWmiQuery\"), ClientComputerName)"
+},
+{
+"name": "dest_nt_domain",
+"origName": "crowdstrike:events:sensor : EVAL-dest_nt_domain",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"UserLogon\", \"UserLogoff\"), mvindex(split(UserPrincipal, \"@\"), -1))"
+},
+{
+"name": "dest_port",
+"origName": "crowdstrike:events:sensor : EVAL-dest_port",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"NetworkConnectIP4\", \"NetworkCloseIP4\", \"NetworkCloseIP6\", \"NetworkConnectIP6\"), RemotePort, \n        event_simpleName IN (\"NetworkListenIP4\", \"NetworkListenIP6\", \"NetworkReceiveAcceptIP4\", \"NetworkReceiveAcceptIP6\"), LocalPort)"
+},
+{
+"name": "dvc",
+"origName": "crowdstrike:events:sensor : EVAL-dvc",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"SensitiveWmiQuery\", \"NewExecutableRenamed\", \"FileRenameInfo\", \"UserLogoff\", \"InstalledApplication\", \"CriticalEnvironmentVariableChanged\"), \n                coalesce(device_hostname, aid_computer_name))"
+},
+{
+"name": "dvc_aid",
+"origName": "crowdstrike:events:sensor : EVAL-dvc_aid",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(isnull(device_hostname) AND isnull(aid_computer_name) AND event_simpleName IN (\"ScreenshotTakenEtw\", \"WmiCreateProcess\", \"InjectedThread\", \"DriverLoad\", \"AsepValueUpdate\", \"AsepKeyUpdate\", \"SensitiveWmiQuery\", \"NewExecutableRenamed\", \"HostedServiceStarted\", \"ModifyServiceBinary\", \"CreateService\", \"ScheduledTaskRegistered\", \"RarFileWritten\", \"ELFFileWritten\", \"FileRenameInfo\", \"UserIdentity\", \"ServiceStarted\", \"OsVersionInfo\", \"QuarantinedFile\", \"QuarantinedFileState\", \"UserLogoff\", \"UserLogonFailed\", \"UserLogonFailed2\", \"ProcessRollup2\", \"ProcessRollup2\", \"EndOfProcess\", \"SyntheticProcessRollup2\", \"ImageHash\", \"CommandHistory\", \"ProcessBlocked\", \"PrivilegedProcessHandleFromUnsignedModule\", \"NewExecutableWritten\", \"PeFileWritten\", \"DirectoryCreate\", \"CriticalFileAccessed\", \"NewScriptWritten\", \"PeVersionInfo\", \"PackedExecutableWritten\", \"ExecutableDeleted\", \"FileOpenInfo\", \"FileCreateInfo\", \"InstalledApplication\", \"InstanceMetadata\", \"KernelModeLoadImage\", \"HostInfo\", \"ProcessRollup2Stats\", \"LFODownloadConfirmation\", \"SystemCapacity\", \"CriticalEnvironmentVariableChanged\"),  aid)"
+},
+{
+"name": "enabled",
+"origName": "crowdstrike:events:sensor : EVAL-enabled",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"UserIdentity\", \"OsVersionInfo\", \"LocalIpAddressIP4\", \"LocalIpAddressIP6\", \"InstanceMetadata\", \"HostInfo\"), \"enabled\")"
+},
+{
+"name": "family",
+"origName": "crowdstrike:events:sensor : EVAL-family",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName=\"OsVersionInfo\" AND event_platform=\"Lin\", case(event_simpleName=\"OsVersionInfo\" AND event_platform=\"Lin\", mvindex(split(OSVersionString, \" \"), -1)), event_simpleName=\"InstanceMetadata\", json_extract(InstanceMetadata,\"architecture\"), event_simpleName=\"SystemCapacity\", CpuProcessorName)"
+},
+{
+"name": "file_access_time",
+"origName": "crowdstrike:events:sensor : EVAL-file_access_time",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"RarFileWritten\", \"ELFFileWritten\", \"FileCreateInfo\", \"FileRenameInfo\", \"NewExecutableWritten\", \"PeFileWritten\", \"DirectoryCreate\", \"NewScriptWritten\", \"ExecutableDeleted\", \"FileOpenInfo\", \"CriticalFileAccessed\"), ContextTimeStamp, event_simpleName IN (\"PackedExecutableWritten\"), timestamp/1000)"
+},
+{
+"name": "file_create_time",
+"origName": "crowdstrike:events:sensor : EVAL-file_create_time",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"RarFileWritten\", \"ELFFileWritten\", \"FileCreateInfo\", \"NewExecutableWritten\", \"PeFileWritten\", \"DirectoryCreate\", \"NewScriptWritten\"), ContextTimeStamp, event_simpleName IN (\"PackedExecutableWritten\"), timestamp/1000)"
+},
+{
+"name": "file_hash",
+"origName": "crowdstrike:events:sensor : EVAL-file_hash",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"ELFFileWritten\", \"QuarantinedFile\", \"QuarantinedFileState\", \"PeFileWritten\", \"PeVersionInfo\", \"PackedExecutableWritten\", \"NewScriptWritten\", \"NewExecutableWritten\"), SHA256HashData)"
+},
+{
+"name": "file_modify_time",
+"origName": "crowdstrike:events:sensor : EVAL-file_modify_time",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"FileCreateInfo\", \"FileRenameInfo\", \"NewExecutableWritten\", \"PeFileWritten\", \"DirectoryCreate\", \"NewScriptWritten\", \"ExecutableDeleted\", \"FileOpenInfo\"), ContextTimeStamp, \n        event_simpleName IN (\"PackedExecutableWritten\"), timestamp/1000)"
+},
+{
+"name": "file_name",
+"origName": "crowdstrike:events:sensor : EVAL-file_name",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"QuarantinedFile\", \"QuarantinedFileState\", \"PeVersionInfo\"), mvindex(split(ImageFileName, if(event_platform=\"Win\", \"\\\\\", \"/\")), -1), \n        event_simpleName=\"LFODownloadConfirmation\", TargetFileName, \n        event_simpleName IN (\"RarFileWritten\", \"ELFFileWritten\", \"FileRenameInfo\", \"NewExecutableWritten\", \"DirectoryCreate\", \"CriticalFileAccessed\", \"NewScriptWritten\", \"PackedExecutableWritten\", \"ExecutableDeleted\", \"FileOpenInfo\", \"FileCreateInfo\", \"PeFileWritten\"), mvindex(split(TargetFileName, if(event_platform=\"Win\", \"\\\\\", \"/\")), -1))"
+},
+{
+"name": "file_path",
+"origName": "crowdstrike:events:sensor : EVAL-file_path",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_platform=\"Win\", \n        case(event_simpleName IN (\"PeVersionInfo\", \"QuarantinedFile\"), ImageFileName, \n        event_simpleName IN (\"QuarantinedFileState\"), QuarantinedFileName, \n        event_simpleName IN (\"RarFileWritten\", \"ELFFileWritten\", \"FileCreateInfo\", \"NewExecutableWritten\", \"PeFileWritten\", \"DirectoryCreate\", \"NewScriptWritten\", \"PackedExecutableWritten\", \"PackedExecutableWritten\", \"ExecutableDeleted\", \"FileOpenInfo\"), TargetFileName), \n    event_simpleName=\"LFODownloadConfirmation\", DownloadPath, \n    event_platform IN (\"Mac\", \"Lin\"), case(event_simpleName IN(\"CriticalFileAccessed\", \"DirectoryCreate\", \"ExecutableDeleted\", \"NewExecutableWritten\", \"NewScriptWritten\", \"PeFileWritten\", \"FileOpenInfo\"), TargetFileName))"
+},
+{
+"name": "file_size",
+"origName": "crowdstrike:events:sensor : EVAL-file_size",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"PeFileWritten\", \"NewScriptWritten\", \"NewExecutableWritten\"), round(Size/1000))"
+},
+{
+"name": "interface",
+"origName": "crowdstrike:events:sensor : EVAL-interface",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"LocalIpAddressIP4\", \"LocalIpAddressIP6\"), InterfaceAlias)"
+},
+{
+"name": "ip",
+"origName": "crowdstrike:events:sensor : EVAL-ip",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName=\"LocalIpAddressIP4\", LocalAddressIP4, event_simpleName=\"LocalIpAddressIP6\", LocalAddressIP6)"
+},
+{
+"name": "mac",
+"origName": "crowdstrike:events:sensor : EVAL-mac",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"LocalIpAddressIP4\", \"LocalIpAddressIP6\"), if(PhysicalAddress=\"\", null(), PhysicalAddress))"
+},
+{
+"name": "message_type",
+"origName": "crowdstrike:events:sensor : EVAL-message_type",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName=\"DnsRequest\", \"Query\")"
+},
+{
+"name": "name",
+"origName": "crowdstrike:events:sensor : EVAL-name",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName=\"DnsRequest\", name)"
+},
+{
+"name": "object",
+"origName": "crowdstrike:events:sensor : EVAL-object",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName=\"FileRenameInfo\", TargetFileName, \n        event_simpleName=\"UserLogoff\", UserName, \n        event_simpleName=\"InstalledApplication\", AppName, \n        event_simpleName=\"CriticalEnvironmentVariableChanged\", EnvironmentVariableName, \n        event_simpleName IN (\"NewExecutableRenamed\"), SourceFileName, \n        event_simpleName IN (\"SensitiveWmiQuery\"), ClientComputerName)"
+},
+{
+"name": "object_attrs",
+"origName": "crowdstrike:events:sensor : EVAL-object_attrs",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName=\"FileRenameInfo\", \"file name\", event_simpleName IN (\"SensitiveWmiQuery\"), event_platform, event_simpleName=\"InstalledApplication\", AppVersion, event_simpleName=\"CriticalEnvironmentVariableChanged\", EnvironmentVariableValue)"
+},
+{
+"name": "object_category",
+"origName": "crowdstrike:events:sensor : EVAL-object_category",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName=\"FileRenameInfo\", \"file\", \n        event_simpleName=\"UserLogoff\", \"user\", \n        event_simpleName=\"InstalledApplication\", \"application\", \n        event_simpleName=\"CriticalEnvironmentVariableChanged\", EnvironmentVariableName, \n        event_simpleName IN (\"SensitiveWmiQuery\"), \"OS\")"
+},
+{
+"name": "object_id",
+"origName": "crowdstrike:events:sensor : EVAL-object_id",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_platform IN (\"Win\",\"Mac\", \"Lin\"), case(event_simpleName=\"UserLogoff\", coalesce(UserSid, UID)))"
+},
+{
+"name": "object_path",
+"origName": "crowdstrike:events:sensor : EVAL-object_path",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_platform=\"Win\", case(event_simpleName IN (\"NewExecutableRenamed\", \"FileRenameInfo\"), SourceFileName, \n        event_simpleName IN (\"SensitiveWmiQuery\"), WmiNamespaceName))"
+},
+{
+"name": "original_file_name",
+"origName": "crowdstrike:events:sensor : EVAL-original_file_name",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName=\"PeVersionInfo\", OriginalFilename)"
+},
+{
+"name": "os",
+"origName": "crowdstrike:events:sensor : EVAL-os",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"ScreenshotTakenEtw\", \"WmiCreateProcess\", \"InjectedThread\", \"DriverLoad\", \"OsVersionInfo\", \"ProcessRollup2\", \"EndOfProcess\", \"SyntheticProcessRollup2\", \"ImageHash\", \"CommandHistory\", \"ProcessBlocked\", \"PrivilegedProcessHandleFromUnsignedModule\", \"KernelModeLoadImage\", \"HostInfo\", \"ProcessRollup2Stats\"), if(event_platform=\"Mac\", \"MacOS\", coalesce(aid_os_version, event_platform)))"
+},
+{
+"name": "parent_process_exec",
+"origName": "crowdstrike:events:sensor : EVAL-parent_process_exec",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"ProcessRollup2\", \"ProcessBlocked\"), ParentBaseFileName)"
+},
+{
+"name": "parent_process_id",
+"origName": "crowdstrike:events:sensor : EVAL-parent_process_id",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"ProcessRollup2\", \"EndOfProcess\", \"SyntheticProcessRollup2\", \"ProcessBlocked\", \"ProcessRollup2Stats\"), ParentProcessId)"
+},
+{
+"name": "parent_process_name",
+"origName": "crowdstrike:events:sensor : EVAL-parent_process_name",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"ProcessRollup2\", \"ProcessBlocked\"), ParentBaseFileName)"
+},
+{
+"name": "process",
+"origName": "crowdstrike:events:sensor : EVAL-process",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"WmiCreateProcess\", \"ScreenshotTakenEtw\", \"ProcessRollup2\", \"SyntheticProcessRollup2\", \"ProcessBlocked\", \"ProcessRollup2Stats\"), trim(trim(CommandLine, \" \"), \"\\\"\"), \n        event_simpleName IN (\"ImageHash\", \"PrivilegedProcessHandleFromUnsignedModule\"), ImageFileName, \n        event_simpleName=\"KernelModeLoadImage\", mvindex(split(ImageFileName, if(event_platform=\"Win\", \"\\\\\", \"/\")), -1), \n        event_simpleName=\"CommandHistory\", CommandHistory)"
+},
+{
+"name": "process_exec",
+"origName": "crowdstrike:events:sensor : EVAL-process_exec",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"WmiCreateProcess\", \"DriverLoad\", \"ScreenshotTakenEtw\", \"ProcessBlocked\", \"PrivilegedProcessHandleFromUnsignedModule\", \"ImageHash\", \"ProcessRollup2\", \"SyntheticProcessRollup2\"), mvindex(split(ImageFileName, if(event_platform=\"Win\", \"\\\\\", \"/\")), -1), \n        event_simpleName=\"ProcessRollup2Stats\", mvindex(split(CommandLine, if(event_platform=\"Win\", \"\\\\\", \"/\")), -1), \n        event_simpleName=\"CommandHistory\", mvindex(split(mvindex(split(CommandHistory, \"\u00b6\"),0), if(event_platform=\"Win\", \"\\\\\", \"/\")), -1))"
+},
+{
+"name": "process_hash",
+"origName": "crowdstrike:events:sensor : EVAL-process_hash",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"ProcessRollup2\", \"EndOfProcess\", \"SyntheticProcessRollup2\", \"ImageHash\", \"ProcessBlocked\", \"PrivilegedProcessHandleFromUnsignedModule\", \"KernelModeLoadImage\", \"ProcessRollup2Stats\"), SHA256HashData)"
+},
+{
+"name": "process_id",
+"origName": "crowdstrike:events:sensor : EVAL-process_id",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"InjectedThread\", \"WmiCreateProcess\", \"ServiceStarted\", \"ProcessRollup2\", \"SyntheticProcessRollup2\", \"CommandHistory\", \"ProcessBlocked\", \"PeVersionInfo\"), TargetProcessId, \n        event_simpleName IN (\"ScreenshotTakenEtw\", \"DriverLoad\", \"AsepValueUpdate\", \"AsepKeyUpdate\", \"ModifyServiceBinary\", \"CreateService\", \"RarFileWritten\", \"ELFFileWritten\", \"NetworkConnectIP4\", \"NetworkListenIP4\", \"NetworkCloseIP4\", \"NetworkCloseIP6\", \"NetworkConnectIP6\", \"NetworkListenIP6\", \"NetworkReceiveAcceptIP4\", \"NetworkReceiveAcceptIP6\", \"EndOfProcess\", \"ImageHash\", \"PrivilegedProcessHandleFromUnsignedModule\", \"FileCreateInfo\", \"FileRenameInfo\", \"NewExecutableWritten\", \"PeFileWritten\", \"DirectoryCreate\", \"CriticalFileAccessed\", \"NewScriptWritten\", \"PackedExecutableWritten\", \"ExecutableDeleted\", \"FileOpenInfo\", \"KernelModeLoadImage\"), ContextProcessId, \n        event_simpleName IN (\"ScheduledTaskRegistered\"), RpcClientProcessId)"
+},
+{
+"name": "process_integrity_level",
+"origName": "crowdstrike:events:sensor : EVAL-process_integrity_level",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"ProcessRollup2\", \"SyntheticProcessRollup2\", \"EndOfProcess\", \"ImageHash\", \"CommandHistory\", \"ProcessBlocked\", \"PrivilegedProcessHandleFromUnsignedModule\"), IntegrityLevel)"
+},
+{
+"name": "process_name",
+"origName": "crowdstrike:events:sensor : EVAL-process_name",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"ProcessRollup2\", \"SyntheticProcessRollup2\", \"ProcessBlocked\"), mvindex(split(if(like(CommandLine, \"\\\"%\\\"%\"), mvindex(split(CommandLine, \"\\\"\"), 1), mvindex(split(CommandLine, \" \"), 0)), if(event_platform=\"Win\", \"\\\\\", \"/\")), -1), \n        event_simpleName IN (\"WmiCreateProcess\", \"DriverLoad\", \"ScreenshotTakenEtw\", \"ImageHash\", \"PrivilegedProcessHandleFromUnsignedModule\", \"KernelModeLoadImage\"), mvindex(split(ImageFileName, if(event_platform=\"Win\", \"\\\\\", \"/\")), -1), \n        event_simpleName=\"CommandHistory\", mvindex(split(CommandHistory, \" \"), 0))"
+},
+{
+"name": "process_path",
+"origName": "crowdstrike:events:sensor : EVAL-process_path",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"ProcessRollup2\", \"SyntheticProcessRollup2\", \"ProcessBlocked\"), if(event_platform=\"Win\", if(substr(CommandLine, 1, 1)=\"\\\"\", mvindex(split(CommandLine, \"\\\"\"), 1), mvindex(split(CommandLine, \" \"), 0)), ImageFileName), \n        event_simpleName IN (\"WmiCreateProcess\", \"DriverLoad\", \"ScreenshotTakenEtw\", \"ImageHash\", \"PrivilegedProcessHandleFromUnsignedModule\", \"KernelModeLoadImage\"), ImageFileName, \n        event_simpleName=\"ProcessRollup2Stats\", CommandLine)"
+},
+{
+"name": "query",
+"origName": "crowdstrike:events:sensor : EVAL-query",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName=\"DnsRequest\", DomainName)"
+},
+{
+"name": "query_count",
+"origName": "crowdstrike:events:sensor : EVAL-query_count",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName=\"DnsRequest\", DnsRequestCount)"
+},
+{
+"name": "query_type",
+"origName": "crowdstrike:events:sensor : EVAL-query_type",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName=\"DnsRequest\", json_extract(lookup(\"crowdstrike_ta_lookup_RequestType\", json_object(\"RequestType\", RequestType), json_array(\"RequestType_meaning\")), \"RequestType_meaning\"))"
+},
+{
+"name": "reason",
+"origName": "crowdstrike:events:sensor : EVAL-reason",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName=\"UserLogon\", \"success\", event_simpleName IN (\"UserLogonFailed\", \"UserLogonFailed2\"), \"failure\")"
+},
+{
+"name": "record_type",
+"origName": "crowdstrike:events:sensor : EVAL-record_type",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName=\"DnsRequest\", case(isnotnull(IP6Records), \"AAAA\", isnotnull(IP4Records), \"A\"))"
+},
+{
+"name": "registry_hive",
+"origName": "crowdstrike:events:sensor : EVAL-registry_hive",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"AsepKeyUpdate\", \"AsepValueUpdate\"), \n        case(like(RegObjectName, \"\\\\REGISTRY\\\\MACHINE\\\\SAM\\\\%\"), \"HKEY_LOCAL_MACHINE\\\\SAM\", \n             like(RegObjectName, \"\\\\REGISTRY\\\\MACHINE\\\\SECURITY\\\\%\"), \"HKEY_LOCAL_MACHINE\\\\Security\", \n             like(RegObjectName, \"\\\\REGISTRY\\\\MACHINE\\\\SOFTWARE\\\\%\"), \"HKEY_LOCAL_MACHINE\\\\Software\", \n             like(RegObjectName, \"\\\\REGISTRY\\\\MACHINE\\\\SYSTEM\\\\%\"), \"HKEY_LOCAL_MACHINE\\\\System\", \n             like(RegObjectName, \"\\\\REGISTRY\\\\CONFIG\\\\%\"), \"HKEY_CURRENT_CONFIG\", \n             like(RegObjectName, \"\\\\REGISTRY\\\\USER\\\\.DEFAULT\\\\%\"), \"HKEY_CURRENT_USER\\\\.DEFAULT\", \n             like(RegObjectName, \"\\\\REGISTRY\\\\USER\\\\%\"), \"HKEY_CURRENT_USER\"))"
+},
+{
+"name": "registry_path",
+"origName": "crowdstrike:events:sensor : EVAL-registry_path",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"AsepValueUpdate\", \"AsepKeyUpdate\"), RegObjectName)"
+},
+{
+"name": "registry_value_data",
+"origName": "crowdstrike:events:sensor : EVAL-registry_value_data",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"AsepValueUpdate\"), RegStringValue)"
+},
+{
+"name": "registry_value_type",
+"origName": "crowdstrike:events:sensor : EVAL-registry_value_type",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"AsepValueUpdate\", \"AsepKeyUpdate\"), \"REG_BINARY\")"
+},
+{
+"name": "reply_code",
+"origName": "crowdstrike:events:sensor : EVAL-reply_code",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName=\"DnsRequest\", json_extract(lookup(\"crowdstrike_ta_lookup_QueryStatus\", json_object(\"QueryStatus\", QueryStatus), json_array(\"QueryStatus_code\")), \"QueryStatus_code\"))"
+},
+{
+"name": "reply_code_id",
+"origName": "crowdstrike:events:sensor : EVAL-reply_code_id",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName=\"DnsRequest\", QueryStatus)"
+},
+{
+"name": "result",
+"origName": "crowdstrike:events:sensor : EVAL-result",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName=\"UserLogoff\", \"lockout\", \n        event_simpleName IN (\"NewExecutableRenamed\"), \"NewExecutableRenamed\", \n        event_simpleName=\"CriticalEnvironmentVariableChanged\", \"CriticalEnvironmentVariableChanged\", \n        event_simpleName=\"InstalledApplication\", \"InstalledApplication\", \n        event_simpleName IN (\"SensitiveWmiQuery\"), \"SensitiveWmiQuery\")"
+},
+{
+"name": "serial",
+"origName": "crowdstrike:events:sensor : EVAL-serial",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName=\"InstanceMetadata\", json_extract(InstanceMetadata,\"instanceId\"), event_simpleName=\"HostInfo\", mvindex(split(BootArgs, \"=\"), -1), true(), serial)"
+},
+{
+"name": "service",
+"origName": "crowdstrike:events:sensor : EVAL-service",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"HostedServiceStarted\", \"ServiceStarted\") AND event_platform=\"Win\", ServiceDisplayName, \n    event_simpleName IN (\"ScheduledTaskRegistered\") AND event_platform=\"Win\", mvindex(split(TaskExecCommand, if(event_platform=\"Win\", \"\\\\\", \"/\")), -1), \n    event_simpleName IN (\"ModifyServiceBinary\", \"CreateService\") AND event_platform=\"Win\", mvindex(split(ServiceImagePath, if(event_platform=\"Win\", \"\\\\\", \"/\")), -1))"
+},
+{
+"name": "service_exec",
+"origName": "crowdstrike:events:sensor : EVAL-service_exec",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"HostedServiceStarted\", \"ServiceStarted\"), mvindex(split(ImageFileName, if(event_platform=\"Win\", \"\\\\\", \"/\")), -1), \n    event_simpleName IN (\"ScheduledTaskRegistered\") AND event_platform=\"Win\", mvindex(split(TaskExecCommand, if(event_platform=\"Win\", \"\\\\\", \"/\")), -1), \n    event_simpleName IN (\"ModifyServiceBinary\", \"CreateService\") AND event_platform=\"Win\", mvindex(split(ServiceImagePath, if(event_platform=\"Win\", \"\\\\\", \"/\")), -1))"
+},
+{
+"name": "service_name",
+"origName": "crowdstrike:events:sensor : EVAL-service_name",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"HostedServiceStarted\", \"ServiceStarted\") AND event_platform=\"Win\", ServiceDisplayName, \n    event_simpleName IN (\"ScheduledTaskRegistered\"), mvindex(split(TaskExecCommand, if(event_platform=\"Win\", \"\\\\\", \"/\")), -1), \n    event_simpleName IN (\"ModifyServiceBinary\", \"CreateService\") AND event_platform=\"Win\", mvindex(split(ServiceImagePath, if(event_platform=\"Win\", \"\\\\\", \"/\")), -1))"
+},
+{
+"name": "service_path",
+"origName": "crowdstrike:events:sensor : EVAL-service_path",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName=\"ServiceStarted\" AND event_platform=\"Win\", mvindex(split(CommandLine, \" \"), 0), \n    event_simpleName IN (\"ScheduledTaskRegistered\") AND event_platform=\"Win\", TaskExecCommand, \n    event_simpleName IN (\"ModifyServiceBinary\", \"CreateService\") AND event_platform=\"Win\",  ServiceImagePath, \n    event_simpleName IN (\"HostedServiceStarted\") AND event_platform=\"Win\",  ImageFileName)"
+},
+{
+"name": "severity",
+"origName": "crowdstrike:events:sensor : EVAL-severity",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"QuarantinedFileState\", \"QuarantinedFile\"), \"informational\")"
+},
+{
+"name": "signature_id",
+"origName": "crowdstrike:events:sensor : EVAL-signature_id",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName=\"QuarantinedFile\" AND event_platform=\"Win\", PatternId)"
+},
+{
+"name": "src",
+"origName": "crowdstrike:events:sensor : EVAL-src",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"FileRenameInfo\", \"UserLogoff\", \"UserLogonFailed\", \"DnsRequest\", \"InstalledApplication\", \"CriticalEnvironmentVariableChanged\"), coalesce(device_hostname, aid_computer_name), \n    event_simpleName=\"UserLogon\" AND event_platform IN (\"Mac\", \"Lin\"), coalesce(device_hostname, aid_computer_name), \n    event_simpleName IN (\"UserLogon\", \"UserLogonFailed2\"), ClientComputerName, \n    event_simpleName IN (\"NetworkConnectIP4\", \"NetworkCloseIP4\"), LocalAddressIP4, \n    event_simpleName IN (\"NetworkCloseIP6\", \"NetworkConnectIP6\"), LocalAddressIP6, \n    event_simpleName IN (\"NetworkListenIP4\", \"NetworkReceiveAcceptIP4\"), RemoteAddressIP4, \n    event_simpleName IN (\"NetworkListenIP6\", \"NetworkReceiveAcceptIP6\"), RemoteAddressIP6)"
+},
+{
+"name": "src_aid",
+"origName": "crowdstrike:events:sensor : EVAL-src_aid",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(isnull(device_hostname) AND isnull(aid_computer_name) AND event_simpleName IN (\"ScreenshotTakenEtw\", \"WmiCreateProcess\", \"InjectedThread\", \"DriverLoad\", \"AsepValueUpdate\", \"AsepKeyUpdate\", \"SensitiveWmiQuery\", \"NewExecutableRenamed\", \"HostedServiceStarted\", \"ModifyServiceBinary\", \"CreateService\", \"ScheduledTaskRegistered\", \"RarFileWritten\", \"ELFFileWritten\", \"FileRenameInfo\", \"UserIdentity\", \"ServiceStarted\", \"OsVersionInfo\", \"QuarantinedFile\", \"QuarantinedFileState\", \"UserLogoff\", \"UserLogonFailed\", \"UserLogonFailed2\", \"ProcessRollup2\", \"ProcessRollup2\", \"EndOfProcess\", \"SyntheticProcessRollup2\", \"ImageHash\", \"CommandHistory\", \"ProcessBlocked\", \"PrivilegedProcessHandleFromUnsignedModule\", \"NewExecutableWritten\", \"PeFileWritten\", \"DirectoryCreate\", \"CriticalFileAccessed\", \"NewScriptWritten\", \"PeVersionInfo\", \"PackedExecutableWritten\", \"ExecutableDeleted\", \"FileOpenInfo\", \"FileCreateInfo\", \"InstalledApplication\", \"InstanceMetadata\", \"KernelModeLoadImage\", \"HostInfo\", \"ProcessRollup2Stats\", \"LFODownloadConfirmation\", \"SystemCapacity\", \"CriticalEnvironmentVariableChanged\", \"DnsRequest\"),  aid, \n                    isnull(device_hostname) AND isnull(aid_computer_name) AND event_simpleName IN  (\"UserLogon\") AND event_platform IN (\"Mac\", \"Lin\"), aid)"
+},
+{
+"name": "src_ip",
+"origName": "crowdstrike:events:sensor : EVAL-src_ip",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"LocalIpAddressIP4\", \"LocalIpAddressIP6\"), aip, event_simpleName=\"UserLogon\", RemoteAddressIP4)"
+},
+{
+"name": "src_nt_domain",
+"origName": "crowdstrike:events:sensor : EVAL-src_nt_domain",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"UserLogon\", \"UserLogoff\"), mvindex(split(UserPrincipal, \"@\"), -1))"
+},
+{
+"name": "src_port",
+"origName": "crowdstrike:events:sensor : EVAL-src_port",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"NetworkConnectIP4\", \"NetworkCloseIP4\", \"NetworkCloseIP6\", \"NetworkConnectIP6\"), LocalPort, \n        event_simpleName IN (\"NetworkListenIP4\", \"NetworkListenIP6\", \"NetworkReceiveAcceptIP4\", \"NetworkReceiveAcceptIP6\"), RemotePort)"
+},
+{
+"name": "src_user",
+"origName": "crowdstrike:events:sensor : EVAL-src_user",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName=\"UserLogoff\", coalesce(UserSid, UID))"
+},
+{
+"name": "src_user_id",
+"origName": "crowdstrike:events:sensor : EVAL-src_user_id",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"UserLogon\", \"UserLogonFailed\"), UserSid)"
+},
+{
+"name": "src_user_name",
+"origName": "crowdstrike:events:sensor : EVAL-src_user_name",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName=\"UserLogoff\", UserName)"
+},
+{
+"name": "src_user_type",
+"origName": "crowdstrike:events:sensor : EVAL-src_user_type",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"UserLogoff\"), if(UserIsAdmin=\"1\", \"admin\", \"user\"))"
+},
+{
+"name": "state",
+"origName": "crowdstrike:events:sensor : EVAL-state",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"NetworkCloseIP6\", \"NetworkCloseIP4\"), \"closed\", \n    event_simpleName IN (\"NetworkConnectIP4\", \"NetworkConnectIP6\", \"NetworkReceiveAcceptIP4\", \"NetworkReceiveAcceptIP6\"), if(Protocol=\"6\", \"established\", \"open\"), \n    event_simpleName IN (\"NetworkListenIP4\", \"NetworkListenIP6\"), \"listening\", \n    event_simpleName IN (\"NetworkCloseIP4\", \"NetworkCloseIP6\"), \"closed\")"
+},
+{
+"name": "status",
+"origName": "crowdstrike:events:sensor : EVAL-status",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName = \"UserIdentity\", \"logged on\", \n    event_simpleName IN (\"HostedServiceStarted\", \"ModifyServiceBinary\", \"CreateService\", \"ServiceStarted\", \"ScheduledTaskRegistered\") AND event_platform = \"Win\", \"started\", \n    event_simpleName IN (\"AsepValueUpdate\", \"AsepKeyUpdate\", \"SensitiveWmiQuery\", \"NewExecutableRenamed\", \"UserLogoff\", \"FileRenameInfo\", \"CriticalEnvironmentVariableChanged\", \"InstalledApplication\"), \"success\")"
+},
+{
+"name": "transaction_id",
+"origName": "crowdstrike:events:sensor : EVAL-transaction_id",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName=\"DnsRequest\", id)"
+},
+{
+"name": "transport_dest_port",
+"origName": "crowdstrike:events:sensor : EVAL-transport_dest_port",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"NetworkConnectIP4\", \"NetworkCloseIP4\", \"NetworkCloseIP6\", \"NetworkConnectIP6\"), json_extract(lookup(\"crowdstrike_ta_lookup_Protocol\", json_object(\"Protocol\", Protocol), json_array(\"Protocol_lc_meaning\")), \"Protocol_lc_meaning\")+ \"/\" + RemotePort, \n        event_simpleName IN (\"NetworkListenIP4\", \"NetworkListenIP6\", \"NetworkReceiveAcceptIP4\", \"NetworkReceiveAcceptIP6\"), json_extract(lookup(\"crowdstrike_ta_lookup_Protocol\", json_object(\"Protocol\", Protocol), json_array(\"Protocol_lc_meaning\")), \"Protocol_lc_meaning\")+ \"/\" + LocalPort)"
+},
+{
+"name": "url_domain",
+"origName": "crowdstrike:events:sensor : EVAL-url_domain",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName=\"LFODownloadConfirmation\", DownloadServer)"
+},
+{
+"name": "user",
+"origName": "crowdstrike:events:sensor : EVAL-user",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName = \"PeFileWritten\", coalesce(FileOperatorSid, UserName), \n    event_simpleName = \"UserLogon\", coalesce(UserPrincipal, UserName), \n    event_simpleName IN (\"SensitiveWmiQuery\", \"HostedServiceStarted\", \"CreateService\", \"ScheduledTaskRegistered\", \"WmiCreateProcess\", \"ScreenshotTakenEtw\", \"UserIdentity\",\"ServiceStarted\",\"UserLogonFailed\",\"UserLogonFailed2\",\"NewScriptWritten\"), if(UserName=\"\", null(), UserName), \n    event_simpleName IN (\"UserLogoff\",\"ProcessRollup2\",\"EndOfProcess\",\"SyntheticProcessRollup2\", \"CriticalFileAccessed\"), coalesce(UserSid, UID))"
+},
+{
+"name": "user_id",
+"origName": "crowdstrike:events:sensor : EVAL-user_id",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"UserIdentity\",\"UserLogon\",\"UserLogonFailed\",\"UserLogonFailed2\",\"UserLogoff\",\"ProcessRollup2\", \"EndOfProcess\", \"SyntheticProcessRollup2\",\"ImageHash_Win\",\"CommandHistory\",\"ProcessBlocked\",\"PrivilegedProcessHandleFromUnsignedModule\",\"FileRenameInfo\"), coalesce(UserSid, UID))"
+},
+{
+"name": "user_name",
+"origName": "crowdstrike:events:sensor : EVAL-user_name",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName = \"UserLogoff\", UserName)"
+},
+{
+"name": "user_type",
+"origName": "crowdstrike:events:sensor : EVAL-user_type",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName=\"UserLogonFailed\", if(UserLogonFlags=\"2\", \"admin\", \"user\"), \n        event_simpleName IN (\"UserLogon\", \"UserLogoff\"), if(UserIsAdmin=\"1\", \"admin\", \"user\"), \n        event_simpleName=\"SensitiveWmiQuery\",  if(like(UserName,\"%SYSTEM\"), \"admin\", \"user\"))"
+},
+{
+"name": "vendor_account",
+"origName": "crowdstrike:events:sensor : EVAL-vendor_account",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName IN (\"UserLogon\", \"UserLogonFailed\", \"UserLogonFailed2\"), \"CrowdStrike FDR\")"
+},
+{
+"name": "vendor_product",
+"origName": "crowdstrike:events:sensor : EVAL-vendor_product",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "\"CrowdStrike FDR\""
+},
+{
+"name": "version",
+"origName": "crowdstrike:events:sensor : EVAL-version",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"value": "case(event_simpleName = \"OsVersionInfo\" AND event_platform != \"Win\", OSVersionString, event_simpleName = \"OsVersionInfo\" AND event_platform = \"Win\", ProductName, event_simpleName=\"InstanceMetadata\", json_extract(InstanceMetadata,\"version\"))"
+}
+]

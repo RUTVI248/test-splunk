@@ -1,0 +1,524 @@
+[
+{
+"color": "none",
+"name": "crowdstrike_asep_key_update",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"AsepKeyUpdate\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_asep_value_update",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"AsepValueUpdate\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_command_history",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"CommandHistory\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_create_service",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"CreateService\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_critical_environment_variable_changed",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"CriticalEnvironmentVariableChanged\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_critical_file_accessed",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"CriticalFileAccessed\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_directory_create",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"DirectoryCreate\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_dns_request",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"DnsRequest\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_driver_load",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"DriverLoad\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_elf_file_written",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"ELFFileWritten\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_end_of_process",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"EndOfProcess\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_executable_deleted",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"ExecutableDeleted\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_file_create_info",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"FileCreateInfo\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_file_open_info",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"FileOpenInfo\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_file_rename_info",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"FileRenameInfo\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_host_info",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"HostInfo\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_hosted_service_started",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"HostedServiceStarted\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_image_hash",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"ImageHash\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_inctance_metadata",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"InstanceMetadata\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_injected_thread",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"InjectedThread\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_installed_application",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"InstalledApplication\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_kernel_mode_load_image",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"KernelModeLoadImage\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_lfo_download_confirmation",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"LFODownloadConfirmation\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_local_ip_address_ip4",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"LocalIpAddressIP4\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_local_ip_address_ip6",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"LocalIpAddressIP6\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_modify_service_binary",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"ModifyServiceBinary\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_network_close_ip4",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"NetworkCloseIP4\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_network_close_ip6",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"NetworkCloseIP6\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_network_connect_ip4",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"NetworkConnectIP4\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_network_connect_ip6",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"NetworkConnectIP6\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_network_listen_ip4",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"NetworkListenIP4\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_network_listen_ip6",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"NetworkListenIP6\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_network_receive_accept_ip4",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"NetworkReceiveAcceptIP4\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_network_receive_accept_ip6",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"NetworkReceiveAcceptIP6\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_new_executable_renamed",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"NewExecutableRenamed\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_new_executable_written",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"NewExecutableWritten\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_new_script_written",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"NewScriptWritten\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_os_version_info",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"OsVersionInfo\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_packed_executable_written",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"PackedExecutableWritten\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_pe_file_written",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"PeFileWritten\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_pe_version_info",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"PeVersionInfo\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_privileged_process_handle_from_unsigned_module",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"PrivilegedProcessHandleFromUnsignedModule\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_process_blocked",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"ProcessBlocked\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_process_rollup2",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"ProcessRollup2\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_process_rollup2_stats",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"ProcessRollup2Stats\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_quarantined_file",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"QuarantinedFile\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_quarantined_file_state",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"QuarantinedFileState\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_rar_file_written",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"RarFileWritten\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_scheduled_task_registered",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"ScheduledTaskRegistered\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_screenshot_taken_etw",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"ScreenshotTakenEtw\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_sensitive_wmi_query",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"SensitiveWmiQuery\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_service_started",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"ServiceStarted\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_synthetic_process_rollup2",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"SyntheticProcessRollup2\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_system_capacity",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"SystemCapacity\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_user_identity",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"UserIdentity\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_user_logoff",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"UserLogoff\"",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_user_logon",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName IN (\"UserLogon\",\"UserLogonFailed\",\"UserLogonFailed2\")",
+"sharing": "global",
+"tags": "\n          "
+},
+{
+"color": "none",
+"name": "crowdstrike_wmi_create_process",
+"owner": "nobody",
+"priority": "1",
+"search": "sourcetype=\"crowdstrike:events:sensor\" AND event_simpleName=\"WmiCreateProcess\"",
+"sharing": "global",
+"tags": "\n          "
+}
+]

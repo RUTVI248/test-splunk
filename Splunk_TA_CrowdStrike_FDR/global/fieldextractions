@@ -1,0 +1,11 @@
+[
+{
+"name": "crowdstrike_ta_serial",
+"origName": "crowdstrike:events:sensor : EXTRACT-crowdstrike_ta_serial",
+"owner": "nobody",
+"sharing": "global",
+"stanza": "crowdstrike:events:sensor",
+"type": "EXTRACT",
+"value": "[^0-9a-f]+(?<serial>[0-9a-f]+(?:-[0-9a-f]+){4})\\s+ in BootArgs"
+}
+]

@@ -1,0 +1,409 @@
+[
+{
+"endpoint": "enabled",
+"name": "eventtype=crowdstrike_asep_key_update",
+"owner": "nobody",
+"registry": "enabled",
+"sharing": "global"
+},
+{
+"endpoint": "enabled",
+"name": "eventtype=crowdstrike_asep_value_update",
+"owner": "nobody",
+"registry": "enabled",
+"sharing": "global"
+},
+{
+"name": "eventtype=crowdstrike_command_history",
+"owner": "nobody",
+"process": "enabled",
+"report": "enabled",
+"sharing": "global"
+},
+{
+"name": "eventtype=crowdstrike_create_service",
+"owner": "nobody",
+"report": "enabled",
+"service": "enabled",
+"sharing": "global"
+},
+{
+"account": "enabled",
+"change": "enabled",
+"name": "eventtype=crowdstrike_critical_environment_variable_changed",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"endpoint": "enabled",
+"filesystem": "enabled",
+"name": "eventtype=crowdstrike_critical_file_accessed",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"endpoint": "enabled",
+"filesystem": "enabled",
+"name": "eventtype=crowdstrike_directory_create",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"dns": "enabled",
+"name": "eventtype=crowdstrike_dns_request",
+"network": "enabled",
+"owner": "nobody",
+"resolution": "enabled",
+"sharing": "global"
+},
+{
+"name": "eventtype=crowdstrike_driver_load",
+"owner": "nobody",
+"process": "enabled",
+"report": "enabled",
+"sharing": "global"
+},
+{
+"endpoint": "enabled",
+"filesystem": "enabled",
+"name": "eventtype=crowdstrike_elf_file_written",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"name": "eventtype=crowdstrike_end_of_process",
+"owner": "nobody",
+"process": "enabled",
+"report": "enabled",
+"sharing": "global"
+},
+{
+"endpoint": "enabled",
+"filesystem": "enabled",
+"name": "eventtype=crowdstrike_executable_deleted",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"endpoint": "enabled",
+"filesystem": "enabled",
+"name": "eventtype=crowdstrike_file_create_info",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"endpoint": "enabled",
+"filesystem": "enabled",
+"name": "eventtype=crowdstrike_file_open_info",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"change": "enabled",
+"endpoint": "enabled",
+"name": "eventtype=crowdstrike_file_rename_info",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"inventory": "enabled",
+"name": "eventtype=crowdstrike_host_info",
+"owner": "nobody",
+"sharing": "global",
+"system": "enabled",
+"version": "enabled"
+},
+{
+"name": "eventtype=crowdstrike_hosted_service_started",
+"owner": "nobody",
+"report": "enabled",
+"service": "enabled",
+"sharing": "global"
+},
+{
+"name": "eventtype=crowdstrike_image_hash",
+"owner": "nobody",
+"process": "enabled",
+"report": "enabled",
+"sharing": "global"
+},
+{
+"inventory": "enabled",
+"name": "eventtype=crowdstrike_inctance_metadata",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"name": "eventtype=crowdstrike_injected_thread",
+"owner": "nobody",
+"process": "enabled",
+"report": "enabled",
+"sharing": "global"
+},
+{
+"change": "enabled",
+"name": "eventtype=crowdstrike_installed_application",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"name": "eventtype=crowdstrike_kernel_mode_load_image",
+"owner": "nobody",
+"process": "enabled",
+"report": "enabled",
+"sharing": "global"
+},
+{
+"endpoint": "enabled",
+"filesystem": "enabled",
+"name": "eventtype=crowdstrike_lfo_download_confirmation",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"inventory": "enabled",
+"name": "eventtype=crowdstrike_local_ip_address_ip4",
+"network": "enabled",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"inventory": "enabled",
+"name": "eventtype=crowdstrike_local_ip_address_ip6",
+"network": "enabled",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"name": "eventtype=crowdstrike_modify_service_binary",
+"owner": "nobody",
+"report": "enabled",
+"service": "enabled",
+"sharing": "global"
+},
+{
+"listening": "enabled",
+"name": "eventtype=crowdstrike_network_close_ip4",
+"owner": "nobody",
+"port": "enabled",
+"sharing": "global"
+},
+{
+"listening": "enabled",
+"name": "eventtype=crowdstrike_network_close_ip6",
+"owner": "nobody",
+"port": "enabled",
+"sharing": "global"
+},
+{
+"listening": "enabled",
+"name": "eventtype=crowdstrike_network_connect_ip4",
+"owner": "nobody",
+"port": "enabled",
+"sharing": "global"
+},
+{
+"listening": "enabled",
+"name": "eventtype=crowdstrike_network_connect_ip6",
+"owner": "nobody",
+"port": "enabled",
+"sharing": "global"
+},
+{
+"listening": "enabled",
+"name": "eventtype=crowdstrike_network_listen_ip4",
+"owner": "nobody",
+"port": "enabled",
+"sharing": "global"
+},
+{
+"listening": "enabled",
+"name": "eventtype=crowdstrike_network_listen_ip6",
+"owner": "nobody",
+"port": "enabled",
+"sharing": "global"
+},
+{
+"listening": "enabled",
+"name": "eventtype=crowdstrike_network_receive_accept_ip4",
+"owner": "nobody",
+"port": "enabled",
+"sharing": "global"
+},
+{
+"listening": "enabled",
+"name": "eventtype=crowdstrike_network_receive_accept_ip6",
+"owner": "nobody",
+"port": "enabled",
+"sharing": "global"
+},
+{
+"change": "enabled",
+"endpoint": "enabled",
+"name": "eventtype=crowdstrike_new_executable_renamed",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"endpoint": "enabled",
+"filesystem": "enabled",
+"name": "eventtype=crowdstrike_new_executable_written",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"endpoint": "enabled",
+"filesystem": "enabled",
+"name": "eventtype=crowdstrike_new_script_written",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"inventory": "enabled",
+"name": "eventtype=crowdstrike_os_version_info",
+"owner": "nobody",
+"sharing": "global",
+"system": "enabled",
+"version": "enabled"
+},
+{
+"endpoint": "enabled",
+"filesystem": "enabled",
+"name": "eventtype=crowdstrike_packed_executable_written",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"endpoint": "enabled",
+"filesystem": "enabled",
+"name": "eventtype=crowdstrike_pe_file_written",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"endpoint": "enabled",
+"filesystem": "enabled",
+"name": "eventtype=crowdstrike_pe_version_info",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"name": "eventtype=crowdstrike_privileged_process_handle_from_unsigned_module",
+"owner": "nobody",
+"process": "enabled",
+"report": "enabled",
+"sharing": "global"
+},
+{
+"name": "eventtype=crowdstrike_process_blocked",
+"owner": "nobody",
+"process": "enabled",
+"report": "enabled",
+"sharing": "global"
+},
+{
+"name": "eventtype=crowdstrike_process_rollup2",
+"owner": "nobody",
+"process": "enabled",
+"report": "enabled",
+"sharing": "global"
+},
+{
+"name": "eventtype=crowdstrike_process_rollup2_stats",
+"owner": "nobody",
+"process": "enabled",
+"report": "enabled",
+"sharing": "global"
+},
+{
+"attack": "enabled",
+"data": "enabled",
+"malware": "enabled",
+"name": "eventtype=crowdstrike_quarantined_file",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"attack": "enabled",
+"malware": "enabled",
+"name": "eventtype=crowdstrike_quarantined_file_state",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"endpoint": "enabled",
+"filesystem": "enabled",
+"name": "eventtype=crowdstrike_rar_file_written",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"name": "eventtype=crowdstrike_scheduled_task_registered",
+"owner": "nobody",
+"report": "enabled",
+"service": "enabled",
+"sharing": "global"
+},
+{
+"name": "eventtype=crowdstrike_screenshot_taken_etw",
+"owner": "nobody",
+"process": "enabled",
+"report": "enabled",
+"sharing": "global"
+},
+{
+"change": "enabled",
+"endpoint": "enabled",
+"name": "eventtype=crowdstrike_sensitive_wmi_query",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"name": "eventtype=crowdstrike_service_started",
+"owner": "nobody",
+"report": "enabled",
+"service": "enabled",
+"sharing": "global"
+},
+{
+"name": "eventtype=crowdstrike_synthetic_process_rollup2",
+"owner": "nobody",
+"process": "enabled",
+"report": "enabled",
+"sharing": "global"
+},
+{
+"cpu": "enabled",
+"inventory": "enabled",
+"name": "eventtype=crowdstrike_system_capacity",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"inventory": "enabled",
+"name": "eventtype=crowdstrike_user_identity",
+"owner": "nobody",
+"sharing": "global",
+"user": "enabled"
+},
+{
+"account": "enabled",
+"change": "enabled",
+"name": "eventtype=crowdstrike_user_logoff",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"authentication": "enabled",
+"name": "eventtype=crowdstrike_user_logon",
+"owner": "nobody",
+"sharing": "global"
+},
+{
+"name": "eventtype=crowdstrike_wmi_create_process",
+"owner": "nobody",
+"process": "enabled",
+"report": "enabled",
+"sharing": "global"
+}
+]
